@@ -1,0 +1,661 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Code coverage report for src/utils/zcl_abapgit_utils.clas.testclasses.abap</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../prettify.css" />
+    <link rel="stylesheet" href="../../base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+    
+<body>
+<div class='wrapper'>
+    <div class='pad1'>
+        <h1><a href="../../index.html">All files</a> / <a href="index.html">src/utils</a> zcl_abapgit_utils.clas.testclasses.abap</h1>
+        <div class='clearfix'>
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">100% </span>
+                <span class="quiet">Statements</span>
+                <span class='fraction'>192/192</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">100% </span>
+                <span class="quiet">Branches</span>
+                <span class='fraction'>10/10</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">100% </span>
+                <span class="quiet">Functions</span>
+                <span class='fraction'>10/10</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">100% </span>
+                <span class="quiet">Lines</span>
+                <span class='fraction'>192/192</span>
+            </div>
+        
+            
+        </div>
+        <p class="quiet">
+            Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
+        </p>
+        <template id="filterTemplate">
+            <div class="quiet">
+                Filter:
+                <input type="search" id="fileSearch">
+            </div>
+        </template>
+    </div>
+    <div class='status-line high'></div>
+    <pre><table class="coverage">
+<tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
+<a name='L2'></a><a href='#L2'>2</a>
+<a name='L3'></a><a href='#L3'>3</a>
+<a name='L4'></a><a href='#L4'>4</a>
+<a name='L5'></a><a href='#L5'>5</a>
+<a name='L6'></a><a href='#L6'>6</a>
+<a name='L7'></a><a href='#L7'>7</a>
+<a name='L8'></a><a href='#L8'>8</a>
+<a name='L9'></a><a href='#L9'>9</a>
+<a name='L10'></a><a href='#L10'>10</a>
+<a name='L11'></a><a href='#L11'>11</a>
+<a name='L12'></a><a href='#L12'>12</a>
+<a name='L13'></a><a href='#L13'>13</a>
+<a name='L14'></a><a href='#L14'>14</a>
+<a name='L15'></a><a href='#L15'>15</a>
+<a name='L16'></a><a href='#L16'>16</a>
+<a name='L17'></a><a href='#L17'>17</a>
+<a name='L18'></a><a href='#L18'>18</a>
+<a name='L19'></a><a href='#L19'>19</a>
+<a name='L20'></a><a href='#L20'>20</a>
+<a name='L21'></a><a href='#L21'>21</a>
+<a name='L22'></a><a href='#L22'>22</a>
+<a name='L23'></a><a href='#L23'>23</a>
+<a name='L24'></a><a href='#L24'>24</a>
+<a name='L25'></a><a href='#L25'>25</a>
+<a name='L26'></a><a href='#L26'>26</a>
+<a name='L27'></a><a href='#L27'>27</a>
+<a name='L28'></a><a href='#L28'>28</a>
+<a name='L29'></a><a href='#L29'>29</a>
+<a name='L30'></a><a href='#L30'>30</a>
+<a name='L31'></a><a href='#L31'>31</a>
+<a name='L32'></a><a href='#L32'>32</a>
+<a name='L33'></a><a href='#L33'>33</a>
+<a name='L34'></a><a href='#L34'>34</a>
+<a name='L35'></a><a href='#L35'>35</a>
+<a name='L36'></a><a href='#L36'>36</a>
+<a name='L37'></a><a href='#L37'>37</a>
+<a name='L38'></a><a href='#L38'>38</a>
+<a name='L39'></a><a href='#L39'>39</a>
+<a name='L40'></a><a href='#L40'>40</a>
+<a name='L41'></a><a href='#L41'>41</a>
+<a name='L42'></a><a href='#L42'>42</a>
+<a name='L43'></a><a href='#L43'>43</a>
+<a name='L44'></a><a href='#L44'>44</a>
+<a name='L45'></a><a href='#L45'>45</a>
+<a name='L46'></a><a href='#L46'>46</a>
+<a name='L47'></a><a href='#L47'>47</a>
+<a name='L48'></a><a href='#L48'>48</a>
+<a name='L49'></a><a href='#L49'>49</a>
+<a name='L50'></a><a href='#L50'>50</a>
+<a name='L51'></a><a href='#L51'>51</a>
+<a name='L52'></a><a href='#L52'>52</a>
+<a name='L53'></a><a href='#L53'>53</a>
+<a name='L54'></a><a href='#L54'>54</a>
+<a name='L55'></a><a href='#L55'>55</a>
+<a name='L56'></a><a href='#L56'>56</a>
+<a name='L57'></a><a href='#L57'>57</a>
+<a name='L58'></a><a href='#L58'>58</a>
+<a name='L59'></a><a href='#L59'>59</a>
+<a name='L60'></a><a href='#L60'>60</a>
+<a name='L61'></a><a href='#L61'>61</a>
+<a name='L62'></a><a href='#L62'>62</a>
+<a name='L63'></a><a href='#L63'>63</a>
+<a name='L64'></a><a href='#L64'>64</a>
+<a name='L65'></a><a href='#L65'>65</a>
+<a name='L66'></a><a href='#L66'>66</a>
+<a name='L67'></a><a href='#L67'>67</a>
+<a name='L68'></a><a href='#L68'>68</a>
+<a name='L69'></a><a href='#L69'>69</a>
+<a name='L70'></a><a href='#L70'>70</a>
+<a name='L71'></a><a href='#L71'>71</a>
+<a name='L72'></a><a href='#L72'>72</a>
+<a name='L73'></a><a href='#L73'>73</a>
+<a name='L74'></a><a href='#L74'>74</a>
+<a name='L75'></a><a href='#L75'>75</a>
+<a name='L76'></a><a href='#L76'>76</a>
+<a name='L77'></a><a href='#L77'>77</a>
+<a name='L78'></a><a href='#L78'>78</a>
+<a name='L79'></a><a href='#L79'>79</a>
+<a name='L80'></a><a href='#L80'>80</a>
+<a name='L81'></a><a href='#L81'>81</a>
+<a name='L82'></a><a href='#L82'>82</a>
+<a name='L83'></a><a href='#L83'>83</a>
+<a name='L84'></a><a href='#L84'>84</a>
+<a name='L85'></a><a href='#L85'>85</a>
+<a name='L86'></a><a href='#L86'>86</a>
+<a name='L87'></a><a href='#L87'>87</a>
+<a name='L88'></a><a href='#L88'>88</a>
+<a name='L89'></a><a href='#L89'>89</a>
+<a name='L90'></a><a href='#L90'>90</a>
+<a name='L91'></a><a href='#L91'>91</a>
+<a name='L92'></a><a href='#L92'>92</a>
+<a name='L93'></a><a href='#L93'>93</a>
+<a name='L94'></a><a href='#L94'>94</a>
+<a name='L95'></a><a href='#L95'>95</a>
+<a name='L96'></a><a href='#L96'>96</a>
+<a name='L97'></a><a href='#L97'>97</a>
+<a name='L98'></a><a href='#L98'>98</a>
+<a name='L99'></a><a href='#L99'>99</a>
+<a name='L100'></a><a href='#L100'>100</a>
+<a name='L101'></a><a href='#L101'>101</a>
+<a name='L102'></a><a href='#L102'>102</a>
+<a name='L103'></a><a href='#L103'>103</a>
+<a name='L104'></a><a href='#L104'>104</a>
+<a name='L105'></a><a href='#L105'>105</a>
+<a name='L106'></a><a href='#L106'>106</a>
+<a name='L107'></a><a href='#L107'>107</a>
+<a name='L108'></a><a href='#L108'>108</a>
+<a name='L109'></a><a href='#L109'>109</a>
+<a name='L110'></a><a href='#L110'>110</a>
+<a name='L111'></a><a href='#L111'>111</a>
+<a name='L112'></a><a href='#L112'>112</a>
+<a name='L113'></a><a href='#L113'>113</a>
+<a name='L114'></a><a href='#L114'>114</a>
+<a name='L115'></a><a href='#L115'>115</a>
+<a name='L116'></a><a href='#L116'>116</a>
+<a name='L117'></a><a href='#L117'>117</a>
+<a name='L118'></a><a href='#L118'>118</a>
+<a name='L119'></a><a href='#L119'>119</a>
+<a name='L120'></a><a href='#L120'>120</a>
+<a name='L121'></a><a href='#L121'>121</a>
+<a name='L122'></a><a href='#L122'>122</a>
+<a name='L123'></a><a href='#L123'>123</a>
+<a name='L124'></a><a href='#L124'>124</a>
+<a name='L125'></a><a href='#L125'>125</a>
+<a name='L126'></a><a href='#L126'>126</a>
+<a name='L127'></a><a href='#L127'>127</a>
+<a name='L128'></a><a href='#L128'>128</a>
+<a name='L129'></a><a href='#L129'>129</a>
+<a name='L130'></a><a href='#L130'>130</a>
+<a name='L131'></a><a href='#L131'>131</a>
+<a name='L132'></a><a href='#L132'>132</a>
+<a name='L133'></a><a href='#L133'>133</a>
+<a name='L134'></a><a href='#L134'>134</a>
+<a name='L135'></a><a href='#L135'>135</a>
+<a name='L136'></a><a href='#L136'>136</a>
+<a name='L137'></a><a href='#L137'>137</a>
+<a name='L138'></a><a href='#L138'>138</a>
+<a name='L139'></a><a href='#L139'>139</a>
+<a name='L140'></a><a href='#L140'>140</a>
+<a name='L141'></a><a href='#L141'>141</a>
+<a name='L142'></a><a href='#L142'>142</a>
+<a name='L143'></a><a href='#L143'>143</a>
+<a name='L144'></a><a href='#L144'>144</a>
+<a name='L145'></a><a href='#L145'>145</a>
+<a name='L146'></a><a href='#L146'>146</a>
+<a name='L147'></a><a href='#L147'>147</a>
+<a name='L148'></a><a href='#L148'>148</a>
+<a name='L149'></a><a href='#L149'>149</a>
+<a name='L150'></a><a href='#L150'>150</a>
+<a name='L151'></a><a href='#L151'>151</a>
+<a name='L152'></a><a href='#L152'>152</a>
+<a name='L153'></a><a href='#L153'>153</a>
+<a name='L154'></a><a href='#L154'>154</a>
+<a name='L155'></a><a href='#L155'>155</a>
+<a name='L156'></a><a href='#L156'>156</a>
+<a name='L157'></a><a href='#L157'>157</a>
+<a name='L158'></a><a href='#L158'>158</a>
+<a name='L159'></a><a href='#L159'>159</a>
+<a name='L160'></a><a href='#L160'>160</a>
+<a name='L161'></a><a href='#L161'>161</a>
+<a name='L162'></a><a href='#L162'>162</a>
+<a name='L163'></a><a href='#L163'>163</a>
+<a name='L164'></a><a href='#L164'>164</a>
+<a name='L165'></a><a href='#L165'>165</a>
+<a name='L166'></a><a href='#L166'>166</a>
+<a name='L167'></a><a href='#L167'>167</a>
+<a name='L168'></a><a href='#L168'>168</a>
+<a name='L169'></a><a href='#L169'>169</a>
+<a name='L170'></a><a href='#L170'>170</a>
+<a name='L171'></a><a href='#L171'>171</a>
+<a name='L172'></a><a href='#L172'>172</a>
+<a name='L173'></a><a href='#L173'>173</a>
+<a name='L174'></a><a href='#L174'>174</a>
+<a name='L175'></a><a href='#L175'>175</a>
+<a name='L176'></a><a href='#L176'>176</a>
+<a name='L177'></a><a href='#L177'>177</a>
+<a name='L178'></a><a href='#L178'>178</a>
+<a name='L179'></a><a href='#L179'>179</a>
+<a name='L180'></a><a href='#L180'>180</a>
+<a name='L181'></a><a href='#L181'>181</a>
+<a name='L182'></a><a href='#L182'>182</a>
+<a name='L183'></a><a href='#L183'>183</a>
+<a name='L184'></a><a href='#L184'>184</a>
+<a name='L185'></a><a href='#L185'>185</a>
+<a name='L186'></a><a href='#L186'>186</a>
+<a name='L187'></a><a href='#L187'>187</a>
+<a name='L188'></a><a href='#L188'>188</a>
+<a name='L189'></a><a href='#L189'>189</a>
+<a name='L190'></a><a href='#L190'>190</a>
+<a name='L191'></a><a href='#L191'>191</a>
+<a name='L192'></a><a href='#L192'>192</a>
+<a name='L193'></a><a href='#L193'>193</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">CLASS ltcl_is_binary DEFINITION FINAL FOR TESTING
+  DURATION SHORT
+  RISK LEVEL HARMLESS.
+  PUBLIC SECTION.
+    CLASS-METHODS:
+      class_constructor.
+&nbsp;
+  PRIVATE SECTION.
+    DATA mv_given_file TYPE xstring.
+    DATA mv_act_is_binary TYPE abap_bool.
+    CLASS-DATA:
+      gv_nl    TYPE c LENGTH 1,
+      gv_cr_lf TYPE c LENGTH 2.
+&nbsp;
+    METHODS:
+      cds_metadata_is_text FOR TESTING RAISING cx_static_check,
+      cds_with_umlaut_is_text FOR TESTING RAISING cx_static_check,
+      image_is_binary FOR TESTING RAISING cx_static_check,
+&nbsp;
+      given_file
+        IMPORTING
+          iv_file TYPE string
+        RAISING zcx_abapgit_exception,
+      given_image,
+      given_cds_metadata
+        RAISING zcx_abapgit_exception,
+      given_cds_view_with_umlaut
+        RAISING zcx_abapgit_exception,
+&nbsp;
+      when_is_binary_determined
+        RAISING zcx_abapgit_exception,
+&nbsp;
+      then_is_not_binary,
+      then_is_binary.
+&nbsp;
+ENDCLASS.
+&nbsp;
+&nbsp;
+CLASS ltcl_is_binary IMPLEMENTATION.
+&nbsp;
+  METHOD class_constructor.
+&nbsp;
+    gv_nl    = cl_abap_char_utilities=&gt;newline.
+    gv_cr_lf = cl_abap_char_utilities=&gt;cr_lf.
+&nbsp;
+  ENDMETHOD.
+&nbsp;
+  METHOD cds_metadata_is_text.
+&nbsp;
+    given_cds_metadata( ).
+    when_is_binary_determined( ).
+    then_is_not_binary( ).
+&nbsp;
+  ENDMETHOD.
+&nbsp;
+&nbsp;
+  METHOD cds_with_umlaut_is_text.
+&nbsp;
+    given_cds_view_with_umlaut( ).
+    when_is_binary_determined( ).
+    then_is_not_binary( ).
+&nbsp;
+  ENDMETHOD.
+&nbsp;
+&nbsp;
+  METHOD image_is_binary.
+&nbsp;
+    given_image( ).
+    when_is_binary_determined( ).
+    then_is_binary( ).
+&nbsp;
+  ENDMETHOD.
+&nbsp;
+&nbsp;
+  METHOD given_file.
+&nbsp;
+    mv_given_file = zcl_abapgit_convert=&gt;string_to_xstring_utf8( iv_file ).
+&nbsp;
+  ENDMETHOD.
+&nbsp;
+&nbsp;
+  METHOD given_image.
+&nbsp;
+    mv_given_file =
+        zcl_abapgit_convert=&gt;base64_to_xstring(
+              `iVBORw0KGgoAAAANSUhEUgAAALEAAAA1CAYAAAAOCAoLAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8Y`
+           &amp;&amp; `QUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAecSURBVHhe7ZvLilxVFIb1BfQFdOxAcaAgJIgX8B4HOkkPHB`
+           &amp;&amp; `kxOjFiFBRaEIzowIEYBVGQBMULeIsjFeNI0YGT6EzsB+jETuIblP0V7mbVqn/vs06dc6rqdPbgg+4+a1/`
+           &amp;&amp; `O3t++VvVV29vbk0plzFSJK6OnSlwZPVXiyuipEldGT5W4MnoGk3jn848nl44/Pdn58D35vFLpi0Ekvvjy`
+           &amp;&amp; `85N/b795D35XcZVKH/QusRe4ilwZml4lzgmcqCJXhqBXiXc2j0t5LVXkSt/0IvGFn37Y+7mKXFk2nSVOW`
+           &amp;&amp; `4h/Pvto729V5Moy6SRxEjjhRb549LGZ554q8v7j15/PTs5+/80U9XwIFpbYC5ywIidKM/OqRf7j3O+Tt9`
+           &amp;&amp; `54QfLjd1/LNBUNbXbbDVfvsXHopsnW33/J2D5ZSOKcwInzv/0yl+bSI/fIWFilyGe+ODXT8BY6RaXZbzC`
+           &amp;&amp; `QP3j3xOTYEw9OjmwcnGmDu2+9dvo32oJZVqUHZLXpEu+/86qM75PWEjcJDDLdmm4t/Oxh2e8SI6WXtomH`
+           &amp;&amp; `77x+8unpk3N5sWqp+GW0YSuJIwKD3FK8/oqMtaxCZGaQT069Pdl46MaVdMCq4J39+7ZB5aniSjMxz1Lc4`
+           &amp;&amp; `4cPyJgIYYmjAk+5/+DMtVtinW8t1LZiv0pcWn0AoRLqOah8rZTAxFDaE5/YfHIvdnCJWwn8P2wfSIvMY7`
+           &amp;&amp; `h+U8vhfpQ4t+wfuuO66eys0qgBruKA/TVlRA7FlJnyG1TiRQQGKzG/r7vIV4rEVpxE04wJPo2KaYMfGIN`
+           &amp;&amp; `JHNnH5vASw9xeeWur9+u3dE/JafvMl6enP5dO1YkmiZlh0v0ntLk6Ijalo17pZ/JU8W3w9VIxidw+ONI+`
+           &amp;&amp; `Xn4VE8VvO2AQibkmU2JFURJD2+s3dUj0IMlLz25MT86+cRJcFSFlTr6cxPw9d4J/bfNoUWbScm2l0ia4S`
+           &amp;&amp; `yXOp6VsFZ8OSgip3je9p88P1B73xWOHZayH/SvpUx72mWq7hK2L3QNHyL2HJyvxhW+/klJFyUnM774sYm`
+           &amp;&amp; `2MZefkm3PxFiSi41QjKBBS5aM6ojQoEkio8mt7+md5telzElN/ylTPLAxqmx+ouMgs3ET0rl0NohKdJWa`
+           &amp;&amp; `pv3zfASlWhJzEama9/Oi9MzEWJb2FmUQ1AA121y3XyGdq5ivNJk34xs4NLJZkdZUHDBibB3nm6h/FDozc`
+           &amp;&amp; `+9kyF4Vy1F4bVivxLiz9i4qck3jm+m13oJQOjpGthO9oGtMu8Wr/xbJm84BcJ5M/A4UGzQ0YhG3KK20Dg`
+           &amp;&amp; `Popmf0embhnjjwwFwe2XrkYu0qoOiGVLa8rqq2tiMz61EPF0R48s0TPDEWJYVGRsxIHiQgMdCCdkWZeNX`
+           &amp;&amp; `p9g6nOo9F8HHnbAQG5bQLpbV6pTsBzv2xTz1IepTg1CFUcpPqr56oduqDaUPWHiutSl0aJYRGRu0gcFTh`
+           &amp;&amp; `KpMGiHQBq6czF5lBSRSVWceDjbKzKpyQOg440Tdi6RNtQxQ0uMbQRmbiZLcNzT8k4Rd8CQ6TBoh0A6pSd`
+           &amp;&amp; `i81BvM/DCtE2DngvH5v2xWoFKYmjylXY9157iSEq8pyIwUNiF4HZP/HFFBqNkzmn+ESkwdpIrDqYrYeKJ`
+           &amp;&amp; `V/iIX1LDNTNh5JTlaXiQEmc3kG9H/g8Ern9vyflD9E2VHFLkxgiIp//89xcutI1GiwqMHs+pPWNUmIIie`
+           &amp;&amp; `l0G8MMGLmisyg5VVkqDkoSM8j9M8hdsTFzkxaU0OkgZtNE21DFLVViaBKZO+aZNMzEhWu0LgI33ZmqW4A`
+           &amp;&amp; `hJLaxpXtT4ACq9tVKTlWWigMlsY31NzmgDomeqHTRNozmF2UhiaEkMsLyfBrbwzVajtxVjZ9dfExXidWV`
+           &amp;&amp; `lo1VA4fn9qYjKmc0DtTAsG2h9vJcD/obGE9UumgbRvOLsrDE0DQjl2Zf6CIwKJlUB/uYLh1Ah/s4sOX6Z`
+           &amp;&amp; `8hl84C+JUZWHwc2JrelYDUriazaZt9IDJE9sqKrwMCL+8awn1KB6lzVYHJW3+1cP6vnDjxJAiW5/zAkl0`
+           &amp;&amp; `9UYg6I9oMAylTbKnXYVLMxkF6VD31LrAZTZEXI0VliaCtyHwJDbnnkm2KQO/DRYT4vJUuC+NyNAvhDnYp`
+           &amp;&amp; `BPOpEObl8/ACEUr3STQfvrJ6r/KbCi+1OgrqRJ+XyBafceyuJ1Vkgt+f2cUA7Uy7QXr5dc/QiMURF7ktg`
+           &amp;&amp; `aPslG4+dqUqylOCwZGdFUCtEG3ivrvXKXflBk8gRrMSRfvBCRtpIrWCK3iSGJpH7FDjR1Bl0ptoqgO0It`
+           &amp;&amp; `b9u6hwEVkuwWlYtpCPvXEcibspLSdz0zjxvWpp5Tt7qxiJCUx09tq2hqY0Sqn09vUoMOZGHEBjoDEa57w`
+           &amp;&amp; `ykTMsp+1oa0WOXOn5Wz0jrBacsyvQzsIXG97JxwLPpGFy2zETTTEze4OtF/sQ3CWwhlvKol7rdSFAvYoj`
+           &amp;&amp; `1+acBWUJtK9Q7AO1GvD+P5OhdYkDk9EV3hB5K4GXTRo6+yEmsYvtkFe+6aJmDSDxla2v6/Qn16V0lzqok`
+           &amp;&amp; `HhPDSVzphSpxM1XiNYa9s/ofvfTPpqtY8teRKvGaombgHCr9lUSVeE2pEsepEq8p7HsROYJKfyVRJa6Mn`
+           &amp;&amp; `ipxZfRUiSujp0pcGT1V4sroqRJXRk+VuDJytif/Aa8ZlmVpfNVQAAAAAElFTkSuQmCC` ).
+&nbsp;
+  ENDMETHOD.
+&nbsp;
+&nbsp;
+  METHOD given_cds_metadata.
+&nbsp;
+    given_file( `{`
+    &amp;&amp; gv_nl &amp;&amp; `"BASEINFO":`
+    &amp;&amp; gv_nl &amp;&amp; `{`
+    &amp;&amp; gv_nl &amp;&amp; `"FROM":`
+    &amp;&amp; gv_nl &amp;&amp; `[`
+    &amp;&amp; gv_nl &amp;&amp; `"T100"`
+    &amp;&amp; gv_nl &amp;&amp; `],`
+    &amp;&amp; gv_nl &amp;&amp; `"ASSOCIATED":`
+    &amp;&amp; gv_nl &amp;&amp; `[],`
+    &amp;&amp; gv_nl &amp;&amp; `"BASE":`
+    &amp;&amp; gv_nl &amp;&amp; `[],`
+    &amp;&amp; gv_nl &amp;&amp; `"ANNO_REF":`
+    &amp;&amp; gv_nl &amp;&amp; `[],`
+    &amp;&amp; gv_nl &amp;&amp; `"VERSION":0`
+    &amp;&amp; gv_nl &amp;&amp; `}`
+    &amp;&amp; gv_nl &amp;&amp; `}` ).
+&nbsp;
+  ENDMETHOD.
+&nbsp;
+&nbsp;
+  METHOD given_cds_view_with_umlaut.
+&nbsp;
+    CONSTANTS lc_umlaut_ue TYPE xstring VALUE `C3BC`.
+&nbsp;
+    given_file( `@EndUserText.label: `
+                 &amp;&amp; zcl_abapgit_convert=&gt;xstring_to_string_utf8( lc_umlaut_ue )
+                 &amp;&amp; `bernahmekandidat'`
+     &amp;&amp; gv_cr_lf &amp;&amp; `@AbapCatalog.sqlViewName: 'ZTESTDDLSBUG2'`
+     &amp;&amp; gv_cr_lf &amp;&amp; `@AbapCatalog.compiler.compareFilter: true`
+     &amp;&amp; gv_cr_lf &amp;&amp; `@AbapCatalog.preserveKey: true`
+     &amp;&amp; gv_cr_lf &amp;&amp; `@AccessControl.authorizationCheck: #CHECK`
+     &amp;&amp; gv_cr_lf &amp;&amp; `define view ztest_ddls_bug2`
+     &amp;&amp; gv_cr_lf &amp;&amp; `  as select from t100`
+     &amp;&amp; gv_cr_lf &amp;&amp; `{`
+     &amp;&amp; gv_cr_lf &amp;&amp; `  key sprsl as Sprsl,`
+     &amp;&amp; gv_cr_lf &amp;&amp; `  key arbgb as Arbgb,`
+     &amp;&amp; gv_cr_lf &amp;&amp; `  key msgnr as Msgnr,`
+     &amp;&amp; gv_cr_lf &amp;&amp; `      text  as Text`
+     &amp;&amp; gv_cr_lf &amp;&amp; `}` ).
+&nbsp;
+  ENDMETHOD.
+&nbsp;
+  METHOD when_is_binary_determined.
+&nbsp;
+    mv_act_is_binary = zcl_abapgit_utils=&gt;is_binary( mv_given_file ).
+&nbsp;
+  ENDMETHOD.
+&nbsp;
+&nbsp;
+  METHOD then_is_not_binary.
+&nbsp;
+    cl_abap_unit_assert=&gt;assert_equals(
+      act = mv_act_is_binary
+      exp = abap_false ).
+&nbsp;
+  ENDMETHOD.
+&nbsp;
+&nbsp;
+  METHOD then_is_binary.
+&nbsp;
+    cl_abap_unit_assert=&gt;assert_equals(
+      act = mv_act_is_binary
+      exp = abap_true ).
+&nbsp;
+  ENDMETHOD.
+&nbsp;
+ENDCLASS.
+&nbsp;</pre></td></tr></table></pre>
+
+                <div class='push'></div><!-- for sticky footer -->
+            </div><!-- /wrapper -->
+            <div class='footer quiet pad2 space-top1 center small'>
+                Code coverage generated by
+                <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
+                at 2024-10-16T13:46:33.576Z
+            </div>
+        <script src="../../prettify.js"></script>
+        <script>
+            window.onload = function () {
+                prettyPrint();
+            };
+        </script>
+        <script src="../../sorter.js"></script>
+        <script src="../../block-navigation.js"></script>
+    </body>
+</html>
+    
