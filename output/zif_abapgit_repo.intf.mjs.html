@@ -1,0 +1,157 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Code coverage report for output/zif_abapgit_repo.intf.mjs</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+    
+<body>
+<div class='wrapper'>
+    <div class='pad1'>
+        <h1><a href="../index.html">All files</a> / <a href="index.html">output</a> zif_abapgit_repo.intf.mjs</h1>
+        <div class='clearfix'>
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">100% </span>
+                <span class="quiet">Statements</span>
+                <span class='fraction'>25/25</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">100% </span>
+                <span class="quiet">Branches</span>
+                <span class='fraction'>0/0</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">100% </span>
+                <span class="quiet">Functions</span>
+                <span class='fraction'>0/0</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">100% </span>
+                <span class="quiet">Lines</span>
+                <span class='fraction'>25/25</span>
+            </div>
+        
+            
+        </div>
+        <p class="quiet">
+            Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
+        </p>
+        <template id="filterTemplate">
+            <div class="quiet">
+                Filter:
+                <input type="search" id="fileSearch">
+            </div>
+        </template>
+    </div>
+    <div class='status-line high'></div>
+    <pre><table class="coverage">
+<tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
+<a name='L2'></a><a href='#L2'>2</a>
+<a name='L3'></a><a href='#L3'>3</a>
+<a name='L4'></a><a href='#L4'>4</a>
+<a name='L5'></a><a href='#L5'>5</a>
+<a name='L6'></a><a href='#L6'>6</a>
+<a name='L7'></a><a href='#L7'>7</a>
+<a name='L8'></a><a href='#L8'>8</a>
+<a name='L9'></a><a href='#L9'>9</a>
+<a name='L10'></a><a href='#L10'>10</a>
+<a name='L11'></a><a href='#L11'>11</a>
+<a name='L12'></a><a href='#L12'>12</a>
+<a name='L13'></a><a href='#L13'>13</a>
+<a name='L14'></a><a href='#L14'>14</a>
+<a name='L15'></a><a href='#L15'>15</a>
+<a name='L16'></a><a href='#L16'>16</a>
+<a name='L17'></a><a href='#L17'>17</a>
+<a name='L18'></a><a href='#L18'>18</a>
+<a name='L19'></a><a href='#L19'>19</a>
+<a name='L20'></a><a href='#L20'>20</a>
+<a name='L21'></a><a href='#L21'>21</a>
+<a name='L22'></a><a href='#L22'>22</a>
+<a name='L23'></a><a href='#L23'>23</a>
+<a name='L24'></a><a href='#L24'>24</a>
+<a name='L25'></a><a href='#L25'>25</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span></td><td class="text"><pre class="prettyprint lang-js">// zif_abapgit_repo.intf.abap
+class zif_abapgit_repo {
+  static INTERNAL_TYPE = 'INTF';
+  static ATTRIBUTES = {"MS_DATA": {"type": () =&gt; {return new abap.types.Structure({"key": new abap.types.Character(12, {"qualifiedName":"zif_abapgit_persistence=&gt;ty_value"}), "url": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_PERSISTENCE=&gt;TY_REPO_XML-URL"}), "branch_name": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_PERSISTENCE=&gt;TY_REPO_XML-BRANCH_NAME"}), "selected_commit": new abap.types.Character(40, {"qualifiedName":"zif_abapgit_git_definitions=&gt;ty_sha1"}), "package": new abap.types.Character(30, {"qualifiedName":"DEVCLASS","ddicName":"DEVCLASS","description":"DEVCLASS"}), "created_by": new abap.types.Character(12, {"qualifiedName":"SYUNAME","ddicName":"SYUNAME","description":"SYUNAME"}), "created_at": new abap.types.Packed({length: 21, decimals: 7, qualifiedName: "TIMESTAMPL"}), "deserialized_by": new abap.types.Character(12, {"qualifiedName":"SYUNAME","ddicName":"SYUNAME","description":"SYUNAME"}), "deserialized_at": new abap.types.Packed({length: 21, decimals: 7, qualifiedName: "TIMESTAMPL"}), "offline": new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"}), "switched_origin": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_PERSISTENCE=&gt;TY_REPO_XML-SWITCHED_ORIGIN"}), "dot_abapgit": new abap.types.Structure({"name": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_DOT_ABAPGIT=&gt;TY_DOT_ABAPGIT-NAME"}), "master_language": new abap.types.Character(1, {"qualifiedName":"SPRAS","ddicName":"SPRAS","description":"SPRAS"}), "i18n_languages": abap.types.TableFactory.construct(new abap.types.Character(2, {"qualifiedName":"LAISO","ddicName":"LAISO","description":"LAISO"}), {"withHeader":false,"keyType":"DEFAULT","primaryKey":{"name":"primary_key","type":"STANDARD","isUnique":false,"keyFields":[]},"secondary":[]}, "zif_abapgit_definitions=&gt;ty_languages"), "use_lxe": new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"}), "starting_folder": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_DOT_ABAPGIT=&gt;TY_DOT_ABAPGIT-STARTING_FOLDER"}), "folder_logic": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_DOT_ABAPGIT=&gt;TY_DOT_ABAPGIT-FOLDER_LOGIC"}), "ignore": abap.types.TableFactory.construct(new abap.types.String({qualifiedName: "STRING"}), {"withHeader":false,"keyType":"DEFAULT","primaryKey":{"name":"primary_key","type":"STANDARD","isUnique":false,"keyFields":[]},"secondary":[]}, "zif_abapgit_dot_abapgit=&gt;ty_dot_abapgit-ignore"), "requirements": abap.types.TableFactory.construct(new abap.types.Structure({"component": new abap.types.Character(30, {"description":"DLVUNIT"}), "min_release": new abap.types.Character(10, {"qualifiedName":"SAPRELEASE","ddicName":"SAPRELEASE","description":"SAPRELEASE"}), "min_patch": new abap.types.Character(10, {"qualifiedName":"SAPPATCHLV","ddicName":"SAPPATCHLV","description":"SAPPATCHLV"})}, "zif_abapgit_dot_abapgit=&gt;ty_requirement", undefined, {}, {}), {"withHeader":false,"keyType":"DEFAULT","primaryKey":{"name":"primary_key","type":"STANDARD","isUnique":false,"keyFields":[]},"secondary":[]}, "zif_abapgit_dot_abapgit=&gt;ty_requirement_tt"), "version_constant": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_DOT_ABAPGIT=&gt;TY_DOT_ABAPGIT-VERSION_CONSTANT"}), "abap_language_version": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_DOT_ABAPGIT=&gt;TY_DOT_ABAPGIT-ABAP_LANGUAGE_VERSION"}), "original_system": new abap.types.Character(5, {})}, "zif_abapgit_dot_abapgit=&gt;ty_dot_abapgit", undefined, {}, {}), "head_branch": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_PERSISTENCE=&gt;TY_REPO_XML-HEAD_BRANCH"}), "local_settings": new abap.types.Structure({"display_name": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_PERSISTENCE=&gt;TY_LOCAL_SETTINGS-DISPLAY_NAME"}), "ignore_subpackages": new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"}), "write_protected": new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"}), "only_local_objects": new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"}), "code_inspector_check_variant": new abap.types.Character(30, {"qualifiedName":"SCI_CHKV","ddicName":"SCI_CHKV","description":"SCI_CHKV"}), "block_commit": new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"}), "main_language_only": new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"}), "labels": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_PERSISTENCE=&gt;TY_LOCAL_SETTINGS-LABELS"}), "transport_request": new abap.types.Character(20, {"qualifiedName":"TRKORR","ddicName":"TRKORR","description":"TRKORR"}), "customizing_request": new abap.types.Character(20, {"qualifiedName":"TRKORR","ddicName":"TRKORR","description":"TRKORR"}), "flow": new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"}), "exclude_remote_paths": abap.types.TableFactory.construct(new abap.types.String({qualifiedName: "STRING"}), {"withHeader":false,"keyType":"DEFAULT","primaryKey":{"isUnique":false,"type":"STANDARD","keyFields":[],"name":"primary_key"},"secondary":[]}, "STRING_TABLE")}, "zif_abapgit_persistence=&gt;ty_local_settings", undefined, {}, {})}, "zif_abapgit_persistence=&gt;ty_repo", undefined, {}, {});}, "visibility": "U", "is_constant": " ", "is_class": " "}};
+  static METHODS = {"GET_KEY": {"visibility": "U", "parameters": {"RV_KEY": {"type": () =&gt; {return new abap.types.Character(12, {"qualifiedName":"zif_abapgit_persistence=&gt;ty_value"});}, "is_optional": " "}}},
+  "GET_NAME": {"visibility": "U", "parameters": {"RV_NAME": {"type": () =&gt; {return new abap.types.String({qualifiedName: "STRING"});}, "is_optional": " "}}},
+  "IS_OFFLINE": {"visibility": "U", "parameters": {"RV_OFFLINE": {"type": () =&gt; {return new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"});}, "is_optional": " "}}},
+  "GET_PACKAGE": {"visibility": "U", "parameters": {"RV_PACKAGE": {"type": () =&gt; {return new abap.types.Character(30, {"qualifiedName":"DEVCLASS","ddicName":"DEVCLASS","description":"DEVCLASS"});}, "is_optional": " "}}},
+  "GET_LOCAL_SETTINGS": {"visibility": "U", "parameters": {"RS_SETTINGS": {"type": () =&gt; {return new abap.types.Structure({"display_name": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_PERSISTENCE=&gt;TY_LOCAL_SETTINGS-DISPLAY_NAME"}), "ignore_subpackages": new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"}), "write_protected": new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"}), "only_local_objects": new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"}), "code_inspector_check_variant": new abap.types.Character(30, {"qualifiedName":"SCI_CHKV","ddicName":"SCI_CHKV","description":"SCI_CHKV"}), "block_commit": new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"}), "main_language_only": new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"}), "labels": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_PERSISTENCE=&gt;TY_LOCAL_SETTINGS-LABELS"}), "transport_request": new abap.types.Character(20, {"qualifiedName":"TRKORR","ddicName":"TRKORR","description":"TRKORR"}), "customizing_request": new abap.types.Character(20, {"qualifiedName":"TRKORR","ddicName":"TRKORR","description":"TRKORR"}), "flow": new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"}), "exclude_remote_paths": abap.types.TableFactory.construct(new abap.types.String({qualifiedName: "STRING"}), {"withHeader":false,"keyType":"DEFAULT","primaryKey":{"isUnique":false,"type":"STANDARD","keyFields":[],"name":"primary_key"},"secondary":[]}, "STRING_TABLE")}, "zif_abapgit_persistence=&gt;ty_local_settings", undefined, {}, {});}, "is_optional": " "}}},
+  "GET_TADIR_OBJECTS": {"visibility": "U", "parameters": {"RT_TADIR": {"type": () =&gt; {return abap.types.TableFactory.construct(new abap.types.Structure({"pgmid": new abap.types.Character(4, {}), "object": new abap.types.Character(4, {}), "obj_name": new abap.types.Character(40, {}), "devclass": new abap.types.Character(30, {"qualifiedName":"DEVCLASS","ddicName":"DEVCLASS","description":"DEVCLASS"}), "korrnum": new abap.types.Character(10, {}), "delflag": new abap.types.Character(1, {}), "genflag": new abap.types.Character(1, {}), "path": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_DEFINITIONS=&gt;TY_TADIR-PATH"}), "srcsystem": new abap.types.Character(5, {}), "masterlang": new abap.types.Character(1, {})}, "zif_abapgit_definitions=&gt;ty_tadir", undefined, {}, {}), {"withHeader":false,"keyType":"DEFAULT","primaryKey":{"name":"primary_key","type":"STANDARD","isUnique":false,"keyFields":[]},"secondary":[]}, "zif_abapgit_definitions=&gt;ty_tadir_tt");}, "is_optional": " "}}},
+  "GET_FILES_LOCAL_FILTERED": {"visibility": "U", "parameters": {"RT_FILES": {"type": () =&gt; {return abap.types.TableFactory.construct(new abap.types.Structure({"file": new abap.types.Structure({"path": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_GIT_DEFINITIONS=&gt;TY_FILE_SIGNATURE-PATH"}), "filename": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_GIT_DEFINITIONS=&gt;TY_FILE_SIGNATURE-FILENAME"}), "sha1": new abap.types.Character(40, {"qualifiedName":"zif_abapgit_git_definitions=&gt;ty_sha1"}), "data": new abap.types.XString({qualifiedName: "ZIF_ABAPGIT_GIT_DEFINITIONS=&gt;TY_FILE-DATA"})}, "zif_abapgit_git_definitions=&gt;ty_file", undefined, {}, {}), "item": new abap.types.Structure({"obj_type": new abap.types.Character(4, {}), "obj_name": new abap.types.Character(40, {}), "devclass": new abap.types.Character(30, {"qualifiedName":"DEVCLASS","ddicName":"DEVCLASS","description":"DEVCLASS"}), "srcsystem": new abap.types.Character(5, {}), "origlang": new abap.types.Character(1, {}), "inactive": new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"}), "abap_language_version": new abap.types.Character(1, {"qualifiedName":"zif_abapgit_aff_types_v1=&gt;ty_abap_language_version"})}, "zif_abapgit_definitions=&gt;ty_item", undefined, {}, {})}, "zif_abapgit_definitions=&gt;ty_file_item", undefined, {}, {}), {"withHeader":false,"keyType":"DEFAULT","primaryKey":{"name":"primary_key","type":"STANDARD","isUnique":false,"keyFields":[]},"secondary":[]}, "zif_abapgit_definitions=&gt;ty_files_item_tt");}, "is_optional": " "}, "II_OBJ_FILTER": {"type": () =&gt; {return new abap.types.ABAPObject({qualifiedName: "ZIF_ABAPGIT_OBJECT_FILTER", RTTIName: "\\INTERFACE=ZIF_ABAPGIT_OBJECT_FILTER"});}, "is_optional": " "}, "II_LOG": {"type": () =&gt; {return new abap.types.ABAPObject({qualifiedName: "ZIF_ABAPGIT_LOG", RTTIName: "\\INTERFACE=ZIF_ABAPGIT_LOG"});}, "is_optional": " "}}},
+  "GET_FILES_LOCAL": {"visibility": "U", "parameters": {"RT_FILES": {"type": () =&gt; {return abap.types.TableFactory.construct(new abap.types.Structure({"file": new abap.types.Structure({"path": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_GIT_DEFINITIONS=&gt;TY_FILE_SIGNATURE-PATH"}), "filename": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_GIT_DEFINITIONS=&gt;TY_FILE_SIGNATURE-FILENAME"}), "sha1": new abap.types.Character(40, {"qualifiedName":"zif_abapgit_git_definitions=&gt;ty_sha1"}), "data": new abap.types.XString({qualifiedName: "ZIF_ABAPGIT_GIT_DEFINITIONS=&gt;TY_FILE-DATA"})}, "zif_abapgit_git_definitions=&gt;ty_file", undefined, {}, {}), "item": new abap.types.Structure({"obj_type": new abap.types.Character(4, {}), "obj_name": new abap.types.Character(40, {}), "devclass": new abap.types.Character(30, {"qualifiedName":"DEVCLASS","ddicName":"DEVCLASS","description":"DEVCLASS"}), "srcsystem": new abap.types.Character(5, {}), "origlang": new abap.types.Character(1, {}), "inactive": new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"}), "abap_language_version": new abap.types.Character(1, {"qualifiedName":"zif_abapgit_aff_types_v1=&gt;ty_abap_language_version"})}, "zif_abapgit_definitions=&gt;ty_item", undefined, {}, {})}, "zif_abapgit_definitions=&gt;ty_file_item", undefined, {}, {}), {"withHeader":false,"keyType":"DEFAULT","primaryKey":{"name":"primary_key","type":"STANDARD","isUnique":false,"keyFields":[]},"secondary":[]}, "zif_abapgit_definitions=&gt;ty_files_item_tt");}, "is_optional": " "}, "II_LOG": {"type": () =&gt; {return new abap.types.ABAPObject({qualifiedName: "ZIF_ABAPGIT_LOG", RTTIName: "\\INTERFACE=ZIF_ABAPGIT_LOG"});}, "is_optional": " "}}},
+  "GET_FILES_REMOTE": {"visibility": "U", "parameters": {"RT_FILES": {"type": () =&gt; {return abap.types.TableFactory.construct(new abap.types.Structure({"path": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_GIT_DEFINITIONS=&gt;TY_FILE_SIGNATURE-PATH"}), "filename": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_GIT_DEFINITIONS=&gt;TY_FILE_SIGNATURE-FILENAME"}), "sha1": new abap.types.Character(40, {"qualifiedName":"zif_abapgit_git_definitions=&gt;ty_sha1"}), "data": new abap.types.XString({qualifiedName: "ZIF_ABAPGIT_GIT_DEFINITIONS=&gt;TY_FILE-DATA"})}, "zif_abapgit_git_definitions=&gt;ty_file", undefined, {}, {}), {"withHeader":false,"keyType":"DEFAULT","primaryKey":{"name":"primary_key","type":"STANDARD","isUnique":false,"keyFields":[]},"secondary":[{"name":"file_path","type":"SORTED","isUnique":true,"keyFields":["PATH","FILENAME"]},{"name":"file","type":"SORTED","isUnique":false,"keyFields":["FILENAME"]}]}, "zif_abapgit_git_definitions=&gt;ty_files_tt");}, "is_optional": " "}, "II_OBJ_FILTER": {"type": () =&gt; {return new abap.types.ABAPObject({qualifiedName: "ZIF_ABAPGIT_OBJECT_FILTER", RTTIName: "\\INTERFACE=ZIF_ABAPGIT_OBJECT_FILTER"});}, "is_optional": " "}, "IV_IGNORE_FILES": {"type": () =&gt; {return new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"});}, "is_optional": " "}}},
+  "REFRESH": {"visibility": "U", "parameters": {"IV_DROP_CACHE": {"type": () =&gt; {return new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"});}, "is_optional": " "}, "IV_DROP_LOG": {"type": () =&gt; {return new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"});}, "is_optional": " "}}},
+  "GET_DOT_ABAPGIT": {"visibility": "U", "parameters": {"RO_DOT_ABAPGIT": {"type": () =&gt; {return new abap.types.ABAPObject({qualifiedName: "ZCL_ABAPGIT_DOT_ABAPGIT", RTTIName: "\\CLASS=ZCL_ABAPGIT_DOT_ABAPGIT"});}, "is_optional": " "}}},
+  "SET_DOT_ABAPGIT": {"visibility": "U", "parameters": {"IO_DOT_ABAPGIT": {"type": () =&gt; {return new abap.types.ABAPObject({qualifiedName: "ZCL_ABAPGIT_DOT_ABAPGIT", RTTIName: "\\CLASS=ZCL_ABAPGIT_DOT_ABAPGIT"});}, "is_optional": " "}}},
+  "FIND_REMOTE_DOT_ABAPGIT": {"visibility": "U", "parameters": {"RO_DOT": {"type": () =&gt; {return new abap.types.ABAPObject({qualifiedName: "ZCL_ABAPGIT_DOT_ABAPGIT", RTTIName: "\\CLASS=ZCL_ABAPGIT_DOT_ABAPGIT"});}, "is_optional": " "}}},
+  "DESERIALIZE": {"visibility": "U", "parameters": {"IS_CHECKS": {"type": () =&gt; {return new abap.types.Structure({"overwrite": abap.types.TableFactory.construct(new abap.types.Structure({"obj_type": new abap.types.Character(4, {}), "obj_name": new abap.types.Character(40, {}), "devclass": new abap.types.Character(30, {"qualifiedName":"DEVCLASS","ddicName":"DEVCLASS","description":"DEVCLASS"}), "srcsystem": new abap.types.Character(5, {}), "origlang": new abap.types.Character(1, {}), "inactive": new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"}), "abap_language_version": new abap.types.Character(1, {"qualifiedName":"zif_abapgit_aff_types_v1=&gt;ty_abap_language_version"}), "state": new abap.types.Character(2, {"qualifiedName":"zif_abapgit_definitions=&gt;ty_overwrite-state"}), "action": new abap.types.Integer({qualifiedName: "ZIF_ABAPGIT_DEFINITIONS=&gt;TY_OVERWRITE-ACTION"}), "icon": new abap.types.Character(4, {"qualifiedName":"ICON_D","ddicName":"ICON_D","description":"ICON_D"}), "text": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_DEFINITIONS=&gt;TY_OVERWRITE-TEXT"}), "decision": new abap.types.Character(1, {"qualifiedName":"zif_abapgit_definitions=&gt;ty_yes_no"})}, "zif_abapgit_definitions=&gt;ty_overwrite", undefined, {}, {}), {"withHeader":false,"keyType":"DEFAULT","primaryKey":{"name":"primary_key","type":"STANDARD","isUnique":false,"keyFields":[]},"secondary":[{"name":"object_type_and_name","type":"HASHED","isUnique":true,"keyFields":["OBJ_TYPE","OBJ_NAME"]}]}, "zif_abapgit_definitions=&gt;ty_overwrite_tt"), "warning_package": abap.types.TableFactory.construct(new abap.types.Structure({"obj_type": new abap.types.Character(4, {}), "obj_name": new abap.types.Character(40, {}), "devclass": new abap.types.Character(30, {"qualifiedName":"DEVCLASS","ddicName":"DEVCLASS","description":"DEVCLASS"}), "srcsystem": new abap.types.Character(5, {}), "origlang": new abap.types.Character(1, {}), "inactive": new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"}), "abap_language_version": new abap.types.Character(1, {"qualifiedName":"zif_abapgit_aff_types_v1=&gt;ty_abap_language_version"}), "state": new abap.types.Character(2, {"qualifiedName":"zif_abapgit_definitions=&gt;ty_overwrite-state"}), "action": new abap.types.Integer({qualifiedName: "ZIF_ABAPGIT_DEFINITIONS=&gt;TY_OVERWRITE-ACTION"}), "icon": new abap.types.Character(4, {"qualifiedName":"ICON_D","ddicName":"ICON_D","description":"ICON_D"}), "text": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_DEFINITIONS=&gt;TY_OVERWRITE-TEXT"}), "decision": new abap.types.Character(1, {"qualifiedName":"zif_abapgit_definitions=&gt;ty_yes_no"})}, "zif_abapgit_definitions=&gt;ty_overwrite", undefined, {}, {}), {"withHeader":false,"keyType":"DEFAULT","primaryKey":{"name":"primary_key","type":"STANDARD","isUnique":false,"keyFields":[]},"secondary":[{"name":"object_type_and_name","type":"HASHED","isUnique":true,"keyFields":["OBJ_TYPE","OBJ_NAME"]}]}, "zif_abapgit_definitions=&gt;ty_overwrite_tt"), "requirements": new abap.types.Structure({"met": new abap.types.Character(1, {"qualifiedName":"zif_abapgit_definitions=&gt;ty_yes_no"}), "decision": new abap.types.Character(1, {"qualifiedName":"zif_abapgit_definitions=&gt;ty_yes_no"})}, "zif_abapgit_definitions=&gt;ty_requirements", undefined, {}, {}), "dependencies": new abap.types.Structure({"met": new abap.types.Character(1, {"qualifiedName":"zif_abapgit_definitions=&gt;ty_yes_no"}), "decision": new abap.types.Character(1, {"qualifiedName":"zif_abapgit_definitions=&gt;ty_yes_no"})}, "zif_abapgit_definitions=&gt;ty_dependencies", undefined, {}, {}), "transport": new abap.types.Structure({"required": new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"}), "transport": new abap.types.Character(20, {"qualifiedName":"TRKORR","ddicName":"TRKORR","description":"TRKORR"}), "type": new abap.types.Structure({"request": new abap.types.Character(1, {"qualifiedName":"TRFUNCTION","ddicName":"TRFUNCTION","description":"TRFUNCTION"}), "task": new abap.types.Character(1, {"qualifiedName":"TRFUNCTION","ddicName":"TRFUNCTION","description":"TRFUNCTION"})}, "zif_abapgit_definitions=&gt;ty_transport_type", undefined, {}, {})}, "zif_abapgit_definitions=&gt;ty_transport", undefined, {}, {}), "customizing": new abap.types.Structure({"required": new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"}), "transport": new abap.types.Character(20, {"qualifiedName":"TRKORR","ddicName":"TRKORR","description":"TRKORR"}), "type": new abap.types.Structure({"request": new abap.types.Character(1, {"qualifiedName":"TRFUNCTION","ddicName":"TRFUNCTION","description":"TRFUNCTION"}), "task": new abap.types.Character(1, {"qualifiedName":"TRFUNCTION","ddicName":"TRFUNCTION","description":"TRFUNCTION"})}, "zif_abapgit_definitions=&gt;ty_transport_type", undefined, {}, {})}, "zif_abapgit_definitions=&gt;ty_transport", undefined, {}, {})}, "zif_abapgit_definitions=&gt;ty_deserialize_checks", undefined, {}, {});}, "is_optional": " "}, "II_LOG": {"type": () =&gt; {return new abap.types.ABAPObject({qualifiedName: "ZIF_ABAPGIT_LOG", RTTIName: "\\INTERFACE=ZIF_ABAPGIT_LOG"});}, "is_optional": " "}}},
+  "DESERIALIZE_CHECKS": {"visibility": "U", "parameters": {"RS_CHECKS": {"type": () =&gt; {return new abap.types.Structure({"overwrite": abap.types.TableFactory.construct(new abap.types.Structure({"obj_type": new abap.types.Character(4, {}), "obj_name": new abap.types.Character(40, {}), "devclass": new abap.types.Character(30, {"qualifiedName":"DEVCLASS","ddicName":"DEVCLASS","description":"DEVCLASS"}), "srcsystem": new abap.types.Character(5, {}), "origlang": new abap.types.Character(1, {}), "inactive": new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"}), "abap_language_version": new abap.types.Character(1, {"qualifiedName":"zif_abapgit_aff_types_v1=&gt;ty_abap_language_version"}), "state": new abap.types.Character(2, {"qualifiedName":"zif_abapgit_definitions=&gt;ty_overwrite-state"}), "action": new abap.types.Integer({qualifiedName: "ZIF_ABAPGIT_DEFINITIONS=&gt;TY_OVERWRITE-ACTION"}), "icon": new abap.types.Character(4, {"qualifiedName":"ICON_D","ddicName":"ICON_D","description":"ICON_D"}), "text": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_DEFINITIONS=&gt;TY_OVERWRITE-TEXT"}), "decision": new abap.types.Character(1, {"qualifiedName":"zif_abapgit_definitions=&gt;ty_yes_no"})}, "zif_abapgit_definitions=&gt;ty_overwrite", undefined, {}, {}), {"withHeader":false,"keyType":"DEFAULT","primaryKey":{"name":"primary_key","type":"STANDARD","isUnique":false,"keyFields":[]},"secondary":[{"name":"object_type_and_name","type":"HASHED","isUnique":true,"keyFields":["OBJ_TYPE","OBJ_NAME"]}]}, "zif_abapgit_definitions=&gt;ty_overwrite_tt"), "warning_package": abap.types.TableFactory.construct(new abap.types.Structure({"obj_type": new abap.types.Character(4, {}), "obj_name": new abap.types.Character(40, {}), "devclass": new abap.types.Character(30, {"qualifiedName":"DEVCLASS","ddicName":"DEVCLASS","description":"DEVCLASS"}), "srcsystem": new abap.types.Character(5, {}), "origlang": new abap.types.Character(1, {}), "inactive": new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"}), "abap_language_version": new abap.types.Character(1, {"qualifiedName":"zif_abapgit_aff_types_v1=&gt;ty_abap_language_version"}), "state": new abap.types.Character(2, {"qualifiedName":"zif_abapgit_definitions=&gt;ty_overwrite-state"}), "action": new abap.types.Integer({qualifiedName: "ZIF_ABAPGIT_DEFINITIONS=&gt;TY_OVERWRITE-ACTION"}), "icon": new abap.types.Character(4, {"qualifiedName":"ICON_D","ddicName":"ICON_D","description":"ICON_D"}), "text": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_DEFINITIONS=&gt;TY_OVERWRITE-TEXT"}), "decision": new abap.types.Character(1, {"qualifiedName":"zif_abapgit_definitions=&gt;ty_yes_no"})}, "zif_abapgit_definitions=&gt;ty_overwrite", undefined, {}, {}), {"withHeader":false,"keyType":"DEFAULT","primaryKey":{"name":"primary_key","type":"STANDARD","isUnique":false,"keyFields":[]},"secondary":[{"name":"object_type_and_name","type":"HASHED","isUnique":true,"keyFields":["OBJ_TYPE","OBJ_NAME"]}]}, "zif_abapgit_definitions=&gt;ty_overwrite_tt"), "requirements": new abap.types.Structure({"met": new abap.types.Character(1, {"qualifiedName":"zif_abapgit_definitions=&gt;ty_yes_no"}), "decision": new abap.types.Character(1, {"qualifiedName":"zif_abapgit_definitions=&gt;ty_yes_no"})}, "zif_abapgit_definitions=&gt;ty_requirements", undefined, {}, {}), "dependencies": new abap.types.Structure({"met": new abap.types.Character(1, {"qualifiedName":"zif_abapgit_definitions=&gt;ty_yes_no"}), "decision": new abap.types.Character(1, {"qualifiedName":"zif_abapgit_definitions=&gt;ty_yes_no"})}, "zif_abapgit_definitions=&gt;ty_dependencies", undefined, {}, {}), "transport": new abap.types.Structure({"required": new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"}), "transport": new abap.types.Character(20, {"qualifiedName":"TRKORR","ddicName":"TRKORR","description":"TRKORR"}), "type": new abap.types.Structure({"request": new abap.types.Character(1, {"qualifiedName":"TRFUNCTION","ddicName":"TRFUNCTION","description":"TRFUNCTION"}), "task": new abap.types.Character(1, {"qualifiedName":"TRFUNCTION","ddicName":"TRFUNCTION","description":"TRFUNCTION"})}, "zif_abapgit_definitions=&gt;ty_transport_type", undefined, {}, {})}, "zif_abapgit_definitions=&gt;ty_transport", undefined, {}, {}), "customizing": new abap.types.Structure({"required": new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"}), "transport": new abap.types.Character(20, {"qualifiedName":"TRKORR","ddicName":"TRKORR","description":"TRKORR"}), "type": new abap.types.Structure({"request": new abap.types.Character(1, {"qualifiedName":"TRFUNCTION","ddicName":"TRFUNCTION","description":"TRFUNCTION"}), "task": new abap.types.Character(1, {"qualifiedName":"TRFUNCTION","ddicName":"TRFUNCTION","description":"TRFUNCTION"})}, "zif_abapgit_definitions=&gt;ty_transport_type", undefined, {}, {})}, "zif_abapgit_definitions=&gt;ty_transport", undefined, {}, {})}, "zif_abapgit_definitions=&gt;ty_deserialize_checks", undefined, {}, {});}, "is_optional": " "}}},
+  "CHECKSUMS": {"visibility": "U", "parameters": {"RI_CHECKSUMS": {"type": () =&gt; {return new abap.types.ABAPObject({qualifiedName: "ZIF_ABAPGIT_REPO_CHECKSUMS", RTTIName: "\\INTERFACE=ZIF_ABAPGIT_REPO_CHECKSUMS"});}, "is_optional": " "}}},
+  "HAS_REMOTE_SOURCE": {"visibility": "U", "parameters": {"RV_YES": {"type": () =&gt; {return new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"});}, "is_optional": " "}}}};
+}
+abap.Classes['ZIF_ABAPGIT_REPO'] = zif_abapgit_repo;
+export {zif_abapgit_repo};
+//# sourceMappingURL=zif_abapgit_repo.intf.mjs.map</pre></td></tr></table></pre>
+
+                <div class='push'></div><!-- for sticky footer -->
+            </div><!-- /wrapper -->
+            <div class='footer quiet pad2 space-top1 center small'>
+                Code coverage generated by
+                <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
+                at 2024-12-08T10:48:40.364Z
+            </div>
+        <script src="../prettify.js"></script>
+        <script>
+            window.onload = function () {
+                prettyPrint();
+            };
+        </script>
+        <script src="../sorter.js"></script>
+        <script src="../block-navigation.js"></script>
+    </body>
+</html>
+    

@@ -1,0 +1,271 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Code coverage report for output/zif_abapgit_git_definitions.intf.mjs</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+    
+<body>
+<div class='wrapper'>
+    <div class='pad1'>
+        <h1><a href="../index.html">All files</a> / <a href="index.html">output</a> zif_abapgit_git_definitions.intf.mjs</h1>
+        <div class='clearfix'>
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">100% </span>
+                <span class="quiet">Statements</span>
+                <span class='fraction'>63/63</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">100% </span>
+                <span class="quiet">Branches</span>
+                <span class='fraction'>0/0</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">100% </span>
+                <span class="quiet">Functions</span>
+                <span class='fraction'>0/0</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">100% </span>
+                <span class="quiet">Lines</span>
+                <span class='fraction'>63/63</span>
+            </div>
+        
+            
+        </div>
+        <p class="quiet">
+            Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
+        </p>
+        <template id="filterTemplate">
+            <div class="quiet">
+                Filter:
+                <input type="search" id="fileSearch">
+            </div>
+        </template>
+    </div>
+    <div class='status-line high'></div>
+    <pre><table class="coverage">
+<tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
+<a name='L2'></a><a href='#L2'>2</a>
+<a name='L3'></a><a href='#L3'>3</a>
+<a name='L4'></a><a href='#L4'>4</a>
+<a name='L5'></a><a href='#L5'>5</a>
+<a name='L6'></a><a href='#L6'>6</a>
+<a name='L7'></a><a href='#L7'>7</a>
+<a name='L8'></a><a href='#L8'>8</a>
+<a name='L9'></a><a href='#L9'>9</a>
+<a name='L10'></a><a href='#L10'>10</a>
+<a name='L11'></a><a href='#L11'>11</a>
+<a name='L12'></a><a href='#L12'>12</a>
+<a name='L13'></a><a href='#L13'>13</a>
+<a name='L14'></a><a href='#L14'>14</a>
+<a name='L15'></a><a href='#L15'>15</a>
+<a name='L16'></a><a href='#L16'>16</a>
+<a name='L17'></a><a href='#L17'>17</a>
+<a name='L18'></a><a href='#L18'>18</a>
+<a name='L19'></a><a href='#L19'>19</a>
+<a name='L20'></a><a href='#L20'>20</a>
+<a name='L21'></a><a href='#L21'>21</a>
+<a name='L22'></a><a href='#L22'>22</a>
+<a name='L23'></a><a href='#L23'>23</a>
+<a name='L24'></a><a href='#L24'>24</a>
+<a name='L25'></a><a href='#L25'>25</a>
+<a name='L26'></a><a href='#L26'>26</a>
+<a name='L27'></a><a href='#L27'>27</a>
+<a name='L28'></a><a href='#L28'>28</a>
+<a name='L29'></a><a href='#L29'>29</a>
+<a name='L30'></a><a href='#L30'>30</a>
+<a name='L31'></a><a href='#L31'>31</a>
+<a name='L32'></a><a href='#L32'>32</a>
+<a name='L33'></a><a href='#L33'>33</a>
+<a name='L34'></a><a href='#L34'>34</a>
+<a name='L35'></a><a href='#L35'>35</a>
+<a name='L36'></a><a href='#L36'>36</a>
+<a name='L37'></a><a href='#L37'>37</a>
+<a name='L38'></a><a href='#L38'>38</a>
+<a name='L39'></a><a href='#L39'>39</a>
+<a name='L40'></a><a href='#L40'>40</a>
+<a name='L41'></a><a href='#L41'>41</a>
+<a name='L42'></a><a href='#L42'>42</a>
+<a name='L43'></a><a href='#L43'>43</a>
+<a name='L44'></a><a href='#L44'>44</a>
+<a name='L45'></a><a href='#L45'>45</a>
+<a name='L46'></a><a href='#L46'>46</a>
+<a name='L47'></a><a href='#L47'>47</a>
+<a name='L48'></a><a href='#L48'>48</a>
+<a name='L49'></a><a href='#L49'>49</a>
+<a name='L50'></a><a href='#L50'>50</a>
+<a name='L51'></a><a href='#L51'>51</a>
+<a name='L52'></a><a href='#L52'>52</a>
+<a name='L53'></a><a href='#L53'>53</a>
+<a name='L54'></a><a href='#L54'>54</a>
+<a name='L55'></a><a href='#L55'>55</a>
+<a name='L56'></a><a href='#L56'>56</a>
+<a name='L57'></a><a href='#L57'>57</a>
+<a name='L58'></a><a href='#L58'>58</a>
+<a name='L59'></a><a href='#L59'>59</a>
+<a name='L60'></a><a href='#L60'>60</a>
+<a name='L61'></a><a href='#L61'>61</a>
+<a name='L62'></a><a href='#L62'>62</a>
+<a name='L63'></a><a href='#L63'>63</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span></td><td class="text"><pre class="prettyprint lang-js">// zif_abapgit_git_definitions.intf.abap
+class zif_abapgit_git_definitions {
+  static INTERNAL_TYPE = 'INTF';
+  static ATTRIBUTES = {"C_CHMOD": {"type": () =&gt; {return new abap.types.Structure({"file": new abap.types.Character(6, {"qualifiedName":"zif_abapgit_git_definitions=&gt;ty_chmod"}), "executable": new abap.types.Character(6, {"qualifiedName":"zif_abapgit_git_definitions=&gt;ty_chmod"}), "dir": new abap.types.Character(6, {"qualifiedName":"zif_abapgit_git_definitions=&gt;ty_chmod"}), "submodule": new abap.types.Character(6, {"qualifiedName":"zif_abapgit_git_definitions=&gt;ty_chmod"}), "symbolic_link": new abap.types.Character(6, {"qualifiedName":"zif_abapgit_git_definitions=&gt;ty_chmod"})}, undefined, undefined, {}, {});}, "visibility": "U", "is_constant": "X", "is_class": "X"},
+  "C_TYPE": {"type": () =&gt; {return new abap.types.Structure({"commit": new abap.types.Character(6, {"qualifiedName":"zif_abapgit_git_definitions=&gt;ty_type"}), "tree": new abap.types.Character(6, {"qualifiedName":"zif_abapgit_git_definitions=&gt;ty_type"}), "ref_d": new abap.types.Character(6, {"qualifiedName":"zif_abapgit_git_definitions=&gt;ty_type"}), "tag": new abap.types.Character(6, {"qualifiedName":"zif_abapgit_git_definitions=&gt;ty_type"}), "blob": new abap.types.Character(6, {"qualifiedName":"zif_abapgit_git_definitions=&gt;ty_type"})}, undefined, undefined, {}, {});}, "visibility": "U", "is_constant": "X", "is_class": "X"},
+  "C_GIT_BRANCH_TYPE": {"type": () =&gt; {return new abap.types.Structure({"branch": new abap.types.Character(2, {"qualifiedName":"zif_abapgit_git_definitions=&gt;ty_git_branch_type"}), "lightweight_tag": new abap.types.Character(2, {"qualifiedName":"zif_abapgit_git_definitions=&gt;ty_git_branch_type"}), "annotated_tag": new abap.types.Character(2, {"qualifiedName":"zif_abapgit_git_definitions=&gt;ty_git_branch_type"}), "other": new abap.types.Character(2, {"qualifiedName":"zif_abapgit_git_definitions=&gt;ty_git_branch_type"})}, undefined, undefined, {}, {});}, "visibility": "U", "is_constant": "X", "is_class": "X"},
+  "C_HEAD_NAME": {"type": () =&gt; {return new abap.types.String({qualifiedName: "STRING"});}, "visibility": "U", "is_constant": "X", "is_class": "X"},
+  "C_GIT_BRANCH": {"type": () =&gt; {return new abap.types.Structure({"main": new abap.types.String({qualifiedName: "STRING"}), "prefix": new abap.types.String({qualifiedName: "STRING"}), "heads_prefix": new abap.types.String({qualifiedName: "STRING"}), "heads": new abap.types.String({qualifiedName: "STRING"}), "tags_prefix": new abap.types.String({qualifiedName: "STRING"}), "tags": new abap.types.String({qualifiedName: "STRING"}), "peel": new abap.types.String({qualifiedName: "STRING"})}, undefined, undefined, {}, {});}, "visibility": "U", "is_constant": "X", "is_class": "X"}};
+  static METHODS = {};
+}
+abap.Classes['ZIF_ABAPGIT_GIT_DEFINITIONS'] = zif_abapgit_git_definitions;
+zif_abapgit_git_definitions.zif_abapgit_git_definitions$c_chmod = new abap.types.Structure({"file": new abap.types.Character(6, {"qualifiedName":"zif_abapgit_git_definitions=&gt;ty_chmod"}), "executable": new abap.types.Character(6, {"qualifiedName":"zif_abapgit_git_definitions=&gt;ty_chmod"}), "dir": new abap.types.Character(6, {"qualifiedName":"zif_abapgit_git_definitions=&gt;ty_chmod"}), "submodule": new abap.types.Character(6, {"qualifiedName":"zif_abapgit_git_definitions=&gt;ty_chmod"}), "symbolic_link": new abap.types.Character(6, {"qualifiedName":"zif_abapgit_git_definitions=&gt;ty_chmod"})}, undefined, undefined, {}, {});
+zif_abapgit_git_definitions.zif_abapgit_git_definitions$c_chmod.get().file.set('100644');
+zif_abapgit_git_definitions.zif_abapgit_git_definitions$c_chmod.get().executable.set('100755');
+zif_abapgit_git_definitions.zif_abapgit_git_definitions$c_chmod.get().dir.set('40000 ');
+zif_abapgit_git_definitions.zif_abapgit_git_definitions$c_chmod.get().submodule.set('160000');
+zif_abapgit_git_definitions.zif_abapgit_git_definitions$c_chmod.get().symbolic_link.set('120000');
+zif_abapgit_git_definitions.zif_abapgit_git_definitions$c_type = new abap.types.Structure({"commit": new abap.types.Character(6, {"qualifiedName":"zif_abapgit_git_definitions=&gt;ty_type"}), "tree": new abap.types.Character(6, {"qualifiedName":"zif_abapgit_git_definitions=&gt;ty_type"}), "ref_d": new abap.types.Character(6, {"qualifiedName":"zif_abapgit_git_definitions=&gt;ty_type"}), "tag": new abap.types.Character(6, {"qualifiedName":"zif_abapgit_git_definitions=&gt;ty_type"}), "blob": new abap.types.Character(6, {"qualifiedName":"zif_abapgit_git_definitions=&gt;ty_type"})}, undefined, undefined, {}, {});
+zif_abapgit_git_definitions.zif_abapgit_git_definitions$c_type.get().commit.set('commit');
+zif_abapgit_git_definitions.zif_abapgit_git_definitions$c_type.get().tree.set('tree');
+zif_abapgit_git_definitions.zif_abapgit_git_definitions$c_type.get().ref_d.set('ref_d');
+zif_abapgit_git_definitions.zif_abapgit_git_definitions$c_type.get().tag.set('tag');
+zif_abapgit_git_definitions.zif_abapgit_git_definitions$c_type.get().blob.set('blob');
+zif_abapgit_git_definitions.zif_abapgit_git_definitions$c_git_branch_type = new abap.types.Structure({"branch": new abap.types.Character(2, {"qualifiedName":"zif_abapgit_git_definitions=&gt;ty_git_branch_type"}), "lightweight_tag": new abap.types.Character(2, {"qualifiedName":"zif_abapgit_git_definitions=&gt;ty_git_branch_type"}), "annotated_tag": new abap.types.Character(2, {"qualifiedName":"zif_abapgit_git_definitions=&gt;ty_git_branch_type"}), "other": new abap.types.Character(2, {"qualifiedName":"zif_abapgit_git_definitions=&gt;ty_git_branch_type"})}, undefined, undefined, {}, {});
+zif_abapgit_git_definitions.zif_abapgit_git_definitions$c_git_branch_type.get().branch.set('HD');
+zif_abapgit_git_definitions.zif_abapgit_git_definitions$c_git_branch_type.get().lightweight_tag.set('TG');
+zif_abapgit_git_definitions.zif_abapgit_git_definitions$c_git_branch_type.get().annotated_tag.set('AT');
+zif_abapgit_git_definitions.zif_abapgit_git_definitions$c_git_branch_type.get().other.set('ZZ');
+zif_abapgit_git_definitions.zif_abapgit_git_definitions$c_head_name = new abap.types.String({qualifiedName: "STRING"});
+zif_abapgit_git_definitions.zif_abapgit_git_definitions$c_head_name.set('HEAD');
+zif_abapgit_git_definitions.zif_abapgit_git_definitions$c_git_branch = new abap.types.Structure({"main": new abap.types.String({qualifiedName: "STRING"}), "prefix": new abap.types.String({qualifiedName: "STRING"}), "heads_prefix": new abap.types.String({qualifiedName: "STRING"}), "heads": new abap.types.String({qualifiedName: "STRING"}), "tags_prefix": new abap.types.String({qualifiedName: "STRING"}), "tags": new abap.types.String({qualifiedName: "STRING"}), "peel": new abap.types.String({qualifiedName: "STRING"})}, undefined, undefined, {}, {});
+zif_abapgit_git_definitions.zif_abapgit_git_definitions$c_git_branch.get().main.set('refs/heads/main');
+zif_abapgit_git_definitions.zif_abapgit_git_definitions$c_git_branch.get().prefix.set('refs/');
+zif_abapgit_git_definitions.zif_abapgit_git_definitions$c_git_branch.get().heads_prefix.set('refs/heads/');
+zif_abapgit_git_definitions.zif_abapgit_git_definitions$c_git_branch.get().heads.set('refs/heads/*');
+zif_abapgit_git_definitions.zif_abapgit_git_definitions$c_git_branch.get().tags_prefix.set('refs/tags/');
+zif_abapgit_git_definitions.zif_abapgit_git_definitions$c_git_branch.get().tags.set('refs/tags/*');
+zif_abapgit_git_definitions.zif_abapgit_git_definitions$c_git_branch.get().peel.set('^{}');
+zif_abapgit_git_definitions.ty_type = new abap.types.Character(6, {"qualifiedName":"zif_abapgit_git_definitions=&gt;ty_type"});
+zif_abapgit_git_definitions.ty_bitbyte = new abap.types.Character(8, {"qualifiedName":"zif_abapgit_git_definitions=&gt;ty_bitbyte"});
+zif_abapgit_git_definitions.ty_sha1 = new abap.types.Character(40, {"qualifiedName":"zif_abapgit_git_definitions=&gt;ty_sha1"});
+zif_abapgit_git_definitions.ty_sha1_tt = abap.types.TableFactory.construct(new abap.types.Character(40, {"qualifiedName":"zif_abapgit_git_definitions=&gt;ty_sha1"}), {"withHeader":false,"keyType":"DEFAULT","primaryKey":{"name":"primary_key","type":"STANDARD","isUnique":false,"keyFields":[]},"secondary":[]}, "zif_abapgit_git_definitions=&gt;ty_sha1_tt");
+zif_abapgit_git_definitions.ty_adler32 = new abap.types.Hex({length: 4});
+zif_abapgit_git_definitions.ty_item_state = new abap.types.Character(1, {"qualifiedName":"zif_abapgit_git_definitions=&gt;ty_item_state"});
+zif_abapgit_git_definitions.ty_file_signature = new abap.types.Structure({"path": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_GIT_DEFINITIONS=&gt;TY_FILE_SIGNATURE-PATH"}), "filename": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_GIT_DEFINITIONS=&gt;TY_FILE_SIGNATURE-FILENAME"}), "sha1": new abap.types.Character(40, {"qualifiedName":"zif_abapgit_git_definitions=&gt;ty_sha1"})}, "zif_abapgit_git_definitions=&gt;ty_file_signature", undefined, {}, {});
+zif_abapgit_git_definitions.ty_file_signatures_tt = abap.types.TableFactory.construct(new abap.types.Structure({"path": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_GIT_DEFINITIONS=&gt;TY_FILE_SIGNATURE-PATH"}), "filename": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_GIT_DEFINITIONS=&gt;TY_FILE_SIGNATURE-FILENAME"}), "sha1": new abap.types.Character(40, {"qualifiedName":"zif_abapgit_git_definitions=&gt;ty_sha1"})}, "zif_abapgit_git_definitions=&gt;ty_file_signature", undefined, {}, {}), {"withHeader":false,"keyType":"DEFAULT","primaryKey":{"name":"primary_key","type":"STANDARD","isUnique":false,"keyFields":[]},"secondary":[]}, "zif_abapgit_git_definitions=&gt;ty_file_signatures_tt");
+zif_abapgit_git_definitions.ty_file_signatures_ts = abap.types.TableFactory.construct(new abap.types.Structure({"path": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_GIT_DEFINITIONS=&gt;TY_FILE_SIGNATURE-PATH"}), "filename": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_GIT_DEFINITIONS=&gt;TY_FILE_SIGNATURE-FILENAME"}), "sha1": new abap.types.Character(40, {"qualifiedName":"zif_abapgit_git_definitions=&gt;ty_sha1"})}, "zif_abapgit_git_definitions=&gt;ty_file_signature", undefined, {}, {}), {"withHeader":false,"keyType":"USER","primaryKey":{"name":"primary_key","type":"SORTED","isUnique":true,"keyFields":["PATH","FILENAME"]},"secondary":[]}, "zif_abapgit_git_definitions=&gt;ty_file_signatures_ts");
+zif_abapgit_git_definitions.ty_file = new abap.types.Structure({"path": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_GIT_DEFINITIONS=&gt;TY_FILE_SIGNATURE-PATH"}), "filename": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_GIT_DEFINITIONS=&gt;TY_FILE_SIGNATURE-FILENAME"}), "sha1": new abap.types.Character(40, {"qualifiedName":"zif_abapgit_git_definitions=&gt;ty_sha1"}), "data": new abap.types.XString({qualifiedName: "ZIF_ABAPGIT_GIT_DEFINITIONS=&gt;TY_FILE-DATA"})}, "zif_abapgit_git_definitions=&gt;ty_file", undefined, {}, {});
+zif_abapgit_git_definitions.ty_files_tt = abap.types.TableFactory.construct(new abap.types.Structure({"path": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_GIT_DEFINITIONS=&gt;TY_FILE_SIGNATURE-PATH"}), "filename": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_GIT_DEFINITIONS=&gt;TY_FILE_SIGNATURE-FILENAME"}), "sha1": new abap.types.Character(40, {"qualifiedName":"zif_abapgit_git_definitions=&gt;ty_sha1"}), "data": new abap.types.XString({qualifiedName: "ZIF_ABAPGIT_GIT_DEFINITIONS=&gt;TY_FILE-DATA"})}, "zif_abapgit_git_definitions=&gt;ty_file", undefined, {}, {}), {"withHeader":false,"keyType":"DEFAULT","primaryKey":{"name":"primary_key","type":"STANDARD","isUnique":false,"keyFields":[]},"secondary":[{"name":"file_path","type":"SORTED","isUnique":true,"keyFields":["PATH","FILENAME"]},{"name":"file","type":"SORTED","isUnique":false,"keyFields":["FILENAME"]}]}, "zif_abapgit_git_definitions=&gt;ty_files_tt");
+zif_abapgit_git_definitions.ty_git_branch_type = new abap.types.Character(2, {"qualifiedName":"zif_abapgit_git_definitions=&gt;ty_git_branch_type"});
+zif_abapgit_git_definitions.ty_git_branch = new abap.types.Structure({"sha1": new abap.types.Character(40, {"qualifiedName":"zif_abapgit_git_definitions=&gt;ty_sha1"}), "name": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_GIT_DEFINITIONS=&gt;TY_GIT_BRANCH-NAME"}), "type": new abap.types.Character(2, {"qualifiedName":"zif_abapgit_git_definitions=&gt;ty_git_branch_type"}), "is_head": new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"}), "display_name": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_GIT_DEFINITIONS=&gt;TY_GIT_BRANCH-DISPLAY_NAME"})}, "zif_abapgit_git_definitions=&gt;ty_git_branch", undefined, {}, {});
+zif_abapgit_git_definitions.ty_git_branch_list_tt = abap.types.TableFactory.construct(new abap.types.Structure({"sha1": new abap.types.Character(40, {"qualifiedName":"zif_abapgit_git_definitions=&gt;ty_sha1"}), "name": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_GIT_DEFINITIONS=&gt;TY_GIT_BRANCH-NAME"}), "type": new abap.types.Character(2, {"qualifiedName":"zif_abapgit_git_definitions=&gt;ty_git_branch_type"}), "is_head": new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"}), "display_name": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_GIT_DEFINITIONS=&gt;TY_GIT_BRANCH-DISPLAY_NAME"})}, "zif_abapgit_git_definitions=&gt;ty_git_branch", undefined, {}, {}), {"withHeader":false,"keyType":"DEFAULT","primaryKey":{"name":"primary_key","type":"STANDARD","isUnique":false,"keyFields":[]},"secondary":[{"name":"name_key","type":"SORTED","isUnique":false,"keyFields":["NAME"]}]}, "zif_abapgit_git_definitions=&gt;ty_git_branch_list_tt");
+zif_abapgit_git_definitions.ty_git_tag = new abap.types.Structure({"sha1": new abap.types.Character(40, {"qualifiedName":"zif_abapgit_git_definitions=&gt;ty_sha1"}), "object": new abap.types.Character(40, {"qualifiedName":"zif_abapgit_git_definitions=&gt;ty_sha1"}), "name": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_GIT_DEFINITIONS=&gt;TY_GIT_TAG-NAME"}), "type": new abap.types.Character(2, {"qualifiedName":"zif_abapgit_git_definitions=&gt;ty_git_branch_type"}), "display_name": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_GIT_DEFINITIONS=&gt;TY_GIT_TAG-DISPLAY_NAME"}), "tagger_name": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_GIT_DEFINITIONS=&gt;TY_GIT_TAG-TAGGER_NAME"}), "tagger_email": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_GIT_DEFINITIONS=&gt;TY_GIT_TAG-TAGGER_EMAIL"}), "message": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_GIT_DEFINITIONS=&gt;TY_GIT_TAG-MESSAGE"}), "body": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_GIT_DEFINITIONS=&gt;TY_GIT_TAG-BODY"})}, "zif_abapgit_git_definitions=&gt;ty_git_tag", undefined, {}, {});
+zif_abapgit_git_definitions.ty_git_user = new abap.types.Structure({"name": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_GIT_DEFINITIONS=&gt;TY_GIT_USER-NAME"}), "email": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_GIT_DEFINITIONS=&gt;TY_GIT_USER-EMAIL"})}, "zif_abapgit_git_definitions=&gt;ty_git_user", undefined, {}, {});
+zif_abapgit_git_definitions.ty_comment = new abap.types.Structure({"committer": new abap.types.Structure({"name": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_GIT_DEFINITIONS=&gt;TY_GIT_USER-NAME"}), "email": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_GIT_DEFINITIONS=&gt;TY_GIT_USER-EMAIL"})}, "zif_abapgit_git_definitions=&gt;ty_git_user", undefined, {}, {}), "author": new abap.types.Structure({"name": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_GIT_DEFINITIONS=&gt;TY_GIT_USER-NAME"}), "email": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_GIT_DEFINITIONS=&gt;TY_GIT_USER-EMAIL"})}, "zif_abapgit_git_definitions=&gt;ty_git_user", undefined, {}, {}), "comment": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_GIT_DEFINITIONS=&gt;TY_COMMENT-COMMENT"})}, "zif_abapgit_git_definitions=&gt;ty_comment", undefined, {}, {});
+zif_abapgit_git_definitions.ty_chmod = new abap.types.Character(6, {"qualifiedName":"zif_abapgit_git_definitions=&gt;ty_chmod"});
+zif_abapgit_git_definitions.ty_expanded = new abap.types.Structure({"path": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_GIT_DEFINITIONS=&gt;TY_EXPANDED-PATH"}), "name": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_GIT_DEFINITIONS=&gt;TY_EXPANDED-NAME"}), "sha1": new abap.types.Character(40, {"qualifiedName":"zif_abapgit_git_definitions=&gt;ty_sha1"}), "chmod": new abap.types.Character(6, {"qualifiedName":"zif_abapgit_git_definitions=&gt;ty_chmod"})}, "zif_abapgit_git_definitions=&gt;ty_expanded", undefined, {}, {});
+zif_abapgit_git_definitions.ty_expanded_tt = abap.types.TableFactory.construct(new abap.types.Structure({"path": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_GIT_DEFINITIONS=&gt;TY_EXPANDED-PATH"}), "name": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_GIT_DEFINITIONS=&gt;TY_EXPANDED-NAME"}), "sha1": new abap.types.Character(40, {"qualifiedName":"zif_abapgit_git_definitions=&gt;ty_sha1"}), "chmod": new abap.types.Character(6, {"qualifiedName":"zif_abapgit_git_definitions=&gt;ty_chmod"})}, "zif_abapgit_git_definitions=&gt;ty_expanded", undefined, {}, {}), {"withHeader":false,"keyType":"DEFAULT","primaryKey":{"name":"primary_key","type":"STANDARD","isUnique":false,"keyFields":[]},"secondary":[{"name":"path_name","type":"SORTED","isUnique":false,"keyFields":["PATH","NAME"]}]}, "zif_abapgit_git_definitions=&gt;ty_expanded_tt");
+zif_abapgit_git_definitions.ty_create = new abap.types.Structure({"name": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_GIT_DEFINITIONS=&gt;TY_CREATE-NAME"}), "parent": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_GIT_DEFINITIONS=&gt;TY_CREATE-PARENT"})}, "zif_abapgit_git_definitions=&gt;ty_create", undefined, {}, {});
+zif_abapgit_git_definitions.ty_commit = new abap.types.Structure({"sha1": new abap.types.Character(40, {"qualifiedName":"zif_abapgit_git_definitions=&gt;ty_sha1"}), "parent1": new abap.types.Character(40, {"qualifiedName":"zif_abapgit_git_definitions=&gt;ty_sha1"}), "parent2": new abap.types.Character(40, {"qualifiedName":"zif_abapgit_git_definitions=&gt;ty_sha1"}), "author": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_GIT_DEFINITIONS=&gt;TY_COMMIT-AUTHOR"}), "email": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_GIT_DEFINITIONS=&gt;TY_COMMIT-EMAIL"}), "time": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_GIT_DEFINITIONS=&gt;TY_COMMIT-TIME"}), "message": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_GIT_DEFINITIONS=&gt;TY_COMMIT-MESSAGE"}), "body": abap.types.TableFactory.construct(new abap.types.String({qualifiedName: "STRING"}), {"withHeader":false,"keyType":"DEFAULT","primaryKey":{"name":"primary_key","type":"STANDARD","isUnique":false,"keyFields":[]},"secondary":[]}, "zif_abapgit_git_definitions=&gt;ty_commit-body"), "branch": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_GIT_DEFINITIONS=&gt;TY_COMMIT-BRANCH"}), "merge": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_GIT_DEFINITIONS=&gt;TY_COMMIT-MERGE"}), "tags": abap.types.TableFactory.construct(new abap.types.String({qualifiedName: "STRING"}), {"withHeader":false,"keyType":"DEFAULT","primaryKey":{"name":"primary_key","type":"STANDARD","isUnique":false,"keyFields":[]},"secondary":[]}, "zif_abapgit_git_definitions=&gt;ty_commit-tags"), "create": abap.types.TableFactory.construct(new abap.types.Structure({"name": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_GIT_DEFINITIONS=&gt;TY_CREATE-NAME"}), "parent": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_GIT_DEFINITIONS=&gt;TY_CREATE-PARENT"})}, "zif_abapgit_git_definitions=&gt;ty_create", undefined, {}, {}), {"withHeader":false,"keyType":"DEFAULT","primaryKey":{"name":"primary_key","type":"STANDARD","isUnique":false,"keyFields":[]},"secondary":[]}, "zif_abapgit_git_definitions=&gt;ty_commit-create"), "compressed": new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"})}, "zif_abapgit_git_definitions=&gt;ty_commit", undefined, {}, {});
+zif_abapgit_git_definitions.ty_commit_tt = abap.types.TableFactory.construct(new abap.types.Structure({"sha1": new abap.types.Character(40, {"qualifiedName":"zif_abapgit_git_definitions=&gt;ty_sha1"}), "parent1": new abap.types.Character(40, {"qualifiedName":"zif_abapgit_git_definitions=&gt;ty_sha1"}), "parent2": new abap.types.Character(40, {"qualifiedName":"zif_abapgit_git_definitions=&gt;ty_sha1"}), "author": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_GIT_DEFINITIONS=&gt;TY_COMMIT-AUTHOR"}), "email": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_GIT_DEFINITIONS=&gt;TY_COMMIT-EMAIL"}), "time": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_GIT_DEFINITIONS=&gt;TY_COMMIT-TIME"}), "message": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_GIT_DEFINITIONS=&gt;TY_COMMIT-MESSAGE"}), "body": abap.types.TableFactory.construct(new abap.types.String({qualifiedName: "STRING"}), {"withHeader":false,"keyType":"DEFAULT","primaryKey":{"name":"primary_key","type":"STANDARD","isUnique":false,"keyFields":[]},"secondary":[]}, "zif_abapgit_git_definitions=&gt;ty_commit-body"), "branch": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_GIT_DEFINITIONS=&gt;TY_COMMIT-BRANCH"}), "merge": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_GIT_DEFINITIONS=&gt;TY_COMMIT-MERGE"}), "tags": abap.types.TableFactory.construct(new abap.types.String({qualifiedName: "STRING"}), {"withHeader":false,"keyType":"DEFAULT","primaryKey":{"name":"primary_key","type":"STANDARD","isUnique":false,"keyFields":[]},"secondary":[]}, "zif_abapgit_git_definitions=&gt;ty_commit-tags"), "create": abap.types.TableFactory.construct(new abap.types.Structure({"name": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_GIT_DEFINITIONS=&gt;TY_CREATE-NAME"}), "parent": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_GIT_DEFINITIONS=&gt;TY_CREATE-PARENT"})}, "zif_abapgit_git_definitions=&gt;ty_create", undefined, {}, {}), {"withHeader":false,"keyType":"DEFAULT","primaryKey":{"name":"primary_key","type":"STANDARD","isUnique":false,"keyFields":[]},"secondary":[]}, "zif_abapgit_git_definitions=&gt;ty_commit-create"), "compressed": new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"})}, "zif_abapgit_git_definitions=&gt;ty_commit", undefined, {}, {}), {"withHeader":false,"keyType":"DEFAULT","primaryKey":{"name":"primary_key","type":"STANDARD","isUnique":false,"keyFields":[]},"secondary":[]}, "zif_abapgit_git_definitions=&gt;ty_commit_tt");
+export {zif_abapgit_git_definitions};
+//# sourceMappingURL=zif_abapgit_git_definitions.intf.mjs.map</pre></td></tr></table></pre>
+
+                <div class='push'></div><!-- for sticky footer -->
+            </div><!-- /wrapper -->
+            <div class='footer quiet pad2 space-top1 center small'>
+                Code coverage generated by
+                <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
+                at 2024-12-08T10:48:40.364Z
+            </div>
+        <script src="../prettify.js"></script>
+        <script>
+            window.onload = function () {
+                prettyPrint();
+            };
+        </script>
+        <script src="../sorter.js"></script>
+        <script src="../block-navigation.js"></script>
+    </body>
+</html>
+    
