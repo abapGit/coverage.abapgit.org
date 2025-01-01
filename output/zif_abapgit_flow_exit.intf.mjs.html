@@ -1,0 +1,112 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Code coverage report for output/zif_abapgit_flow_exit.intf.mjs</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+    
+<body>
+<div class='wrapper'>
+    <div class='pad1'>
+        <h1><a href="../index.html">All files</a> / <a href="index.html">output</a> zif_abapgit_flow_exit.intf.mjs</h1>
+        <div class='clearfix'>
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">100% </span>
+                <span class="quiet">Statements</span>
+                <span class='fraction'>10/10</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">100% </span>
+                <span class="quiet">Branches</span>
+                <span class='fraction'>0/0</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">100% </span>
+                <span class="quiet">Functions</span>
+                <span class='fraction'>0/0</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">100% </span>
+                <span class="quiet">Lines</span>
+                <span class='fraction'>10/10</span>
+            </div>
+        
+            
+        </div>
+        <p class="quiet">
+            Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
+        </p>
+        <template id="filterTemplate">
+            <div class="quiet">
+                Filter:
+                <input type="search" id="fileSearch">
+            </div>
+        </template>
+    </div>
+    <div class='status-line high'></div>
+    <pre><table class="coverage">
+<tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
+<a name='L2'></a><a href='#L2'>2</a>
+<a name='L3'></a><a href='#L3'>3</a>
+<a name='L4'></a><a href='#L4'>4</a>
+<a name='L5'></a><a href='#L5'>5</a>
+<a name='L6'></a><a href='#L6'>6</a>
+<a name='L7'></a><a href='#L7'>7</a>
+<a name='L8'></a><a href='#L8'>8</a>
+<a name='L9'></a><a href='#L9'>9</a>
+<a name='L10'></a><a href='#L10'>10</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span></td><td class="text"><pre class="prettyprint lang-js">// zif_abapgit_flow_exit.intf.abap
+class zif_abapgit_flow_exit {
+  static INTERNAL_TYPE = 'INTF';
+  static ATTRIBUTES = {};
+  static METHODS = {"TOOLBAR_EXTRAS": {"visibility": "U", "parameters": {"IO_TOOLBAR": {"type": () =&gt; {return new abap.types.ABAPObject({qualifiedName: "ZCL_ABAPGIT_HTML_TOOLBAR", RTTIName: "\\CLASS=ZCL_ABAPGIT_HTML_TOOLBAR"});}, "is_optional": " "}, "IS_FEATURE": {"type": () =&gt; {return new abap.types.Structure({"repo": new abap.types.Structure({"name": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_GUI_PAGE_FLOW=&gt;TY_FEATURE-REPO-NAME"}), "key": new abap.types.Character(12, {"qualifiedName":"zif_abapgit_persistence=&gt;ty_value"}), "package": new abap.types.Character(30, {"qualifiedName":"DEVCLASS","ddicName":"DEVCLASS","description":"DEVCLASS"})}, "zif_abapgit_gui_page_flow=&gt;ty_feature-repo", undefined, {}, {}), "branch": new abap.types.Structure({"display_name": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_GUI_PAGE_FLOW=&gt;TY_FEATURE-BRANCH-DISPLAY_NAME"}), "sha1": new abap.types.Character(40, {"qualifiedName":"zif_abapgit_git_definitions=&gt;ty_sha1"}), "up_to_date": new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"})}, "zif_abapgit_gui_page_flow=&gt;ty_feature-branch", undefined, {}, {}), "pr": new abap.types.Structure({"title": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_GUI_PAGE_FLOW=&gt;TY_FEATURE-PR-TITLE"}), "url": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_GUI_PAGE_FLOW=&gt;TY_FEATURE-PR-URL"}), "draft": new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"})}, "zif_abapgit_gui_page_flow=&gt;ty_feature-pr", undefined, {}, {}), "transport": new abap.types.Structure({"trkorr": new abap.types.Character(20, {"qualifiedName":"TRKORR","ddicName":"TRKORR","description":"TRKORR"}), "title": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_GUI_PAGE_FLOW=&gt;TY_FEATURE-TRANSPORT-TITLE"})}, "zif_abapgit_gui_page_flow=&gt;ty_feature-transport", undefined, {}, {}), "full_match": new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"}), "changed_files": abap.types.TableFactory.construct(new abap.types.Structure({"path": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_GUI_PAGE_FLOW=&gt;TY_PATH_NAME-PATH"}), "filename": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_GUI_PAGE_FLOW=&gt;TY_PATH_NAME-FILENAME"}), "remote_sha1": new abap.types.Character(40, {"qualifiedName":"zif_abapgit_git_definitions=&gt;ty_sha1"}), "local_sha1": new abap.types.Character(40, {"qualifiedName":"zif_abapgit_git_definitions=&gt;ty_sha1"})}, "zif_abapgit_gui_page_flow=&gt;ty_path_name", undefined, {}, {}), {"withHeader":false,"keyType":"USER","primaryKey":{"name":"primary_key","type":"HASHED","isUnique":true,"keyFields":["PATH","FILENAME"]},"secondary":[]}, "zif_abapgit_gui_page_flow=&gt;ty_path_name_tt"), "changed_objects": abap.types.TableFactory.construct(new abap.types.Structure({"obj_type": new abap.types.Character(4, {}), "obj_name": new abap.types.Character(40, {}), "devclass": new abap.types.Character(30, {"qualifiedName":"DEVCLASS","ddicName":"DEVCLASS","description":"DEVCLASS"}), "srcsystem": new abap.types.Character(5, {}), "origlang": new abap.types.Character(1, {}), "inactive": new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"}), "abap_language_version": new abap.types.Character(1, {"qualifiedName":"zif_abapgit_aff_types_v1=&gt;ty_abap_language_version"})}, "zif_abapgit_definitions=&gt;ty_item", undefined, {}, {}), {"withHeader":false,"keyType":"USER","primaryKey":{"name":"primary_key","type":"SORTED","isUnique":true,"keyFields":["OBJ_TYPE","OBJ_NAME"]},"secondary":[]}, "zif_abapgit_definitions=&gt;ty_items_ts")}, "zif_abapgit_gui_page_flow=&gt;ty_feature", undefined, {}, {});}, "is_optional": " "}, "IV_INDEX": {"type": () =&gt; {return new abap.types.Integer({qualifiedName: "I"});}, "is_optional": " "}}},
+  "ON_EVENT": {"visibility": "U", "parameters": {"RS_RESULT": {"type": () =&gt; {return new abap.types.Structure({"handled": new abap.types.Structure({"page": new abap.types.ABAPObject({qualifiedName: "ZIF_ABAPGIT_GUI_RENDERABLE", RTTIName: "\\INTERFACE=ZIF_ABAPGIT_GUI_RENDERABLE"}), "state": new abap.types.Integer({qualifiedName: "ZIF_ABAPGIT_GUI_EVENT_HANDLER=&gt;TY_HANDLING_RESULT-STATE"})}, "zif_abapgit_gui_event_handler=&gt;ty_handling_result", undefined, {}, {}), "refresh": new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"})}, "zif_abapgit_flow_exit=&gt;ty_event_result", undefined, {}, {});}, "is_optional": " "}, "II_EVENT": {"type": () =&gt; {return new abap.types.ABAPObject({qualifiedName: "ZIF_ABAPGIT_GUI_EVENT", RTTIName: "\\INTERFACE=ZIF_ABAPGIT_GUI_EVENT"});}, "is_optional": " "}, "IT_FEATURES": {"type": () =&gt; {return abap.types.TableFactory.construct(new abap.types.Structure({"repo": new abap.types.Structure({"name": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_GUI_PAGE_FLOW=&gt;TY_FEATURE-REPO-NAME"}), "key": new abap.types.Character(12, {"qualifiedName":"zif_abapgit_persistence=&gt;ty_value"}), "package": new abap.types.Character(30, {"qualifiedName":"DEVCLASS","ddicName":"DEVCLASS","description":"DEVCLASS"})}, "zif_abapgit_gui_page_flow=&gt;ty_feature-repo", undefined, {}, {}), "branch": new abap.types.Structure({"display_name": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_GUI_PAGE_FLOW=&gt;TY_FEATURE-BRANCH-DISPLAY_NAME"}), "sha1": new abap.types.Character(40, {"qualifiedName":"zif_abapgit_git_definitions=&gt;ty_sha1"}), "up_to_date": new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"})}, "zif_abapgit_gui_page_flow=&gt;ty_feature-branch", undefined, {}, {}), "pr": new abap.types.Structure({"title": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_GUI_PAGE_FLOW=&gt;TY_FEATURE-PR-TITLE"}), "url": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_GUI_PAGE_FLOW=&gt;TY_FEATURE-PR-URL"}), "draft": new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"})}, "zif_abapgit_gui_page_flow=&gt;ty_feature-pr", undefined, {}, {}), "transport": new abap.types.Structure({"trkorr": new abap.types.Character(20, {"qualifiedName":"TRKORR","ddicName":"TRKORR","description":"TRKORR"}), "title": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_GUI_PAGE_FLOW=&gt;TY_FEATURE-TRANSPORT-TITLE"})}, "zif_abapgit_gui_page_flow=&gt;ty_feature-transport", undefined, {}, {}), "full_match": new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"}), "changed_files": abap.types.TableFactory.construct(new abap.types.Structure({"path": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_GUI_PAGE_FLOW=&gt;TY_PATH_NAME-PATH"}), "filename": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_GUI_PAGE_FLOW=&gt;TY_PATH_NAME-FILENAME"}), "remote_sha1": new abap.types.Character(40, {"qualifiedName":"zif_abapgit_git_definitions=&gt;ty_sha1"}), "local_sha1": new abap.types.Character(40, {"qualifiedName":"zif_abapgit_git_definitions=&gt;ty_sha1"})}, "zif_abapgit_gui_page_flow=&gt;ty_path_name", undefined, {}, {}), {"withHeader":false,"keyType":"USER","primaryKey":{"name":"primary_key","type":"HASHED","isUnique":true,"keyFields":["PATH","FILENAME"]},"secondary":[]}, "zif_abapgit_gui_page_flow=&gt;ty_path_name_tt"), "changed_objects": abap.types.TableFactory.construct(new abap.types.Structure({"obj_type": new abap.types.Character(4, {}), "obj_name": new abap.types.Character(40, {}), "devclass": new abap.types.Character(30, {"qualifiedName":"DEVCLASS","ddicName":"DEVCLASS","description":"DEVCLASS"}), "srcsystem": new abap.types.Character(5, {}), "origlang": new abap.types.Character(1, {}), "inactive": new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"}), "abap_language_version": new abap.types.Character(1, {"qualifiedName":"zif_abapgit_aff_types_v1=&gt;ty_abap_language_version"})}, "zif_abapgit_definitions=&gt;ty_item", undefined, {}, {}), {"withHeader":false,"keyType":"USER","primaryKey":{"name":"primary_key","type":"SORTED","isUnique":true,"keyFields":["OBJ_TYPE","OBJ_NAME"]},"secondary":[]}, "zif_abapgit_definitions=&gt;ty_items_ts")}, "zif_abapgit_gui_page_flow=&gt;ty_feature", undefined, {}, {}), {"withHeader":false,"keyType":"DEFAULT","primaryKey":{"name":"primary_key","type":"STANDARD","isUnique":false,"keyFields":[]},"secondary":[]}, "zif_abapgit_gui_page_flow=&gt;ty_features");}, "is_optional": " "}}}};
+}
+abap.Classes['ZIF_ABAPGIT_FLOW_EXIT'] = zif_abapgit_flow_exit;zif_abapgit_flow_exit.ty_event_result = new abap.types.Structure({"handled": new abap.types.Structure({"page": new abap.types.ABAPObject({qualifiedName: "ZIF_ABAPGIT_GUI_RENDERABLE", RTTIName: "\\INTERFACE=ZIF_ABAPGIT_GUI_RENDERABLE"}), "state": new abap.types.Integer({qualifiedName: "ZIF_ABAPGIT_GUI_EVENT_HANDLER=&gt;TY_HANDLING_RESULT-STATE"})}, "zif_abapgit_gui_event_handler=&gt;ty_handling_result", undefined, {}, {}), "refresh": new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"})}, "zif_abapgit_flow_exit=&gt;ty_event_result", undefined, {}, {});
+export {zif_abapgit_flow_exit};
+//# sourceMappingURL=zif_abapgit_flow_exit.intf.mjs.map</pre></td></tr></table></pre>
+
+                <div class='push'></div><!-- for sticky footer -->
+            </div><!-- /wrapper -->
+            <div class='footer quiet pad2 space-top1 center small'>
+                Code coverage generated by
+                <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
+                at 2025-01-01T15:58:33.133Z
+            </div>
+        <script src="../prettify.js"></script>
+        <script>
+            window.onload = function () {
+                prettyPrint();
+            };
+        </script>
+        <script src="../sorter.js"></script>
+        <script src="../block-navigation.js"></script>
+    </body>
+</html>
+    
