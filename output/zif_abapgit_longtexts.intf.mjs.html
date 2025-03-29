@@ -1,0 +1,121 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Code coverage report for output/zif_abapgit_longtexts.intf.mjs</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+    
+<body>
+<div class='wrapper'>
+    <div class='pad1'>
+        <h1><a href="../index.html">All files</a> / <a href="index.html">output</a> zif_abapgit_longtexts.intf.mjs</h1>
+        <div class='clearfix'>
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">100% </span>
+                <span class="quiet">Statements</span>
+                <span class='fraction'>13/13</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">100% </span>
+                <span class="quiet">Branches</span>
+                <span class='fraction'>0/0</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">100% </span>
+                <span class="quiet">Functions</span>
+                <span class='fraction'>0/0</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">100% </span>
+                <span class="quiet">Lines</span>
+                <span class='fraction'>13/13</span>
+            </div>
+        
+            
+        </div>
+        <p class="quiet">
+            Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
+        </p>
+        <template id="filterTemplate">
+            <div class="quiet">
+                Filter:
+                <input type="search" id="fileSearch">
+            </div>
+        </template>
+    </div>
+    <div class='status-line high'></div>
+    <pre><table class="coverage">
+<tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
+<a name='L2'></a><a href='#L2'>2</a>
+<a name='L3'></a><a href='#L3'>3</a>
+<a name='L4'></a><a href='#L4'>4</a>
+<a name='L5'></a><a href='#L5'>5</a>
+<a name='L6'></a><a href='#L6'>6</a>
+<a name='L7'></a><a href='#L7'>7</a>
+<a name='L8'></a><a href='#L8'>8</a>
+<a name='L9'></a><a href='#L9'>9</a>
+<a name='L10'></a><a href='#L10'>10</a>
+<a name='L11'></a><a href='#L11'>11</a>
+<a name='L12'></a><a href='#L12'>12</a>
+<a name='L13'></a><a href='#L13'>13</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span></td><td class="text"><pre class="prettyprint lang-js">// zif_abapgit_longtexts.intf.abap
+class zif_abapgit_longtexts {
+  static INTERNAL_TYPE = 'INTF';
+  static ATTRIBUTES = {};
+  static METHODS = {"CHANGED_BY": {"visibility": "U", "parameters": {"RV_USER": {"type": () =&gt; {return new abap.types.Character(12, {"qualifiedName":"SYUNAME","ddicName":"SYUNAME","description":"SYUNAME"});}, "is_optional": " "}, "IV_OBJECT_NAME": {"type": () =&gt; {return new abap.types.Character(40, {});}, "is_optional": " "}, "IV_LONGTEXT_ID": {"type": () =&gt; {return new abap.types.Character(2, {});}, "is_optional": " "}, "IT_DOKIL": {"type": () =&gt; {return abap.types.TableFactory.construct(new abap.types.Structure({"id": new abap.types.Character(2, {}), "object": new abap.types.Character(60, {}), "langu": new abap.types.Character(1, {}), "typ": new abap.types.Character(1, {}), "version": new abap.types.Numc({length: 4}), "masterlang": new abap.types.Character(1, {}), "txtlines": new abap.types.Numc({length: 5}), "dokstate": new abap.types.Character(1, {}), "selfdef": new abap.types.Character(1, {})}, "DOKIL", "DOKIL", {}, {}), {"withHeader":false,"keyType":"DEFAULT","primaryKey":{"name":"primary_key","type":"STANDARD","isUnique":false,"keyFields":[]},"secondary":[]}, "zif_abapgit_definitions=&gt;ty_dokil_tt");}, "is_optional": " "}}},
+  "SERIALIZE": {"visibility": "U", "parameters": {"RT_LONGTEXTS": {"type": () =&gt; {return abap.types.TableFactory.construct(new abap.types.Structure({"dokil": new abap.types.Structure({"id": new abap.types.Character(2, {}), "object": new abap.types.Character(60, {}), "langu": new abap.types.Character(1, {}), "typ": new abap.types.Character(1, {}), "version": new abap.types.Numc({length: 4}), "masterlang": new abap.types.Character(1, {}), "txtlines": new abap.types.Numc({length: 5}), "dokstate": new abap.types.Character(1, {}), "selfdef": new abap.types.Character(1, {})}, "DOKIL", "DOKIL", {}, {}), "head": new abap.types.Structure({"tdobject": new abap.types.Character(10, {}), "tdname": new abap.types.Character(70, {}), "tdid": new abap.types.Character(4, {}), "tdspras": new abap.types.Character(1, {}), "tdtitle": new abap.types.Character(50, {}), "tdform": new abap.types.Character(16, {}), "tdstyle": new abap.types.Character(8, {}), "tdversion": new abap.types.Numc({length: 5}), "tdfuser": new abap.types.Character(12, {}), "tdfreles": new abap.types.Character(4, {}), "tdfdate": new abap.types.Date(), "tdftime": new abap.types.Time(), "tdluser": new abap.types.Character(12, {}), "tdlreles": new abap.types.Character(4, {}), "tdldate": new abap.types.Date(), "tdltime": new abap.types.Time(), "tdlinesize": new abap.types.Numc({length: 3}), "tdtxtlines": new abap.types.Numc({length: 5}), "tdhyphenat": new abap.types.Character(1, {}), "tdospras": new abap.types.Character(1, {}), "tdtranstat": new abap.types.Numc(), "tdmacode1": new abap.types.Character(16, {}), "tdmacode2": new abap.types.Character(16, {}), "tdrefobj": new abap.types.Character(10, {}), "tdrefname": new abap.types.Character(70, {}), "tdrefid": new abap.types.Character(4, {}), "tdtexttype": new abap.types.Character(6, {}), "tdcompress": new abap.types.Character(1, {}), "mandt": new abap.types.Character(3, {}), "tdoclass": new abap.types.Character(4, {}), "logsys": new abap.types.Character(10, {})}, "THEAD", "THEAD", {}, {}), "lines": abap.types.TableFactory.construct(new abap.types.Structure({"tdformat": new abap.types.Character(2, {}), "tdline": new abap.types.Character(132, {})}, "TLINE", "TLINE", {}, {}), {"withHeader":false,"keyType":"DEFAULT","primaryKey":{"isUnique":false,"type":"STANDARD","keyFields":[],"name":"primary_key"},"secondary":[]}, "TLINE_TAB")}, "zif_abapgit_longtexts=&gt;ty_longtext", undefined, {}, {}), {"withHeader":false,"keyType":"DEFAULT","primaryKey":{"name":"primary_key","type":"STANDARD","isUnique":false,"keyFields":[]},"secondary":[]}, "zif_abapgit_longtexts=&gt;ty_longtexts");}, "is_optional": " "}, "IV_LONGTEXT_NAME": {"type": () =&gt; {return new abap.types.String({qualifiedName: "STRING"});}, "is_optional": " "}, "IV_OBJECT_NAME": {"type": () =&gt; {return new abap.types.Character();}, "is_optional": " "}, "IV_LONGTEXT_ID": {"type": () =&gt; {return new abap.types.Character(2, {});}, "is_optional": " "}, "IT_DOKIL": {"type": () =&gt; {return abap.types.TableFactory.construct(new abap.types.Structure({"id": new abap.types.Character(2, {}), "object": new abap.types.Character(60, {}), "langu": new abap.types.Character(1, {}), "typ": new abap.types.Character(1, {}), "version": new abap.types.Numc({length: 4}), "masterlang": new abap.types.Character(1, {}), "txtlines": new abap.types.Numc({length: 5}), "dokstate": new abap.types.Character(1, {}), "selfdef": new abap.types.Character(1, {})}, "DOKIL", "DOKIL", {}, {}), {"withHeader":false,"keyType":"DEFAULT","primaryKey":{"name":"primary_key","type":"STANDARD","isUnique":false,"keyFields":[]},"secondary":[]}, "zif_abapgit_definitions=&gt;ty_dokil_tt");}, "is_optional": " "}, "II_XML": {"type": () =&gt; {return new abap.types.ABAPObject({qualifiedName: "ZIF_ABAPGIT_XML_OUTPUT", RTTIName: "\\INTERFACE=ZIF_ABAPGIT_XML_OUTPUT"});}, "is_optional": " "}, "IO_I18N_PARAMS": {"type": () =&gt; {return new abap.types.ABAPObject({qualifiedName: "ZCL_ABAPGIT_I18N_PARAMS", RTTIName: "\\CLASS=ZCL_ABAPGIT_I18N_PARAMS"});}, "is_optional": " "}}},
+  "DESERIALIZE": {"visibility": "U", "parameters": {"IV_LONGTEXT_NAME": {"type": () =&gt; {return new abap.types.String({qualifiedName: "STRING"});}, "is_optional": " "}, "IV_OBJECT_NAME": {"type": () =&gt; {return new abap.types.Character();}, "is_optional": " "}, "IV_LONGTEXT_ID": {"type": () =&gt; {return new abap.types.Character(2, {});}, "is_optional": " "}, "II_XML": {"type": () =&gt; {return new abap.types.ABAPObject({qualifiedName: "ZIF_ABAPGIT_XML_INPUT", RTTIName: "\\INTERFACE=ZIF_ABAPGIT_XML_INPUT"});}, "is_optional": " "}, "IV_MAIN_LANGUAGE": {"type": () =&gt; {return new abap.types.Character(1, {"qualifiedName":"sy-langu","conversionExit":"ISOLA"});}, "is_optional": " "}}},
+  "DELETE": {"visibility": "U", "parameters": {"IV_OBJECT_NAME": {"type": () =&gt; {return new abap.types.Character(40, {});}, "is_optional": " "}, "IV_LONGTEXT_ID": {"type": () =&gt; {return new abap.types.Character(2, {});}, "is_optional": " "}}}};
+}
+abap.Classes['ZIF_ABAPGIT_LONGTEXTS'] = zif_abapgit_longtexts;zif_abapgit_longtexts.ty_longtext = new abap.types.Structure({"dokil": new abap.types.Structure({"id": new abap.types.Character(2, {}), "object": new abap.types.Character(60, {}), "langu": new abap.types.Character(1, {}), "typ": new abap.types.Character(1, {}), "version": new abap.types.Numc({length: 4}), "masterlang": new abap.types.Character(1, {}), "txtlines": new abap.types.Numc({length: 5}), "dokstate": new abap.types.Character(1, {}), "selfdef": new abap.types.Character(1, {})}, "DOKIL", "DOKIL", {}, {}), "head": new abap.types.Structure({"tdobject": new abap.types.Character(10, {}), "tdname": new abap.types.Character(70, {}), "tdid": new abap.types.Character(4, {}), "tdspras": new abap.types.Character(1, {}), "tdtitle": new abap.types.Character(50, {}), "tdform": new abap.types.Character(16, {}), "tdstyle": new abap.types.Character(8, {}), "tdversion": new abap.types.Numc({length: 5}), "tdfuser": new abap.types.Character(12, {}), "tdfreles": new abap.types.Character(4, {}), "tdfdate": new abap.types.Date(), "tdftime": new abap.types.Time(), "tdluser": new abap.types.Character(12, {}), "tdlreles": new abap.types.Character(4, {}), "tdldate": new abap.types.Date(), "tdltime": new abap.types.Time(), "tdlinesize": new abap.types.Numc({length: 3}), "tdtxtlines": new abap.types.Numc({length: 5}), "tdhyphenat": new abap.types.Character(1, {}), "tdospras": new abap.types.Character(1, {}), "tdtranstat": new abap.types.Numc(), "tdmacode1": new abap.types.Character(16, {}), "tdmacode2": new abap.types.Character(16, {}), "tdrefobj": new abap.types.Character(10, {}), "tdrefname": new abap.types.Character(70, {}), "tdrefid": new abap.types.Character(4, {}), "tdtexttype": new abap.types.Character(6, {}), "tdcompress": new abap.types.Character(1, {}), "mandt": new abap.types.Character(3, {}), "tdoclass": new abap.types.Character(4, {}), "logsys": new abap.types.Character(10, {})}, "THEAD", "THEAD", {}, {}), "lines": abap.types.TableFactory.construct(new abap.types.Structure({"tdformat": new abap.types.Character(2, {}), "tdline": new abap.types.Character(132, {})}, "TLINE", "TLINE", {}, {}), {"withHeader":false,"keyType":"DEFAULT","primaryKey":{"isUnique":false,"type":"STANDARD","keyFields":[],"name":"primary_key"},"secondary":[]}, "TLINE_TAB")}, "zif_abapgit_longtexts=&gt;ty_longtext", undefined, {}, {});
+zif_abapgit_longtexts.ty_longtexts = abap.types.TableFactory.construct(new abap.types.Structure({"dokil": new abap.types.Structure({"id": new abap.types.Character(2, {}), "object": new abap.types.Character(60, {}), "langu": new abap.types.Character(1, {}), "typ": new abap.types.Character(1, {}), "version": new abap.types.Numc({length: 4}), "masterlang": new abap.types.Character(1, {}), "txtlines": new abap.types.Numc({length: 5}), "dokstate": new abap.types.Character(1, {}), "selfdef": new abap.types.Character(1, {})}, "DOKIL", "DOKIL", {}, {}), "head": new abap.types.Structure({"tdobject": new abap.types.Character(10, {}), "tdname": new abap.types.Character(70, {}), "tdid": new abap.types.Character(4, {}), "tdspras": new abap.types.Character(1, {}), "tdtitle": new abap.types.Character(50, {}), "tdform": new abap.types.Character(16, {}), "tdstyle": new abap.types.Character(8, {}), "tdversion": new abap.types.Numc({length: 5}), "tdfuser": new abap.types.Character(12, {}), "tdfreles": new abap.types.Character(4, {}), "tdfdate": new abap.types.Date(), "tdftime": new abap.types.Time(), "tdluser": new abap.types.Character(12, {}), "tdlreles": new abap.types.Character(4, {}), "tdldate": new abap.types.Date(), "tdltime": new abap.types.Time(), "tdlinesize": new abap.types.Numc({length: 3}), "tdtxtlines": new abap.types.Numc({length: 5}), "tdhyphenat": new abap.types.Character(1, {}), "tdospras": new abap.types.Character(1, {}), "tdtranstat": new abap.types.Numc(), "tdmacode1": new abap.types.Character(16, {}), "tdmacode2": new abap.types.Character(16, {}), "tdrefobj": new abap.types.Character(10, {}), "tdrefname": new abap.types.Character(70, {}), "tdrefid": new abap.types.Character(4, {}), "tdtexttype": new abap.types.Character(6, {}), "tdcompress": new abap.types.Character(1, {}), "mandt": new abap.types.Character(3, {}), "tdoclass": new abap.types.Character(4, {}), "logsys": new abap.types.Character(10, {})}, "THEAD", "THEAD", {}, {}), "lines": abap.types.TableFactory.construct(new abap.types.Structure({"tdformat": new abap.types.Character(2, {}), "tdline": new abap.types.Character(132, {})}, "TLINE", "TLINE", {}, {}), {"withHeader":false,"keyType":"DEFAULT","primaryKey":{"isUnique":false,"type":"STANDARD","keyFields":[],"name":"primary_key"},"secondary":[]}, "TLINE_TAB")}, "zif_abapgit_longtexts=&gt;ty_longtext", undefined, {}, {}), {"withHeader":false,"keyType":"DEFAULT","primaryKey":{"name":"primary_key","type":"STANDARD","isUnique":false,"keyFields":[]},"secondary":[]}, "zif_abapgit_longtexts=&gt;ty_longtexts");
+export {zif_abapgit_longtexts};
+//# sourceMappingURL=zif_abapgit_longtexts.intf.mjs.map</pre></td></tr></table></pre>
+
+                <div class='push'></div><!-- for sticky footer -->
+            </div><!-- /wrapper -->
+            <div class='footer quiet pad2 space-top1 center small'>
+                Code coverage generated by
+                <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
+                at 2025-03-29T13:06:18.026Z
+            </div>
+        <script src="../prettify.js"></script>
+        <script>
+            window.onload = function () {
+                prettyPrint();
+            };
+        </script>
+        <script src="../sorter.js"></script>
+        <script src="../block-navigation.js"></script>
+    </body>
+</html>
+    
