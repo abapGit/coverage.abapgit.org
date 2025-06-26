@@ -1,0 +1,763 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Code coverage report for src/git/zlib/zcl_abapgit_zlib.clas.testclasses.abap</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../prettify.css" />
+    <link rel="stylesheet" href="../../../base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../../favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+    
+<body>
+<div class='wrapper'>
+    <div class='pad1'>
+        <h1><a href="../../../index.html">All files</a> / <a href="index.html">src/git/zlib</a> zcl_abapgit_zlib.clas.testclasses.abap</h1>
+        <div class='clearfix'>
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">100% </span>
+                <span class="quiet">Statements</span>
+                <span class='fraction'>226/226</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">100% </span>
+                <span class="quiet">Branches</span>
+                <span class='fraction'>5/5</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">100% </span>
+                <span class="quiet">Functions</span>
+                <span class='fraction'>5/5</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">100% </span>
+                <span class="quiet">Lines</span>
+                <span class='fraction'>226/226</span>
+            </div>
+        
+            
+        </div>
+        <p class="quiet">
+            Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
+        </p>
+        <template id="filterTemplate">
+            <div class="quiet">
+                Filter:
+                <input type="search" id="fileSearch">
+            </div>
+        </template>
+    </div>
+    <div class='status-line high'></div>
+    <pre><table class="coverage">
+<tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
+<a name='L2'></a><a href='#L2'>2</a>
+<a name='L3'></a><a href='#L3'>3</a>
+<a name='L4'></a><a href='#L4'>4</a>
+<a name='L5'></a><a href='#L5'>5</a>
+<a name='L6'></a><a href='#L6'>6</a>
+<a name='L7'></a><a href='#L7'>7</a>
+<a name='L8'></a><a href='#L8'>8</a>
+<a name='L9'></a><a href='#L9'>9</a>
+<a name='L10'></a><a href='#L10'>10</a>
+<a name='L11'></a><a href='#L11'>11</a>
+<a name='L12'></a><a href='#L12'>12</a>
+<a name='L13'></a><a href='#L13'>13</a>
+<a name='L14'></a><a href='#L14'>14</a>
+<a name='L15'></a><a href='#L15'>15</a>
+<a name='L16'></a><a href='#L16'>16</a>
+<a name='L17'></a><a href='#L17'>17</a>
+<a name='L18'></a><a href='#L18'>18</a>
+<a name='L19'></a><a href='#L19'>19</a>
+<a name='L20'></a><a href='#L20'>20</a>
+<a name='L21'></a><a href='#L21'>21</a>
+<a name='L22'></a><a href='#L22'>22</a>
+<a name='L23'></a><a href='#L23'>23</a>
+<a name='L24'></a><a href='#L24'>24</a>
+<a name='L25'></a><a href='#L25'>25</a>
+<a name='L26'></a><a href='#L26'>26</a>
+<a name='L27'></a><a href='#L27'>27</a>
+<a name='L28'></a><a href='#L28'>28</a>
+<a name='L29'></a><a href='#L29'>29</a>
+<a name='L30'></a><a href='#L30'>30</a>
+<a name='L31'></a><a href='#L31'>31</a>
+<a name='L32'></a><a href='#L32'>32</a>
+<a name='L33'></a><a href='#L33'>33</a>
+<a name='L34'></a><a href='#L34'>34</a>
+<a name='L35'></a><a href='#L35'>35</a>
+<a name='L36'></a><a href='#L36'>36</a>
+<a name='L37'></a><a href='#L37'>37</a>
+<a name='L38'></a><a href='#L38'>38</a>
+<a name='L39'></a><a href='#L39'>39</a>
+<a name='L40'></a><a href='#L40'>40</a>
+<a name='L41'></a><a href='#L41'>41</a>
+<a name='L42'></a><a href='#L42'>42</a>
+<a name='L43'></a><a href='#L43'>43</a>
+<a name='L44'></a><a href='#L44'>44</a>
+<a name='L45'></a><a href='#L45'>45</a>
+<a name='L46'></a><a href='#L46'>46</a>
+<a name='L47'></a><a href='#L47'>47</a>
+<a name='L48'></a><a href='#L48'>48</a>
+<a name='L49'></a><a href='#L49'>49</a>
+<a name='L50'></a><a href='#L50'>50</a>
+<a name='L51'></a><a href='#L51'>51</a>
+<a name='L52'></a><a href='#L52'>52</a>
+<a name='L53'></a><a href='#L53'>53</a>
+<a name='L54'></a><a href='#L54'>54</a>
+<a name='L55'></a><a href='#L55'>55</a>
+<a name='L56'></a><a href='#L56'>56</a>
+<a name='L57'></a><a href='#L57'>57</a>
+<a name='L58'></a><a href='#L58'>58</a>
+<a name='L59'></a><a href='#L59'>59</a>
+<a name='L60'></a><a href='#L60'>60</a>
+<a name='L61'></a><a href='#L61'>61</a>
+<a name='L62'></a><a href='#L62'>62</a>
+<a name='L63'></a><a href='#L63'>63</a>
+<a name='L64'></a><a href='#L64'>64</a>
+<a name='L65'></a><a href='#L65'>65</a>
+<a name='L66'></a><a href='#L66'>66</a>
+<a name='L67'></a><a href='#L67'>67</a>
+<a name='L68'></a><a href='#L68'>68</a>
+<a name='L69'></a><a href='#L69'>69</a>
+<a name='L70'></a><a href='#L70'>70</a>
+<a name='L71'></a><a href='#L71'>71</a>
+<a name='L72'></a><a href='#L72'>72</a>
+<a name='L73'></a><a href='#L73'>73</a>
+<a name='L74'></a><a href='#L74'>74</a>
+<a name='L75'></a><a href='#L75'>75</a>
+<a name='L76'></a><a href='#L76'>76</a>
+<a name='L77'></a><a href='#L77'>77</a>
+<a name='L78'></a><a href='#L78'>78</a>
+<a name='L79'></a><a href='#L79'>79</a>
+<a name='L80'></a><a href='#L80'>80</a>
+<a name='L81'></a><a href='#L81'>81</a>
+<a name='L82'></a><a href='#L82'>82</a>
+<a name='L83'></a><a href='#L83'>83</a>
+<a name='L84'></a><a href='#L84'>84</a>
+<a name='L85'></a><a href='#L85'>85</a>
+<a name='L86'></a><a href='#L86'>86</a>
+<a name='L87'></a><a href='#L87'>87</a>
+<a name='L88'></a><a href='#L88'>88</a>
+<a name='L89'></a><a href='#L89'>89</a>
+<a name='L90'></a><a href='#L90'>90</a>
+<a name='L91'></a><a href='#L91'>91</a>
+<a name='L92'></a><a href='#L92'>92</a>
+<a name='L93'></a><a href='#L93'>93</a>
+<a name='L94'></a><a href='#L94'>94</a>
+<a name='L95'></a><a href='#L95'>95</a>
+<a name='L96'></a><a href='#L96'>96</a>
+<a name='L97'></a><a href='#L97'>97</a>
+<a name='L98'></a><a href='#L98'>98</a>
+<a name='L99'></a><a href='#L99'>99</a>
+<a name='L100'></a><a href='#L100'>100</a>
+<a name='L101'></a><a href='#L101'>101</a>
+<a name='L102'></a><a href='#L102'>102</a>
+<a name='L103'></a><a href='#L103'>103</a>
+<a name='L104'></a><a href='#L104'>104</a>
+<a name='L105'></a><a href='#L105'>105</a>
+<a name='L106'></a><a href='#L106'>106</a>
+<a name='L107'></a><a href='#L107'>107</a>
+<a name='L108'></a><a href='#L108'>108</a>
+<a name='L109'></a><a href='#L109'>109</a>
+<a name='L110'></a><a href='#L110'>110</a>
+<a name='L111'></a><a href='#L111'>111</a>
+<a name='L112'></a><a href='#L112'>112</a>
+<a name='L113'></a><a href='#L113'>113</a>
+<a name='L114'></a><a href='#L114'>114</a>
+<a name='L115'></a><a href='#L115'>115</a>
+<a name='L116'></a><a href='#L116'>116</a>
+<a name='L117'></a><a href='#L117'>117</a>
+<a name='L118'></a><a href='#L118'>118</a>
+<a name='L119'></a><a href='#L119'>119</a>
+<a name='L120'></a><a href='#L120'>120</a>
+<a name='L121'></a><a href='#L121'>121</a>
+<a name='L122'></a><a href='#L122'>122</a>
+<a name='L123'></a><a href='#L123'>123</a>
+<a name='L124'></a><a href='#L124'>124</a>
+<a name='L125'></a><a href='#L125'>125</a>
+<a name='L126'></a><a href='#L126'>126</a>
+<a name='L127'></a><a href='#L127'>127</a>
+<a name='L128'></a><a href='#L128'>128</a>
+<a name='L129'></a><a href='#L129'>129</a>
+<a name='L130'></a><a href='#L130'>130</a>
+<a name='L131'></a><a href='#L131'>131</a>
+<a name='L132'></a><a href='#L132'>132</a>
+<a name='L133'></a><a href='#L133'>133</a>
+<a name='L134'></a><a href='#L134'>134</a>
+<a name='L135'></a><a href='#L135'>135</a>
+<a name='L136'></a><a href='#L136'>136</a>
+<a name='L137'></a><a href='#L137'>137</a>
+<a name='L138'></a><a href='#L138'>138</a>
+<a name='L139'></a><a href='#L139'>139</a>
+<a name='L140'></a><a href='#L140'>140</a>
+<a name='L141'></a><a href='#L141'>141</a>
+<a name='L142'></a><a href='#L142'>142</a>
+<a name='L143'></a><a href='#L143'>143</a>
+<a name='L144'></a><a href='#L144'>144</a>
+<a name='L145'></a><a href='#L145'>145</a>
+<a name='L146'></a><a href='#L146'>146</a>
+<a name='L147'></a><a href='#L147'>147</a>
+<a name='L148'></a><a href='#L148'>148</a>
+<a name='L149'></a><a href='#L149'>149</a>
+<a name='L150'></a><a href='#L150'>150</a>
+<a name='L151'></a><a href='#L151'>151</a>
+<a name='L152'></a><a href='#L152'>152</a>
+<a name='L153'></a><a href='#L153'>153</a>
+<a name='L154'></a><a href='#L154'>154</a>
+<a name='L155'></a><a href='#L155'>155</a>
+<a name='L156'></a><a href='#L156'>156</a>
+<a name='L157'></a><a href='#L157'>157</a>
+<a name='L158'></a><a href='#L158'>158</a>
+<a name='L159'></a><a href='#L159'>159</a>
+<a name='L160'></a><a href='#L160'>160</a>
+<a name='L161'></a><a href='#L161'>161</a>
+<a name='L162'></a><a href='#L162'>162</a>
+<a name='L163'></a><a href='#L163'>163</a>
+<a name='L164'></a><a href='#L164'>164</a>
+<a name='L165'></a><a href='#L165'>165</a>
+<a name='L166'></a><a href='#L166'>166</a>
+<a name='L167'></a><a href='#L167'>167</a>
+<a name='L168'></a><a href='#L168'>168</a>
+<a name='L169'></a><a href='#L169'>169</a>
+<a name='L170'></a><a href='#L170'>170</a>
+<a name='L171'></a><a href='#L171'>171</a>
+<a name='L172'></a><a href='#L172'>172</a>
+<a name='L173'></a><a href='#L173'>173</a>
+<a name='L174'></a><a href='#L174'>174</a>
+<a name='L175'></a><a href='#L175'>175</a>
+<a name='L176'></a><a href='#L176'>176</a>
+<a name='L177'></a><a href='#L177'>177</a>
+<a name='L178'></a><a href='#L178'>178</a>
+<a name='L179'></a><a href='#L179'>179</a>
+<a name='L180'></a><a href='#L180'>180</a>
+<a name='L181'></a><a href='#L181'>181</a>
+<a name='L182'></a><a href='#L182'>182</a>
+<a name='L183'></a><a href='#L183'>183</a>
+<a name='L184'></a><a href='#L184'>184</a>
+<a name='L185'></a><a href='#L185'>185</a>
+<a name='L186'></a><a href='#L186'>186</a>
+<a name='L187'></a><a href='#L187'>187</a>
+<a name='L188'></a><a href='#L188'>188</a>
+<a name='L189'></a><a href='#L189'>189</a>
+<a name='L190'></a><a href='#L190'>190</a>
+<a name='L191'></a><a href='#L191'>191</a>
+<a name='L192'></a><a href='#L192'>192</a>
+<a name='L193'></a><a href='#L193'>193</a>
+<a name='L194'></a><a href='#L194'>194</a>
+<a name='L195'></a><a href='#L195'>195</a>
+<a name='L196'></a><a href='#L196'>196</a>
+<a name='L197'></a><a href='#L197'>197</a>
+<a name='L198'></a><a href='#L198'>198</a>
+<a name='L199'></a><a href='#L199'>199</a>
+<a name='L200'></a><a href='#L200'>200</a>
+<a name='L201'></a><a href='#L201'>201</a>
+<a name='L202'></a><a href='#L202'>202</a>
+<a name='L203'></a><a href='#L203'>203</a>
+<a name='L204'></a><a href='#L204'>204</a>
+<a name='L205'></a><a href='#L205'>205</a>
+<a name='L206'></a><a href='#L206'>206</a>
+<a name='L207'></a><a href='#L207'>207</a>
+<a name='L208'></a><a href='#L208'>208</a>
+<a name='L209'></a><a href='#L209'>209</a>
+<a name='L210'></a><a href='#L210'>210</a>
+<a name='L211'></a><a href='#L211'>211</a>
+<a name='L212'></a><a href='#L212'>212</a>
+<a name='L213'></a><a href='#L213'>213</a>
+<a name='L214'></a><a href='#L214'>214</a>
+<a name='L215'></a><a href='#L215'>215</a>
+<a name='L216'></a><a href='#L216'>216</a>
+<a name='L217'></a><a href='#L217'>217</a>
+<a name='L218'></a><a href='#L218'>218</a>
+<a name='L219'></a><a href='#L219'>219</a>
+<a name='L220'></a><a href='#L220'>220</a>
+<a name='L221'></a><a href='#L221'>221</a>
+<a name='L222'></a><a href='#L222'>222</a>
+<a name='L223'></a><a href='#L223'>223</a>
+<a name='L224'></a><a href='#L224'>224</a>
+<a name='L225'></a><a href='#L225'>225</a>
+<a name='L226'></a><a href='#L226'>226</a>
+<a name='L227'></a><a href='#L227'>227</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">&nbsp;
+CLASS ltcl_zlib DEFINITION FOR TESTING
+  DURATION SHORT
+  RISK LEVEL HARMLESS.
+&nbsp;
+  PRIVATE SECTION.
+    METHODS:
+      fixed FOR TESTING RAISING cx_dynamic_check,
+      dynamic_simple FOR TESTING RAISING cx_dynamic_check zcx_abapgit_exception,
+      dynamic_another FOR TESTING RAISING cx_dynamic_check zcx_abapgit_exception,
+      dynamic FOR TESTING RAISING cx_dynamic_check zcx_abapgit_exception,
+      not_compressed FOR TESTING RAISING cx_dynamic_check.
+&nbsp;
+ENDCLASS.
+&nbsp;
+&nbsp;
+CLASS ltcl_zlib IMPLEMENTATION.
+&nbsp;
+  METHOD fixed.
+&nbsp;
+    DATA: ls_data TYPE zcl_abapgit_zlib=&gt;ty_decompress.
+&nbsp;
+    CONSTANTS:
+      lc_raw        TYPE xstring VALUE '48656C6C6F20576F726C64210D0A',
+      lc_compressed TYPE xstring VALUE 'F348CDC9C95708CF2FCA4951E4E5020024E90455'.
+&nbsp;
+&nbsp;
+    ls_data = zcl_abapgit_zlib=&gt;decompress( lc_compressed ).
+&nbsp;
+    cl_abap_unit_assert=&gt;assert_not_initial( ls_data-raw ).
+    cl_abap_unit_assert=&gt;assert_equals( act = ls_data-raw
+                                        exp = lc_raw ).
+&nbsp;
+  ENDMETHOD.
+&nbsp;
+  METHOD not_compressed.
+&nbsp;
+    DATA: ls_data TYPE zcl_abapgit_zlib=&gt;ty_decompress.
+&nbsp;
+    CONSTANTS:
+      lc_raw        TYPE xstring VALUE '4142434445464748494A4B4C',
+      lc_compressed TYPE xstring VALUE '010C00F3FF4142434445464748494A4B4C'.
+&nbsp;
+&nbsp;
+    ls_data = zcl_abapgit_zlib=&gt;decompress( lc_compressed ).
+&nbsp;
+    cl_abap_unit_assert=&gt;assert_not_initial( ls_data-raw ).
+    cl_abap_unit_assert=&gt;assert_equals( act = ls_data-raw
+                                        exp = lc_raw ).
+&nbsp;
+  ENDMETHOD.
+&nbsp;
+  METHOD dynamic_simple.
+&nbsp;
+    DATA: ls_data       TYPE zcl_abapgit_zlib=&gt;ty_decompress,
+          lv_compressed TYPE xstring,
+          lv_decoded    TYPE xstring.
+&nbsp;
+&nbsp;
+    lv_compressed = |05804109000008C4AA184EC1C7E0C08FF5C70EA43E470B1A0B045D|.
+&nbsp;
+    lv_decoded = zcl_abapgit_convert=&gt;string_to_xstring_utf8( |hello world| ).
+&nbsp;
+    ls_data = zcl_abapgit_zlib=&gt;decompress( lv_compressed ).
+&nbsp;
+    cl_abap_unit_assert=&gt;assert_not_initial( ls_data-raw ).
+    cl_abap_unit_assert=&gt;assert_equals( act = ls_data-raw
+                                        exp = lv_decoded ).
+&nbsp;
+  ENDMETHOD.
+&nbsp;
+  METHOD dynamic_another.
+&nbsp;
+    DATA: ls_data       TYPE zcl_abapgit_zlib=&gt;ty_decompress,
+          lv_compressed TYPE xstring,
+          lv_decoded    TYPE xstring.
+&nbsp;
+&nbsp;
+    lv_compressed = |25CCD10903310C04D156B680904AD284628963C1929D93D4FF| &amp;&amp;
+      |19F23DBCF9ACDB1CDCD90E5D73DD4816C4AD5E182BD24659F50D516EE6605CB0| &amp;&amp;
+      |C913D3F400183B7D29CA7C1FCC18546A47A10B53BE670FABFFDAE0728540267F| &amp;&amp;
+      |2DEF07|.
+&nbsp;
+    lv_decoded = zcl_abapgit_convert=&gt;string_to_xstring_utf8(
+      |Lorem ipsum dolor sit amet, consectetur adipiscing elit, | &amp;&amp;
+      |sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.| ).
+&nbsp;
+    ls_data = zcl_abapgit_zlib=&gt;decompress( lv_compressed ).
+&nbsp;
+    cl_abap_unit_assert=&gt;assert_not_initial( ls_data-raw ).
+    cl_abap_unit_assert=&gt;assert_equals( act = ls_data-raw
+                                        exp = lv_decoded ).
+&nbsp;
+  ENDMETHOD.
+&nbsp;
+  METHOD dynamic.
+&nbsp;
+    DATA: ls_data       TYPE zcl_abapgit_zlib=&gt;ty_decompress,
+          lv_compressed TYPE xstring,
+          lv_decoded    TYPE xstring.
+&nbsp;
+&nbsp;
+    lv_compressed = |75555D6FE246147DF7AFB8521F1610A0AA8F911A| &amp;&amp;
+      |C9C1A6B5969034711A352FCE605FF074CD8C3B33| &amp;&amp;
+      |86657FFD9E191302DBEC8B857DBFCFB9F7F00BED| &amp;&amp;
+      |2BD1EC8A52ABB5DC448FF13D3DF38A92836A8DA6| &amp;&amp;
+      |F806EFF1E26FEACD9D114E9B288A46A34C59279A| &amp;&amp;
+      |66348A46946D5B6D1CB99A49AFFEE5D2595A1BBD| &amp;&amp;
+      |25D56D36EC682D1BA64E556CA8118EADA38D7464| &amp;&amp;
+      |B8616161B0526D087517D9F23392C5A5933BB811| &amp;&amp;
+      |B29FA7846966D81B9E13126DDBC85238A9156A69| &amp;&amp;
+      |432F68B298DDDDDEE3B19C677FF81613DEEAD0DF| &amp;&amp;
+      |8771EF61497A7B87ECE9572E3BA4F7639CE53FB3| &amp;&amp;
+      |9C8370EE42831FCB0F7DB7B5501B26ABB77C848F| &amp;&amp;
+      |76A2E9D892501559B163383D70233A55D6FD00BE| &amp;&amp;
+      |938BC44E93E5BEA532A4B301FC27CB186C427155| &amp;&amp;
+      |013F812A7A1D32A010B850ACC086469DC3F9875A| &amp;&amp;
+      |3878A3BE2719ECA9CA37D2B3FB16358111483E27| &amp;&amp;
+      |451EDF2C52D408442B273DF27ECCB38C3EBC15D6| &amp;&amp;
+      |861CC73E02FFBE1D6DE4462AD104239A09B12B34| &amp;&amp;
+      |045E3DE35239366B51326DD9D51A88B02BFC2686| &amp;&amp;
+      |44538AA2D7D757B1126DD4E8A2DCB6FD77FA9D08| &amp;&amp;
+      |1B5BB85ADAC9357E942D462ABE217040C36994CD| &amp;&amp;
+      |E9DC7D725D0B5B08BF528C153F4E094FCA1E295B| &amp;&amp;
+      |6679162FA61152FE1055864DBB889846E932C9E6| &amp;&amp;
+      |D3284AE23CF6FEA709B017CEE8A6C182E7FFDCA7| &amp;&amp;
+      |F490CE29BFA36F725F4A3F124DFD0C1FB9FF7F1A| &amp;&amp;
+      |B92EDFA7F949D8E4FA02AB4118E0049D8708E54E| &amp;&amp;
+      |EFB00218801981CD396E05875D7580442BB2252B| &amp;&amp;
+      |61A4B657E0F98D88A77B4C9816C94D317FB8BB3D| &amp;&amp;
+      |1E94A7F404207E9D26BEF81E489E505973F985E4| &amp;&amp;
+      |3ADC52D919E317D21EACE32D494B07DD19AA78C7| &amp;&amp;
+      |8D6EB7EFA629E5609558D9CE604B9DDFD7177262| &amp;&amp;
+      |D5F89B31908AB6C21656B497AEF62D40B07CCF82| &amp;&amp;
+      |F0599056CD015B4509EF8EB5CE978868F6673AFB| &amp;&amp;
+      |0CCB048DC88ACA963E25A34F3D3213CA8D5036C8| &amp;&amp;
+      |D8DEE0FA41E52C14B80A906988823966B5BE8817| &amp;&amp;
+      |09770A6985AB077FC5E32C1F3FE5E3FB6438262B| &amp;&amp;
+      |B72DFA79F709117E160CE88CC44841235F72DCD4| &amp;&amp;
+      |E86DCA3DCABCA945E10E2D83CC5F7FA3C1F3454F| &amp;&amp;
+      |43AF6E4BED7A11B8F5870C593EE0A6B9BDFA998E| &amp;&amp;
+      |D1E081FFEBA4017E5E300396FE0E4F087F8CEA90| &amp;&amp;
+      |560C7F26D329E5FD7B09F0D8F7FF0614B7AD9789| &amp;&amp;
+      |75B0AC21664755F6FF003D4947C74123BF304DA0| &amp;&amp;
+      |FCA536204077CA8D69DD41E72D0E8ED598F86BC9| &amp;&amp;
+      |0D9E9E8861E01CCAB1626ABB55236D8DDE012316| &amp;&amp;
+      |558082338D26C5DEA4A986AA92D215440566DFAE| &amp;&amp;
+      |9F75FEB49CE5D9DDB24817E96DBACC1F7B176C2E| &amp;&amp;
+      |86F14BF21DD2B86583A502789C33343030333151| &amp;&amp;
+      |284A4D4CC94DD5CB4D61E8F9CF526533B9F99E89| &amp;&amp;
+      |F5DD0E11137B1563BF8D9300E5B40D39B801789C| &amp;&amp;
+      |0BCBCF4CD15308CFCCC951484A554849CD492D49| &amp;&amp;
+      |050A700100650107AFB643789C5D524B8FDA3010| &amp;&amp;
+      |BEFB578C38ED4AD1F621F5D29B49CC6235C49163| &amp;&amp;
+      |96720C8921AE428C62A768FF7D6702BBDB564242| &amp;&amp;
+      |F3F85EE398CEC2461AC85D638760E1018B47C652| &amp;&amp;
+      |7F791DDDA98BF0D03CC2D7CF5FBE81AEBBA9077E| &amp;&amp;
+      |AD47CB5869C7B30BC1F9015C80CE8EF6F00AA7B1| &amp;&amp;
+      |1EA26D13388ED6823F42D3D5E3C926103DD4C32B| &amp;&amp;
+      |5CEC1810E00FB176831B4E5043833A0C37638734| &amp;&amp;
+      |C11F23D1E3720B7508BE7135F241EB9BE96C8758| &amp;&amp;
+      |47D23BBADE067888687C51DD118BC759A4B575CF| &amp;&amp;
+      |DC00347B1BC1D5C5CE4F11461BE2E81AE248C00D| &amp;&amp;
+      |4D3FB5E4E16DDCBBB3BB2B107C0E1F18924E0113| &amp;&amp;
+      |90CF04CEBE7547FAB773ACCB74E85DE812681D51| &amp;&amp;
+      |1FA688CD40CDF99609E5F8E44708B6EF193238F4| &amp;&amp;
+      |3D67FD7037EF90F50B1D34DE4F14A873EDFCF9DF| &amp;&amp;
+      |242EB0E3340E2869674CEBF164B3E22FDB44EAD0|.
+&nbsp;
+    lv_decoded = zcl_abapgit_convert=&gt;string_to_xstring_utf8(
+         |# wdalv_config\nSAP Web Dynpro ABAP ALV |
+      &amp;&amp; |configurator\n\n\n**Install**\n* Import |
+      &amp;&amp; |the objects from nugget file under lates|
+      &amp;&amp; |t git release using SAPLINK\n* Activate |
+      &amp;&amp; |all the objects\n* Create WD application|
+      &amp;&amp; |s for ZALV_COMP_CONFIG\n\n**Demo**\n* Cr|
+      &amp;&amp; |eate WD application for ZALV_DEMO\n* Exe|
+      &amp;&amp; |cute the application\n* Execute configur|
+      &amp;&amp; |ator application (ZALV_COMP_CONFIG)\n* C|
+      &amp;&amp; |hange some config values and save\n* Rel|
+      &amp;&amp; |aunch ZALV_DEMO application to see the c|
+      &amp;&amp; |hanges\n\n\n**Use**\n- Add usage of ZALV|
+      &amp;&amp; | component to any component that uses SA|
+      &amp;&amp; |P standand ALV component - SALV_WD_TABLE|
+      &amp;&amp; |\n- Instantiate ZALV component and pass |
+      &amp;&amp; |ALV usage object of original ALV to ZALV|
+      &amp;&amp; | by calling interface method set_alv_usa|
+      &amp;&amp; |ge. \n\n```abap\nlo_cmp_usage =   wd_thi|
+      &amp;&amp; |s-&gt;wd_cpuse_zalv( ).\nIF lo_cmp_usage-&gt;h|
+      &amp;&amp; |as_active_component( ) IS INITIAL.\n    |
+      &amp;&amp; |lo_cmp_usage-&gt;create_component( ).\nENDI|
+      &amp;&amp; |F.\n\nDATA lo_interfacecontroller TYPE R|
+      &amp;&amp; |EF TO ziwci_alv .\nlo_interfacecontrolle|
+      &amp;&amp; |r =   wd_this-&gt;wd_cpifc_zalv( ).\n\nlo_i|
+      &amp;&amp; |nterfacecontroller-&gt;set_alv_usage(\n    |
+      &amp;&amp; |alv_usage =  lo_alv_usage\n  ).\n```\n\n|
+      &amp;&amp; |- For production scenarios: In method UP|
+      &amp;&amp; |DATE_DB_FROM_CONFIG of component control|
+      &amp;&amp; |ler of component ZALV - check if the cur|
+      &amp;&amp; |rent system is your development system. |
+      &amp;&amp; |This ensures that Z tables are updated w|
+      &amp;&amp; |ith config meta data only in Dev system.|
+      &amp;&amp; | \n\n```abap\n  CHECK sy-sysid cp 'D*'.\n|
+      &amp;&amp; |```\n- Transport wrapper Config: For ot|
+      &amp;&amp; |her systems in the transport path(QA,IT,|
+      &amp;&amp; |UT,PD), simply transport the table entri|
+      &amp;&amp; |es from ZTALV* tables where config_type |
+      &amp;&amp; |= 02 (Wrapper Config)\n\n**Note**\n- Man|
+      &amp;&amp; |datory step: Execute the application (Re|
+      &amp;&amp; |quired for updating Z tables with config|
+      &amp;&amp; | meta data ) before running ALV configur|
+      &amp;&amp; |ator App\n- If ALV functions from config|
+      &amp;&amp; |urator (like - record count, full screen|
+      &amp;&amp; |, excel export) are to be published then|
+      &amp;&amp; | main application need to have node mapp|
+      &amp;&amp; |ing for FUNCTION_ELEMENTS node of ALV. \n\n| ).
+&nbsp;
+    ls_data = zcl_abapgit_zlib=&gt;decompress( lv_compressed ).
+&nbsp;
+    cl_abap_unit_assert=&gt;assert_not_initial( ls_data-raw ).
+    cl_abap_unit_assert=&gt;assert_equals( act = ls_data-raw
+                                        exp = lv_decoded ).
+&nbsp;
+  ENDMETHOD.
+&nbsp;
+ENDCLASS.
+&nbsp;</pre></td></tr></table></pre>
+
+                <div class='push'></div><!-- for sticky footer -->
+            </div><!-- /wrapper -->
+            <div class='footer quiet pad2 space-top1 center small'>
+                Code coverage generated by
+                <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
+                at 2025-06-26T13:35:20.501Z
+            </div>
+        <script src="../../../prettify.js"></script>
+        <script>
+            window.onload = function () {
+                prettyPrint();
+            };
+        </script>
+        <script src="../../../sorter.js"></script>
+        <script src="../../../block-navigation.js"></script>
+    </body>
+</html>
+    
