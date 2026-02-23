@@ -1,0 +1,634 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Code coverage report for output/zcl_abapgit_repo.clas.testclasses.mjs</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+    
+<body>
+<div class='wrapper'>
+    <div class='pad1'>
+        <h1><a href="../index.html">All files</a> / <a href="index.html">output</a> zcl_abapgit_repo.clas.testclasses.mjs</h1>
+        <div class='clearfix'>
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">96.73% </span>
+                <span class="quiet">Statements</span>
+                <span class='fraction'>178/184</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">88.88% </span>
+                <span class="quiet">Branches</span>
+                <span class='fraction'>16/18</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">73.68% </span>
+                <span class="quiet">Functions</span>
+                <span class='fraction'>14/19</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">96.73% </span>
+                <span class="quiet">Lines</span>
+                <span class='fraction'>178/184</span>
+            </div>
+        
+            
+        </div>
+        <p class="quiet">
+            Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
+        </p>
+        <template id="filterTemplate">
+            <div class="quiet">
+                Filter:
+                <input type="search" id="fileSearch">
+            </div>
+        </template>
+    </div>
+    <div class='status-line high'></div>
+    <pre><table class="coverage">
+<tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
+<a name='L2'></a><a href='#L2'>2</a>
+<a name='L3'></a><a href='#L3'>3</a>
+<a name='L4'></a><a href='#L4'>4</a>
+<a name='L5'></a><a href='#L5'>5</a>
+<a name='L6'></a><a href='#L6'>6</a>
+<a name='L7'></a><a href='#L7'>7</a>
+<a name='L8'></a><a href='#L8'>8</a>
+<a name='L9'></a><a href='#L9'>9</a>
+<a name='L10'></a><a href='#L10'>10</a>
+<a name='L11'></a><a href='#L11'>11</a>
+<a name='L12'></a><a href='#L12'>12</a>
+<a name='L13'></a><a href='#L13'>13</a>
+<a name='L14'></a><a href='#L14'>14</a>
+<a name='L15'></a><a href='#L15'>15</a>
+<a name='L16'></a><a href='#L16'>16</a>
+<a name='L17'></a><a href='#L17'>17</a>
+<a name='L18'></a><a href='#L18'>18</a>
+<a name='L19'></a><a href='#L19'>19</a>
+<a name='L20'></a><a href='#L20'>20</a>
+<a name='L21'></a><a href='#L21'>21</a>
+<a name='L22'></a><a href='#L22'>22</a>
+<a name='L23'></a><a href='#L23'>23</a>
+<a name='L24'></a><a href='#L24'>24</a>
+<a name='L25'></a><a href='#L25'>25</a>
+<a name='L26'></a><a href='#L26'>26</a>
+<a name='L27'></a><a href='#L27'>27</a>
+<a name='L28'></a><a href='#L28'>28</a>
+<a name='L29'></a><a href='#L29'>29</a>
+<a name='L30'></a><a href='#L30'>30</a>
+<a name='L31'></a><a href='#L31'>31</a>
+<a name='L32'></a><a href='#L32'>32</a>
+<a name='L33'></a><a href='#L33'>33</a>
+<a name='L34'></a><a href='#L34'>34</a>
+<a name='L35'></a><a href='#L35'>35</a>
+<a name='L36'></a><a href='#L36'>36</a>
+<a name='L37'></a><a href='#L37'>37</a>
+<a name='L38'></a><a href='#L38'>38</a>
+<a name='L39'></a><a href='#L39'>39</a>
+<a name='L40'></a><a href='#L40'>40</a>
+<a name='L41'></a><a href='#L41'>41</a>
+<a name='L42'></a><a href='#L42'>42</a>
+<a name='L43'></a><a href='#L43'>43</a>
+<a name='L44'></a><a href='#L44'>44</a>
+<a name='L45'></a><a href='#L45'>45</a>
+<a name='L46'></a><a href='#L46'>46</a>
+<a name='L47'></a><a href='#L47'>47</a>
+<a name='L48'></a><a href='#L48'>48</a>
+<a name='L49'></a><a href='#L49'>49</a>
+<a name='L50'></a><a href='#L50'>50</a>
+<a name='L51'></a><a href='#L51'>51</a>
+<a name='L52'></a><a href='#L52'>52</a>
+<a name='L53'></a><a href='#L53'>53</a>
+<a name='L54'></a><a href='#L54'>54</a>
+<a name='L55'></a><a href='#L55'>55</a>
+<a name='L56'></a><a href='#L56'>56</a>
+<a name='L57'></a><a href='#L57'>57</a>
+<a name='L58'></a><a href='#L58'>58</a>
+<a name='L59'></a><a href='#L59'>59</a>
+<a name='L60'></a><a href='#L60'>60</a>
+<a name='L61'></a><a href='#L61'>61</a>
+<a name='L62'></a><a href='#L62'>62</a>
+<a name='L63'></a><a href='#L63'>63</a>
+<a name='L64'></a><a href='#L64'>64</a>
+<a name='L65'></a><a href='#L65'>65</a>
+<a name='L66'></a><a href='#L66'>66</a>
+<a name='L67'></a><a href='#L67'>67</a>
+<a name='L68'></a><a href='#L68'>68</a>
+<a name='L69'></a><a href='#L69'>69</a>
+<a name='L70'></a><a href='#L70'>70</a>
+<a name='L71'></a><a href='#L71'>71</a>
+<a name='L72'></a><a href='#L72'>72</a>
+<a name='L73'></a><a href='#L73'>73</a>
+<a name='L74'></a><a href='#L74'>74</a>
+<a name='L75'></a><a href='#L75'>75</a>
+<a name='L76'></a><a href='#L76'>76</a>
+<a name='L77'></a><a href='#L77'>77</a>
+<a name='L78'></a><a href='#L78'>78</a>
+<a name='L79'></a><a href='#L79'>79</a>
+<a name='L80'></a><a href='#L80'>80</a>
+<a name='L81'></a><a href='#L81'>81</a>
+<a name='L82'></a><a href='#L82'>82</a>
+<a name='L83'></a><a href='#L83'>83</a>
+<a name='L84'></a><a href='#L84'>84</a>
+<a name='L85'></a><a href='#L85'>85</a>
+<a name='L86'></a><a href='#L86'>86</a>
+<a name='L87'></a><a href='#L87'>87</a>
+<a name='L88'></a><a href='#L88'>88</a>
+<a name='L89'></a><a href='#L89'>89</a>
+<a name='L90'></a><a href='#L90'>90</a>
+<a name='L91'></a><a href='#L91'>91</a>
+<a name='L92'></a><a href='#L92'>92</a>
+<a name='L93'></a><a href='#L93'>93</a>
+<a name='L94'></a><a href='#L94'>94</a>
+<a name='L95'></a><a href='#L95'>95</a>
+<a name='L96'></a><a href='#L96'>96</a>
+<a name='L97'></a><a href='#L97'>97</a>
+<a name='L98'></a><a href='#L98'>98</a>
+<a name='L99'></a><a href='#L99'>99</a>
+<a name='L100'></a><a href='#L100'>100</a>
+<a name='L101'></a><a href='#L101'>101</a>
+<a name='L102'></a><a href='#L102'>102</a>
+<a name='L103'></a><a href='#L103'>103</a>
+<a name='L104'></a><a href='#L104'>104</a>
+<a name='L105'></a><a href='#L105'>105</a>
+<a name='L106'></a><a href='#L106'>106</a>
+<a name='L107'></a><a href='#L107'>107</a>
+<a name='L108'></a><a href='#L108'>108</a>
+<a name='L109'></a><a href='#L109'>109</a>
+<a name='L110'></a><a href='#L110'>110</a>
+<a name='L111'></a><a href='#L111'>111</a>
+<a name='L112'></a><a href='#L112'>112</a>
+<a name='L113'></a><a href='#L113'>113</a>
+<a name='L114'></a><a href='#L114'>114</a>
+<a name='L115'></a><a href='#L115'>115</a>
+<a name='L116'></a><a href='#L116'>116</a>
+<a name='L117'></a><a href='#L117'>117</a>
+<a name='L118'></a><a href='#L118'>118</a>
+<a name='L119'></a><a href='#L119'>119</a>
+<a name='L120'></a><a href='#L120'>120</a>
+<a name='L121'></a><a href='#L121'>121</a>
+<a name='L122'></a><a href='#L122'>122</a>
+<a name='L123'></a><a href='#L123'>123</a>
+<a name='L124'></a><a href='#L124'>124</a>
+<a name='L125'></a><a href='#L125'>125</a>
+<a name='L126'></a><a href='#L126'>126</a>
+<a name='L127'></a><a href='#L127'>127</a>
+<a name='L128'></a><a href='#L128'>128</a>
+<a name='L129'></a><a href='#L129'>129</a>
+<a name='L130'></a><a href='#L130'>130</a>
+<a name='L131'></a><a href='#L131'>131</a>
+<a name='L132'></a><a href='#L132'>132</a>
+<a name='L133'></a><a href='#L133'>133</a>
+<a name='L134'></a><a href='#L134'>134</a>
+<a name='L135'></a><a href='#L135'>135</a>
+<a name='L136'></a><a href='#L136'>136</a>
+<a name='L137'></a><a href='#L137'>137</a>
+<a name='L138'></a><a href='#L138'>138</a>
+<a name='L139'></a><a href='#L139'>139</a>
+<a name='L140'></a><a href='#L140'>140</a>
+<a name='L141'></a><a href='#L141'>141</a>
+<a name='L142'></a><a href='#L142'>142</a>
+<a name='L143'></a><a href='#L143'>143</a>
+<a name='L144'></a><a href='#L144'>144</a>
+<a name='L145'></a><a href='#L145'>145</a>
+<a name='L146'></a><a href='#L146'>146</a>
+<a name='L147'></a><a href='#L147'>147</a>
+<a name='L148'></a><a href='#L148'>148</a>
+<a name='L149'></a><a href='#L149'>149</a>
+<a name='L150'></a><a href='#L150'>150</a>
+<a name='L151'></a><a href='#L151'>151</a>
+<a name='L152'></a><a href='#L152'>152</a>
+<a name='L153'></a><a href='#L153'>153</a>
+<a name='L154'></a><a href='#L154'>154</a>
+<a name='L155'></a><a href='#L155'>155</a>
+<a name='L156'></a><a href='#L156'>156</a>
+<a name='L157'></a><a href='#L157'>157</a>
+<a name='L158'></a><a href='#L158'>158</a>
+<a name='L159'></a><a href='#L159'>159</a>
+<a name='L160'></a><a href='#L160'>160</a>
+<a name='L161'></a><a href='#L161'>161</a>
+<a name='L162'></a><a href='#L162'>162</a>
+<a name='L163'></a><a href='#L163'>163</a>
+<a name='L164'></a><a href='#L164'>164</a>
+<a name='L165'></a><a href='#L165'>165</a>
+<a name='L166'></a><a href='#L166'>166</a>
+<a name='L167'></a><a href='#L167'>167</a>
+<a name='L168'></a><a href='#L168'>168</a>
+<a name='L169'></a><a href='#L169'>169</a>
+<a name='L170'></a><a href='#L170'>170</a>
+<a name='L171'></a><a href='#L171'>171</a>
+<a name='L172'></a><a href='#L172'>172</a>
+<a name='L173'></a><a href='#L173'>173</a>
+<a name='L174'></a><a href='#L174'>174</a>
+<a name='L175'></a><a href='#L175'>175</a>
+<a name='L176'></a><a href='#L176'>176</a>
+<a name='L177'></a><a href='#L177'>177</a>
+<a name='L178'></a><a href='#L178'>178</a>
+<a name='L179'></a><a href='#L179'>179</a>
+<a name='L180'></a><a href='#L180'>180</a>
+<a name='L181'></a><a href='#L181'>181</a>
+<a name='L182'></a><a href='#L182'>182</a>
+<a name='L183'></a><a href='#L183'>183</a>
+<a name='L184'></a><a href='#L184'>184</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span></td><td class="text"><pre class="prettyprint lang-js">const {zcl_abapgit_repo} = await import("./zcl_abapgit_repo.clas.mjs");
+const {cx_root} = await import("./cx_root.clas.mjs");
+// zcl_abapgit_repo.clas.testclasses.abap
+class ltcl_find_remote_dot_abapgit {
+  static STATIC_SUPER = undefined;
+  static INTERNAL_TYPE = 'CLAS';
+  static INTERNAL_NAME = 'CLAS-ZCL_ABAPGIT_REPO-LTCL_FIND_REMOTE_DOT_ABAPGIT';
+  static IMPLEMENTED_INTERFACES = [];
+  static ATTRIBUTES = {"MI_REPO": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.ABAPObject({qualifiedName: "ZIF_ABAPGIT_REPO", RTTIName: "\\INTERFACE=ZIF_ABAPGIT_REPO"});},</span> "visibility": "I", "is_constant": " ", "is_class": " "},
+  "MX_ERROR": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.ABAPObject({qualifiedName: "ZCX_ABAPGIT_EXCEPTION", RTTIName: "\\CLASS=ZCX_ABAPGIT_EXCEPTION"});},</span> "visibility": "I", "is_constant": " ", "is_class": " "},
+  "MO_DOT_ABAPGIT": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.ABAPObject({qualifiedName: "ZCL_ABAPGIT_DOT_ABAPGIT", RTTIName: "\\CLASS=ZCL_ABAPGIT_DOT_ABAPGIT"});},</span> "visibility": "I", "is_constant": " ", "is_class": " "},
+  "C_DUMMY_REPO_KEY": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Character(12, {"qualifiedName":"zif_abapgit_persistence=&gt;ty_value"});},</span> "visibility": "I", "is_constant": "X", "is_class": "X"}};
+  static METHODS = {"POSITIVE": {"visibility": "I", "parameters": {}},
+  "NEW_REPO_NEEDS_NO_DOT_ABAPGIT": {"visibility": "I", "parameters": {}},
+  "GIVEN_ANY_REPO": {"visibility": "I", "parameters": {}},
+  "WHEN_FIND_REMOTE_DOT_ABAPGIT": {"visibility": "I", "parameters": {}},
+  "THEN_DOT_ABAPGIT_IS_BOUND": {"visibility": "I", "parameters": {}},
+  "THEN_NO_EXCEPTION_IS_RAISED": {"visibility": "I", "parameters": {}},
+  "GIVEN_DOT_ABAPGIT_FILE": {"visibility": "I", "parameters": {}},
+  "GIVEN_NO_DOT_ABAPGIT_FILE": {"visibility": "I", "parameters": {}},
+  "THEN_DOT_ABAPGIT_IS_NOT_BOUND": {"visibility": "I", "parameters": {}},
+  "GIVEN_REPO_HAS_FILES": {"visibility": "I", "parameters": {"IV_NUMBER_OF_FILES": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Integer({qualifiedName: "I"});},</span> "is_optional": " ", "parm_kind": "I", "type_name": "IntegerType"}}}};
+  #mi_repo;
+  #mx_error;
+  #mo_dot_abapgit;
+  constructor() {
+    this.me = new abap.types.ABAPObject();
+    this.me.set(this);
+    this.INTERNAL_ID = abap.internalIdCounter++;
+    this.FRIENDS_ACCESS_INSTANCE = {
+      "positive": this.#positive.bind(this),
+      "new_repo_needs_no_dot_abapgit": this.#new_repo_needs_no_dot_abapgit.bind(this),
+      "given_any_repo": this.#given_any_repo.bind(this),
+      "when_find_remote_dot_abapgit": this.#when_find_remote_dot_abapgit.bind(this),
+      "then_dot_abapgit_is_bound": this.#then_dot_abapgit_is_bound.bind(this),
+      "then_no_exception_is_raised": this.#then_no_exception_is_raised.bind(this),
+      "given_dot_abapgit_file": this.#given_dot_abapgit_file.bind(this),
+      "given_no_dot_abapgit_file": this.#given_no_dot_abapgit_file.bind(this),
+      "then_dot_abapgit_is_not_bound": this.#then_dot_abapgit_is_not_bound.bind(this),
+      "given_repo_has_files": this.#given_repo_has_files.bind(this),
+    };
+    this.#mi_repo = new abap.types.ABAPObject({qualifiedName: "ZIF_ABAPGIT_REPO", RTTIName: "\\INTERFACE=ZIF_ABAPGIT_REPO"});
+    this.FRIENDS_ACCESS_INSTANCE["mi_repo"] = this.#mi_repo;
+    this.#mx_error = new abap.types.ABAPObject({qualifiedName: "ZCX_ABAPGIT_EXCEPTION", RTTIName: "\\CLASS=ZCX_ABAPGIT_EXCEPTION"});
+    this.FRIENDS_ACCESS_INSTANCE["mx_error"] = this.#mx_error;
+    this.#mo_dot_abapgit = new abap.types.ABAPObject({qualifiedName: "ZCL_ABAPGIT_DOT_ABAPGIT", RTTIName: "\\CLASS=ZCL_ABAPGIT_DOT_ABAPGIT"});
+    this.FRIENDS_ACCESS_INSTANCE["mo_dot_abapgit"] = this.#mo_dot_abapgit;
+    this.c_dummy_repo_key = ltcl_find_remote_dot_abapgit.c_dummy_repo_key;
+  }
+  async constructor_(INPUT) {
+    if (super.constructor_) <span class="branch-0 cbranch-no" title="branch not covered" >{ await super.constructor_(INPUT); }</span>
+    return this;
+  }
+  async #positive() {
+    await this.#given_any_repo();
+    await this.#given_dot_abapgit_file();
+    await this.#when_find_remote_dot_abapgit();
+    await this.#then_dot_abapgit_is_bound();
+    await this.#then_no_exception_is_raised();
+  }
+  async #new_repo_needs_no_dot_abapgit() {
+    await this.#given_any_repo();
+    await this.#given_repo_has_files({iv_number_of_files: abap.IntegerFactory.get(3)});
+    await this.#given_no_dot_abapgit_file();
+    await this.#when_find_remote_dot_abapgit();
+    await this.#then_dot_abapgit_is_not_bound();
+    await this.#then_no_exception_is_raised();
+  }
+  async #given_any_repo() {
+    let ls_data = new abap.types.Structure({
+    "key": new abap.types.Character(12, {"qualifiedName":"zif_abapgit_persistence=&gt;ty_value"}),
+    "url": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_PERSISTENCE=&gt;TY_REPO_XML-URL"}),
+    "branch_name": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_PERSISTENCE=&gt;TY_REPO_XML-BRANCH_NAME"}),
+    "selected_commit": new abap.types.Character(40, {"qualifiedName":"zif_abapgit_git_definitions=&gt;ty_sha1"}),
+    "package": new abap.types.Character(30, {"qualifiedName":"DEVCLASS","ddicName":"DEVCLASS","description":"DEVCLASS"}),
+    "created_by": new abap.types.Character(12, {"qualifiedName":"SYUNAME","ddicName":"SYUNAME","description":"SYUNAME"}),
+    "created_at": new abap.types.Packed({length: 21, decimals: 7, qualifiedName: "TIMESTAMPL"}),
+    "deserialized_by": new abap.types.Character(12, {"qualifiedName":"SYUNAME","ddicName":"SYUNAME","description":"SYUNAME"}),
+    "deserialized_at": new abap.types.Packed({length: 21, decimals: 7, qualifiedName: "TIMESTAMPL"}),
+    "offline": new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"}),
+    "switched_origin": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_PERSISTENCE=&gt;TY_REPO_XML-SWITCHED_ORIGIN"}),
+    "dot_abapgit": new abap.types.Structure({
+    "name": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_DOT_ABAPGIT=&gt;TY_DOT_ABAPGIT-NAME"}),
+    "master_language": new abap.types.Character(1, {"qualifiedName":"SPRAS","ddicName":"SPRAS","description":"SPRAS"}),
+    "i18n_languages": abap.types.TableFactory.construct(new abap.types.Character(2, {"qualifiedName":"LAISO","ddicName":"LAISO","description":"LAISO"}), {"withHeader":false,"keyType":"DEFAULT","primaryKey":{"name":"primary_key","type":"STANDARD","isUnique":false,"keyFields":[]},"secondary":[]}, "zif_abapgit_definitions=&gt;ty_languages"),
+    "use_lxe": new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"}),
+    "without_translation": abap.types.TableFactory.construct(new abap.types.String({qualifiedName: "STRING"}), {"withHeader":false,"keyType":"DEFAULT","primaryKey":{"name":"primary_key","type":"STANDARD","isUnique":false,"keyFields":[]},"secondary":[]}, "zif_abapgit_dot_abapgit=&gt;ty_dot_abapgit-without_translation"),
+    "starting_folder": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_DOT_ABAPGIT=&gt;TY_DOT_ABAPGIT-STARTING_FOLDER"}),
+    "folder_logic": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_DOT_ABAPGIT=&gt;TY_DOT_ABAPGIT-FOLDER_LOGIC"}),
+    "ignore": abap.types.TableFactory.construct(new abap.types.String({qualifiedName: "STRING"}), {"withHeader":false,"keyType":"DEFAULT","primaryKey":{"name":"primary_key","type":"STANDARD","isUnique":false,"keyFields":[]},"secondary":[]}, "zif_abapgit_dot_abapgit=&gt;ty_dot_abapgit-ignore"),
+    "requirements": abap.types.TableFactory.construct(new abap.types.Structure({
+    "component": new abap.types.Character(30, {"description":"DLVUNIT"}),
+    "min_release": new abap.types.Character(10, {"qualifiedName":"SAPRELEASE","ddicName":"SAPRELEASE","description":"SAPRELEASE"}),
+    "min_patch": new abap.types.Character(10, {"qualifiedName":"SAPPATCHLV","ddicName":"SAPPATCHLV","description":"SAPPATCHLV"})}, "zif_abapgit_dot_abapgit=&gt;ty_requirement", undefined, {}, {}), {"withHeader":false,"keyType":"DEFAULT","primaryKey":{"name":"primary_key","type":"STANDARD","isUnique":false,"keyFields":[]},"secondary":[]}, "zif_abapgit_dot_abapgit=&gt;ty_requirement_tt"),
+    "version_constant": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_DOT_ABAPGIT=&gt;TY_DOT_ABAPGIT-VERSION_CONSTANT"}),
+    "abap_language_version": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_DOT_ABAPGIT=&gt;TY_DOT_ABAPGIT-ABAP_LANGUAGE_VERSION"}),
+    "original_system": new abap.types.Character(5, {})}, "zif_abapgit_dot_abapgit=&gt;ty_dot_abapgit", undefined, {}, {}),
+    "head_branch": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_PERSISTENCE=&gt;TY_REPO_XML-HEAD_BRANCH"}),
+    "local_settings": new abap.types.Structure({
+    "display_name": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_PERSISTENCE=&gt;TY_LOCAL_SETTINGS-DISPLAY_NAME"}),
+    "ignore_subpackages": new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"}),
+    "write_protected": new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"}),
+    "only_local_objects": new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"}),
+    "code_inspector_check_variant": new abap.types.Character(30, {"qualifiedName":"SCI_CHKV","ddicName":"SCI_CHKV","description":"SCI_CHKV"}),
+    "block_commit": new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"}),
+    "main_language_only": new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"}),
+    "suppress_lxe_po_comments": new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"}),
+    "labels": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_PERSISTENCE=&gt;TY_LOCAL_SETTINGS-LABELS"}),
+    "transport_request": new abap.types.Character(20, {"qualifiedName":"TRKORR","ddicName":"TRKORR","description":"TRKORR"}),
+    "customizing_request": new abap.types.Character(20, {"qualifiedName":"TRKORR","ddicName":"TRKORR","description":"TRKORR"}),
+    "flow": new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"}),
+    "exclude_remote_paths": abap.types.TableFactory.construct(new abap.types.String({qualifiedName: "STRING"}), {"withHeader":false,"keyType":"DEFAULT","primaryKey":{"isUnique":false,"type":"STANDARD","keyFields":[],"name":"primary_key"},"secondary":[]}, "STRING_TABLE")}, "zif_abapgit_persistence=&gt;ty_local_settings", undefined, {}, {})}, "zif_abapgit_persistence=&gt;ty_repo", undefined, {}, {});
+    ls_data.get().key.set(ltcl_find_remote_dot_abapgit.c_dummy_repo_key);
+    this.#mi_repo.set(await (new abap.Classes['ZCL_ABAPGIT_REPO_OFFLINE']()).constructor_({is_data: ls_data}));
+  }
+  async #given_dot_abapgit_file() {
+    let lt_files = abap.types.TableFactory.construct(new abap.types.Structure({
+    "path": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_GIT_DEFINITIONS=&gt;TY_FILE_SIGNATURE-PATH"}),
+    "filename": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_GIT_DEFINITIONS=&gt;TY_FILE_SIGNATURE-FILENAME"}),
+    "sha1": new abap.types.Character(40, {"qualifiedName":"zif_abapgit_git_definitions=&gt;ty_sha1"}),
+    "data": new abap.types.XString({qualifiedName: "ZIF_ABAPGIT_GIT_DEFINITIONS=&gt;TY_FILE-DATA"})}, "zif_abapgit_git_definitions=&gt;ty_file", undefined, {}, {}), {"withHeader":false,"keyType":"DEFAULT","primaryKey":{"name":"primary_key","type":"STANDARD","isUnique":false,"keyFields":[]},"secondary":[{"name":"file_path","type":"SORTED","isUnique":true,"keyFields":["PATH","FILENAME"]},{"name":"file","type":"SORTED","isUnique":false,"keyFields":["FILENAME"]}]}, "zif_abapgit_git_definitions=&gt;ty_files_tt");
+    let ls_file = new abap.types.Structure({
+    "path": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_GIT_DEFINITIONS=&gt;TY_FILE_SIGNATURE-PATH"}),
+    "filename": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_GIT_DEFINITIONS=&gt;TY_FILE_SIGNATURE-FILENAME"}),
+    "sha1": new abap.types.Character(40, {"qualifiedName":"zif_abapgit_git_definitions=&gt;ty_sha1"}),
+    "data": new abap.types.XString({qualifiedName: "ZIF_ABAPGIT_GIT_DEFINITIONS=&gt;TY_FILE-DATA"})}, "zif_abapgit_git_definitions=&gt;ty_file", undefined, {}, {});
+    ls_file.get().path.set(abap.Classes['ZIF_ABAPGIT_DEFINITIONS'].zif_abapgit_definitions$c_root_dir);
+    ls_file.get().filename.set(abap.Classes['ZIF_ABAPGIT_DEFINITIONS'].zif_abapgit_definitions$c_dot_abapgit);
+    ls_file.get().data.set((await abap.Classes['ZCL_ABAPGIT_CONVERT'].string_to_xstring({iv_str: abap.operators.concat(new abap.types.String().set(`&lt;?xml version="1.0" encoding="utf-8"?&gt;`),abap.operators.concat(new abap.types.String().set(`&lt;asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0"&gt;`),abap.operators.concat(new abap.types.String().set(` &lt;asx:values&gt;`),abap.operators.concat(new abap.types.String().set(`  &lt;DATA&gt;`),abap.operators.concat(new abap.types.String().set(`   &lt;MASTER_LANGUAGE&gt;E&lt;/MASTER_LANGUAGE&gt;`),abap.operators.concat(new abap.types.String().set(`   &lt;STARTING_FOLDER&gt;/src/&lt;/STARTING_FOLDER&gt;`),abap.operators.concat(new abap.types.String().set(`   &lt;FOLDER_LOGIC&gt;PREFIX&lt;/FOLDER_LOGIC&gt;`),abap.operators.concat(new abap.types.String().set(`   &lt;IGNORE&gt;`),abap.operators.concat(new abap.types.String().set(`    &lt;item&gt;/.gitignore&lt;/item&gt;`),abap.operators.concat(new abap.types.String().set(`    &lt;item&gt;/LICENSE&lt;/item&gt;`),abap.operators.concat(new abap.types.String().set(`    &lt;item&gt;/README.md&lt;/item&gt;`),abap.operators.concat(new abap.types.String().set(`    &lt;item&gt;/package.json&lt;/item&gt;`),abap.operators.concat(new abap.types.String().set(`    &lt;item&gt;/.travis.yml&lt;/item&gt;`),abap.operators.concat(new abap.types.String().set(`   &lt;/IGNORE&gt;`),abap.operators.concat(new abap.types.String().set(`  &lt;/DATA&gt;`),abap.operators.concat(new abap.types.String().set(` &lt;/asx:values&gt;`),new abap.types.String().set(`&lt;/asx:abap&gt;`)))))))))))))))))})));
+    abap.statements.insertInternal({data: ls_file, table: lt_files});
+    await this.#mi_repo.get().zif_abapgit_repo$set_files_remote({it_files: lt_files});
+  }
+  async #given_no_dot_abapgit_file() {
+  }
+  async #when_find_remote_dot_abapgit() {
+    try {
+      this.#mo_dot_abapgit.set((await this.#mi_repo.get().zif_abapgit_repo$find_remote_dot_abapgit()));
+    } <span class="branch-0 cbranch-no" title="branch not covered" >catch (e) {</span>
+<span class="cstat-no" title="statement not covered" >      if ((abap.Classes['ZCX_ABAPGIT_EXCEPTION'] &amp;&amp; e instanceof abap.Classes['ZCX_ABAPGIT_EXCEPTION'])) {</span>
+<span class="cstat-no" title="statement not covered" >        this.#mx_error.set(e);</span>
+<span class="cstat-no" title="statement not covered" >      } else {</span>
+<span class="cstat-no" title="statement not covered" >        throw e;</span>
+<span class="cstat-no" title="statement not covered" >      }</span>
+<span class="cstat-no" title="statement not covered" >    }</span>
+  }
+  async #then_dot_abapgit_is_bound() {
+    await abap.Classes['CL_ABAP_UNIT_ASSERT'].assert_bound({act: this.#mo_dot_abapgit});
+  }
+  async #then_no_exception_is_raised() {
+    await abap.Classes['CL_ABAP_UNIT_ASSERT'].assert_not_bound({act: this.#mx_error});
+  }
+  async #then_dot_abapgit_is_not_bound() {
+    await abap.Classes['CL_ABAP_UNIT_ASSERT'].assert_not_bound({act: this.#mo_dot_abapgit});
+  }
+  async #given_repo_has_files(INPUT) {
+    let iv_number_of_files = INPUT?.iv_number_of_files;
+    if (iv_number_of_files?.getQualifiedName === undefined || iv_number_of_files.getQualifiedName() !== "I") { iv_number_of_files = undefined; }
+    if (iv_number_of_files === undefined) { iv_number_of_files = new abap.types.Integer({qualifiedName: "I"}).set(INPUT.iv_number_of_files); }
+    let lt_files = abap.types.TableFactory.construct(new abap.types.Structure({
+    "path": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_GIT_DEFINITIONS=&gt;TY_FILE_SIGNATURE-PATH"}),
+    "filename": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_GIT_DEFINITIONS=&gt;TY_FILE_SIGNATURE-FILENAME"}),
+    "sha1": new abap.types.Character(40, {"qualifiedName":"zif_abapgit_git_definitions=&gt;ty_sha1"}),
+    "data": new abap.types.XString({qualifiedName: "ZIF_ABAPGIT_GIT_DEFINITIONS=&gt;TY_FILE-DATA"})}, "zif_abapgit_git_definitions=&gt;ty_file", undefined, {}, {}), {"withHeader":false,"keyType":"DEFAULT","primaryKey":{"name":"primary_key","type":"STANDARD","isUnique":false,"keyFields":[]},"secondary":[{"name":"file_path","type":"SORTED","isUnique":true,"keyFields":["PATH","FILENAME"]},{"name":"file","type":"SORTED","isUnique":false,"keyFields":["FILENAME"]}]}, "zif_abapgit_git_definitions=&gt;ty_files_tt");
+    let ls_file = new abap.types.Structure({
+    "path": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_GIT_DEFINITIONS=&gt;TY_FILE_SIGNATURE-PATH"}),
+    "filename": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_GIT_DEFINITIONS=&gt;TY_FILE_SIGNATURE-FILENAME"}),
+    "sha1": new abap.types.Character(40, {"qualifiedName":"zif_abapgit_git_definitions=&gt;ty_sha1"}),
+    "data": new abap.types.XString({qualifiedName: "ZIF_ABAPGIT_GIT_DEFINITIONS=&gt;TY_FILE-DATA"})}, "zif_abapgit_git_definitions=&gt;ty_file", undefined, {}, {});
+    ls_file.get().path.set(abap.Classes['ZIF_ABAPGIT_DEFINITIONS'].zif_abapgit_definitions$c_root_dir);
+    const indexBackup1 = abap.builtin.sy.get().index.get();
+    const unique839 = iv_number_of_files.get();
+    for (let unique840 = 0; unique840 &lt; unique839; unique840++) {
+      abap.builtin.sy.get().index.set(unique840 + 1);
+      ls_file.get().filename.set(new abap.types.String().set(`File_${abap.templateFormatting(abap.builtin.sy.get().index)}`));
+      abap.statements.insertInternal({data: ls_file, table: lt_files});
+    }
+    abap.builtin.sy.get().index.set(indexBackup1);
+    await this.#mi_repo.get().zif_abapgit_repo$set_files_remote({it_files: lt_files});
+  }
+}
+abap.Classes['CLAS-ZCL_ABAPGIT_REPO-LTCL_FIND_REMOTE_DOT_ABAPGIT'] = ltcl_find_remote_dot_abapgit;
+ltcl_find_remote_dot_abapgit.c_dummy_repo_key = new abap.types.Character(12, {"qualifiedName":"zif_abapgit_persistence=&gt;ty_value"});
+ltcl_find_remote_dot_abapgit.c_dummy_repo_key.set('000000001');
+export {ltcl_find_remote_dot_abapgit};</pre></td></tr></table></pre>
+
+                <div class='push'></div><!-- for sticky footer -->
+            </div><!-- /wrapper -->
+            <div class='footer quiet pad2 space-top1 center small'>
+                Code coverage generated by
+                <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
+                at 2026-02-23T16:07:14.249Z
+            </div>
+        <script src="../prettify.js"></script>
+        <script>
+            window.onload = function () {
+                prettyPrint();
+            };
+        </script>
+        <script src="../sorter.js"></script>
+        <script src="../block-navigation.js"></script>
+    </body>
+</html>
+    

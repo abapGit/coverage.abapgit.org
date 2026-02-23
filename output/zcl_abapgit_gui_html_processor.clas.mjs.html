@@ -1,0 +1,559 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Code coverage report for output/zcl_abapgit_gui_html_processor.clas.mjs</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+    
+<body>
+<div class='wrapper'>
+    <div class='pad1'>
+        <h1><a href="../index.html">All files</a> / <a href="index.html">output</a> zcl_abapgit_gui_html_processor.clas.mjs</h1>
+        <div class='clearfix'>
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">99.37% </span>
+                <span class="quiet">Statements</span>
+                <span class='fraction'>158/159</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">70.27% </span>
+                <span class="quiet">Branches</span>
+                <span class='fraction'>26/37</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">38.46% </span>
+                <span class="quiet">Functions</span>
+                <span class='fraction'>10/26</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">99.37% </span>
+                <span class="quiet">Lines</span>
+                <span class='fraction'>158/159</span>
+            </div>
+        
+            
+        </div>
+        <p class="quiet">
+            Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
+        </p>
+        <template id="filterTemplate">
+            <div class="quiet">
+                Filter:
+                <input type="search" id="fileSearch">
+            </div>
+        </template>
+    </div>
+    <div class='status-line high'></div>
+    <pre><table class="coverage">
+<tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
+<a name='L2'></a><a href='#L2'>2</a>
+<a name='L3'></a><a href='#L3'>3</a>
+<a name='L4'></a><a href='#L4'>4</a>
+<a name='L5'></a><a href='#L5'>5</a>
+<a name='L6'></a><a href='#L6'>6</a>
+<a name='L7'></a><a href='#L7'>7</a>
+<a name='L8'></a><a href='#L8'>8</a>
+<a name='L9'></a><a href='#L9'>9</a>
+<a name='L10'></a><a href='#L10'>10</a>
+<a name='L11'></a><a href='#L11'>11</a>
+<a name='L12'></a><a href='#L12'>12</a>
+<a name='L13'></a><a href='#L13'>13</a>
+<a name='L14'></a><a href='#L14'>14</a>
+<a name='L15'></a><a href='#L15'>15</a>
+<a name='L16'></a><a href='#L16'>16</a>
+<a name='L17'></a><a href='#L17'>17</a>
+<a name='L18'></a><a href='#L18'>18</a>
+<a name='L19'></a><a href='#L19'>19</a>
+<a name='L20'></a><a href='#L20'>20</a>
+<a name='L21'></a><a href='#L21'>21</a>
+<a name='L22'></a><a href='#L22'>22</a>
+<a name='L23'></a><a href='#L23'>23</a>
+<a name='L24'></a><a href='#L24'>24</a>
+<a name='L25'></a><a href='#L25'>25</a>
+<a name='L26'></a><a href='#L26'>26</a>
+<a name='L27'></a><a href='#L27'>27</a>
+<a name='L28'></a><a href='#L28'>28</a>
+<a name='L29'></a><a href='#L29'>29</a>
+<a name='L30'></a><a href='#L30'>30</a>
+<a name='L31'></a><a href='#L31'>31</a>
+<a name='L32'></a><a href='#L32'>32</a>
+<a name='L33'></a><a href='#L33'>33</a>
+<a name='L34'></a><a href='#L34'>34</a>
+<a name='L35'></a><a href='#L35'>35</a>
+<a name='L36'></a><a href='#L36'>36</a>
+<a name='L37'></a><a href='#L37'>37</a>
+<a name='L38'></a><a href='#L38'>38</a>
+<a name='L39'></a><a href='#L39'>39</a>
+<a name='L40'></a><a href='#L40'>40</a>
+<a name='L41'></a><a href='#L41'>41</a>
+<a name='L42'></a><a href='#L42'>42</a>
+<a name='L43'></a><a href='#L43'>43</a>
+<a name='L44'></a><a href='#L44'>44</a>
+<a name='L45'></a><a href='#L45'>45</a>
+<a name='L46'></a><a href='#L46'>46</a>
+<a name='L47'></a><a href='#L47'>47</a>
+<a name='L48'></a><a href='#L48'>48</a>
+<a name='L49'></a><a href='#L49'>49</a>
+<a name='L50'></a><a href='#L50'>50</a>
+<a name='L51'></a><a href='#L51'>51</a>
+<a name='L52'></a><a href='#L52'>52</a>
+<a name='L53'></a><a href='#L53'>53</a>
+<a name='L54'></a><a href='#L54'>54</a>
+<a name='L55'></a><a href='#L55'>55</a>
+<a name='L56'></a><a href='#L56'>56</a>
+<a name='L57'></a><a href='#L57'>57</a>
+<a name='L58'></a><a href='#L58'>58</a>
+<a name='L59'></a><a href='#L59'>59</a>
+<a name='L60'></a><a href='#L60'>60</a>
+<a name='L61'></a><a href='#L61'>61</a>
+<a name='L62'></a><a href='#L62'>62</a>
+<a name='L63'></a><a href='#L63'>63</a>
+<a name='L64'></a><a href='#L64'>64</a>
+<a name='L65'></a><a href='#L65'>65</a>
+<a name='L66'></a><a href='#L66'>66</a>
+<a name='L67'></a><a href='#L67'>67</a>
+<a name='L68'></a><a href='#L68'>68</a>
+<a name='L69'></a><a href='#L69'>69</a>
+<a name='L70'></a><a href='#L70'>70</a>
+<a name='L71'></a><a href='#L71'>71</a>
+<a name='L72'></a><a href='#L72'>72</a>
+<a name='L73'></a><a href='#L73'>73</a>
+<a name='L74'></a><a href='#L74'>74</a>
+<a name='L75'></a><a href='#L75'>75</a>
+<a name='L76'></a><a href='#L76'>76</a>
+<a name='L77'></a><a href='#L77'>77</a>
+<a name='L78'></a><a href='#L78'>78</a>
+<a name='L79'></a><a href='#L79'>79</a>
+<a name='L80'></a><a href='#L80'>80</a>
+<a name='L81'></a><a href='#L81'>81</a>
+<a name='L82'></a><a href='#L82'>82</a>
+<a name='L83'></a><a href='#L83'>83</a>
+<a name='L84'></a><a href='#L84'>84</a>
+<a name='L85'></a><a href='#L85'>85</a>
+<a name='L86'></a><a href='#L86'>86</a>
+<a name='L87'></a><a href='#L87'>87</a>
+<a name='L88'></a><a href='#L88'>88</a>
+<a name='L89'></a><a href='#L89'>89</a>
+<a name='L90'></a><a href='#L90'>90</a>
+<a name='L91'></a><a href='#L91'>91</a>
+<a name='L92'></a><a href='#L92'>92</a>
+<a name='L93'></a><a href='#L93'>93</a>
+<a name='L94'></a><a href='#L94'>94</a>
+<a name='L95'></a><a href='#L95'>95</a>
+<a name='L96'></a><a href='#L96'>96</a>
+<a name='L97'></a><a href='#L97'>97</a>
+<a name='L98'></a><a href='#L98'>98</a>
+<a name='L99'></a><a href='#L99'>99</a>
+<a name='L100'></a><a href='#L100'>100</a>
+<a name='L101'></a><a href='#L101'>101</a>
+<a name='L102'></a><a href='#L102'>102</a>
+<a name='L103'></a><a href='#L103'>103</a>
+<a name='L104'></a><a href='#L104'>104</a>
+<a name='L105'></a><a href='#L105'>105</a>
+<a name='L106'></a><a href='#L106'>106</a>
+<a name='L107'></a><a href='#L107'>107</a>
+<a name='L108'></a><a href='#L108'>108</a>
+<a name='L109'></a><a href='#L109'>109</a>
+<a name='L110'></a><a href='#L110'>110</a>
+<a name='L111'></a><a href='#L111'>111</a>
+<a name='L112'></a><a href='#L112'>112</a>
+<a name='L113'></a><a href='#L113'>113</a>
+<a name='L114'></a><a href='#L114'>114</a>
+<a name='L115'></a><a href='#L115'>115</a>
+<a name='L116'></a><a href='#L116'>116</a>
+<a name='L117'></a><a href='#L117'>117</a>
+<a name='L118'></a><a href='#L118'>118</a>
+<a name='L119'></a><a href='#L119'>119</a>
+<a name='L120'></a><a href='#L120'>120</a>
+<a name='L121'></a><a href='#L121'>121</a>
+<a name='L122'></a><a href='#L122'>122</a>
+<a name='L123'></a><a href='#L123'>123</a>
+<a name='L124'></a><a href='#L124'>124</a>
+<a name='L125'></a><a href='#L125'>125</a>
+<a name='L126'></a><a href='#L126'>126</a>
+<a name='L127'></a><a href='#L127'>127</a>
+<a name='L128'></a><a href='#L128'>128</a>
+<a name='L129'></a><a href='#L129'>129</a>
+<a name='L130'></a><a href='#L130'>130</a>
+<a name='L131'></a><a href='#L131'>131</a>
+<a name='L132'></a><a href='#L132'>132</a>
+<a name='L133'></a><a href='#L133'>133</a>
+<a name='L134'></a><a href='#L134'>134</a>
+<a name='L135'></a><a href='#L135'>135</a>
+<a name='L136'></a><a href='#L136'>136</a>
+<a name='L137'></a><a href='#L137'>137</a>
+<a name='L138'></a><a href='#L138'>138</a>
+<a name='L139'></a><a href='#L139'>139</a>
+<a name='L140'></a><a href='#L140'>140</a>
+<a name='L141'></a><a href='#L141'>141</a>
+<a name='L142'></a><a href='#L142'>142</a>
+<a name='L143'></a><a href='#L143'>143</a>
+<a name='L144'></a><a href='#L144'>144</a>
+<a name='L145'></a><a href='#L145'>145</a>
+<a name='L146'></a><a href='#L146'>146</a>
+<a name='L147'></a><a href='#L147'>147</a>
+<a name='L148'></a><a href='#L148'>148</a>
+<a name='L149'></a><a href='#L149'>149</a>
+<a name='L150'></a><a href='#L150'>150</a>
+<a name='L151'></a><a href='#L151'>151</a>
+<a name='L152'></a><a href='#L152'>152</a>
+<a name='L153'></a><a href='#L153'>153</a>
+<a name='L154'></a><a href='#L154'>154</a>
+<a name='L155'></a><a href='#L155'>155</a>
+<a name='L156'></a><a href='#L156'>156</a>
+<a name='L157'></a><a href='#L157'>157</a>
+<a name='L158'></a><a href='#L158'>158</a>
+<a name='L159'></a><a href='#L159'>159</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span></td><td class="text"><pre class="prettyprint lang-js">const {cx_root} = await import("./cx_root.clas.mjs");
+// zcl_abapgit_gui_html_processor.clas.abap
+class zcl_abapgit_gui_html_processor {
+  static STATIC_SUPER = undefined;
+  static INTERNAL_TYPE = 'CLAS';
+  static INTERNAL_NAME = 'ZCL_ABAPGIT_GUI_HTML_PROCESSOR';
+  static IMPLEMENTED_INTERFACES = ["ZIF_ABAPGIT_GUI_HTML_PROCESSOR"];
+  static ATTRIBUTES = {"MT_PRESERVE_CSS": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return abap.types.TableFactory.construct(new abap.types.String({qualifiedName: "STRING"}), {"withHeader":false,"keyType":"DEFAULT","primaryKey":{"isUnique":false,"type":"STANDARD","keyFields":[],"name":"primary_key"},"secondary":[]}, "STRING_TABLE");},</span> "visibility": "I", "is_constant": " ", "is_class": " "},
+  "MI_ASSET_MAN": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.ABAPObject({qualifiedName: "ZIF_ABAPGIT_GUI_ASSET_MANAGER", RTTIName: "\\INTERFACE=ZIF_ABAPGIT_GUI_ASSET_MANAGER"});},</span> "visibility": "I", "is_constant": " ", "is_class": " "},
+  "C_CSS_BUILD_NAME": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.String({qualifiedName: "STRING"});},</span> "visibility": "U", "is_constant": "X", "is_class": "X"},
+  "C_PREPROCESS_MARKER": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.String({qualifiedName: "STRING"});},</span> "visibility": "U", "is_constant": "X", "is_class": "X"},
+  "C_COMMENT_START": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.String({qualifiedName: "STRING"});},</span> "visibility": "U", "is_constant": "X", "is_class": "X"},
+  "C_COMMENT_END": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.String({qualifiedName: "STRING"});},</span> "visibility": "U", "is_constant": "X", "is_class": "X"}};
+  static METHODS = {"PATCH_HTML": {"visibility": "I", "parameters": {"IV_HTML": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.String({qualifiedName: "STRING"});},</span> "is_optional": " ", "parm_kind": "I", "type_name": "StringType"}, "EV_HTML": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.String({qualifiedName: "STRING"});},</span> "is_optional": " ", "parm_kind": "E", "type_name": "StringType"}, "ET_CSS_URLS": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return abap.types.TableFactory.construct(new abap.types.String({qualifiedName: "STRING"}), {"withHeader":false,"keyType":"DEFAULT","primaryKey":{"isUnique":false,"type":"STANDARD","keyFields":[],"name":"primary_key"},"secondary":[]}, "STRING_TABLE");},</span> "is_optional": " ", "parm_kind": "E", "type_name": "TableType"}}},
+  "IS_PRESERVED": {"visibility": "I", "parameters": {"RV_YES": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"});},</span> "is_optional": " ", "parm_kind": "R", "type_name": "CharacterType"}, "IV_CSS_URL": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.String({qualifiedName: "STRING"});},</span> "is_optional": " ", "parm_kind": "I", "type_name": "StringType"}}},
+  "FIND_HEAD_OFFSET": {"visibility": "I", "parameters": {"RV_HEAD_END": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Integer({qualifiedName: "I"});},</span> "is_optional": " ", "parm_kind": "R", "type_name": "IntegerType"}, "IV_HTML": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.String({qualifiedName: "STRING"});},</span> "is_optional": " ", "parm_kind": "I", "type_name": "StringType"}}},
+  "CONSTRUCTOR": {"visibility": "U", "parameters": {"II_ASSET_MAN": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.ABAPObject({qualifiedName: "ZIF_ABAPGIT_GUI_ASSET_MANAGER", RTTIName: "\\INTERFACE=ZIF_ABAPGIT_GUI_ASSET_MANAGER"});},</span> "is_optional": " ", "parm_kind": "I", "type_name": "ObjectReferenceType"}}},
+  "PRESERVE_CSS": {"visibility": "U", "parameters": {"IV_CSS_URL": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.String({qualifiedName: "STRING"});},</span> "is_optional": " ", "parm_kind": "I", "type_name": "StringType"}}}};
+  #mt_preserve_css;
+  #mi_asset_man;
+  constructor() {
+    this.me = new abap.types.ABAPObject();
+    this.me.set(this);
+    this.INTERNAL_ID = abap.internalIdCounter++;
+    this.FRIENDS_ACCESS_INSTANCE = {
+      "patch_html": this.#patch_html.bind(this),
+      "is_preserved": this.#is_preserved.bind(this),
+      "find_head_offset": this.#find_head_offset.bind(this),
+      "preserve_css": this.preserve_css.bind(this),
+    };
+    this.#mt_preserve_css = abap.types.TableFactory.construct(new abap.types.String({qualifiedName: "STRING"}), {"withHeader":false,"keyType":"DEFAULT","primaryKey":{"isUnique":false,"type":"STANDARD","keyFields":[],"name":"primary_key"},"secondary":[]}, "STRING_TABLE");
+    this.FRIENDS_ACCESS_INSTANCE["mt_preserve_css"] = this.#mt_preserve_css;
+    this.#mi_asset_man = new abap.types.ABAPObject({qualifiedName: "ZIF_ABAPGIT_GUI_ASSET_MANAGER", RTTIName: "\\INTERFACE=ZIF_ABAPGIT_GUI_ASSET_MANAGER"});
+    this.FRIENDS_ACCESS_INSTANCE["mi_asset_man"] = this.#mi_asset_man;
+    this.c_css_build_name = zcl_abapgit_gui_html_processor.c_css_build_name;
+    this.c_preprocess_marker = zcl_abapgit_gui_html_processor.c_preprocess_marker;
+    this.c_comment_start = zcl_abapgit_gui_html_processor.c_comment_start;
+    this.c_comment_end = zcl_abapgit_gui_html_processor.c_comment_end;
+  }
+  async constructor_(INPUT) {
+    let ii_asset_man = INPUT?.ii_asset_man;
+    if (ii_asset_man?.getQualifiedName === undefined || ii_asset_man.getQualifiedName() !== "ZIF_ABAPGIT_GUI_ASSET_MANAGER") <span class="branch-0 cbranch-no" title="branch not covered" >{ ii_asset_man = undefined; }</span>
+    if (ii_asset_man === undefined) <span class="branch-0 cbranch-no" title="branch not covered" >{ ii_asset_man = new abap.types.ABAPObject({qualifiedName: "ZIF_ABAPGIT_GUI_ASSET_MANAGER", RTTIName: "\\INTERFACE=ZIF_ABAPGIT_GUI_ASSET_MANAGER"}).set(INPUT.ii_asset_man); }</span>
+    this.#mi_asset_man.set(ii_asset_man);
+    return this;
+  }
+  async #find_head_offset(INPUT) {
+    let rv_head_end = new abap.types.Integer({qualifiedName: "I"});
+    let iv_html = INPUT?.iv_html;
+    if (iv_html?.getQualifiedName === undefined || iv_html.getQualifiedName() !== "STRING") <span class="branch-0 cbranch-no" title="branch not covered" >{ iv_html = undefined; }</span>
+    if (iv_html === undefined) <span class="branch-0 cbranch-no" title="branch not covered" >{ iv_html = new abap.types.String({qualifiedName: "STRING"}).set(INPUT.iv_html); }</span>
+    rv_head_end.set(abap.builtin.find({val: iv_html, regex: new abap.types.String().set(`${abap.templateFormatting(abap.Classes['CL_ABAP_CHAR_UTILITIES'].newline)}?\\s*&lt;/head&gt;`), case: abap.builtin.abap_false}));
+    if (abap.compare.le(rv_head_end, abap.IntegerFactory.get(0))) {
+      rv_head_end.set(abap.builtin.find({val: iv_html, regex: new abap.types.String().set(`&lt;/head&gt;`), case: abap.builtin.abap_false}));
+      if (abap.compare.le(rv_head_end, abap.IntegerFactory.get(0))) {
+        await abap.Classes['ZCX_ABAPGIT_EXCEPTION'].raise({iv_text: abap.CharacterFactory.get(36, 'HTML preprocessor: &lt;/head&gt; not found')});
+<span class="cstat-no" title="statement not covered" ><span class="branch-0 cbranch-no" title="branch not covered" >      }</span></span>
+    }
+    return rv_head_end;
+  }
+  async #is_preserved(INPUT) {
+    let rv_yes = new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"});
+    let iv_css_url = INPUT?.iv_css_url;
+    if (iv_css_url?.getQualifiedName === undefined || iv_css_url.getQualifiedName() !== "STRING") <span class="branch-0 cbranch-no" title="branch not covered" >{ iv_css_url = undefined; }</span>
+    if (iv_css_url === undefined) <span class="branch-0 cbranch-no" title="branch not covered" >{ iv_css_url = new abap.types.String({qualifiedName: "STRING"}).set(INPUT.iv_css_url); }</span>
+    abap.statements.readTable(this.#mt_preserve_css,{withKey: (i) =&gt; {return abap.compare.eq(i.table_line, iv_css_url);},
+      withKeyValue: [{key: <span class="fstat-no" title="function not covered" >(i) =&gt; {return i.table_line},</span> value: iv_css_url}],
+      usesTableLine: true,
+      withKeySimple: {"table_line": iv_css_url}});
+    rv_yes.set(abap.builtin.boolc(abap.compare.eq(abap.builtin.sy.get().subrc, abap.IntegerFactory.get(0))));
+    return rv_yes;
+  }
+  async #patch_html(INPUT) {
+    let iv_html = INPUT?.iv_html;
+    if (iv_html?.getQualifiedName === undefined || iv_html.getQualifiedName() !== "STRING") <span class="branch-0 cbranch-no" title="branch not covered" >{ iv_html = undefined; }</span>
+    if (iv_html === undefined) <span class="branch-0 cbranch-no" title="branch not covered" >{ iv_html = new abap.types.String({qualifiedName: "STRING"}).set(INPUT.iv_html); }</span>
+    let ev_html = INPUT?.ev_html <span class="branch-0 cbranch-no" title="branch not covered" >|| new abap.types.String({qualifiedName: "STRING"});</span>
+    let et_css_urls = INPUT?.et_css_urls <span class="branch-0 cbranch-no" title="branch not covered" >|| abap.types.TableFactory.construct(new abap.types.String({qualifiedName: "STRING"}), {"withHeader":false,"keyType":"DEFAULT","primaryKey":{"isUnique":false,"type":"STANDARD","keyFields":[],"name":"primary_key"},"secondary":[]}, "STRING_TABLE");</span>
+    let lc_css_re = new abap.types.String({qualifiedName: "STRING"});
+    lc_css_re.set(`&lt;link\\s+rel="stylesheet"\\s+type="text/css"\\s+href="(\\S+)"&gt;`);
+    let lv_head_end = new abap.types.Integer({qualifiedName: "I"});
+    let lo_css_re = new abap.types.ABAPObject({qualifiedName: "CL_ABAP_REGEX", RTTIName: "\\CLASS=CL_ABAP_REGEX"});
+    let lo_matcher = new abap.types.ABAPObject({qualifiedName: "CL_ABAP_MATCHER", RTTIName: "\\CLASS=CL_ABAP_MATCHER"});
+    let lv_css_path = new abap.types.String({qualifiedName: "STRING"});
+    let lv_marker = new abap.types.String({qualifiedName: "STRING"});
+    let lv_off = new abap.types.Integer({qualifiedName: "I"});
+    let lv_len = new abap.types.Integer({qualifiedName: "I"});
+    let lv_cur = new abap.types.Integer({qualifiedName: "I"});
+    let lv_css_build = new abap.types.String({qualifiedName: "STRING"});
+    lv_css_build.set('&lt;link rel="stylesheet" type="text/css" href="$BUILD_NAME"&gt;');
+    abap.statements.replace({target: lv_css_build, all: false, with: zcl_abapgit_gui_html_processor.c_css_build_name, of: abap.CharacterFactory.get(11, '$BUILD_NAME')});
+    ev_html.clear();
+    et_css_urls.clear();
+    lv_head_end.set((await this.#find_head_offset({iv_html: iv_html})));
+    lo_css_re.set(await (new abap.Classes['CL_ABAP_REGEX']()).constructor_({ignore_case: abap.builtin.abap_true, pattern: lc_css_re}));
+    lo_matcher.set((await lo_css_re.get().create_matcher({text: abap.builtin.substring({val: iv_html, len: lv_head_end})})));
+    const indexBackup1 = abap.builtin.sy.get().index.get();
+    let unique935 = 1;
+    while (abap.compare.eq((await lo_matcher.get().find_next()), abap.builtin.abap_true)) {
+      abap.builtin.sy.get().index.set(unique935++);
+      lv_css_path.set((await lo_matcher.get().get_submatch({index: abap.IntegerFactory.get(1)})));
+      if (abap.compare.eq(abap.builtin.abap_false, (await this.#is_preserved({iv_css_url: lv_css_path})))) {
+        lv_off.set((await lo_matcher.get().get_offset()));
+        lv_len.set((await lo_matcher.get().get_length()));
+        ev_html.set(abap.operators.concat(ev_html,abap.builtin.substring({val: iv_html, off: lv_cur, len: abap.operators.minus(lv_off,lv_cur)})));
+        ev_html.set(abap.operators.concat(ev_html,abap.operators.concat(zcl_abapgit_gui_html_processor.c_comment_start,abap.operators.concat(abap.builtin.substring({val: iv_html, off: lv_off, len: lv_len}),zcl_abapgit_gui_html_processor.c_comment_end))));
+        lv_cur.set(abap.operators.add(lv_off,lv_len));
+        abap.statements.append({source: lv_css_path, target: et_css_urls});
+      }
+    }
+    abap.builtin.sy.get().index.set(indexBackup1);
+    ev_html.set(abap.operators.concat(ev_html,abap.builtin.substring({val: iv_html, off: lv_cur, len: abap.operators.minus(lv_head_end,lv_cur)})));
+    if (abap.compare.gt(abap.builtin.lines({val: et_css_urls}), abap.IntegerFactory.get(0))) {
+      lv_marker.set(abap.operators.concat(abap.Classes['CL_ABAP_CHAR_UTILITIES'].newline,abap.operators.concat(new abap.types.String().set(`    `),abap.operators.concat(zcl_abapgit_gui_html_processor.c_preprocess_marker,abap.operators.concat(abap.Classes['CL_ABAP_CHAR_UTILITIES'].newline,new abap.types.String().set(`    `))))));
+      ev_html.set(abap.operators.concat(ev_html,abap.operators.concat(lv_marker,lv_css_build)));
+    }
+    ev_html.set(abap.operators.concat(ev_html,abap.builtin.substring({val: iv_html, off: lv_head_end})));
+  }
+  async preserve_css(INPUT) {
+    let iv_css_url = INPUT?.iv_css_url;
+    if (iv_css_url?.getQualifiedName === undefined || iv_css_url.getQualifiedName() !== "STRING") { iv_css_url = undefined; }
+    if (iv_css_url === undefined) { iv_css_url = new abap.types.String({qualifiedName: "STRING"}).set(INPUT.iv_css_url); }
+    abap.statements.append({source: iv_css_url, target: this.#mt_preserve_css});
+  }
+  async zif_abapgit_gui_html_processor$process(INPUT) {
+    let rv_html = new abap.types.String({qualifiedName: "STRING"});
+    let iv_html = INPUT?.iv_html;
+    if (iv_html?.getQualifiedName === undefined || iv_html.getQualifiedName() !== "STRING") { iv_html = undefined; }
+    if (iv_html === undefined) { iv_html = new abap.types.String({qualifiedName: "STRING"}).set(INPUT.iv_html); }
+    let ii_gui_services = INPUT?.ii_gui_services;
+    if (ii_gui_services?.getQualifiedName === undefined || ii_gui_services.getQualifiedName() !== "ZIF_ABAPGIT_GUI_SERVICES") { ii_gui_services = undefined; }
+    if (ii_gui_services === undefined) { ii_gui_services = new abap.types.ABAPObject({qualifiedName: "ZIF_ABAPGIT_GUI_SERVICES", RTTIName: "\\INTERFACE=ZIF_ABAPGIT_GUI_SERVICES"}).set(INPUT.ii_gui_services); }
+    let lo_css_processor = new abap.types.ABAPObject({qualifiedName: "ZCL_ABAPGIT_GUI_CSS_PROCESSOR", RTTIName: "\\CLASS=ZCL_ABAPGIT_GUI_CSS_PROCESSOR"});
+    let lt_css_urls = abap.types.TableFactory.construct(new abap.types.String({qualifiedName: "STRING"}), {"withHeader":false,"keyType":"DEFAULT","primaryKey":{"isUnique":false,"type":"STANDARD","keyFields":[],"name":"primary_key"},"secondary":[]}, "STRING_TABLE");
+    let lv_css_build = new abap.types.String({qualifiedName: "STRING"});
+    let fs_lv_url_ = new abap.types.FieldSymbol(new abap.types.String({qualifiedName: "STRING"}));
+    await this.#patch_html({iv_html: iv_html, ev_html: rv_html, et_css_urls: lt_css_urls});
+    if (abap.compare.gt(abap.builtin.lines({val: lt_css_urls}), abap.IntegerFactory.get(0))) {
+      lo_css_processor.set(await (new abap.Classes['ZCL_ABAPGIT_GUI_CSS_PROCESSOR']()).constructor_({ii_asset_manager: this.#mi_asset_man}));
+      for await (const unique936 of abap.statements.loop(lt_css_urls)) {
+        fs_lv_url_.assign(unique936);
+        await lo_css_processor.get().add_file({iv_url: fs_lv_url_});
+      }
+      lv_css_build.set((await lo_css_processor.get().process()));
+      await ii_gui_services.get().zif_abapgit_gui_services$cache_asset({iv_url: new abap.types.String().set(`${abap.templateFormatting(zcl_abapgit_gui_html_processor.c_css_build_name)}`), iv_type: abap.CharacterFactory.get(4, 'text'), iv_subtype: abap.CharacterFactory.get(3, 'css'), iv_text: lv_css_build});
+    }
+    return rv_html;
+  }
+}
+abap.Classes['ZCL_ABAPGIT_GUI_HTML_PROCESSOR'] = zcl_abapgit_gui_html_processor;
+zcl_abapgit_gui_html_processor.c_css_build_name = new abap.types.String({qualifiedName: "STRING"});
+zcl_abapgit_gui_html_processor.c_css_build_name.set('css/bundle.css');
+zcl_abapgit_gui_html_processor.c_preprocess_marker = new abap.types.String({qualifiedName: "STRING"});
+zcl_abapgit_gui_html_processor.c_preprocess_marker.set(`&lt;!-- abapGit HTML preprocessor --&gt;`);
+zcl_abapgit_gui_html_processor.c_comment_start = new abap.types.String({qualifiedName: "STRING"});
+zcl_abapgit_gui_html_processor.c_comment_start.set(`&lt;!--`);
+zcl_abapgit_gui_html_processor.c_comment_end = new abap.types.String({qualifiedName: "STRING"});
+zcl_abapgit_gui_html_processor.c_comment_end.set(`--&gt;`);
+export {zcl_abapgit_gui_html_processor};</pre></td></tr></table></pre>
+
+                <div class='push'></div><!-- for sticky footer -->
+            </div><!-- /wrapper -->
+            <div class='footer quiet pad2 space-top1 center small'>
+                Code coverage generated by
+                <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
+                at 2026-02-23T16:07:14.249Z
+            </div>
+        <script src="../prettify.js"></script>
+        <script>
+            window.onload = function () {
+                prettyPrint();
+            };
+        </script>
+        <script src="../sorter.js"></script>
+        <script src="../block-navigation.js"></script>
+    </body>
+</html>
+    

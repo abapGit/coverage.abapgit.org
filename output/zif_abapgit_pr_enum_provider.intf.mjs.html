@@ -1,0 +1,217 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Code coverage report for output/zif_abapgit_pr_enum_provider.intf.mjs</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+    
+<body>
+<div class='wrapper'>
+    <div class='pad1'>
+        <h1><a href="../index.html">All files</a> / <a href="index.html">output</a> zif_abapgit_pr_enum_provider.intf.mjs</h1>
+        <div class='clearfix'>
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">77.77% </span>
+                <span class="quiet">Statements</span>
+                <span class='fraction'>35/45</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">100% </span>
+                <span class="quiet">Branches</span>
+                <span class='fraction'>2/2</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">11.11% </span>
+                <span class="quiet">Functions</span>
+                <span class='fraction'>1/9</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">77.77% </span>
+                <span class="quiet">Lines</span>
+                <span class='fraction'>35/45</span>
+            </div>
+        
+            
+        </div>
+        <p class="quiet">
+            Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
+        </p>
+        <template id="filterTemplate">
+            <div class="quiet">
+                Filter:
+                <input type="search" id="fileSearch">
+            </div>
+        </template>
+    </div>
+    <div class='status-line medium'></div>
+    <pre><table class="coverage">
+<tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
+<a name='L2'></a><a href='#L2'>2</a>
+<a name='L3'></a><a href='#L3'>3</a>
+<a name='L4'></a><a href='#L4'>4</a>
+<a name='L5'></a><a href='#L5'>5</a>
+<a name='L6'></a><a href='#L6'>6</a>
+<a name='L7'></a><a href='#L7'>7</a>
+<a name='L8'></a><a href='#L8'>8</a>
+<a name='L9'></a><a href='#L9'>9</a>
+<a name='L10'></a><a href='#L10'>10</a>
+<a name='L11'></a><a href='#L11'>11</a>
+<a name='L12'></a><a href='#L12'>12</a>
+<a name='L13'></a><a href='#L13'>13</a>
+<a name='L14'></a><a href='#L14'>14</a>
+<a name='L15'></a><a href='#L15'>15</a>
+<a name='L16'></a><a href='#L16'>16</a>
+<a name='L17'></a><a href='#L17'>17</a>
+<a name='L18'></a><a href='#L18'>18</a>
+<a name='L19'></a><a href='#L19'>19</a>
+<a name='L20'></a><a href='#L20'>20</a>
+<a name='L21'></a><a href='#L21'>21</a>
+<a name='L22'></a><a href='#L22'>22</a>
+<a name='L23'></a><a href='#L23'>23</a>
+<a name='L24'></a><a href='#L24'>24</a>
+<a name='L25'></a><a href='#L25'>25</a>
+<a name='L26'></a><a href='#L26'>26</a>
+<a name='L27'></a><a href='#L27'>27</a>
+<a name='L28'></a><a href='#L28'>28</a>
+<a name='L29'></a><a href='#L29'>29</a>
+<a name='L30'></a><a href='#L30'>30</a>
+<a name='L31'></a><a href='#L31'>31</a>
+<a name='L32'></a><a href='#L32'>32</a>
+<a name='L33'></a><a href='#L33'>33</a>
+<a name='L34'></a><a href='#L34'>34</a>
+<a name='L35'></a><a href='#L35'>35</a>
+<a name='L36'></a><a href='#L36'>36</a>
+<a name='L37'></a><a href='#L37'>37</a>
+<a name='L38'></a><a href='#L38'>38</a>
+<a name='L39'></a><a href='#L39'>39</a>
+<a name='L40'></a><a href='#L40'>40</a>
+<a name='L41'></a><a href='#L41'>41</a>
+<a name='L42'></a><a href='#L42'>42</a>
+<a name='L43'></a><a href='#L43'>43</a>
+<a name='L44'></a><a href='#L44'>44</a>
+<a name='L45'></a><a href='#L45'>45</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span></td><td class="text"><pre class="prettyprint lang-js">// zif_abapgit_pr_enum_provider.intf.abap
+class zif_abapgit_pr_enum_provider {
+  static INTERNAL_TYPE = 'INTF';
+  static INTERNAL_NAME = 'ZIF_ABAPGIT_PR_ENUM_PROVIDER';
+  static ATTRIBUTES = {};
+  static METHODS = {"LIST_PULL_REQUESTS": {"visibility": "U", "parameters": {"RT_PULLS": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return abap.types.TableFactory.construct(new abap.types.Structure({</span>
+<span class="cstat-no" title="statement not covered" >  "base_url": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_PR_ENUM_PROVIDER=&gt;TY_PULL_REQUEST-BASE_URL"}),</span>
+<span class="cstat-no" title="statement not covered" >  "number": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_PR_ENUM_PROVIDER=&gt;TY_PULL_REQUEST-NUMBER"}),</span>
+<span class="cstat-no" title="statement not covered" >  "title": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_PR_ENUM_PROVIDER=&gt;TY_PULL_REQUEST-TITLE"}),</span>
+<span class="cstat-no" title="statement not covered" >  "user": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_PR_ENUM_PROVIDER=&gt;TY_PULL_REQUEST-USER"}),</span>
+<span class="cstat-no" title="statement not covered" >  "head_url": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_PR_ENUM_PROVIDER=&gt;TY_PULL_REQUEST-HEAD_URL"}),</span>
+<span class="cstat-no" title="statement not covered" >  "head_branch": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_PR_ENUM_PROVIDER=&gt;TY_PULL_REQUEST-HEAD_BRANCH"}),</span>
+<span class="cstat-no" title="statement not covered" >  "created_at": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_PR_ENUM_PROVIDER=&gt;TY_PULL_REQUEST-CREATED_AT"}),</span>
+<span class="cstat-no" title="statement not covered" >  "is_for_upstream": new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"}),</span>
+<span class="cstat-no" title="statement not covered" >  "draft": new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"}),</span>
+<span class="cstat-no" title="statement not covered" >  "html_url": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_PR_ENUM_PROVIDER=&gt;TY_PULL_REQUEST-HTML_URL"}),</span>
+  "labels": abap.types.TableFactory.construct(new abap.types.String({qualifiedName: "STRING"}), {"withHeader":false,"keyType":"DEFAULT","primaryKey":{"name":"primary_key","type":"STANDARD","isUnique":false,"keyFields":[]},"secondary":[]}, "zif_abapgit_pr_enum_provider=&gt;ty_pull_request-labels")}, "zif_abapgit_pr_enum_provider=&gt;ty_pull_request", undefined, {}, {}), {"withHeader":false,"keyType":"USER","primaryKey":{"name":"primary_key","type":"STANDARD","isUnique":false,"keyFields":["BASE_URL","NUMBER"]},"secondary":[]}, "zif_abapgit_pr_enum_provider=&gt;ty_pull_requests");}, "is_optional": " ", "parm_kind": "R", "type_name": "TableType"}}},
+  "CREATE_REPOSITORY": {"visibility": "U", "parameters": {"IV_DESCRIPTION": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.String({qualifiedName: "STRING"});},</span> "is_optional": " ", "parm_kind": "I", "type_name": "StringType"}, "IV_IS_ORG": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"});},</span> "is_optional": " ", "parm_kind": "I", "type_name": "CharacterType"}, "IV_PRIVATE": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"});},</span> "is_optional": " ", "parm_kind": "I", "type_name": "CharacterType"}, "IV_AUTO_INIT": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"});},</span> "is_optional": " ", "parm_kind": "I", "type_name": "CharacterType"}}},
+  "CREATE_INITIAL_BRANCH": {"visibility": "U", "parameters": {"RV_BRANCH_NAME": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.String({qualifiedName: "STRING"});},</span> "is_optional": " ", "parm_kind": "R", "type_name": "StringType"}, "IV_README": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.String({qualifiedName: "STRING"});},</span> "is_optional": " ", "parm_kind": "I", "type_name": "StringType"}, "IV_BRANCH_NAME": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.String({qualifiedName: "STRING"});},</span> "is_optional": " ", "parm_kind": "I", "type_name": "StringType"}}}};
+}
+abap.Classes['ZIF_ABAPGIT_PR_ENUM_PROVIDER'] = zif_abapgit_pr_enum_provider;zif_abapgit_pr_enum_provider.ty_pull_request = new abap.types.Structure({
+"base_url": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_PR_ENUM_PROVIDER=&gt;TY_PULL_REQUEST-BASE_URL"}),
+"number": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_PR_ENUM_PROVIDER=&gt;TY_PULL_REQUEST-NUMBER"}),
+"title": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_PR_ENUM_PROVIDER=&gt;TY_PULL_REQUEST-TITLE"}),
+"user": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_PR_ENUM_PROVIDER=&gt;TY_PULL_REQUEST-USER"}),
+"head_url": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_PR_ENUM_PROVIDER=&gt;TY_PULL_REQUEST-HEAD_URL"}),
+"head_branch": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_PR_ENUM_PROVIDER=&gt;TY_PULL_REQUEST-HEAD_BRANCH"}),
+"created_at": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_PR_ENUM_PROVIDER=&gt;TY_PULL_REQUEST-CREATED_AT"}),
+"is_for_upstream": new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"}),
+"draft": new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"}),
+"html_url": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_PR_ENUM_PROVIDER=&gt;TY_PULL_REQUEST-HTML_URL"}),
+"labels": abap.types.TableFactory.construct(new abap.types.String({qualifiedName: "STRING"}), {"withHeader":false,"keyType":"DEFAULT","primaryKey":{"name":"primary_key","type":"STANDARD","isUnique":false,"keyFields":[]},"secondary":[]}, "zif_abapgit_pr_enum_provider=&gt;ty_pull_request-labels")}, "zif_abapgit_pr_enum_provider=&gt;ty_pull_request", undefined, {}, {});
+zif_abapgit_pr_enum_provider.ty_pull_requests = abap.types.TableFactory.construct(new abap.types.Structure({
+"base_url": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_PR_ENUM_PROVIDER=&gt;TY_PULL_REQUEST-BASE_URL"}),
+"number": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_PR_ENUM_PROVIDER=&gt;TY_PULL_REQUEST-NUMBER"}),
+"title": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_PR_ENUM_PROVIDER=&gt;TY_PULL_REQUEST-TITLE"}),
+"user": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_PR_ENUM_PROVIDER=&gt;TY_PULL_REQUEST-USER"}),
+"head_url": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_PR_ENUM_PROVIDER=&gt;TY_PULL_REQUEST-HEAD_URL"}),
+"head_branch": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_PR_ENUM_PROVIDER=&gt;TY_PULL_REQUEST-HEAD_BRANCH"}),
+"created_at": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_PR_ENUM_PROVIDER=&gt;TY_PULL_REQUEST-CREATED_AT"}),
+"is_for_upstream": new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"}),
+"draft": new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"}),
+"html_url": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_PR_ENUM_PROVIDER=&gt;TY_PULL_REQUEST-HTML_URL"}),
+"labels": abap.types.TableFactory.construct(new abap.types.String({qualifiedName: "STRING"}), {"withHeader":false,"keyType":"DEFAULT","primaryKey":{"name":"primary_key","type":"STANDARD","isUnique":false,"keyFields":[]},"secondary":[]}, "zif_abapgit_pr_enum_provider=&gt;ty_pull_request-labels")}, "zif_abapgit_pr_enum_provider=&gt;ty_pull_request", undefined, {}, {}), {"withHeader":false,"keyType":"USER","primaryKey":{"name":"primary_key","type":"STANDARD","isUnique":false,"keyFields":["BASE_URL","NUMBER"]},"secondary":[]}, "zif_abapgit_pr_enum_provider=&gt;ty_pull_requests");
+export {zif_abapgit_pr_enum_provider};</pre></td></tr></table></pre>
+
+                <div class='push'></div><!-- for sticky footer -->
+            </div><!-- /wrapper -->
+            <div class='footer quiet pad2 space-top1 center small'>
+                Code coverage generated by
+                <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
+                at 2026-02-23T16:07:14.249Z
+            </div>
+        <script src="../prettify.js"></script>
+        <script>
+            window.onload = function () {
+                prettyPrint();
+            };
+        </script>
+        <script src="../sorter.js"></script>
+        <script src="../block-navigation.js"></script>
+    </body>
+</html>
+    

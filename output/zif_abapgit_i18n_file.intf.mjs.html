@@ -1,0 +1,139 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Code coverage report for output/zif_abapgit_i18n_file.intf.mjs</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+    
+<body>
+<div class='wrapper'>
+    <div class='pad1'>
+        <h1><a href="../index.html">All files</a> / <a href="index.html">output</a> zif_abapgit_i18n_file.intf.mjs</h1>
+        <div class='clearfix'>
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">73.68% </span>
+                <span class="quiet">Statements</span>
+                <span class='fraction'>14/19</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">100% </span>
+                <span class="quiet">Branches</span>
+                <span class='fraction'>2/2</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">14.28% </span>
+                <span class="quiet">Functions</span>
+                <span class='fraction'>1/7</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">73.68% </span>
+                <span class="quiet">Lines</span>
+                <span class='fraction'>14/19</span>
+            </div>
+        
+            
+        </div>
+        <p class="quiet">
+            Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
+        </p>
+        <template id="filterTemplate">
+            <div class="quiet">
+                Filter:
+                <input type="search" id="fileSearch">
+            </div>
+        </template>
+    </div>
+    <div class='status-line medium'></div>
+    <pre><table class="coverage">
+<tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
+<a name='L2'></a><a href='#L2'>2</a>
+<a name='L3'></a><a href='#L3'>3</a>
+<a name='L4'></a><a href='#L4'>4</a>
+<a name='L5'></a><a href='#L5'>5</a>
+<a name='L6'></a><a href='#L6'>6</a>
+<a name='L7'></a><a href='#L7'>7</a>
+<a name='L8'></a><a href='#L8'>8</a>
+<a name='L9'></a><a href='#L9'>9</a>
+<a name='L10'></a><a href='#L10'>10</a>
+<a name='L11'></a><a href='#L11'>11</a>
+<a name='L12'></a><a href='#L12'>12</a>
+<a name='L13'></a><a href='#L13'>13</a>
+<a name='L14'></a><a href='#L14'>14</a>
+<a name='L15'></a><a href='#L15'>15</a>
+<a name='L16'></a><a href='#L16'>16</a>
+<a name='L17'></a><a href='#L17'>17</a>
+<a name='L18'></a><a href='#L18'>18</a>
+<a name='L19'></a><a href='#L19'>19</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span></td><td class="text"><pre class="prettyprint lang-js">// zif_abapgit_i18n_file.intf.abap
+class zif_abapgit_i18n_file {
+  static INTERNAL_TYPE = 'INTF';
+  static INTERNAL_NAME = 'ZIF_ABAPGIT_I18N_FILE';
+  static ATTRIBUTES = {};
+  static METHODS = {"RENDER": {"visibility": "U", "parameters": {"RV_DATA": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.XString({qualifiedName: "XSTRING"});},</span> "is_optional": " ", "parm_kind": "R", "type_name": "XStringType"}}},
+  "TRANSLATE": {"visibility": "U", "parameters": {"CV_CHANGED": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"});},</span> "is_optional": " ", "parm_kind": "C", "type_name": "CharacterType"}, "CT_TEXT_PAIRS": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return abap.types.TableFactory.construct(new abap.types.Structure({</span>
+<span class="cstat-no" title="statement not covered" >  "textkey": new abap.types.Character(32, {"qualifiedName":"zif_abapgit_lxe_texts=&gt;ty_text_pair-textkey"}),</span>
+<span class="cstat-no" title="statement not covered" >  "s_text": new abap.types.Character(255, {"qualifiedName":"zif_abapgit_lxe_texts=&gt;ty_text_pair-s_text"}),</span>
+<span class="cstat-no" title="statement not covered" >  "t_text": new abap.types.Character(255, {"qualifiedName":"zif_abapgit_lxe_texts=&gt;ty_text_pair-t_text"}),</span>
+<span class="cstat-no" title="statement not covered" >  "unitmlt": new abap.types.Integer({qualifiedName: "ZIF_ABAPGIT_LXE_TEXTS=&gt;TY_TEXT_PAIR-UNITMLT"}),</span>
+<span class="cstat-no" title="statement not covered" >  "uppcase": new abap.types.Character(4, {"qualifiedName":"zif_abapgit_lxe_texts=&gt;ty_text_pair-uppcase"}),</span>
+  "texttype": new abap.types.Character(1, {"qualifiedName":"zif_abapgit_lxe_texts=&gt;ty_text_pair-texttype"})}, "zif_abapgit_lxe_texts=&gt;ty_text_pair", undefined, {}, {}), {"withHeader":false,"keyType":"DEFAULT","primaryKey":{"name":"primary_key","type":"STANDARD","isUnique":false,"keyFields":[]},"secondary":[]}, "zif_abapgit_lxe_texts=&gt;ty_text_pairs");}, "is_optional": " ", "parm_kind": "C", "type_name": "TableType"}}},
+  "EXT": {"visibility": "U", "parameters": {"RV_EXT": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.String({qualifiedName: "STRING"});},</span> "is_optional": " ", "parm_kind": "R", "type_name": "StringType"}}},
+  "LANG": {"visibility": "U", "parameters": {"RV_LANG": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Character(2, {"qualifiedName":"LAISO","ddicName":"LAISO","description":"LAISO"});},</span> "is_optional": " ", "parm_kind": "R", "type_name": "CharacterType"}}},
+  "LANG_SUFFIX": {"visibility": "U", "parameters": {"RV_LANG_SUFFIX": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.String({qualifiedName: "STRING"});},</span> "is_optional": " ", "parm_kind": "R", "type_name": "StringType"}}}};
+}
+abap.Classes['ZIF_ABAPGIT_I18N_FILE'] = zif_abapgit_i18n_file;zif_abapgit_i18n_file.ty_table_of = abap.types.TableFactory.construct(new abap.types.ABAPObject({qualifiedName: "ZIF_ABAPGIT_I18N_FILE", RTTIName: "\\INTERFACE=ZIF_ABAPGIT_I18N_FILE"}), {"withHeader":false,"keyType":"DEFAULT","primaryKey":{"name":"primary_key","type":"STANDARD","isUnique":false,"keyFields":[]},"secondary":[]}, "zif_abapgit_i18n_file=&gt;ty_table_of");
+export {zif_abapgit_i18n_file};</pre></td></tr></table></pre>
+
+                <div class='push'></div><!-- for sticky footer -->
+            </div><!-- /wrapper -->
+            <div class='footer quiet pad2 space-top1 center small'>
+                Code coverage generated by
+                <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
+                at 2026-02-23T16:07:14.249Z
+            </div>
+        <script src="../prettify.js"></script>
+        <script>
+            window.onload = function () {
+                prettyPrint();
+            };
+        </script>
+        <script src="../sorter.js"></script>
+        <script src="../block-navigation.js"></script>
+    </body>
+</html>
+    

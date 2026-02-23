@@ -1,0 +1,286 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Code coverage report for output/zif_abapgit_object.intf.mjs</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+    
+<body>
+<div class='wrapper'>
+    <div class='pad1'>
+        <h1><a href="../index.html">All files</a> / <a href="index.html">output</a> zif_abapgit_object.intf.mjs</h1>
+        <div class='clearfix'>
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">57.35% </span>
+                <span class="quiet">Statements</span>
+                <span class='fraction'>39/68</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">100% </span>
+                <span class="quiet">Branches</span>
+                <span class='fraction'>2/2</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">3.12% </span>
+                <span class="quiet">Functions</span>
+                <span class='fraction'>1/32</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">57.35% </span>
+                <span class="quiet">Lines</span>
+                <span class='fraction'>39/68</span>
+            </div>
+        
+            
+        </div>
+        <p class="quiet">
+            Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
+        </p>
+        <template id="filterTemplate">
+            <div class="quiet">
+                Filter:
+                <input type="search" id="fileSearch">
+            </div>
+        </template>
+    </div>
+    <div class='status-line medium'></div>
+    <pre><table class="coverage">
+<tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
+<a name='L2'></a><a href='#L2'>2</a>
+<a name='L3'></a><a href='#L3'>3</a>
+<a name='L4'></a><a href='#L4'>4</a>
+<a name='L5'></a><a href='#L5'>5</a>
+<a name='L6'></a><a href='#L6'>6</a>
+<a name='L7'></a><a href='#L7'>7</a>
+<a name='L8'></a><a href='#L8'>8</a>
+<a name='L9'></a><a href='#L9'>9</a>
+<a name='L10'></a><a href='#L10'>10</a>
+<a name='L11'></a><a href='#L11'>11</a>
+<a name='L12'></a><a href='#L12'>12</a>
+<a name='L13'></a><a href='#L13'>13</a>
+<a name='L14'></a><a href='#L14'>14</a>
+<a name='L15'></a><a href='#L15'>15</a>
+<a name='L16'></a><a href='#L16'>16</a>
+<a name='L17'></a><a href='#L17'>17</a>
+<a name='L18'></a><a href='#L18'>18</a>
+<a name='L19'></a><a href='#L19'>19</a>
+<a name='L20'></a><a href='#L20'>20</a>
+<a name='L21'></a><a href='#L21'>21</a>
+<a name='L22'></a><a href='#L22'>22</a>
+<a name='L23'></a><a href='#L23'>23</a>
+<a name='L24'></a><a href='#L24'>24</a>
+<a name='L25'></a><a href='#L25'>25</a>
+<a name='L26'></a><a href='#L26'>26</a>
+<a name='L27'></a><a href='#L27'>27</a>
+<a name='L28'></a><a href='#L28'>28</a>
+<a name='L29'></a><a href='#L29'>29</a>
+<a name='L30'></a><a href='#L30'>30</a>
+<a name='L31'></a><a href='#L31'>31</a>
+<a name='L32'></a><a href='#L32'>32</a>
+<a name='L33'></a><a href='#L33'>33</a>
+<a name='L34'></a><a href='#L34'>34</a>
+<a name='L35'></a><a href='#L35'>35</a>
+<a name='L36'></a><a href='#L36'>36</a>
+<a name='L37'></a><a href='#L37'>37</a>
+<a name='L38'></a><a href='#L38'>38</a>
+<a name='L39'></a><a href='#L39'>39</a>
+<a name='L40'></a><a href='#L40'>40</a>
+<a name='L41'></a><a href='#L41'>41</a>
+<a name='L42'></a><a href='#L42'>42</a>
+<a name='L43'></a><a href='#L43'>43</a>
+<a name='L44'></a><a href='#L44'>44</a>
+<a name='L45'></a><a href='#L45'>45</a>
+<a name='L46'></a><a href='#L46'>46</a>
+<a name='L47'></a><a href='#L47'>47</a>
+<a name='L48'></a><a href='#L48'>48</a>
+<a name='L49'></a><a href='#L49'>49</a>
+<a name='L50'></a><a href='#L50'>50</a>
+<a name='L51'></a><a href='#L51'>51</a>
+<a name='L52'></a><a href='#L52'>52</a>
+<a name='L53'></a><a href='#L53'>53</a>
+<a name='L54'></a><a href='#L54'>54</a>
+<a name='L55'></a><a href='#L55'>55</a>
+<a name='L56'></a><a href='#L56'>56</a>
+<a name='L57'></a><a href='#L57'>57</a>
+<a name='L58'></a><a href='#L58'>58</a>
+<a name='L59'></a><a href='#L59'>59</a>
+<a name='L60'></a><a href='#L60'>60</a>
+<a name='L61'></a><a href='#L61'>61</a>
+<a name='L62'></a><a href='#L62'>62</a>
+<a name='L63'></a><a href='#L63'>63</a>
+<a name='L64'></a><a href='#L64'>64</a>
+<a name='L65'></a><a href='#L65'>65</a>
+<a name='L66'></a><a href='#L66'>66</a>
+<a name='L67'></a><a href='#L67'>67</a>
+<a name='L68'></a><a href='#L68'>68</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span></td><td class="text"><pre class="prettyprint lang-js">// zif_abapgit_object.intf.abap
+class zif_abapgit_object {
+  static INTERNAL_TYPE = 'INTF';
+  static INTERNAL_NAME = 'ZIF_ABAPGIT_OBJECT';
+  static ATTRIBUTES = {"GC_STEP_ID": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Structure({</span>
+<span class="cstat-no" title="statement not covered" >  "early": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_OBJECTS=&gt;TY_DESERIALIZATION_STEP"}),</span>
+<span class="cstat-no" title="statement not covered" >  "abap": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_OBJECTS=&gt;TY_DESERIALIZATION_STEP"}),</span>
+<span class="cstat-no" title="statement not covered" >  "ddic": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_OBJECTS=&gt;TY_DESERIALIZATION_STEP"}),</span>
+<span class="cstat-no" title="statement not covered" >  "late": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_OBJECTS=&gt;TY_DESERIALIZATION_STEP"}),</span>
+  "lxe": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_OBJECTS=&gt;TY_DESERIALIZATION_STEP"})}, undefined, undefined, {}, {});}, "visibility": "U", "is_constant": "X", "is_class": "X"}};
+  static METHODS = {"SERIALIZE": {"visibility": "U", "parameters": {"IO_XML": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.ABAPObject({qualifiedName: "ZIF_ABAPGIT_XML_OUTPUT", RTTIName: "\\INTERFACE=ZIF_ABAPGIT_XML_OUTPUT"});},</span> "is_optional": " ", "parm_kind": "I", "type_name": "ObjectReferenceType"}}},
+  "DESERIALIZE": {"visibility": "U", "parameters": {"IV_PACKAGE": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Character(30, {"qualifiedName":"DEVCLASS","ddicName":"DEVCLASS","description":"DEVCLASS"});},</span> "is_optional": " ", "parm_kind": "I", "type_name": "CharacterType"}, "IO_XML": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.ABAPObject({qualifiedName: "ZIF_ABAPGIT_XML_INPUT", RTTIName: "\\INTERFACE=ZIF_ABAPGIT_XML_INPUT"});},</span> "is_optional": " ", "parm_kind": "I", "type_name": "ObjectReferenceType"}, "IV_STEP": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.String({qualifiedName: "ZIF_ABAPGIT_OBJECTS=&gt;TY_DESERIALIZATION_STEP"});},</span> "is_optional": " ", "parm_kind": "I", "type_name": "StringType"}, "II_LOG": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.ABAPObject({qualifiedName: "ZIF_ABAPGIT_LOG", RTTIName: "\\INTERFACE=ZIF_ABAPGIT_LOG"});},</span> "is_optional": " ", "parm_kind": "I", "type_name": "ObjectReferenceType"}, "IV_TRANSPORT": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Character(20, {"qualifiedName":"TRKORR","ddicName":"TRKORR","description":"TRKORR"});},</span> "is_optional": " ", "parm_kind": "I", "type_name": "CharacterType"}}},
+  "DELETE": {"visibility": "U", "parameters": {"IV_PACKAGE": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Character(30, {"qualifiedName":"DEVCLASS","ddicName":"DEVCLASS","description":"DEVCLASS"});},</span> "is_optional": " ", "parm_kind": "I", "type_name": "CharacterType"}, "IV_TRANSPORT": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Character(20, {"qualifiedName":"TRKORR","ddicName":"TRKORR","description":"TRKORR"});},</span> "is_optional": " ", "parm_kind": "I", "type_name": "CharacterType"}, "II_LOG": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.ABAPObject({qualifiedName: "ZIF_ABAPGIT_LOG", RTTIName: "\\INTERFACE=ZIF_ABAPGIT_LOG"});},</span> "is_optional": " ", "parm_kind": "I", "type_name": "ObjectReferenceType"}}},
+  "EXISTS": {"visibility": "U", "parameters": {"RV_BOOL": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"});},</span> "is_optional": " ", "parm_kind": "R", "type_name": "CharacterType"}}},
+  "IS_LOCKED": {"visibility": "U", "parameters": {"RV_IS_LOCKED": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"});},</span> "is_optional": " ", "parm_kind": "R", "type_name": "CharacterType"}}},
+  "IS_ACTIVE": {"visibility": "U", "parameters": {"RV_ACTIVE": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"});},</span> "is_optional": " ", "parm_kind": "R", "type_name": "CharacterType"}}},
+  "CHANGED_BY": {"visibility": "U", "parameters": {"RV_USER": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Character(12, {"qualifiedName":"SYUNAME","ddicName":"SYUNAME","description":"SYUNAME"});},</span> "is_optional": " ", "parm_kind": "R", "type_name": "CharacterType"}, "IV_EXTRA": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.String({qualifiedName: "STRING"});},</span> "is_optional": " ", "parm_kind": "I", "type_name": "StringType"}}},
+  "JUMP": {"visibility": "U", "parameters": {"RV_EXIT": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"});},</span> "is_optional": " ", "parm_kind": "R", "type_name": "CharacterType"}, "IV_EXTRA": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.String({qualifiedName: "STRING"});},</span> "is_optional": " ", "parm_kind": "I", "type_name": "StringType"}}},
+  "GET_METADATA": {"visibility": "U", "parameters": {"RS_METADATA": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Structure({</span>
+<span class="cstat-no" title="statement not covered" >  "class": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_DEFINITIONS=&gt;TY_METADATA-CLASS"}),</span>
+  "version": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_DEFINITIONS=&gt;TY_METADATA-VERSION"})}, "zif_abapgit_definitions=&gt;ty_metadata", undefined, {}, {});}, "is_optional": " ", "parm_kind": "R", "type_name": "StructureType"}}},
+  "GET_COMPARATOR": {"visibility": "U", "parameters": {"RI_COMPARATOR": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.ABAPObject({qualifiedName: "ZIF_ABAPGIT_COMPARATOR", RTTIName: "\\INTERFACE=ZIF_ABAPGIT_COMPARATOR"});},</span> "is_optional": " ", "parm_kind": "R", "type_name": "ObjectReferenceType"}}},
+  "GET_DESERIALIZE_STEPS": {"visibility": "U", "parameters": {"RT_STEPS": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return abap.types.TableFactory.construct(new abap.types.String({qualifiedName: "ZIF_ABAPGIT_OBJECTS=&gt;TY_DESERIALIZATION_STEP"}), {"withHeader":false,"keyType":"DEFAULT","primaryKey":{"name":"primary_key","type":"STANDARD","isUnique":false,"keyFields":[]},"secondary":[]}, "zif_abapgit_objects=&gt;ty_deserialization_step_tt");},</span> "is_optional": " ", "parm_kind": "R", "type_name": "TableType"}}},
+  "GET_DESERIALIZE_ORDER": {"visibility": "U", "parameters": {"RT_OBJECTS_BEFORE": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return abap.types.TableFactory.construct(new abap.types.Structure({</span>
+<span class="cstat-no" title="statement not covered" >  "obj_type": new abap.types.Character(4, {}),</span>
+<span class="cstat-no" title="statement not covered" >  "obj_name": new abap.types.Character(40, {}),</span>
+<span class="cstat-no" title="statement not covered" >  "devclass": new abap.types.Character(30, {"qualifiedName":"DEVCLASS","ddicName":"DEVCLASS","description":"DEVCLASS"}),</span>
+<span class="cstat-no" title="statement not covered" >  "srcsystem": new abap.types.Character(5, {}),</span>
+<span class="cstat-no" title="statement not covered" >  "origlang": new abap.types.Character(1, {}),</span>
+<span class="cstat-no" title="statement not covered" >  "inactive": new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"}),</span>
+  "abap_language_version": new abap.types.Character(1, {"qualifiedName":"zif_abapgit_aff_types_v1=&gt;ty_abap_language_version"})}, "zif_abapgit_definitions=&gt;ty_item", undefined, {}, {}), {"withHeader":false,"keyType":"DEFAULT","primaryKey":{"name":"primary_key","type":"STANDARD","isUnique":false,"keyFields":[]},"secondary":[]}, "zif_abapgit_definitions=&gt;ty_items_tt");}, "is_optional": " ", "parm_kind": "R", "type_name": "TableType"}, "IT_ALL_OBJECTS": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return abap.types.TableFactory.construct(new abap.types.Structure({</span>
+<span class="cstat-no" title="statement not covered" >  "obj_type": new abap.types.Character(4, {}),</span>
+<span class="cstat-no" title="statement not covered" >  "obj_name": new abap.types.Character(40, {}),</span>
+<span class="cstat-no" title="statement not covered" >  "devclass": new abap.types.Character(30, {"qualifiedName":"DEVCLASS","ddicName":"DEVCLASS","description":"DEVCLASS"}),</span>
+<span class="cstat-no" title="statement not covered" >  "srcsystem": new abap.types.Character(5, {}),</span>
+<span class="cstat-no" title="statement not covered" >  "origlang": new abap.types.Character(1, {}),</span>
+<span class="cstat-no" title="statement not covered" >  "inactive": new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"}),</span>
+  "abap_language_version": new abap.types.Character(1, {"qualifiedName":"zif_abapgit_aff_types_v1=&gt;ty_abap_language_version"})}, "zif_abapgit_definitions=&gt;ty_item", undefined, {}, {}), {"withHeader":false,"keyType":"DEFAULT","primaryKey":{"name":"primary_key","type":"STANDARD","isUnique":false,"keyFields":[]},"secondary":[]}, "zif_abapgit_definitions=&gt;ty_items_tt");}, "is_optional": " ", "parm_kind": "I", "type_name": "TableType"}}},
+  "MAP_FILENAME_TO_OBJECT": {"visibility": "U", "parameters": {"IV_ITEM_PART_OF_FILENAME": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.String({qualifiedName: "STRING"});},</span> "is_optional": " ", "parm_kind": "I", "type_name": "StringType"}, "IV_PATH": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.String({qualifiedName: "STRING"});},</span> "is_optional": " ", "parm_kind": "I", "type_name": "StringType"}, "IO_DOT": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.ABAPObject({qualifiedName: "ZCL_ABAPGIT_DOT_ABAPGIT", RTTIName: "\\CLASS=ZCL_ABAPGIT_DOT_ABAPGIT"});},</span> "is_optional": " ", "parm_kind": "I", "type_name": "ObjectReferenceType"}, "IV_PACKAGE": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Character(30, {"qualifiedName":"DEVCLASS","ddicName":"DEVCLASS","description":"DEVCLASS"});},</span> "is_optional": " ", "parm_kind": "I", "type_name": "CharacterType"}, "CS_ITEM": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Structure({</span>
+<span class="cstat-no" title="statement not covered" >  "obj_type": new abap.types.Character(4, {}),</span>
+<span class="cstat-no" title="statement not covered" >  "obj_name": new abap.types.Character(40, {}),</span>
+<span class="cstat-no" title="statement not covered" >  "devclass": new abap.types.Character(30, {"qualifiedName":"DEVCLASS","ddicName":"DEVCLASS","description":"DEVCLASS"}),</span>
+<span class="cstat-no" title="statement not covered" >  "srcsystem": new abap.types.Character(5, {}),</span>
+<span class="cstat-no" title="statement not covered" >  "origlang": new abap.types.Character(1, {}),</span>
+<span class="cstat-no" title="statement not covered" >  "inactive": new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"}),</span>
+  "abap_language_version": new abap.types.Character(1, {"qualifiedName":"zif_abapgit_aff_types_v1=&gt;ty_abap_language_version"})}, "zif_abapgit_definitions=&gt;ty_item", undefined, {}, {});}, "is_optional": " ", "parm_kind": "C", "type_name": "StructureType"}}},
+  "MAP_OBJECT_TO_FILENAME": {"visibility": "U", "parameters": {"IS_ITEM": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Structure({</span>
+<span class="cstat-no" title="statement not covered" >  "obj_type": new abap.types.Character(4, {}),</span>
+<span class="cstat-no" title="statement not covered" >  "obj_name": new abap.types.Character(40, {}),</span>
+<span class="cstat-no" title="statement not covered" >  "devclass": new abap.types.Character(30, {"qualifiedName":"DEVCLASS","ddicName":"DEVCLASS","description":"DEVCLASS"}),</span>
+<span class="cstat-no" title="statement not covered" >  "srcsystem": new abap.types.Character(5, {}),</span>
+<span class="cstat-no" title="statement not covered" >  "origlang": new abap.types.Character(1, {}),</span>
+<span class="cstat-no" title="statement not covered" >  "inactive": new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"}),</span>
+  "abap_language_version": new abap.types.Character(1, {"qualifiedName":"zif_abapgit_aff_types_v1=&gt;ty_abap_language_version"})}, "zif_abapgit_definitions=&gt;ty_item", undefined, {}, {});}, "is_optional": " ", "parm_kind": "I", "type_name": "StructureType"}, "IV_EXT": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.String({qualifiedName: "STRING"});},</span> "is_optional": " ", "parm_kind": "I", "type_name": "StringType"}, "IV_EXTRA": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Character();},</span> "is_optional": " ", "parm_kind": "I", "type_name": "CLikeType"}, "CV_ITEM_PART_OF_FILENAME": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.String({qualifiedName: "STRING"});},</span> "is_optional": " ", "parm_kind": "C", "type_name": "StringType"}}}};
+}
+abap.Classes['ZIF_ABAPGIT_OBJECT'] = zif_abapgit_object;
+zif_abapgit_object.zif_abapgit_object$gc_step_id = new abap.types.Structure({
+"early": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_OBJECTS=&gt;TY_DESERIALIZATION_STEP"}),
+"abap": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_OBJECTS=&gt;TY_DESERIALIZATION_STEP"}),
+"ddic": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_OBJECTS=&gt;TY_DESERIALIZATION_STEP"}),
+"late": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_OBJECTS=&gt;TY_DESERIALIZATION_STEP"}),
+"lxe": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_OBJECTS=&gt;TY_DESERIALIZATION_STEP"})}, undefined, undefined, {}, {});
+zif_abapgit_object.zif_abapgit_object$gc_step_id.get().early.set('EARLY');
+zif_abapgit_object.zif_abapgit_object$gc_step_id.get().abap.set('ABAP');
+zif_abapgit_object.zif_abapgit_object$gc_step_id.get().ddic.set('DDIC');
+zif_abapgit_object.zif_abapgit_object$gc_step_id.get().late.set('LATE');
+zif_abapgit_object.zif_abapgit_object$gc_step_id.get().lxe.set('LXE');
+export {zif_abapgit_object};</pre></td></tr></table></pre>
+
+                <div class='push'></div><!-- for sticky footer -->
+            </div><!-- /wrapper -->
+            <div class='footer quiet pad2 space-top1 center small'>
+                Code coverage generated by
+                <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
+                at 2026-02-23T16:07:14.249Z
+            </div>
+        <script src="../prettify.js"></script>
+        <script>
+            window.onload = function () {
+                prettyPrint();
+            };
+        </script>
+        <script src="../sorter.js"></script>
+        <script src="../block-navigation.js"></script>
+    </body>
+</html>
+    

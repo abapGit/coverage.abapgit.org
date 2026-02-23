@@ -1,0 +1,370 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Code coverage report for output/cl_bcs.clas.mjs</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+    
+<body>
+<div class='wrapper'>
+    <div class='pad1'>
+        <h1><a href="../index.html">All files</a> / <a href="index.html">output</a> cl_bcs.clas.mjs</h1>
+        <div class='clearfix'>
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">31.25% </span>
+                <span class="quiet">Statements</span>
+                <span class='fraction'>30/96</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">100% </span>
+                <span class="quiet">Branches</span>
+                <span class='fraction'>2/2</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">3.84% </span>
+                <span class="quiet">Functions</span>
+                <span class='fraction'>1/26</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">31.25% </span>
+                <span class="quiet">Lines</span>
+                <span class='fraction'>30/96</span>
+            </div>
+        
+            
+        </div>
+        <p class="quiet">
+            Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
+        </p>
+        <template id="filterTemplate">
+            <div class="quiet">
+                Filter:
+                <input type="search" id="fileSearch">
+            </div>
+        </template>
+    </div>
+    <div class='status-line low'></div>
+    <pre><table class="coverage">
+<tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
+<a name='L2'></a><a href='#L2'>2</a>
+<a name='L3'></a><a href='#L3'>3</a>
+<a name='L4'></a><a href='#L4'>4</a>
+<a name='L5'></a><a href='#L5'>5</a>
+<a name='L6'></a><a href='#L6'>6</a>
+<a name='L7'></a><a href='#L7'>7</a>
+<a name='L8'></a><a href='#L8'>8</a>
+<a name='L9'></a><a href='#L9'>9</a>
+<a name='L10'></a><a href='#L10'>10</a>
+<a name='L11'></a><a href='#L11'>11</a>
+<a name='L12'></a><a href='#L12'>12</a>
+<a name='L13'></a><a href='#L13'>13</a>
+<a name='L14'></a><a href='#L14'>14</a>
+<a name='L15'></a><a href='#L15'>15</a>
+<a name='L16'></a><a href='#L16'>16</a>
+<a name='L17'></a><a href='#L17'>17</a>
+<a name='L18'></a><a href='#L18'>18</a>
+<a name='L19'></a><a href='#L19'>19</a>
+<a name='L20'></a><a href='#L20'>20</a>
+<a name='L21'></a><a href='#L21'>21</a>
+<a name='L22'></a><a href='#L22'>22</a>
+<a name='L23'></a><a href='#L23'>23</a>
+<a name='L24'></a><a href='#L24'>24</a>
+<a name='L25'></a><a href='#L25'>25</a>
+<a name='L26'></a><a href='#L26'>26</a>
+<a name='L27'></a><a href='#L27'>27</a>
+<a name='L28'></a><a href='#L28'>28</a>
+<a name='L29'></a><a href='#L29'>29</a>
+<a name='L30'></a><a href='#L30'>30</a>
+<a name='L31'></a><a href='#L31'>31</a>
+<a name='L32'></a><a href='#L32'>32</a>
+<a name='L33'></a><a href='#L33'>33</a>
+<a name='L34'></a><a href='#L34'>34</a>
+<a name='L35'></a><a href='#L35'>35</a>
+<a name='L36'></a><a href='#L36'>36</a>
+<a name='L37'></a><a href='#L37'>37</a>
+<a name='L38'></a><a href='#L38'>38</a>
+<a name='L39'></a><a href='#L39'>39</a>
+<a name='L40'></a><a href='#L40'>40</a>
+<a name='L41'></a><a href='#L41'>41</a>
+<a name='L42'></a><a href='#L42'>42</a>
+<a name='L43'></a><a href='#L43'>43</a>
+<a name='L44'></a><a href='#L44'>44</a>
+<a name='L45'></a><a href='#L45'>45</a>
+<a name='L46'></a><a href='#L46'>46</a>
+<a name='L47'></a><a href='#L47'>47</a>
+<a name='L48'></a><a href='#L48'>48</a>
+<a name='L49'></a><a href='#L49'>49</a>
+<a name='L50'></a><a href='#L50'>50</a>
+<a name='L51'></a><a href='#L51'>51</a>
+<a name='L52'></a><a href='#L52'>52</a>
+<a name='L53'></a><a href='#L53'>53</a>
+<a name='L54'></a><a href='#L54'>54</a>
+<a name='L55'></a><a href='#L55'>55</a>
+<a name='L56'></a><a href='#L56'>56</a>
+<a name='L57'></a><a href='#L57'>57</a>
+<a name='L58'></a><a href='#L58'>58</a>
+<a name='L59'></a><a href='#L59'>59</a>
+<a name='L60'></a><a href='#L60'>60</a>
+<a name='L61'></a><a href='#L61'>61</a>
+<a name='L62'></a><a href='#L62'>62</a>
+<a name='L63'></a><a href='#L63'>63</a>
+<a name='L64'></a><a href='#L64'>64</a>
+<a name='L65'></a><a href='#L65'>65</a>
+<a name='L66'></a><a href='#L66'>66</a>
+<a name='L67'></a><a href='#L67'>67</a>
+<a name='L68'></a><a href='#L68'>68</a>
+<a name='L69'></a><a href='#L69'>69</a>
+<a name='L70'></a><a href='#L70'>70</a>
+<a name='L71'></a><a href='#L71'>71</a>
+<a name='L72'></a><a href='#L72'>72</a>
+<a name='L73'></a><a href='#L73'>73</a>
+<a name='L74'></a><a href='#L74'>74</a>
+<a name='L75'></a><a href='#L75'>75</a>
+<a name='L76'></a><a href='#L76'>76</a>
+<a name='L77'></a><a href='#L77'>77</a>
+<a name='L78'></a><a href='#L78'>78</a>
+<a name='L79'></a><a href='#L79'>79</a>
+<a name='L80'></a><a href='#L80'>80</a>
+<a name='L81'></a><a href='#L81'>81</a>
+<a name='L82'></a><a href='#L82'>82</a>
+<a name='L83'></a><a href='#L83'>83</a>
+<a name='L84'></a><a href='#L84'>84</a>
+<a name='L85'></a><a href='#L85'>85</a>
+<a name='L86'></a><a href='#L86'>86</a>
+<a name='L87'></a><a href='#L87'>87</a>
+<a name='L88'></a><a href='#L88'>88</a>
+<a name='L89'></a><a href='#L89'>89</a>
+<a name='L90'></a><a href='#L90'>90</a>
+<a name='L91'></a><a href='#L91'>91</a>
+<a name='L92'></a><a href='#L92'>92</a>
+<a name='L93'></a><a href='#L93'>93</a>
+<a name='L94'></a><a href='#L94'>94</a>
+<a name='L95'></a><a href='#L95'>95</a>
+<a name='L96'></a><a href='#L96'>96</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span></td><td class="text"><pre class="prettyprint lang-js">const {cx_root} = await import("./cx_root.clas.mjs");
+// cl_bcs.clas.abap
+class cl_bcs {
+  static STATIC_SUPER = undefined;
+  static INTERNAL_TYPE = 'CLAS';
+  static INTERNAL_NAME = 'CL_BCS';
+  static IMPLEMENTED_INTERFACES = [];
+  static ATTRIBUTES = {};
+  static METHODS = {"CREATE_PERSISTENT": {"visibility": "U", "parameters": {"RESULT": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.ABAPObject({qualifiedName: "CL_BCS", RTTIName: "\\CLASS=CL_BCS"});},</span> "is_optional": " ", "parm_kind": "R", "type_name": "ObjectReferenceType"}}},
+  "ADD_RECIPIENT": {"visibility": "U", "parameters": {"I_RECIPIENT": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.ABAPObject({qualifiedName: "IF_RECIPIENT_BCS", RTTIName: "\\INTERFACE=IF_RECIPIENT_BCS"});},</span> "is_optional": " ", "parm_kind": "I", "type_name": "ObjectReferenceType"}, "I_EXPRESS": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"});},</span> "is_optional": " ", "parm_kind": "I", "type_name": "CharacterType"}, "I_COPY": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"});},</span> "is_optional": " ", "parm_kind": "I", "type_name": "CharacterType"}, "I_BLIND_COPY": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"});},</span> "is_optional": " ", "parm_kind": "I", "type_name": "CharacterType"}, "I_NO_FORWARD": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"});},</span> "is_optional": " ", "parm_kind": "I", "type_name": "CharacterType"}}},
+  "SET_SENDER": {"visibility": "U", "parameters": {"I_SENDER": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.ABAPObject({qualifiedName: "IF_SENDER_BCS", RTTIName: "\\INTERFACE=IF_SENDER_BCS"});},</span> "is_optional": " ", "parm_kind": "I", "type_name": "ObjectReferenceType"}}},
+  "SET_STATUS_ATTRIBUTES": {"visibility": "U", "parameters": {"I_REQUESTED_STATUS": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Character(4);},</span> "is_optional": " ", "parm_kind": "I", "type_name": "AnyType"}, "I_STATUS_MAIL": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Character(4);},</span> "is_optional": " ", "parm_kind": "I", "type_name": "AnyType"}}},
+  "SET_DOCUMENT": {"visibility": "U", "parameters": {"I_DOCUMENT": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.ABAPObject({qualifiedName: "IF_DOCUMENT_BCS", RTTIName: "\\INTERFACE=IF_DOCUMENT_BCS"});},</span> "is_optional": " ", "parm_kind": "I", "type_name": "ObjectReferenceType"}}},
+  "SET_MESSAGE_SUBJECT": {"visibility": "U", "parameters": {"IP_SUBJECT": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.String({qualifiedName: "STRING"});},</span> "is_optional": " ", "parm_kind": "I", "type_name": "StringType"}}},
+  "SEND": {"visibility": "U", "parameters": {"RESULT": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"});},</span> "is_optional": " ", "parm_kind": "R", "type_name": "CharacterType"}, "I_WITH_ERROR_SCREEN": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"});},</span> "is_optional": " ", "parm_kind": "I", "type_name": "CharacterType"}}},
+  "SET_SEND_IMMEDIATELY": {"visibility": "U", "parameters": {"I_SEND_IMMEDIATELY": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"});},</span> "is_optional": " ", "parm_kind": "I", "type_name": "CharacterType"}}}};
+<span class="fstat-no" title="function not covered" >  constructor() {</span>
+<span class="cstat-no" title="statement not covered" >    this.me = new abap.types.ABAPObject();</span>
+<span class="cstat-no" title="statement not covered" >    this.me.set(this);</span>
+<span class="cstat-no" title="statement not covered" >    this.INTERNAL_ID = abap.internalIdCounter++;</span>
+<span class="cstat-no" title="statement not covered" >    this.FRIENDS_ACCESS_INSTANCE = {</span>
+<span class="cstat-no" title="statement not covered" >      "add_recipient": this.add_recipient.bind(this),</span>
+<span class="cstat-no" title="statement not covered" >      "set_sender": this.set_sender.bind(this),</span>
+<span class="cstat-no" title="statement not covered" >      "set_status_attributes": this.set_status_attributes.bind(this),</span>
+<span class="cstat-no" title="statement not covered" >      "set_document": this.set_document.bind(this),</span>
+<span class="cstat-no" title="statement not covered" >      "set_message_subject": this.set_message_subject.bind(this),</span>
+<span class="cstat-no" title="statement not covered" >      "send": this.send.bind(this),</span>
+<span class="cstat-no" title="statement not covered" >      "set_send_immediately": this.set_send_immediately.bind(this),</span>
+<span class="cstat-no" title="statement not covered" >    };</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
+<span class="fstat-no" title="function not covered" >  async constructor_(INPUT) {</span>
+<span class="cstat-no" title="statement not covered" >    if (super.constructor_) { await super.constructor_(INPUT); }</span>
+<span class="cstat-no" title="statement not covered" >    return this;</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
+<span class="fstat-no" title="function not covered" >  async set_document(INPUT) {</span>
+<span class="cstat-no" title="statement not covered" >    let i_document = INPUT?.i_document;</span>
+<span class="cstat-no" title="statement not covered" >    if (i_document?.getQualifiedName === undefined || i_document.getQualifiedName() !== "IF_DOCUMENT_BCS") { i_document = undefined; }</span>
+<span class="cstat-no" title="statement not covered" >    if (i_document === undefined) { i_document = new abap.types.ABAPObject({qualifiedName: "IF_DOCUMENT_BCS", RTTIName: "\\INTERFACE=IF_DOCUMENT_BCS"}).set(INPUT.i_document); }</span>
+<span class="cstat-no" title="statement not covered" >    abap.statements.assert(abap.compare.eq(abap.IntegerFactory.get(1), abap.CharacterFactory.get(4, 'todo')));</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
+<span class="fstat-no" title="function not covered" >  async set_status_attributes(INPUT) {</span>
+<span class="cstat-no" title="statement not covered" >    let i_requested_status = INPUT?.i_requested_status;</span>
+<span class="cstat-no" title="statement not covered" >    let i_status_mail = INPUT?.i_status_mail || new abap.types.Character(4);</span>
+<span class="cstat-no" title="statement not covered" >    abap.statements.assert(abap.compare.eq(abap.IntegerFactory.get(1), abap.CharacterFactory.get(4, 'todo')));</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
+<span class="fstat-no" title="function not covered" >  async set_send_immediately(INPUT) {</span>
+<span class="cstat-no" title="statement not covered" >    let i_send_immediately = INPUT?.i_send_immediately;</span>
+<span class="cstat-no" title="statement not covered" >    if (i_send_immediately?.getQualifiedName === undefined || i_send_immediately.getQualifiedName() !== "ABAP_BOOL") { i_send_immediately = undefined; }</span>
+<span class="cstat-no" title="statement not covered" >    if (i_send_immediately === undefined) { i_send_immediately = new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"}).set(INPUT.i_send_immediately); }</span>
+<span class="cstat-no" title="statement not covered" >    abap.statements.assert(abap.compare.eq(abap.IntegerFactory.get(1), abap.CharacterFactory.get(4, 'todo')));</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
+<span class="fstat-no" title="function not covered" >  async set_message_subject(INPUT) {</span>
+<span class="cstat-no" title="statement not covered" >    let ip_subject = INPUT?.ip_subject;</span>
+<span class="cstat-no" title="statement not covered" >    if (ip_subject?.getQualifiedName === undefined || ip_subject.getQualifiedName() !== "STRING") { ip_subject = undefined; }</span>
+<span class="cstat-no" title="statement not covered" >    if (ip_subject === undefined) { ip_subject = new abap.types.String({qualifiedName: "STRING"}).set(INPUT.ip_subject); }</span>
+<span class="cstat-no" title="statement not covered" >    abap.statements.assert(abap.compare.eq(abap.IntegerFactory.get(1), abap.CharacterFactory.get(4, 'todo')));</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
+<span class="fstat-no" title="function not covered" >  async set_sender(INPUT) {</span>
+<span class="cstat-no" title="statement not covered" >    let i_sender = INPUT?.i_sender;</span>
+<span class="cstat-no" title="statement not covered" >    if (i_sender?.getQualifiedName === undefined || i_sender.getQualifiedName() !== "IF_SENDER_BCS") { i_sender = undefined; }</span>
+<span class="cstat-no" title="statement not covered" >    if (i_sender === undefined) { i_sender = new abap.types.ABAPObject({qualifiedName: "IF_SENDER_BCS", RTTIName: "\\INTERFACE=IF_SENDER_BCS"}).set(INPUT.i_sender); }</span>
+<span class="cstat-no" title="statement not covered" >    abap.statements.assert(abap.compare.eq(abap.IntegerFactory.get(1), abap.CharacterFactory.get(4, 'todo')));</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
+<span class="fstat-no" title="function not covered" >  async send(INPUT) {</span>
+<span class="cstat-no" title="statement not covered" >    let result = new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"});</span>
+<span class="cstat-no" title="statement not covered" >    let i_with_error_screen = new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"});</span>
+<span class="cstat-no" title="statement not covered" >    if (INPUT &amp;&amp; INPUT.i_with_error_screen) {i_with_error_screen.set(INPUT.i_with_error_screen);}</span>
+<span class="cstat-no" title="statement not covered" >    if (INPUT === undefined || INPUT.i_with_error_screen === undefined) {i_with_error_screen = abap.builtin.abap_false;}</span>
+<span class="cstat-no" title="statement not covered" >    abap.statements.assert(abap.compare.eq(abap.IntegerFactory.get(1), abap.CharacterFactory.get(4, 'todo')));</span>
+<span class="cstat-no" title="statement not covered" >    return result;</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
+<span class="fstat-no" title="function not covered" >  async create_persistent() {</span>
+<span class="cstat-no" title="statement not covered" >    return cl_bcs.create_persistent();</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
+  static <span class="fstat-no" title="function not covered" >async create_persistent() {</span>
+<span class="cstat-no" title="statement not covered" >    let result = new abap.types.ABAPObject({qualifiedName: "CL_BCS", RTTIName: "\\CLASS=CL_BCS"});</span>
+<span class="cstat-no" title="statement not covered" >    abap.statements.assert(abap.compare.eq(abap.IntegerFactory.get(1), abap.CharacterFactory.get(4, 'todo')));</span>
+<span class="cstat-no" title="statement not covered" >    return result;</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
+<span class="fstat-no" title="function not covered" >  async add_recipient(INPUT) {</span>
+<span class="cstat-no" title="statement not covered" >    let i_recipient = INPUT?.i_recipient;</span>
+<span class="cstat-no" title="statement not covered" >    if (i_recipient?.getQualifiedName === undefined || i_recipient.getQualifiedName() !== "IF_RECIPIENT_BCS") { i_recipient = undefined; }</span>
+<span class="cstat-no" title="statement not covered" >    if (i_recipient === undefined) { i_recipient = new abap.types.ABAPObject({qualifiedName: "IF_RECIPIENT_BCS", RTTIName: "\\INTERFACE=IF_RECIPIENT_BCS"}).set(INPUT.i_recipient); }</span>
+<span class="cstat-no" title="statement not covered" >    let i_express = new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"});</span>
+<span class="cstat-no" title="statement not covered" >    if (INPUT &amp;&amp; INPUT.i_express) {i_express.set(INPUT.i_express);}</span>
+<span class="cstat-no" title="statement not covered" >    let i_copy = new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"});</span>
+<span class="cstat-no" title="statement not covered" >    if (INPUT &amp;&amp; INPUT.i_copy) {i_copy.set(INPUT.i_copy);}</span>
+<span class="cstat-no" title="statement not covered" >    let i_blind_copy = new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"});</span>
+<span class="cstat-no" title="statement not covered" >    if (INPUT &amp;&amp; INPUT.i_blind_copy) {i_blind_copy.set(INPUT.i_blind_copy);}</span>
+<span class="cstat-no" title="statement not covered" >    let i_no_forward = new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"});</span>
+<span class="cstat-no" title="statement not covered" >    if (INPUT &amp;&amp; INPUT.i_no_forward) {i_no_forward.set(INPUT.i_no_forward);}</span>
+<span class="cstat-no" title="statement not covered" >    abap.statements.assert(abap.compare.eq(abap.IntegerFactory.get(1), abap.CharacterFactory.get(4, 'todo')));</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
+}
+abap.Classes['CL_BCS'] = cl_bcs;
+export {cl_bcs};</pre></td></tr></table></pre>
+
+                <div class='push'></div><!-- for sticky footer -->
+            </div><!-- /wrapper -->
+            <div class='footer quiet pad2 space-top1 center small'>
+                Code coverage generated by
+                <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
+                at 2026-02-23T16:07:14.249Z
+            </div>
+        <script src="../prettify.js"></script>
+        <script>
+            window.onload = function () {
+                prettyPrint();
+            };
+        </script>
+        <script src="../sorter.js"></script>
+        <script src="../block-navigation.js"></script>
+    </body>
+</html>
+    

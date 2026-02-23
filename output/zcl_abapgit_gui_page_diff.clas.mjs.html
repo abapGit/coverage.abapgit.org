@@ -1,0 +1,397 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Code coverage report for output/zcl_abapgit_gui_page_diff.clas.mjs</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+    
+<body>
+<div class='wrapper'>
+    <div class='pad1'>
+        <h1><a href="../index.html">All files</a> / <a href="index.html">output</a> zcl_abapgit_gui_page_diff.clas.mjs</h1>
+        <div class='clearfix'>
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">19.04% </span>
+                <span class="quiet">Statements</span>
+                <span class='fraction'>20/105</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">100% </span>
+                <span class="quiet">Branches</span>
+                <span class='fraction'>2/2</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">10% </span>
+                <span class="quiet">Functions</span>
+                <span class='fraction'>1/10</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">19.04% </span>
+                <span class="quiet">Lines</span>
+                <span class='fraction'>20/105</span>
+            </div>
+        
+            
+        </div>
+        <p class="quiet">
+            Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
+        </p>
+        <template id="filterTemplate">
+            <div class="quiet">
+                Filter:
+                <input type="search" id="fileSearch">
+            </div>
+        </template>
+    </div>
+    <div class='status-line low'></div>
+    <pre><table class="coverage">
+<tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
+<a name='L2'></a><a href='#L2'>2</a>
+<a name='L3'></a><a href='#L3'>3</a>
+<a name='L4'></a><a href='#L4'>4</a>
+<a name='L5'></a><a href='#L5'>5</a>
+<a name='L6'></a><a href='#L6'>6</a>
+<a name='L7'></a><a href='#L7'>7</a>
+<a name='L8'></a><a href='#L8'>8</a>
+<a name='L9'></a><a href='#L9'>9</a>
+<a name='L10'></a><a href='#L10'>10</a>
+<a name='L11'></a><a href='#L11'>11</a>
+<a name='L12'></a><a href='#L12'>12</a>
+<a name='L13'></a><a href='#L13'>13</a>
+<a name='L14'></a><a href='#L14'>14</a>
+<a name='L15'></a><a href='#L15'>15</a>
+<a name='L16'></a><a href='#L16'>16</a>
+<a name='L17'></a><a href='#L17'>17</a>
+<a name='L18'></a><a href='#L18'>18</a>
+<a name='L19'></a><a href='#L19'>19</a>
+<a name='L20'></a><a href='#L20'>20</a>
+<a name='L21'></a><a href='#L21'>21</a>
+<a name='L22'></a><a href='#L22'>22</a>
+<a name='L23'></a><a href='#L23'>23</a>
+<a name='L24'></a><a href='#L24'>24</a>
+<a name='L25'></a><a href='#L25'>25</a>
+<a name='L26'></a><a href='#L26'>26</a>
+<a name='L27'></a><a href='#L27'>27</a>
+<a name='L28'></a><a href='#L28'>28</a>
+<a name='L29'></a><a href='#L29'>29</a>
+<a name='L30'></a><a href='#L30'>30</a>
+<a name='L31'></a><a href='#L31'>31</a>
+<a name='L32'></a><a href='#L32'>32</a>
+<a name='L33'></a><a href='#L33'>33</a>
+<a name='L34'></a><a href='#L34'>34</a>
+<a name='L35'></a><a href='#L35'>35</a>
+<a name='L36'></a><a href='#L36'>36</a>
+<a name='L37'></a><a href='#L37'>37</a>
+<a name='L38'></a><a href='#L38'>38</a>
+<a name='L39'></a><a href='#L39'>39</a>
+<a name='L40'></a><a href='#L40'>40</a>
+<a name='L41'></a><a href='#L41'>41</a>
+<a name='L42'></a><a href='#L42'>42</a>
+<a name='L43'></a><a href='#L43'>43</a>
+<a name='L44'></a><a href='#L44'>44</a>
+<a name='L45'></a><a href='#L45'>45</a>
+<a name='L46'></a><a href='#L46'>46</a>
+<a name='L47'></a><a href='#L47'>47</a>
+<a name='L48'></a><a href='#L48'>48</a>
+<a name='L49'></a><a href='#L49'>49</a>
+<a name='L50'></a><a href='#L50'>50</a>
+<a name='L51'></a><a href='#L51'>51</a>
+<a name='L52'></a><a href='#L52'>52</a>
+<a name='L53'></a><a href='#L53'>53</a>
+<a name='L54'></a><a href='#L54'>54</a>
+<a name='L55'></a><a href='#L55'>55</a>
+<a name='L56'></a><a href='#L56'>56</a>
+<a name='L57'></a><a href='#L57'>57</a>
+<a name='L58'></a><a href='#L58'>58</a>
+<a name='L59'></a><a href='#L59'>59</a>
+<a name='L60'></a><a href='#L60'>60</a>
+<a name='L61'></a><a href='#L61'>61</a>
+<a name='L62'></a><a href='#L62'>62</a>
+<a name='L63'></a><a href='#L63'>63</a>
+<a name='L64'></a><a href='#L64'>64</a>
+<a name='L65'></a><a href='#L65'>65</a>
+<a name='L66'></a><a href='#L66'>66</a>
+<a name='L67'></a><a href='#L67'>67</a>
+<a name='L68'></a><a href='#L68'>68</a>
+<a name='L69'></a><a href='#L69'>69</a>
+<a name='L70'></a><a href='#L70'>70</a>
+<a name='L71'></a><a href='#L71'>71</a>
+<a name='L72'></a><a href='#L72'>72</a>
+<a name='L73'></a><a href='#L73'>73</a>
+<a name='L74'></a><a href='#L74'>74</a>
+<a name='L75'></a><a href='#L75'>75</a>
+<a name='L76'></a><a href='#L76'>76</a>
+<a name='L77'></a><a href='#L77'>77</a>
+<a name='L78'></a><a href='#L78'>78</a>
+<a name='L79'></a><a href='#L79'>79</a>
+<a name='L80'></a><a href='#L80'>80</a>
+<a name='L81'></a><a href='#L81'>81</a>
+<a name='L82'></a><a href='#L82'>82</a>
+<a name='L83'></a><a href='#L83'>83</a>
+<a name='L84'></a><a href='#L84'>84</a>
+<a name='L85'></a><a href='#L85'>85</a>
+<a name='L86'></a><a href='#L86'>86</a>
+<a name='L87'></a><a href='#L87'>87</a>
+<a name='L88'></a><a href='#L88'>88</a>
+<a name='L89'></a><a href='#L89'>89</a>
+<a name='L90'></a><a href='#L90'>90</a>
+<a name='L91'></a><a href='#L91'>91</a>
+<a name='L92'></a><a href='#L92'>92</a>
+<a name='L93'></a><a href='#L93'>93</a>
+<a name='L94'></a><a href='#L94'>94</a>
+<a name='L95'></a><a href='#L95'>95</a>
+<a name='L96'></a><a href='#L96'>96</a>
+<a name='L97'></a><a href='#L97'>97</a>
+<a name='L98'></a><a href='#L98'>98</a>
+<a name='L99'></a><a href='#L99'>99</a>
+<a name='L100'></a><a href='#L100'>100</a>
+<a name='L101'></a><a href='#L101'>101</a>
+<a name='L102'></a><a href='#L102'>102</a>
+<a name='L103'></a><a href='#L103'>103</a>
+<a name='L104'></a><a href='#L104'>104</a>
+<a name='L105'></a><a href='#L105'>105</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span></td><td class="text"><pre class="prettyprint lang-js">const {zcl_abapgit_gui_page_diff_base} = await import("./zcl_abapgit_gui_page_diff_base.clas.mjs");
+const {cx_root} = await import("./cx_root.clas.mjs");
+// zcl_abapgit_gui_page_diff.clas.abap
+class zcl_abapgit_gui_page_diff extends zcl_abapgit_gui_page_diff_base {
+  static STATIC_SUPER = zcl_abapgit_gui_page_diff_base;
+  static INTERNAL_TYPE = 'CLAS';
+  static INTERNAL_NAME = 'ZCL_ABAPGIT_GUI_PAGE_DIFF';
+  static IMPLEMENTED_INTERFACES = ["ZIF_ABAPGIT_GUI_EVENT_HANDLER","ZIF_ABAPGIT_GUI_HOTKEYS","ZIF_ABAPGIT_GUI_MENU_PROVIDER","ZIF_ABAPGIT_GUI_RENDERABLE"];
+  static ATTRIBUTES = {};
+  static METHODS = {"CREATE": {"visibility": "U", "parameters": {"RI_PAGE": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.ABAPObject({qualifiedName: "ZIF_ABAPGIT_GUI_RENDERABLE", RTTIName: "\\INTERFACE=ZIF_ABAPGIT_GUI_RENDERABLE"});},</span> "is_optional": " ", "parm_kind": "R", "type_name": "ObjectReferenceType"}, "IV_KEY": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Character(12, {"qualifiedName":"zif_abapgit_persistence=&gt;ty_value"});},</span> "is_optional": " ", "parm_kind": "I", "type_name": "CharacterType"}, "IS_FILE": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Structure({</span>
+<span class="cstat-no" title="statement not covered" >  "path": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_GIT_DEFINITIONS=&gt;TY_FILE_SIGNATURE-PATH"}),</span>
+<span class="cstat-no" title="statement not covered" >  "filename": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_GIT_DEFINITIONS=&gt;TY_FILE_SIGNATURE-FILENAME"}),</span>
+<span class="cstat-no" title="statement not covered" >  "sha1": new abap.types.Character(40, {"qualifiedName":"zif_abapgit_git_definitions=&gt;ty_sha1"}),</span>
+  "data": new abap.types.XString({qualifiedName: "ZIF_ABAPGIT_GIT_DEFINITIONS=&gt;TY_FILE-DATA"})}, "zif_abapgit_git_definitions=&gt;ty_file", undefined, {}, {});}, "is_optional": " ", "parm_kind": "I", "type_name": "StructureType"}, "IS_OBJECT": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Structure({</span>
+<span class="cstat-no" title="statement not covered" >  "obj_type": new abap.types.Character(4, {}),</span>
+<span class="cstat-no" title="statement not covered" >  "obj_name": new abap.types.Character(40, {}),</span>
+<span class="cstat-no" title="statement not covered" >  "devclass": new abap.types.Character(30, {"qualifiedName":"DEVCLASS","ddicName":"DEVCLASS","description":"DEVCLASS"}),</span>
+<span class="cstat-no" title="statement not covered" >  "srcsystem": new abap.types.Character(5, {}),</span>
+<span class="cstat-no" title="statement not covered" >  "origlang": new abap.types.Character(1, {}),</span>
+<span class="cstat-no" title="statement not covered" >  "inactive": new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"}),</span>
+  "abap_language_version": new abap.types.Character(1, {"qualifiedName":"zif_abapgit_aff_types_v1=&gt;ty_abap_language_version"})}, "zif_abapgit_definitions=&gt;ty_item", undefined, {}, {});}, "is_optional": " ", "parm_kind": "I", "type_name": "StructureType"}, "IT_FILES": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return abap.types.TableFactory.construct(new abap.types.Structure({</span>
+<span class="cstat-no" title="statement not covered" >  "file": new abap.types.Structure({</span>
+<span class="cstat-no" title="statement not covered" >  "path": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_GIT_DEFINITIONS=&gt;TY_FILE_SIGNATURE-PATH"}),</span>
+<span class="cstat-no" title="statement not covered" >  "filename": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_GIT_DEFINITIONS=&gt;TY_FILE_SIGNATURE-FILENAME"}),</span>
+<span class="cstat-no" title="statement not covered" >  "sha1": new abap.types.Character(40, {"qualifiedName":"zif_abapgit_git_definitions=&gt;ty_sha1"}),</span>
+<span class="cstat-no" title="statement not covered" >  "data": new abap.types.XString({qualifiedName: "ZIF_ABAPGIT_GIT_DEFINITIONS=&gt;TY_FILE-DATA"})}, "zif_abapgit_git_definitions=&gt;ty_file", undefined, {}, {}),</span>
+<span class="cstat-no" title="statement not covered" >  "method": new abap.types.Character(1, {"qualifiedName":"zif_abapgit_definitions=&gt;ty_method"}),</span>
+<span class="cstat-no" title="statement not covered" >  "status": new abap.types.Structure({</span>
+<span class="cstat-no" title="statement not covered" >  "obj_type": new abap.types.Character(4, {}),</span>
+<span class="cstat-no" title="statement not covered" >  "obj_name": new abap.types.Character(40, {}),</span>
+<span class="cstat-no" title="statement not covered" >  "inactive": new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"}),</span>
+<span class="cstat-no" title="statement not covered" >  "path": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_DEFINITIONS=&gt;TY_RESULT-PATH"}),</span>
+<span class="cstat-no" title="statement not covered" >  "filename": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_DEFINITIONS=&gt;TY_RESULT-FILENAME"}),</span>
+<span class="cstat-no" title="statement not covered" >  "package": new abap.types.Character(30, {"qualifiedName":"DEVCLASS","ddicName":"DEVCLASS","description":"DEVCLASS"}),</span>
+<span class="cstat-no" title="statement not covered" >  "match": new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"}),</span>
+<span class="cstat-no" title="statement not covered" >  "lstate": new abap.types.Character(1, {"qualifiedName":"zif_abapgit_git_definitions=&gt;ty_item_state"}),</span>
+<span class="cstat-no" title="statement not covered" >  "rstate": new abap.types.Character(1, {"qualifiedName":"zif_abapgit_git_definitions=&gt;ty_item_state"}),</span>
+<span class="cstat-no" title="statement not covered" >  "packmove": new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"}),</span>
+<span class="cstat-no" title="statement not covered" >  "srcsystem": new abap.types.Character(5, {}),</span>
+  "origlang": new abap.types.Character(1, {})}, "zif_abapgit_definitions=&gt;ty_result", undefined, {}, {})}, "zif_abapgit_definitions=&gt;ty_stage", undefined, {}, {}), {"withHeader":false,"keyType":"USER","primaryKey":{"name":"primary_key","type":"SORTED","isUnique":true,"keyFields":["FILE-PATH","FILE-FILENAME"]},"secondary":[]}, "zif_abapgit_definitions=&gt;ty_stage_tt");}, "is_optional": " ", "parm_kind": "I", "type_name": "TableType"}}}};
+<span class="fstat-no" title="function not covered" >  constructor() {</span>
+<span class="cstat-no" title="statement not covered" >    const sup = super();</span>
+<span class="cstat-no" title="statement not covered" >    this.me = new abap.types.ABAPObject();</span>
+<span class="cstat-no" title="statement not covered" >    this.me.set(this);</span>
+<span class="cstat-no" title="statement not covered" >    this.INTERNAL_ID = abap.internalIdCounter++;</span>
+<span class="cstat-no" title="statement not covered" >    this.FRIENDS_ACCESS_INSTANCE = {</span>
+<span class="cstat-no" title="statement not covered" >      "SUPER": sup.FRIENDS_ACCESS_INSTANCE,</span>
+<span class="cstat-no" title="statement not covered" >    };</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
+<span class="fstat-no" title="function not covered" >  async constructor_(INPUT) {</span>
+<span class="cstat-no" title="statement not covered" >    if (super.constructor_) { await super.constructor_(INPUT); }</span>
+<span class="cstat-no" title="statement not covered" >    return this;</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
+<span class="fstat-no" title="function not covered" >  async create(INPUT) {</span>
+<span class="cstat-no" title="statement not covered" >    return zcl_abapgit_gui_page_diff.create(INPUT);</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
+  static <span class="fstat-no" title="function not covered" >async create(INPUT) {</span>
+<span class="cstat-no" title="statement not covered" >    let ri_page = new abap.types.ABAPObject({qualifiedName: "ZIF_ABAPGIT_GUI_RENDERABLE", RTTIName: "\\INTERFACE=ZIF_ABAPGIT_GUI_RENDERABLE"});</span>
+<span class="cstat-no" title="statement not covered" >    let iv_key = INPUT?.iv_key;</span>
+<span class="cstat-no" title="statement not covered" >    if (iv_key?.getQualifiedName === undefined || iv_key.getQualifiedName() !== "ZIF_ABAPGIT_PERSISTENCE=&gt;TY_VALUE") { iv_key = undefined; }</span>
+<span class="cstat-no" title="statement not covered" >    if (iv_key === undefined) { iv_key = new abap.types.Character(12, {"qualifiedName":"zif_abapgit_persistence=&gt;ty_value"}).set(INPUT.iv_key); }</span>
+<span class="cstat-no" title="statement not covered" >    let is_file = new abap.types.Structure({</span>
+<span class="cstat-no" title="statement not covered" >    "path": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_GIT_DEFINITIONS=&gt;TY_FILE_SIGNATURE-PATH"}),</span>
+<span class="cstat-no" title="statement not covered" >    "filename": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_GIT_DEFINITIONS=&gt;TY_FILE_SIGNATURE-FILENAME"}),</span>
+<span class="cstat-no" title="statement not covered" >    "sha1": new abap.types.Character(40, {"qualifiedName":"zif_abapgit_git_definitions=&gt;ty_sha1"}),</span>
+<span class="cstat-no" title="statement not covered" >    "data": new abap.types.XString({qualifiedName: "ZIF_ABAPGIT_GIT_DEFINITIONS=&gt;TY_FILE-DATA"})}, "zif_abapgit_git_definitions=&gt;ty_file", undefined, {}, {});</span>
+<span class="cstat-no" title="statement not covered" >    if (INPUT &amp;&amp; INPUT.is_file) {is_file.set(INPUT.is_file);}</span>
+<span class="cstat-no" title="statement not covered" >    let is_object = new abap.types.Structure({</span>
+<span class="cstat-no" title="statement not covered" >    "obj_type": new abap.types.Character(4, {}),</span>
+<span class="cstat-no" title="statement not covered" >    "obj_name": new abap.types.Character(40, {}),</span>
+<span class="cstat-no" title="statement not covered" >    "devclass": new abap.types.Character(30, {"qualifiedName":"DEVCLASS","ddicName":"DEVCLASS","description":"DEVCLASS"}),</span>
+<span class="cstat-no" title="statement not covered" >    "srcsystem": new abap.types.Character(5, {}),</span>
+<span class="cstat-no" title="statement not covered" >    "origlang": new abap.types.Character(1, {}),</span>
+<span class="cstat-no" title="statement not covered" >    "inactive": new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"}),</span>
+<span class="cstat-no" title="statement not covered" >    "abap_language_version": new abap.types.Character(1, {"qualifiedName":"zif_abapgit_aff_types_v1=&gt;ty_abap_language_version"})}, "zif_abapgit_definitions=&gt;ty_item", undefined, {}, {});</span>
+<span class="cstat-no" title="statement not covered" >    if (INPUT &amp;&amp; INPUT.is_object) {is_object.set(INPUT.is_object);}</span>
+<span class="cstat-no" title="statement not covered" >    let it_files = abap.types.TableFactory.construct(new abap.types.Structure({</span>
+<span class="cstat-no" title="statement not covered" >    "file": new abap.types.Structure({</span>
+<span class="cstat-no" title="statement not covered" >    "path": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_GIT_DEFINITIONS=&gt;TY_FILE_SIGNATURE-PATH"}),</span>
+<span class="cstat-no" title="statement not covered" >    "filename": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_GIT_DEFINITIONS=&gt;TY_FILE_SIGNATURE-FILENAME"}),</span>
+<span class="cstat-no" title="statement not covered" >    "sha1": new abap.types.Character(40, {"qualifiedName":"zif_abapgit_git_definitions=&gt;ty_sha1"}),</span>
+<span class="cstat-no" title="statement not covered" >    "data": new abap.types.XString({qualifiedName: "ZIF_ABAPGIT_GIT_DEFINITIONS=&gt;TY_FILE-DATA"})}, "zif_abapgit_git_definitions=&gt;ty_file", undefined, {}, {}),</span>
+<span class="cstat-no" title="statement not covered" >    "method": new abap.types.Character(1, {"qualifiedName":"zif_abapgit_definitions=&gt;ty_method"}),</span>
+<span class="cstat-no" title="statement not covered" >    "status": new abap.types.Structure({</span>
+<span class="cstat-no" title="statement not covered" >    "obj_type": new abap.types.Character(4, {}),</span>
+<span class="cstat-no" title="statement not covered" >    "obj_name": new abap.types.Character(40, {}),</span>
+<span class="cstat-no" title="statement not covered" >    "inactive": new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"}),</span>
+<span class="cstat-no" title="statement not covered" >    "path": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_DEFINITIONS=&gt;TY_RESULT-PATH"}),</span>
+<span class="cstat-no" title="statement not covered" >    "filename": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_DEFINITIONS=&gt;TY_RESULT-FILENAME"}),</span>
+<span class="cstat-no" title="statement not covered" >    "package": new abap.types.Character(30, {"qualifiedName":"DEVCLASS","ddicName":"DEVCLASS","description":"DEVCLASS"}),</span>
+<span class="cstat-no" title="statement not covered" >    "match": new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"}),</span>
+<span class="cstat-no" title="statement not covered" >    "lstate": new abap.types.Character(1, {"qualifiedName":"zif_abapgit_git_definitions=&gt;ty_item_state"}),</span>
+<span class="cstat-no" title="statement not covered" >    "rstate": new abap.types.Character(1, {"qualifiedName":"zif_abapgit_git_definitions=&gt;ty_item_state"}),</span>
+<span class="cstat-no" title="statement not covered" >    "packmove": new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"}),</span>
+<span class="cstat-no" title="statement not covered" >    "srcsystem": new abap.types.Character(5, {}),</span>
+<span class="cstat-no" title="statement not covered" >    "origlang": new abap.types.Character(1, {})}, "zif_abapgit_definitions=&gt;ty_result", undefined, {}, {})}, "zif_abapgit_definitions=&gt;ty_stage", undefined, {}, {}), {"withHeader":false,"keyType":"USER","primaryKey":{"name":"primary_key","type":"SORTED","isUnique":true,"keyFields":["FILE-PATH","FILE-FILENAME"]},"secondary":[]}, "zif_abapgit_definitions=&gt;ty_stage_tt");</span>
+<span class="cstat-no" title="statement not covered" >    if (INPUT &amp;&amp; INPUT.it_files) {it_files.set(INPUT.it_files);}</span>
+<span class="cstat-no" title="statement not covered" >    let lo_component = new abap.types.ABAPObject({qualifiedName: "ZCL_ABAPGIT_GUI_PAGE_DIFF", RTTIName: "\\CLASS=ZCL_ABAPGIT_GUI_PAGE_DIFF"});</span>
+<span class="cstat-no" title="statement not covered" >    lo_component.set(await (new abap.Classes['ZCL_ABAPGIT_GUI_PAGE_DIFF']()).constructor_({iv_key: iv_key, is_file: is_file, is_object: is_object, it_files: it_files}));</span>
+<span class="cstat-no" title="statement not covered" >    ri_page.set((await abap.Classes['ZCL_ABAPGIT_GUI_PAGE_HOC'].create({iv_page_title: abap.CharacterFactory.get(4, 'Diff'), iv_page_layout: (await this.get_page_layout()), ii_page_menu_provider: lo_component, ii_child_component: lo_component})));</span>
+<span class="cstat-no" title="statement not covered" >    return ri_page;</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
+}
+abap.Classes['ZCL_ABAPGIT_GUI_PAGE_DIFF'] = zcl_abapgit_gui_page_diff;
+export {zcl_abapgit_gui_page_diff};</pre></td></tr></table></pre>
+
+                <div class='push'></div><!-- for sticky footer -->
+            </div><!-- /wrapper -->
+            <div class='footer quiet pad2 space-top1 center small'>
+                Code coverage generated by
+                <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
+                at 2026-02-23T16:07:14.249Z
+            </div>
+        <script src="../prettify.js"></script>
+        <script>
+            window.onload = function () {
+                prettyPrint();
+            };
+        </script>
+        <script src="../sorter.js"></script>
+        <script src="../block-navigation.js"></script>
+    </body>
+</html>
+    

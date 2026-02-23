@@ -1,0 +1,478 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Code coverage report for output/zcl_abapgit_object_zag1.clas.testclasses.mjs</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+    
+<body>
+<div class='wrapper'>
+    <div class='pad1'>
+        <h1><a href="../index.html">All files</a> / <a href="index.html">output</a> zcl_abapgit_object_zag1.clas.testclasses.mjs</h1>
+        <div class='clearfix'>
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">15.9% </span>
+                <span class="quiet">Statements</span>
+                <span class='fraction'>21/132</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">75% </span>
+                <span class="quiet">Branches</span>
+                <span class='fraction'>3/4</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">33.33% </span>
+                <span class="quiet">Functions</span>
+                <span class='fraction'>2/6</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">15.9% </span>
+                <span class="quiet">Lines</span>
+                <span class='fraction'>21/132</span>
+            </div>
+        
+            
+        </div>
+        <p class="quiet">
+            Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
+        </p>
+        <template id="filterTemplate">
+            <div class="quiet">
+                Filter:
+                <input type="search" id="fileSearch">
+            </div>
+        </template>
+    </div>
+    <div class='status-line low'></div>
+    <pre><table class="coverage">
+<tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
+<a name='L2'></a><a href='#L2'>2</a>
+<a name='L3'></a><a href='#L3'>3</a>
+<a name='L4'></a><a href='#L4'>4</a>
+<a name='L5'></a><a href='#L5'>5</a>
+<a name='L6'></a><a href='#L6'>6</a>
+<a name='L7'></a><a href='#L7'>7</a>
+<a name='L8'></a><a href='#L8'>8</a>
+<a name='L9'></a><a href='#L9'>9</a>
+<a name='L10'></a><a href='#L10'>10</a>
+<a name='L11'></a><a href='#L11'>11</a>
+<a name='L12'></a><a href='#L12'>12</a>
+<a name='L13'></a><a href='#L13'>13</a>
+<a name='L14'></a><a href='#L14'>14</a>
+<a name='L15'></a><a href='#L15'>15</a>
+<a name='L16'></a><a href='#L16'>16</a>
+<a name='L17'></a><a href='#L17'>17</a>
+<a name='L18'></a><a href='#L18'>18</a>
+<a name='L19'></a><a href='#L19'>19</a>
+<a name='L20'></a><a href='#L20'>20</a>
+<a name='L21'></a><a href='#L21'>21</a>
+<a name='L22'></a><a href='#L22'>22</a>
+<a name='L23'></a><a href='#L23'>23</a>
+<a name='L24'></a><a href='#L24'>24</a>
+<a name='L25'></a><a href='#L25'>25</a>
+<a name='L26'></a><a href='#L26'>26</a>
+<a name='L27'></a><a href='#L27'>27</a>
+<a name='L28'></a><a href='#L28'>28</a>
+<a name='L29'></a><a href='#L29'>29</a>
+<a name='L30'></a><a href='#L30'>30</a>
+<a name='L31'></a><a href='#L31'>31</a>
+<a name='L32'></a><a href='#L32'>32</a>
+<a name='L33'></a><a href='#L33'>33</a>
+<a name='L34'></a><a href='#L34'>34</a>
+<a name='L35'></a><a href='#L35'>35</a>
+<a name='L36'></a><a href='#L36'>36</a>
+<a name='L37'></a><a href='#L37'>37</a>
+<a name='L38'></a><a href='#L38'>38</a>
+<a name='L39'></a><a href='#L39'>39</a>
+<a name='L40'></a><a href='#L40'>40</a>
+<a name='L41'></a><a href='#L41'>41</a>
+<a name='L42'></a><a href='#L42'>42</a>
+<a name='L43'></a><a href='#L43'>43</a>
+<a name='L44'></a><a href='#L44'>44</a>
+<a name='L45'></a><a href='#L45'>45</a>
+<a name='L46'></a><a href='#L46'>46</a>
+<a name='L47'></a><a href='#L47'>47</a>
+<a name='L48'></a><a href='#L48'>48</a>
+<a name='L49'></a><a href='#L49'>49</a>
+<a name='L50'></a><a href='#L50'>50</a>
+<a name='L51'></a><a href='#L51'>51</a>
+<a name='L52'></a><a href='#L52'>52</a>
+<a name='L53'></a><a href='#L53'>53</a>
+<a name='L54'></a><a href='#L54'>54</a>
+<a name='L55'></a><a href='#L55'>55</a>
+<a name='L56'></a><a href='#L56'>56</a>
+<a name='L57'></a><a href='#L57'>57</a>
+<a name='L58'></a><a href='#L58'>58</a>
+<a name='L59'></a><a href='#L59'>59</a>
+<a name='L60'></a><a href='#L60'>60</a>
+<a name='L61'></a><a href='#L61'>61</a>
+<a name='L62'></a><a href='#L62'>62</a>
+<a name='L63'></a><a href='#L63'>63</a>
+<a name='L64'></a><a href='#L64'>64</a>
+<a name='L65'></a><a href='#L65'>65</a>
+<a name='L66'></a><a href='#L66'>66</a>
+<a name='L67'></a><a href='#L67'>67</a>
+<a name='L68'></a><a href='#L68'>68</a>
+<a name='L69'></a><a href='#L69'>69</a>
+<a name='L70'></a><a href='#L70'>70</a>
+<a name='L71'></a><a href='#L71'>71</a>
+<a name='L72'></a><a href='#L72'>72</a>
+<a name='L73'></a><a href='#L73'>73</a>
+<a name='L74'></a><a href='#L74'>74</a>
+<a name='L75'></a><a href='#L75'>75</a>
+<a name='L76'></a><a href='#L76'>76</a>
+<a name='L77'></a><a href='#L77'>77</a>
+<a name='L78'></a><a href='#L78'>78</a>
+<a name='L79'></a><a href='#L79'>79</a>
+<a name='L80'></a><a href='#L80'>80</a>
+<a name='L81'></a><a href='#L81'>81</a>
+<a name='L82'></a><a href='#L82'>82</a>
+<a name='L83'></a><a href='#L83'>83</a>
+<a name='L84'></a><a href='#L84'>84</a>
+<a name='L85'></a><a href='#L85'>85</a>
+<a name='L86'></a><a href='#L86'>86</a>
+<a name='L87'></a><a href='#L87'>87</a>
+<a name='L88'></a><a href='#L88'>88</a>
+<a name='L89'></a><a href='#L89'>89</a>
+<a name='L90'></a><a href='#L90'>90</a>
+<a name='L91'></a><a href='#L91'>91</a>
+<a name='L92'></a><a href='#L92'>92</a>
+<a name='L93'></a><a href='#L93'>93</a>
+<a name='L94'></a><a href='#L94'>94</a>
+<a name='L95'></a><a href='#L95'>95</a>
+<a name='L96'></a><a href='#L96'>96</a>
+<a name='L97'></a><a href='#L97'>97</a>
+<a name='L98'></a><a href='#L98'>98</a>
+<a name='L99'></a><a href='#L99'>99</a>
+<a name='L100'></a><a href='#L100'>100</a>
+<a name='L101'></a><a href='#L101'>101</a>
+<a name='L102'></a><a href='#L102'>102</a>
+<a name='L103'></a><a href='#L103'>103</a>
+<a name='L104'></a><a href='#L104'>104</a>
+<a name='L105'></a><a href='#L105'>105</a>
+<a name='L106'></a><a href='#L106'>106</a>
+<a name='L107'></a><a href='#L107'>107</a>
+<a name='L108'></a><a href='#L108'>108</a>
+<a name='L109'></a><a href='#L109'>109</a>
+<a name='L110'></a><a href='#L110'>110</a>
+<a name='L111'></a><a href='#L111'>111</a>
+<a name='L112'></a><a href='#L112'>112</a>
+<a name='L113'></a><a href='#L113'>113</a>
+<a name='L114'></a><a href='#L114'>114</a>
+<a name='L115'></a><a href='#L115'>115</a>
+<a name='L116'></a><a href='#L116'>116</a>
+<a name='L117'></a><a href='#L117'>117</a>
+<a name='L118'></a><a href='#L118'>118</a>
+<a name='L119'></a><a href='#L119'>119</a>
+<a name='L120'></a><a href='#L120'>120</a>
+<a name='L121'></a><a href='#L121'>121</a>
+<a name='L122'></a><a href='#L122'>122</a>
+<a name='L123'></a><a href='#L123'>123</a>
+<a name='L124'></a><a href='#L124'>124</a>
+<a name='L125'></a><a href='#L125'>125</a>
+<a name='L126'></a><a href='#L126'>126</a>
+<a name='L127'></a><a href='#L127'>127</a>
+<a name='L128'></a><a href='#L128'>128</a>
+<a name='L129'></a><a href='#L129'>129</a>
+<a name='L130'></a><a href='#L130'>130</a>
+<a name='L131'></a><a href='#L131'>131</a>
+<a name='L132'></a><a href='#L132'>132</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span></td><td class="text"><pre class="prettyprint lang-js">const {zcl_abapgit_objects_super} = await import("./zcl_abapgit_objects_super.clas.mjs");
+const {zcl_abapgit_object_zag1} = await import("./zcl_abapgit_object_zag1.clas.mjs");
+const {cx_root} = await import("./cx_root.clas.mjs");
+// zcl_abapgit_object_zag1.clas.testclasses.abap
+class lcl_tr_object_table {
+  static STATIC_SUPER = undefined;
+  static INTERNAL_TYPE = 'CLAS';
+  static INTERNAL_NAME = 'CLAS-ZCL_ABAPGIT_OBJECT_ZAG1-LCL_TR_OBJECT_TABLE';
+  static IMPLEMENTED_INTERFACES = ["IF_FTD_INVOCATION_ANSWER"];
+  static ATTRIBUTES = {};
+  static METHODS = {};
+<span class="fstat-no" title="function not covered" >  constructor() {</span>
+<span class="cstat-no" title="statement not covered" >    this.me = new abap.types.ABAPObject();</span>
+<span class="cstat-no" title="statement not covered" >    this.me.set(this);</span>
+<span class="cstat-no" title="statement not covered" >    this.INTERNAL_ID = abap.internalIdCounter++;</span>
+<span class="cstat-no" title="statement not covered" >    this.FRIENDS_ACCESS_INSTANCE = {</span>
+<span class="cstat-no" title="statement not covered" >    };</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
+<span class="fstat-no" title="function not covered" >  async constructor_(INPUT) {</span>
+<span class="cstat-no" title="statement not covered" >    if (super.constructor_) { await super.constructor_(INPUT); }</span>
+<span class="cstat-no" title="statement not covered" >    return this;</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
+<span class="fstat-no" title="function not covered" >  async if_ftd_invocation_answer$answer(INPUT) {</span>
+<span class="cstat-no" title="statement not covered" >    let $arguments = INPUT?.arguments;</span>
+<span class="cstat-no" title="statement not covered" >    if ($arguments?.getQualifiedName === undefined || $arguments.getQualifiedName() !== "IF_FTD_INPUT_ARGUMENTS") { $arguments = undefined; }</span>
+<span class="cstat-no" title="statement not covered" >    if ($arguments === undefined) { $arguments = new abap.types.ABAPObject({qualifiedName: "IF_FTD_INPUT_ARGUMENTS", RTTIName: "\\INTERFACE=IF_FTD_INPUT_ARGUMENTS"}).set(INPUT.arguments); }</span>
+<span class="cstat-no" title="statement not covered" >    let result = new abap.types.ABAPObject({qualifiedName: "IF_FTD_INVOCATION_RESULT", RTTIName: "\\INTERFACE=IF_FTD_INVOCATION_RESULT"});</span>
+<span class="cstat-no" title="statement not covered" >    if (INPUT &amp;&amp; INPUT.result) {result = INPUT.result;}</span>
+<span class="cstat-no" title="statement not covered" >    let lt_objects = abap.types.TableFactory.construct(new abap.types.Structure({</span>
+<span class="cstat-no" title="statement not covered" >    "pgmid": new abap.types.Character(4, {}),</span>
+<span class="cstat-no" title="statement not covered" >    "object": new abap.types.Character(4, {}),</span>
+<span class="cstat-no" title="statement not covered" >    "text": new abap.types.Character(60, {})}, "KO100", "KO100", {}, {}), {"withHeader":false,"keyType":"DEFAULT","primaryKey":{"name":"primary_key","type":"STANDARD","isUnique":false,"keyFields":[]},"secondary":[]}, "");</span>
+<span class="cstat-no" title="statement not covered" >    let ls_object = new abap.types.Structure({</span>
+<span class="cstat-no" title="statement not covered" >    "pgmid": new abap.types.Character(4, {}),</span>
+<span class="cstat-no" title="statement not covered" >    "object": new abap.types.Character(4, {}),</span>
+<span class="cstat-no" title="statement not covered" >    "text": new abap.types.Character(60, {})}, "KO100", "KO100", {}, {});</span>
+<span class="cstat-no" title="statement not covered" >    ls_object.get().pgmid.set(abap.CharacterFactory.get(4, 'R3TR'));</span>
+<span class="cstat-no" title="statement not covered" >    ls_object.get().object.set(abap.CharacterFactory.get(4, 'ZAG1'));</span>
+<span class="cstat-no" title="statement not covered" >    abap.statements.insertInternal({data: ls_object, table: lt_objects});</span>
+<span class="cstat-no" title="statement not covered" >    await (await result.get().if_ftd_invocation_result$get_output_configuration()).get().if_ftd_output_configuration$set_table_parameter({name: abap.CharacterFactory.get(14, 'WT_OBJECT_TEXT'), value: lt_objects});</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
+}
+abap.Classes['CLAS-ZCL_ABAPGIT_OBJECT_ZAG1-LCL_TR_OBJECT_TABLE'] = lcl_tr_object_table;
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ><span class="branch-0 cbranch-no" title="branch not covered" >class ltcl_test {</span></span></span>
+<span class="cstat-no" title="statement not covered" >  static STATIC_SUPER = undefined;</span>
+<span class="cstat-no" title="statement not covered" >  static INTERNAL_TYPE = 'CLAS';</span>
+<span class="cstat-no" title="statement not covered" >  static INTERNAL_NAME = 'CLAS-ZCL_ABAPGIT_OBJECT_ZAG1-LTCL_TEST';</span>
+<span class="cstat-no" title="statement not covered" >  static IMPLEMENTED_INTERFACES = ["IF_FTD_INVOCATION_ANSWER"];</span>
+<span class="cstat-no" title="statement not covered" >  static ATTRIBUTES = {"MI_ENV": {"type": () =&gt; {return new abap.types.ABAPObject({qualifiedName: "IF_FUNCTION_TEST_ENVIRONMENT", RTTIName: "\\INTERFACE=IF_FUNCTION_TEST_ENVIRONMENT"});}, "visibility": "I", "is_constant": " ", "is_class": " "},</span>
+<span class="cstat-no" title="statement not covered" >  "C_PACKAGE": {"type": () =&gt; {return new abap.types.Character(30, {"qualifiedName":"DEVCLASS","ddicName":"DEVCLASS","description":"DEVCLASS"});}, "visibility": "I", "is_constant": "X", "is_class": "X"}};</span>
+<span class="cstat-no" title="statement not covered" >  static METHODS = {"SETUP": {"visibility": "I", "parameters": {}},</span>
+  "TEARDOWN": {"visibility": "I", "parameters": {}},
+<span class="cstat-no" title="statement not covered" >  "UPSERT": {"visibility": "I", "parameters": {}}};</span>
+<span class="cstat-no" title="statement not covered" >  #mi_env;</span>
+<span class="cstat-no" title="statement not covered" >  constructor() {</span>
+<span class="cstat-no" title="statement not covered" >    this.me = new abap.types.ABAPObject();</span>
+<span class="cstat-no" title="statement not covered" >    this.me.set(this);</span>
+<span class="cstat-no" title="statement not covered" >    this.INTERNAL_ID = abap.internalIdCounter++;</span>
+<span class="cstat-no" title="statement not covered" >    this.FRIENDS_ACCESS_INSTANCE = {</span>
+<span class="cstat-no" title="statement not covered" >      "setup": this.#setup.bind(this),</span>
+<span class="cstat-no" title="statement not covered" >      "teardown": this.#teardown.bind(this),</span>
+<span class="cstat-no" title="statement not covered" >      "upsert": this.#upsert.bind(this),</span>
+<span class="cstat-no" title="statement not covered" >    };</span>
+<span class="cstat-no" title="statement not covered" >    this.#mi_env = new abap.types.ABAPObject({qualifiedName: "IF_FUNCTION_TEST_ENVIRONMENT", RTTIName: "\\INTERFACE=IF_FUNCTION_TEST_ENVIRONMENT"});</span>
+<span class="cstat-no" title="statement not covered" >    this.FRIENDS_ACCESS_INSTANCE["mi_env"] = this.#mi_env;</span>
+<span class="cstat-no" title="statement not covered" >    this.c_package = ltcl_test.c_package;</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
+<span class="cstat-no" title="statement not covered" >  async constructor_(INPUT) {</span>
+<span class="cstat-no" title="statement not covered" >    if (super.constructor_) { await super.constructor_(INPUT); }</span>
+<span class="cstat-no" title="statement not covered" >    return this;</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
+<span class="cstat-no" title="statement not covered" >  async #setup() {</span>
+<span class="cstat-no" title="statement not covered" >    let lt_deps = abap.types.TableFactory.construct(new abap.types.Character(30, {"qualifiedName":"SXCO_FM_NAME","ddicName":"SXCO_FM_NAME","description":"Function module name"}), {"withHeader":false,"keyType":"USER","primaryKey":{"name":"primary_key","type":"STANDARD","isUnique":false,"keyFields":["TABLE_LINE"]},"secondary":[]}, "if_function_test_environment=&gt;tt_function_dependencies");</span>
+<span class="cstat-no" title="statement not covered" >    let lo_initial = new abap.types.ABAPObject({qualifiedName: "ZIF_ABAPGIT_REPO_SRV", RTTIName: "\\INTERFACE=ZIF_ABAPGIT_REPO_SRV"});</span>
+<span class="cstat-no" title="statement not covered" >    let lo_tr_object_table = new abap.types.ABAPObject({qualifiedName: "LCL_TR_OBJECT_TABLE", RTTIName: "\\CLASS-POOL=ZCL_ABAPGIT_OBJECT_ZAG1\\CLASS=LCL_TR_OBJECT_TABLE"});</span>
+<span class="cstat-no" title="statement not covered" >    let lo_environment = new abap.types.ABAPObject({qualifiedName: "ZCL_ABAPGIT_INJECT_ENVIRONMENT", RTTIName: "\\CLASS=ZCL_ABAPGIT_INJECT_ENVIRONMENT"});</span>
+<span class="cstat-no" title="statement not covered" >    await abap.Classes['ZCL_ABAPGIT_REPO_SRV'].inject_instance({ii_srv: lo_initial});</span>
+<span class="cstat-no" title="statement not covered" >    lo_tr_object_table.set(await (new abap.Classes['CLAS-ZCL_ABAPGIT_OBJECT_ZAG1-LCL_TR_OBJECT_TABLE']()).constructor_());</span>
+<span class="cstat-no" title="statement not covered" >    abap.statements.insertInternal({data: abap.CharacterFactory.get(17, 'ENQUEUE_EZABAPGIT'), table: lt_deps});</span>
+<span class="cstat-no" title="statement not covered" >    abap.statements.insertInternal({data: abap.CharacterFactory.get(17, 'DEQUEUE_EZABAPGIT'), table: lt_deps});</span>
+<span class="cstat-no" title="statement not covered" >    abap.statements.insertInternal({data: abap.CharacterFactory.get(15, 'TR_OBJECT_TABLE'), table: lt_deps});</span>
+<span class="cstat-no" title="statement not covered" >    abap.statements.insertInternal({data: abap.CharacterFactory.get(25, 'SAPGUI_PROGRESS_INDICATOR'), table: lt_deps});</span>
+<span class="cstat-no" title="statement not covered" >    this.#mi_env.set((await abap.Classes['CL_FUNCTION_TEST_ENVIRONMENT'].create({function_modules: lt_deps})));</span>
+<span class="cstat-no" title="statement not covered" >    await (await (await (await this.#mi_env.get().if_function_test_environment$get_double({function_name: abap.CharacterFactory.get(17, 'ENQUEUE_EZABAPGIT')})).get().if_function_testdouble$configure_call()).get().if_ftd_input_config_setter$ignore_all_parameters()).get().if_ftd_output_config_setter$then_answer({answer: this.me});</span>
+<span class="cstat-no" title="statement not covered" >    await (await (await (await this.#mi_env.get().if_function_test_environment$get_double({function_name: abap.CharacterFactory.get(17, 'DEQUEUE_EZABAPGIT')})).get().if_function_testdouble$configure_call()).get().if_ftd_input_config_setter$ignore_all_parameters()).get().if_ftd_output_config_setter$then_answer({answer: this.me});</span>
+<span class="cstat-no" title="statement not covered" >    await (await (await (await this.#mi_env.get().if_function_test_environment$get_double({function_name: abap.CharacterFactory.get(25, 'SAPGUI_PROGRESS_INDICATOR')})).get().if_function_testdouble$configure_call()).get().if_ftd_input_config_setter$ignore_all_parameters()).get().if_ftd_output_config_setter$then_answer({answer: this.me});</span>
+<span class="cstat-no" title="statement not covered" >    await (await (await (await this.#mi_env.get().if_function_test_environment$get_double({function_name: abap.CharacterFactory.get(15, 'TR_OBJECT_TABLE')})).get().if_function_testdouble$configure_call()).get().if_ftd_input_config_setter$ignore_all_parameters()).get().if_ftd_output_config_setter$then_answer({answer: lo_tr_object_table});</span>
+<span class="cstat-no" title="statement not covered" >    lo_environment.set(await (new abap.Classes['ZCL_ABAPGIT_INJECT_ENVIRONMENT']()).constructor_());</span>
+<span class="cstat-no" title="statement not covered" >    await abap.Classes['ZCL_ABAPGIT_INJECTOR'].set_environment({ii_environment: lo_environment});</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
+<span class="cstat-no" title="statement not covered" >  async #teardown() {</span>
+<span class="cstat-no" title="statement not covered" >    let li_environment = new abap.types.ABAPObject({qualifiedName: "ZIF_ABAPGIT_ENVIRONMENT", RTTIName: "\\INTERFACE=ZIF_ABAPGIT_ENVIRONMENT"});</span>
+<span class="cstat-no" title="statement not covered" >    await this.#mi_env.get().if_function_test_environment$clear_doubles();</span>
+<span class="cstat-no" title="statement not covered" >    await abap.Classes['ZCL_ABAPGIT_INJECTOR'].set_environment({ii_environment: li_environment});</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
+<span class="cstat-no" title="statement not covered" >  async if_ftd_invocation_answer$answer(INPUT) {</span>
+<span class="cstat-no" title="statement not covered" >    let $arguments = INPUT?.arguments;</span>
+<span class="cstat-no" title="statement not covered" >    if ($arguments?.getQualifiedName === undefined || $arguments.getQualifiedName() !== "IF_FTD_INPUT_ARGUMENTS") { $arguments = undefined; }</span>
+<span class="cstat-no" title="statement not covered" >    if ($arguments === undefined) { $arguments = new abap.types.ABAPObject({qualifiedName: "IF_FTD_INPUT_ARGUMENTS", RTTIName: "\\INTERFACE=IF_FTD_INPUT_ARGUMENTS"}).set(INPUT.arguments); }</span>
+<span class="cstat-no" title="statement not covered" >    let result = new abap.types.ABAPObject({qualifiedName: "IF_FTD_INVOCATION_RESULT", RTTIName: "\\INTERFACE=IF_FTD_INVOCATION_RESULT"});</span>
+<span class="cstat-no" title="statement not covered" >    if (INPUT &amp;&amp; INPUT.result) {result = INPUT.result;}</span>
+<span class="cstat-no" title="statement not covered" >    return;</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
+<span class="cstat-no" title="statement not covered" >  async #upsert() {</span>
+<span class="cstat-no" title="statement not covered" >    let lo_online = new abap.types.ABAPObject({qualifiedName: "ZCL_ABAPGIT_REPO_ONLINE", RTTIName: "\\CLASS=ZCL_ABAPGIT_REPO_ONLINE"});</span>
+<span class="cstat-no" title="statement not covered" >    let lt_result = abap.types.TableFactory.construct(new abap.types.Structure({</span>
+<span class="cstat-no" title="statement not covered" >    "obj_type": new abap.types.Character(4, {}),</span>
+<span class="cstat-no" title="statement not covered" >    "obj_name": new abap.types.Character(40, {}),</span>
+<span class="cstat-no" title="statement not covered" >    "inactive": new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"}),</span>
+<span class="cstat-no" title="statement not covered" >    "path": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_DEFINITIONS=&gt;TY_RESULT-PATH"}),</span>
+<span class="cstat-no" title="statement not covered" >    "filename": new abap.types.String({qualifiedName: "ZIF_ABAPGIT_DEFINITIONS=&gt;TY_RESULT-FILENAME"}),</span>
+<span class="cstat-no" title="statement not covered" >    "package": new abap.types.Character(30, {"qualifiedName":"DEVCLASS","ddicName":"DEVCLASS","description":"DEVCLASS"}),</span>
+<span class="cstat-no" title="statement not covered" >    "match": new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"}),</span>
+<span class="cstat-no" title="statement not covered" >    "lstate": new abap.types.Character(1, {"qualifiedName":"zif_abapgit_git_definitions=&gt;ty_item_state"}),</span>
+<span class="cstat-no" title="statement not covered" >    "rstate": new abap.types.Character(1, {"qualifiedName":"zif_abapgit_git_definitions=&gt;ty_item_state"}),</span>
+<span class="cstat-no" title="statement not covered" >    "packmove": new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"}),</span>
+<span class="cstat-no" title="statement not covered" >    "srcsystem": new abap.types.Character(5, {}),</span>
+<span class="cstat-no" title="statement not covered" >    "origlang": new abap.types.Character(1, {})}, "zif_abapgit_definitions=&gt;ty_result", undefined, {}, {}), {"withHeader":false,"keyType":"DEFAULT","primaryKey":{"name":"primary_key","type":"STANDARD","isUnique":false,"keyFields":[]},"secondary":[{"name":"sec_key","type":"SORTED","isUnique":false,"keyFields":["OBJ_TYPE","OBJ_NAME"]}]}, "zif_abapgit_definitions=&gt;ty_results_tt");</span>
+<span class="cstat-no" title="statement not covered" >    let lv_url = new abap.types.String({qualifiedName: "STRING"});</span>
+<span class="cstat-no" title="statement not covered" >    abap.statements.assert(abap.compare.eq(abap.builtin.sy.get().sysid, abap.CharacterFactory.get(3, 'ABC')));</span>
+<span class="cstat-no" title="statement not covered" >    lv_url.set((await abap.Classes['ZCL_ABAPGIT_GITEA'].create_repo({iv_name: abap.operators.concat(abap.CharacterFactory.get(5, 'repo-'),(await abap.Classes['CL_SYSTEM_UUID'].if_system_uuid_static$create_uuid_x16()))})));</span>
+<span class="cstat-no" title="statement not covered" >    await abap.Classes['ZCL_ABAPGIT_OBJECT_ZAG1'].upsert({iv_name: abap.CharacterFactory.get(9, 'ZAG1_NAME'), iv_value: abap.CharacterFactory.get(5, 'hello'), iv_package: ltcl_test.c_package});</span>
+<span class="cstat-no" title="statement not covered" >    await abap.statements.cast(lo_online, (await (await abap.Classes['ZCL_ABAPGIT_REPO_SRV'].get_instance()).get().zif_abapgit_repo_srv$new_online({iv_url: lv_url, iv_package: ltcl_test.c_package})));</span>
+<span class="cstat-no" title="statement not covered" >    await abap.Classes['CL_ABAP_UNIT_ASSERT'].assert_not_initial({act: lo_online});</span>
+<span class="cstat-no" title="statement not covered" >    lt_result.set((await abap.Classes['ZCL_ABAPGIT_REPO_STATUS'].calculate({ii_repo: lo_online})));</span>
+<span class="cstat-no" title="statement not covered" >    await abap.Classes['CL_ABAP_UNIT_ASSERT'].assert_equals({exp: abap.builtin.lines({val: lt_result}), act: abap.IntegerFactory.get(2)});</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
+<span class="cstat-no" title="statement not covered" >}</span>
+abap.Classes['CLAS-ZCL_ABAPGIT_OBJECT_ZAG1-LTCL_TEST'] = ltcl_test;
+ltcl_test.c_package = new abap.types.Character(30, {"qualifiedName":"DEVCLASS","ddicName":"DEVCLASS","description":"DEVCLASS"});
+ltcl_test.c_package.set('ZFOOBAR');
+export {lcl_tr_object_table, ltcl_test};</pre></td></tr></table></pre>
+
+                <div class='push'></div><!-- for sticky footer -->
+            </div><!-- /wrapper -->
+            <div class='footer quiet pad2 space-top1 center small'>
+                Code coverage generated by
+                <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
+                at 2026-02-23T16:07:14.249Z
+            </div>
+        <script src="../prettify.js"></script>
+        <script>
+            window.onload = function () {
+                prettyPrint();
+            };
+        </script>
+        <script src="../sorter.js"></script>
+        <script src="../block-navigation.js"></script>
+    </body>
+</html>
+    

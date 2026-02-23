@@ -1,0 +1,904 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Code coverage report for output/zcl_abapgit_http.clas.mjs</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+    
+<body>
+<div class='wrapper'>
+    <div class='pad1'>
+        <h1><a href="../index.html">All files</a> / <a href="index.html">output</a> zcl_abapgit_http.clas.mjs</h1>
+        <div class='clearfix'>
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">17.51% </span>
+                <span class="quiet">Statements</span>
+                <span class='fraction'>48/274</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">100% </span>
+                <span class="quiet">Branches</span>
+                <span class='fraction'>2/2</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">2.5% </span>
+                <span class="quiet">Functions</span>
+                <span class='fraction'>1/40</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">17.51% </span>
+                <span class="quiet">Lines</span>
+                <span class='fraction'>48/274</span>
+            </div>
+        
+            
+        </div>
+        <p class="quiet">
+            Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
+        </p>
+        <template id="filterTemplate">
+            <div class="quiet">
+                Filter:
+                <input type="search" id="fileSearch">
+            </div>
+        </template>
+    </div>
+    <div class='status-line low'></div>
+    <pre><table class="coverage">
+<tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
+<a name='L2'></a><a href='#L2'>2</a>
+<a name='L3'></a><a href='#L3'>3</a>
+<a name='L4'></a><a href='#L4'>4</a>
+<a name='L5'></a><a href='#L5'>5</a>
+<a name='L6'></a><a href='#L6'>6</a>
+<a name='L7'></a><a href='#L7'>7</a>
+<a name='L8'></a><a href='#L8'>8</a>
+<a name='L9'></a><a href='#L9'>9</a>
+<a name='L10'></a><a href='#L10'>10</a>
+<a name='L11'></a><a href='#L11'>11</a>
+<a name='L12'></a><a href='#L12'>12</a>
+<a name='L13'></a><a href='#L13'>13</a>
+<a name='L14'></a><a href='#L14'>14</a>
+<a name='L15'></a><a href='#L15'>15</a>
+<a name='L16'></a><a href='#L16'>16</a>
+<a name='L17'></a><a href='#L17'>17</a>
+<a name='L18'></a><a href='#L18'>18</a>
+<a name='L19'></a><a href='#L19'>19</a>
+<a name='L20'></a><a href='#L20'>20</a>
+<a name='L21'></a><a href='#L21'>21</a>
+<a name='L22'></a><a href='#L22'>22</a>
+<a name='L23'></a><a href='#L23'>23</a>
+<a name='L24'></a><a href='#L24'>24</a>
+<a name='L25'></a><a href='#L25'>25</a>
+<a name='L26'></a><a href='#L26'>26</a>
+<a name='L27'></a><a href='#L27'>27</a>
+<a name='L28'></a><a href='#L28'>28</a>
+<a name='L29'></a><a href='#L29'>29</a>
+<a name='L30'></a><a href='#L30'>30</a>
+<a name='L31'></a><a href='#L31'>31</a>
+<a name='L32'></a><a href='#L32'>32</a>
+<a name='L33'></a><a href='#L33'>33</a>
+<a name='L34'></a><a href='#L34'>34</a>
+<a name='L35'></a><a href='#L35'>35</a>
+<a name='L36'></a><a href='#L36'>36</a>
+<a name='L37'></a><a href='#L37'>37</a>
+<a name='L38'></a><a href='#L38'>38</a>
+<a name='L39'></a><a href='#L39'>39</a>
+<a name='L40'></a><a href='#L40'>40</a>
+<a name='L41'></a><a href='#L41'>41</a>
+<a name='L42'></a><a href='#L42'>42</a>
+<a name='L43'></a><a href='#L43'>43</a>
+<a name='L44'></a><a href='#L44'>44</a>
+<a name='L45'></a><a href='#L45'>45</a>
+<a name='L46'></a><a href='#L46'>46</a>
+<a name='L47'></a><a href='#L47'>47</a>
+<a name='L48'></a><a href='#L48'>48</a>
+<a name='L49'></a><a href='#L49'>49</a>
+<a name='L50'></a><a href='#L50'>50</a>
+<a name='L51'></a><a href='#L51'>51</a>
+<a name='L52'></a><a href='#L52'>52</a>
+<a name='L53'></a><a href='#L53'>53</a>
+<a name='L54'></a><a href='#L54'>54</a>
+<a name='L55'></a><a href='#L55'>55</a>
+<a name='L56'></a><a href='#L56'>56</a>
+<a name='L57'></a><a href='#L57'>57</a>
+<a name='L58'></a><a href='#L58'>58</a>
+<a name='L59'></a><a href='#L59'>59</a>
+<a name='L60'></a><a href='#L60'>60</a>
+<a name='L61'></a><a href='#L61'>61</a>
+<a name='L62'></a><a href='#L62'>62</a>
+<a name='L63'></a><a href='#L63'>63</a>
+<a name='L64'></a><a href='#L64'>64</a>
+<a name='L65'></a><a href='#L65'>65</a>
+<a name='L66'></a><a href='#L66'>66</a>
+<a name='L67'></a><a href='#L67'>67</a>
+<a name='L68'></a><a href='#L68'>68</a>
+<a name='L69'></a><a href='#L69'>69</a>
+<a name='L70'></a><a href='#L70'>70</a>
+<a name='L71'></a><a href='#L71'>71</a>
+<a name='L72'></a><a href='#L72'>72</a>
+<a name='L73'></a><a href='#L73'>73</a>
+<a name='L74'></a><a href='#L74'>74</a>
+<a name='L75'></a><a href='#L75'>75</a>
+<a name='L76'></a><a href='#L76'>76</a>
+<a name='L77'></a><a href='#L77'>77</a>
+<a name='L78'></a><a href='#L78'>78</a>
+<a name='L79'></a><a href='#L79'>79</a>
+<a name='L80'></a><a href='#L80'>80</a>
+<a name='L81'></a><a href='#L81'>81</a>
+<a name='L82'></a><a href='#L82'>82</a>
+<a name='L83'></a><a href='#L83'>83</a>
+<a name='L84'></a><a href='#L84'>84</a>
+<a name='L85'></a><a href='#L85'>85</a>
+<a name='L86'></a><a href='#L86'>86</a>
+<a name='L87'></a><a href='#L87'>87</a>
+<a name='L88'></a><a href='#L88'>88</a>
+<a name='L89'></a><a href='#L89'>89</a>
+<a name='L90'></a><a href='#L90'>90</a>
+<a name='L91'></a><a href='#L91'>91</a>
+<a name='L92'></a><a href='#L92'>92</a>
+<a name='L93'></a><a href='#L93'>93</a>
+<a name='L94'></a><a href='#L94'>94</a>
+<a name='L95'></a><a href='#L95'>95</a>
+<a name='L96'></a><a href='#L96'>96</a>
+<a name='L97'></a><a href='#L97'>97</a>
+<a name='L98'></a><a href='#L98'>98</a>
+<a name='L99'></a><a href='#L99'>99</a>
+<a name='L100'></a><a href='#L100'>100</a>
+<a name='L101'></a><a href='#L101'>101</a>
+<a name='L102'></a><a href='#L102'>102</a>
+<a name='L103'></a><a href='#L103'>103</a>
+<a name='L104'></a><a href='#L104'>104</a>
+<a name='L105'></a><a href='#L105'>105</a>
+<a name='L106'></a><a href='#L106'>106</a>
+<a name='L107'></a><a href='#L107'>107</a>
+<a name='L108'></a><a href='#L108'>108</a>
+<a name='L109'></a><a href='#L109'>109</a>
+<a name='L110'></a><a href='#L110'>110</a>
+<a name='L111'></a><a href='#L111'>111</a>
+<a name='L112'></a><a href='#L112'>112</a>
+<a name='L113'></a><a href='#L113'>113</a>
+<a name='L114'></a><a href='#L114'>114</a>
+<a name='L115'></a><a href='#L115'>115</a>
+<a name='L116'></a><a href='#L116'>116</a>
+<a name='L117'></a><a href='#L117'>117</a>
+<a name='L118'></a><a href='#L118'>118</a>
+<a name='L119'></a><a href='#L119'>119</a>
+<a name='L120'></a><a href='#L120'>120</a>
+<a name='L121'></a><a href='#L121'>121</a>
+<a name='L122'></a><a href='#L122'>122</a>
+<a name='L123'></a><a href='#L123'>123</a>
+<a name='L124'></a><a href='#L124'>124</a>
+<a name='L125'></a><a href='#L125'>125</a>
+<a name='L126'></a><a href='#L126'>126</a>
+<a name='L127'></a><a href='#L127'>127</a>
+<a name='L128'></a><a href='#L128'>128</a>
+<a name='L129'></a><a href='#L129'>129</a>
+<a name='L130'></a><a href='#L130'>130</a>
+<a name='L131'></a><a href='#L131'>131</a>
+<a name='L132'></a><a href='#L132'>132</a>
+<a name='L133'></a><a href='#L133'>133</a>
+<a name='L134'></a><a href='#L134'>134</a>
+<a name='L135'></a><a href='#L135'>135</a>
+<a name='L136'></a><a href='#L136'>136</a>
+<a name='L137'></a><a href='#L137'>137</a>
+<a name='L138'></a><a href='#L138'>138</a>
+<a name='L139'></a><a href='#L139'>139</a>
+<a name='L140'></a><a href='#L140'>140</a>
+<a name='L141'></a><a href='#L141'>141</a>
+<a name='L142'></a><a href='#L142'>142</a>
+<a name='L143'></a><a href='#L143'>143</a>
+<a name='L144'></a><a href='#L144'>144</a>
+<a name='L145'></a><a href='#L145'>145</a>
+<a name='L146'></a><a href='#L146'>146</a>
+<a name='L147'></a><a href='#L147'>147</a>
+<a name='L148'></a><a href='#L148'>148</a>
+<a name='L149'></a><a href='#L149'>149</a>
+<a name='L150'></a><a href='#L150'>150</a>
+<a name='L151'></a><a href='#L151'>151</a>
+<a name='L152'></a><a href='#L152'>152</a>
+<a name='L153'></a><a href='#L153'>153</a>
+<a name='L154'></a><a href='#L154'>154</a>
+<a name='L155'></a><a href='#L155'>155</a>
+<a name='L156'></a><a href='#L156'>156</a>
+<a name='L157'></a><a href='#L157'>157</a>
+<a name='L158'></a><a href='#L158'>158</a>
+<a name='L159'></a><a href='#L159'>159</a>
+<a name='L160'></a><a href='#L160'>160</a>
+<a name='L161'></a><a href='#L161'>161</a>
+<a name='L162'></a><a href='#L162'>162</a>
+<a name='L163'></a><a href='#L163'>163</a>
+<a name='L164'></a><a href='#L164'>164</a>
+<a name='L165'></a><a href='#L165'>165</a>
+<a name='L166'></a><a href='#L166'>166</a>
+<a name='L167'></a><a href='#L167'>167</a>
+<a name='L168'></a><a href='#L168'>168</a>
+<a name='L169'></a><a href='#L169'>169</a>
+<a name='L170'></a><a href='#L170'>170</a>
+<a name='L171'></a><a href='#L171'>171</a>
+<a name='L172'></a><a href='#L172'>172</a>
+<a name='L173'></a><a href='#L173'>173</a>
+<a name='L174'></a><a href='#L174'>174</a>
+<a name='L175'></a><a href='#L175'>175</a>
+<a name='L176'></a><a href='#L176'>176</a>
+<a name='L177'></a><a href='#L177'>177</a>
+<a name='L178'></a><a href='#L178'>178</a>
+<a name='L179'></a><a href='#L179'>179</a>
+<a name='L180'></a><a href='#L180'>180</a>
+<a name='L181'></a><a href='#L181'>181</a>
+<a name='L182'></a><a href='#L182'>182</a>
+<a name='L183'></a><a href='#L183'>183</a>
+<a name='L184'></a><a href='#L184'>184</a>
+<a name='L185'></a><a href='#L185'>185</a>
+<a name='L186'></a><a href='#L186'>186</a>
+<a name='L187'></a><a href='#L187'>187</a>
+<a name='L188'></a><a href='#L188'>188</a>
+<a name='L189'></a><a href='#L189'>189</a>
+<a name='L190'></a><a href='#L190'>190</a>
+<a name='L191'></a><a href='#L191'>191</a>
+<a name='L192'></a><a href='#L192'>192</a>
+<a name='L193'></a><a href='#L193'>193</a>
+<a name='L194'></a><a href='#L194'>194</a>
+<a name='L195'></a><a href='#L195'>195</a>
+<a name='L196'></a><a href='#L196'>196</a>
+<a name='L197'></a><a href='#L197'>197</a>
+<a name='L198'></a><a href='#L198'>198</a>
+<a name='L199'></a><a href='#L199'>199</a>
+<a name='L200'></a><a href='#L200'>200</a>
+<a name='L201'></a><a href='#L201'>201</a>
+<a name='L202'></a><a href='#L202'>202</a>
+<a name='L203'></a><a href='#L203'>203</a>
+<a name='L204'></a><a href='#L204'>204</a>
+<a name='L205'></a><a href='#L205'>205</a>
+<a name='L206'></a><a href='#L206'>206</a>
+<a name='L207'></a><a href='#L207'>207</a>
+<a name='L208'></a><a href='#L208'>208</a>
+<a name='L209'></a><a href='#L209'>209</a>
+<a name='L210'></a><a href='#L210'>210</a>
+<a name='L211'></a><a href='#L211'>211</a>
+<a name='L212'></a><a href='#L212'>212</a>
+<a name='L213'></a><a href='#L213'>213</a>
+<a name='L214'></a><a href='#L214'>214</a>
+<a name='L215'></a><a href='#L215'>215</a>
+<a name='L216'></a><a href='#L216'>216</a>
+<a name='L217'></a><a href='#L217'>217</a>
+<a name='L218'></a><a href='#L218'>218</a>
+<a name='L219'></a><a href='#L219'>219</a>
+<a name='L220'></a><a href='#L220'>220</a>
+<a name='L221'></a><a href='#L221'>221</a>
+<a name='L222'></a><a href='#L222'>222</a>
+<a name='L223'></a><a href='#L223'>223</a>
+<a name='L224'></a><a href='#L224'>224</a>
+<a name='L225'></a><a href='#L225'>225</a>
+<a name='L226'></a><a href='#L226'>226</a>
+<a name='L227'></a><a href='#L227'>227</a>
+<a name='L228'></a><a href='#L228'>228</a>
+<a name='L229'></a><a href='#L229'>229</a>
+<a name='L230'></a><a href='#L230'>230</a>
+<a name='L231'></a><a href='#L231'>231</a>
+<a name='L232'></a><a href='#L232'>232</a>
+<a name='L233'></a><a href='#L233'>233</a>
+<a name='L234'></a><a href='#L234'>234</a>
+<a name='L235'></a><a href='#L235'>235</a>
+<a name='L236'></a><a href='#L236'>236</a>
+<a name='L237'></a><a href='#L237'>237</a>
+<a name='L238'></a><a href='#L238'>238</a>
+<a name='L239'></a><a href='#L239'>239</a>
+<a name='L240'></a><a href='#L240'>240</a>
+<a name='L241'></a><a href='#L241'>241</a>
+<a name='L242'></a><a href='#L242'>242</a>
+<a name='L243'></a><a href='#L243'>243</a>
+<a name='L244'></a><a href='#L244'>244</a>
+<a name='L245'></a><a href='#L245'>245</a>
+<a name='L246'></a><a href='#L246'>246</a>
+<a name='L247'></a><a href='#L247'>247</a>
+<a name='L248'></a><a href='#L248'>248</a>
+<a name='L249'></a><a href='#L249'>249</a>
+<a name='L250'></a><a href='#L250'>250</a>
+<a name='L251'></a><a href='#L251'>251</a>
+<a name='L252'></a><a href='#L252'>252</a>
+<a name='L253'></a><a href='#L253'>253</a>
+<a name='L254'></a><a href='#L254'>254</a>
+<a name='L255'></a><a href='#L255'>255</a>
+<a name='L256'></a><a href='#L256'>256</a>
+<a name='L257'></a><a href='#L257'>257</a>
+<a name='L258'></a><a href='#L258'>258</a>
+<a name='L259'></a><a href='#L259'>259</a>
+<a name='L260'></a><a href='#L260'>260</a>
+<a name='L261'></a><a href='#L261'>261</a>
+<a name='L262'></a><a href='#L262'>262</a>
+<a name='L263'></a><a href='#L263'>263</a>
+<a name='L264'></a><a href='#L264'>264</a>
+<a name='L265'></a><a href='#L265'>265</a>
+<a name='L266'></a><a href='#L266'>266</a>
+<a name='L267'></a><a href='#L267'>267</a>
+<a name='L268'></a><a href='#L268'>268</a>
+<a name='L269'></a><a href='#L269'>269</a>
+<a name='L270'></a><a href='#L270'>270</a>
+<a name='L271'></a><a href='#L271'>271</a>
+<a name='L272'></a><a href='#L272'>272</a>
+<a name='L273'></a><a href='#L273'>273</a>
+<a name='L274'></a><a href='#L274'>274</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span></td><td class="text"><pre class="prettyprint lang-js">const {cx_root} = await import("./cx_root.clas.mjs");
+// zcl_abapgit_http.clas.abap
+class zcl_abapgit_http {
+  static STATIC_SUPER = undefined;
+  static INTERNAL_TYPE = 'CLAS';
+  static INTERNAL_NAME = 'ZCL_ABAPGIT_HTTP';
+  static IMPLEMENTED_INTERFACES = [];
+  static ATTRIBUTES = {"C_SCHEME": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Structure({</span>
+  "digest": new abap.types.String({qualifiedName: "STRING"})}, undefined, undefined, {}, {});}, "visibility": "U", "is_constant": "X", "is_class": "X"}};
+  static METHODS = {"CHECK_AUTH_REQUESTED": {"visibility": "O", "parameters": {"RV_AUTH_REQUESTED": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"});},</span> "is_optional": " ", "parm_kind": "R", "type_name": "CharacterType"}, "II_CLIENT": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.ABAPObject({qualifiedName: "IF_HTTP_CLIENT", RTTIName: "\\INTERFACE=IF_HTTP_CLIENT"});},</span> "is_optional": " ", "parm_kind": "I", "type_name": "ObjectReferenceType"}}},
+  "IS_LOCAL_SYSTEM": {"visibility": "O", "parameters": {"RV_BOOL": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"});},</span> "is_optional": " ", "parm_kind": "R", "type_name": "CharacterType"}, "IV_URL": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.String({qualifiedName: "STRING"});},</span> "is_optional": " ", "parm_kind": "I", "type_name": "StringType"}}},
+  "ACQUIRE_LOGIN_DETAILS": {"visibility": "O", "parameters": {"RV_SCHEME": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.String({qualifiedName: "STRING"});},</span> "is_optional": " ", "parm_kind": "R", "type_name": "StringType"}, "II_CLIENT": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.ABAPObject({qualifiedName: "IF_HTTP_CLIENT", RTTIName: "\\INTERFACE=IF_HTTP_CLIENT"});},</span> "is_optional": " ", "parm_kind": "I", "type_name": "ObjectReferenceType"}, "IO_CLIENT": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.ABAPObject({qualifiedName: "ZCL_ABAPGIT_HTTP_CLIENT", RTTIName: "\\CLASS=ZCL_ABAPGIT_HTTP_CLIENT"});},</span> "is_optional": " ", "parm_kind": "I", "type_name": "ObjectReferenceType"}, "IV_URL": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.String({qualifiedName: "STRING"});},</span> "is_optional": " ", "parm_kind": "I", "type_name": "StringType"}}},
+  "GET_HTTP_CLIENT": {"visibility": "O", "parameters": {"RI_CLIENT": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.ABAPObject({qualifiedName: "IF_HTTP_CLIENT", RTTIName: "\\INTERFACE=IF_HTTP_CLIENT"});},</span> "is_optional": " ", "parm_kind": "R", "type_name": "ObjectReferenceType"}, "IV_URL": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.String({qualifiedName: "STRING"});},</span> "is_optional": " ", "parm_kind": "I", "type_name": "StringType"}}},
+  "GET_CONNECTION_LONGTEXT": {"visibility": "O", "parameters": {"RV_LONGTEXT": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.String({qualifiedName: "STRING"});},</span> "is_optional": " ", "parm_kind": "R", "type_name": "StringType"}, "IV_HOST": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.String({qualifiedName: "STRING"});},</span> "is_optional": " ", "parm_kind": "I", "type_name": "StringType"}, "IV_SSL_ID": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Character(6, {"qualifiedName":"SSFAPPLSSL","ddicName":"SSFAPPLSSL","description":"SSL ID"});},</span> "is_optional": " ", "parm_kind": "I", "type_name": "CharacterType"}, "IV_PROXY_HOST": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.String({qualifiedName: "STRING"});},</span> "is_optional": " ", "parm_kind": "I", "type_name": "StringType"}, "IV_PROXY_SERVICE": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.String({qualifiedName: "STRING"});},</span> "is_optional": " ", "parm_kind": "I", "type_name": "StringType"}}},
+  "GET_AGENT": {"visibility": "U", "parameters": {"RV_AGENT": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.String({qualifiedName: "STRING"});},</span> "is_optional": " ", "parm_kind": "R", "type_name": "StringType"}}},
+  "CREATE_BY_URL": {"visibility": "U", "parameters": {"RO_CLIENT": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.ABAPObject({qualifiedName: "ZCL_ABAPGIT_HTTP_CLIENT", RTTIName: "\\CLASS=ZCL_ABAPGIT_HTTP_CLIENT"});},</span> "is_optional": " ", "parm_kind": "R", "type_name": "ObjectReferenceType"}, "IV_URL": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.String({qualifiedName: "STRING"});},</span> "is_optional": " ", "parm_kind": "I", "type_name": "StringType"}, "IT_HEADERS": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return abap.types.TableFactory.construct(new abap.types.Structure({</span>
+<span class="cstat-no" title="statement not covered" >  "key": new abap.types.String({qualifiedName: "ZCL_ABAPGIT_HTTP=&gt;TY_KEY_VALUE-KEY"}),</span>
+  "value": new abap.types.String({qualifiedName: "ZCL_ABAPGIT_HTTP=&gt;TY_KEY_VALUE-VALUE"})}, "zcl_abapgit_http=&gt;ty_key_value", undefined, {}, {}), {"withHeader":false,"keyType":"DEFAULT","primaryKey":{"name":"primary_key","type":"STANDARD","isUnique":false,"keyFields":[]},"secondary":[]}, "zcl_abapgit_http=&gt;ty_headers");}, "is_optional": " ", "parm_kind": "I", "type_name": "TableType"}}},
+  "CHECK_CONNECTION": {"visibility": "U", "parameters": {"IV_URL": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.String({qualifiedName: "STRING"});},</span> "is_optional": " ", "parm_kind": "I", "type_name": "StringType"}}}};
+<span class="fstat-no" title="function not covered" >  constructor() {</span>
+<span class="cstat-no" title="statement not covered" >    this.me = new abap.types.ABAPObject();</span>
+<span class="cstat-no" title="statement not covered" >    this.me.set(this);</span>
+<span class="cstat-no" title="statement not covered" >    this.INTERNAL_ID = abap.internalIdCounter++;</span>
+<span class="cstat-no" title="statement not covered" >    this.FRIENDS_ACCESS_INSTANCE = {</span>
+<span class="cstat-no" title="statement not covered" >    };</span>
+<span class="cstat-no" title="statement not covered" >    this.c_scheme = zcl_abapgit_http.c_scheme;</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
+<span class="fstat-no" title="function not covered" >  async constructor_(INPUT) {</span>
+<span class="cstat-no" title="statement not covered" >    if (super.constructor_) { await super.constructor_(INPUT); }</span>
+<span class="cstat-no" title="statement not covered" >    return this;</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
+<span class="fstat-no" title="function not covered" >  async acquire_login_details(INPUT) {</span>
+<span class="cstat-no" title="statement not covered" >    return zcl_abapgit_http.acquire_login_details(INPUT);</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
+  static <span class="fstat-no" title="function not covered" >async acquire_login_details(INPUT) {</span>
+<span class="cstat-no" title="statement not covered" >    let rv_scheme = new abap.types.String({qualifiedName: "STRING"});</span>
+<span class="cstat-no" title="statement not covered" >    let ii_client = INPUT?.ii_client;</span>
+<span class="cstat-no" title="statement not covered" >    if (ii_client?.getQualifiedName === undefined || ii_client.getQualifiedName() !== "IF_HTTP_CLIENT") { ii_client = undefined; }</span>
+<span class="cstat-no" title="statement not covered" >    if (ii_client === undefined) { ii_client = new abap.types.ABAPObject({qualifiedName: "IF_HTTP_CLIENT", RTTIName: "\\INTERFACE=IF_HTTP_CLIENT"}).set(INPUT.ii_client); }</span>
+<span class="cstat-no" title="statement not covered" >    let io_client = INPUT?.io_client;</span>
+<span class="cstat-no" title="statement not covered" >    if (io_client?.getQualifiedName === undefined || io_client.getQualifiedName() !== "ZCL_ABAPGIT_HTTP_CLIENT") { io_client = undefined; }</span>
+<span class="cstat-no" title="statement not covered" >    if (io_client === undefined) { io_client = new abap.types.ABAPObject({qualifiedName: "ZCL_ABAPGIT_HTTP_CLIENT", RTTIName: "\\CLASS=ZCL_ABAPGIT_HTTP_CLIENT"}).set(INPUT.io_client); }</span>
+<span class="cstat-no" title="statement not covered" >    let iv_url = INPUT?.iv_url;</span>
+<span class="cstat-no" title="statement not covered" >    if (iv_url?.getQualifiedName === undefined || iv_url.getQualifiedName() !== "STRING") { iv_url = undefined; }</span>
+<span class="cstat-no" title="statement not covered" >    if (iv_url === undefined) { iv_url = new abap.types.String({qualifiedName: "STRING"}).set(INPUT.iv_url); }</span>
+<span class="cstat-no" title="statement not covered" >    let lv_default_user = new abap.types.String({qualifiedName: "STRING"});</span>
+<span class="cstat-no" title="statement not covered" >    let lv_user = new abap.types.String({qualifiedName: "STRING"});</span>
+<span class="cstat-no" title="statement not covered" >    let lv_pass = new abap.types.String({qualifiedName: "STRING"});</span>
+<span class="cstat-no" title="statement not covered" >    let lo_digest = new abap.types.ABAPObject({qualifiedName: "ZCL_ABAPGIT_HTTP_DIGEST", RTTIName: "\\CLASS=ZCL_ABAPGIT_HTTP_DIGEST"});</span>
+<span class="cstat-no" title="statement not covered" >    lv_default_user.set((await (await abap.Classes['ZCL_ABAPGIT_PERSIST_FACTORY'].get_user()).get().zif_abapgit_persist_user$get_repo_login({iv_url: iv_url})));</span>
+<span class="cstat-no" title="statement not covered" >    lv_user.set(lv_default_user);</span>
+<span class="cstat-no" title="statement not covered" >    await abap.Classes['ZCL_ABAPGIT_PASSWORD_DIALOG'].popup({iv_repo_url: iv_url, cv_user: lv_user, cv_pass: lv_pass});</span>
+<span class="cstat-no" title="statement not covered" >    if (abap.compare.initial(lv_user)) {</span>
+<span class="cstat-no" title="statement not covered" >      await abap.Classes['ZCX_ABAPGIT_EXCEPTION'].raise({iv_text: abap.CharacterFactory.get(43, 'Unauthorized access. Check your credentials')});</span>
+<span class="cstat-no" title="statement not covered" >    }</span>
+<span class="cstat-no" title="statement not covered" >    if (abap.compare.ne(lv_user, lv_default_user)) {</span>
+<span class="cstat-no" title="statement not covered" >      await (await abap.Classes['ZCL_ABAPGIT_PERSIST_FACTORY'].get_user()).get().zif_abapgit_persist_user$set_repo_login({iv_url: iv_url, iv_login: lv_user});</span>
+<span class="cstat-no" title="statement not covered" >    }</span>
+<span class="cstat-no" title="statement not covered" >    rv_scheme.set((await ii_client.get().if_http_client$response.get().if_http_entity$get_header_field({name: abap.CharacterFactory.get(16, 'www-authenticate')})));</span>
+<span class="cstat-no" title="statement not covered" >    abap.statements.find(rv_scheme, {regex: abap.CharacterFactory.get(6, '^(\\w+)'), submatches: [rv_scheme]});</span>
+<span class="cstat-no" title="statement not covered" >    let unique499 = rv_scheme;</span>
+<span class="cstat-no" title="statement not covered" >    if (abap.compare.eq(unique499, zcl_abapgit_http.c_scheme.get().digest)) {</span>
+<span class="cstat-no" title="statement not covered" >      lo_digest.set(await (new abap.Classes['ZCL_ABAPGIT_HTTP_DIGEST']()).constructor_({ii_client: ii_client, iv_username: lv_user, iv_password: lv_pass}));</span>
+<span class="cstat-no" title="statement not covered" >      await lo_digest.get().run({ii_client: ii_client});</span>
+<span class="cstat-no" title="statement not covered" >      await io_client.get().set_digest({io_digest: lo_digest});</span>
+<span class="cstat-no" title="statement not covered" >    } else {</span>
+<span class="cstat-no" title="statement not covered" >      await ii_client.get().if_http_client$authenticate({username: lv_user, password: lv_pass});</span>
+<span class="cstat-no" title="statement not covered" >    }</span>
+<span class="cstat-no" title="statement not covered" >    return rv_scheme;</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
+<span class="fstat-no" title="function not covered" >  async check_auth_requested(INPUT) {</span>
+<span class="cstat-no" title="statement not covered" >    return zcl_abapgit_http.check_auth_requested(INPUT);</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
+  static <span class="fstat-no" title="function not covered" >async check_auth_requested(INPUT) {</span>
+<span class="cstat-no" title="statement not covered" >    let rv_auth_requested = new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"});</span>
+<span class="cstat-no" title="statement not covered" >    let ii_client = INPUT?.ii_client;</span>
+<span class="cstat-no" title="statement not covered" >    if (ii_client?.getQualifiedName === undefined || ii_client.getQualifiedName() !== "IF_HTTP_CLIENT") { ii_client = undefined; }</span>
+<span class="cstat-no" title="statement not covered" >    if (ii_client === undefined) { ii_client = new abap.types.ABAPObject({qualifiedName: "IF_HTTP_CLIENT", RTTIName: "\\INTERFACE=IF_HTTP_CLIENT"}).set(INPUT.ii_client); }</span>
+<span class="cstat-no" title="statement not covered" >    let lv_code = new abap.types.Integer({qualifiedName: "I"});</span>
+<span class="cstat-no" title="statement not covered" >    await ii_client.get().if_http_client$response.get().if_http_response$get_status({code: lv_code});</span>
+<span class="cstat-no" title="statement not covered" >    if (abap.compare.eq(lv_code, new abap.types.Integer().set(401))) {</span>
+<span class="cstat-no" title="statement not covered" >      rv_auth_requested.set(abap.builtin.abap_true);</span>
+<span class="cstat-no" title="statement not covered" >    }</span>
+<span class="cstat-no" title="statement not covered" >    return rv_auth_requested;</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
+<span class="fstat-no" title="function not covered" >  async check_connection(INPUT) {</span>
+<span class="cstat-no" title="statement not covered" >    return zcl_abapgit_http.check_connection(INPUT);</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
+  static <span class="fstat-no" title="function not covered" >async check_connection(INPUT) {</span>
+<span class="cstat-no" title="statement not covered" >    let iv_url = INPUT?.iv_url;</span>
+<span class="cstat-no" title="statement not covered" >    if (iv_url?.getQualifiedName === undefined || iv_url.getQualifiedName() !== "STRING") { iv_url = undefined; }</span>
+<span class="cstat-no" title="statement not covered" >    if (iv_url === undefined) { iv_url = new abap.types.String({qualifiedName: "STRING"}).set(INPUT.iv_url); }</span>
+<span class="cstat-no" title="statement not covered" >    await this.get_http_client({iv_url: iv_url});</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
+<span class="fstat-no" title="function not covered" >  async create_by_url(INPUT) {</span>
+<span class="cstat-no" title="statement not covered" >    return zcl_abapgit_http.create_by_url(INPUT);</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
+  static <span class="fstat-no" title="function not covered" >async create_by_url(INPUT) {</span>
+<span class="cstat-no" title="statement not covered" >    let ro_client = new abap.types.ABAPObject({qualifiedName: "ZCL_ABAPGIT_HTTP_CLIENT", RTTIName: "\\CLASS=ZCL_ABAPGIT_HTTP_CLIENT"});</span>
+<span class="cstat-no" title="statement not covered" >    let iv_url = INPUT?.iv_url;</span>
+<span class="cstat-no" title="statement not covered" >    if (iv_url?.getQualifiedName === undefined || iv_url.getQualifiedName() !== "STRING") { iv_url = undefined; }</span>
+<span class="cstat-no" title="statement not covered" >    if (iv_url === undefined) { iv_url = new abap.types.String({qualifiedName: "STRING"}).set(INPUT.iv_url); }</span>
+<span class="cstat-no" title="statement not covered" >    let it_headers = abap.types.TableFactory.construct(new abap.types.Structure({</span>
+<span class="cstat-no" title="statement not covered" >    "key": new abap.types.String({qualifiedName: "ZCL_ABAPGIT_HTTP=&gt;TY_KEY_VALUE-KEY"}),</span>
+<span class="cstat-no" title="statement not covered" >    "value": new abap.types.String({qualifiedName: "ZCL_ABAPGIT_HTTP=&gt;TY_KEY_VALUE-VALUE"})}, "zcl_abapgit_http=&gt;ty_key_value", undefined, {}, {}), {"withHeader":false,"keyType":"DEFAULT","primaryKey":{"name":"primary_key","type":"STANDARD","isUnique":false,"keyFields":[]},"secondary":[]}, "zcl_abapgit_http=&gt;ty_headers");</span>
+<span class="cstat-no" title="statement not covered" >    if (INPUT &amp;&amp; INPUT.it_headers) {it_headers.set(INPUT.it_headers);}</span>
+<span class="cstat-no" title="statement not covered" >    let lv_scheme = new abap.types.String({qualifiedName: "STRING"});</span>
+<span class="cstat-no" title="statement not covered" >    let lv_authorization = new abap.types.String({qualifiedName: "STRING"});</span>
+<span class="cstat-no" title="statement not covered" >    let li_client = new abap.types.ABAPObject({qualifiedName: "IF_HTTP_CLIENT", RTTIName: "\\INTERFACE=IF_HTTP_CLIENT"});</span>
+<span class="cstat-no" title="statement not covered" >    let ls_header = new abap.types.Structure({</span>
+<span class="cstat-no" title="statement not covered" >    "key": new abap.types.String({qualifiedName: "ZCL_ABAPGIT_HTTP=&gt;TY_KEY_VALUE-KEY"}),</span>
+<span class="cstat-no" title="statement not covered" >    "value": new abap.types.String({qualifiedName: "ZCL_ABAPGIT_HTTP=&gt;TY_KEY_VALUE-VALUE"})}, "zcl_abapgit_http=&gt;ty_key_value", undefined, {}, {});</span>
+<span class="cstat-no" title="statement not covered" >    li_client.set((await this.get_http_client({iv_url: iv_url})));</span>
+<span class="cstat-no" title="statement not covered" >    ro_client.set(await (new abap.Classes['ZCL_ABAPGIT_HTTP_CLIENT']()).constructor_({ii_client: li_client}));</span>
+<span class="cstat-no" title="statement not covered" >    if (abap.compare.eq((await this.is_local_system({iv_url: iv_url})), abap.builtin.abap_true)) {</span>
+<span class="cstat-no" title="statement not covered" >      await li_client.get().if_http_client$send_sap_logon_ticket();</span>
+<span class="cstat-no" title="statement not covered" >    }</span>
+<span class="cstat-no" title="statement not covered" >    await li_client.get().if_http_client$request.get().if_http_entity$set_cdata({data: abap.CharacterFactory.get(1, '')});</span>
+<span class="cstat-no" title="statement not covered" >    await li_client.get().if_http_client$request.get().if_http_entity$set_header_field({name: abap.CharacterFactory.get(15, '~request_method'), value: abap.CharacterFactory.get(3, 'GET')});</span>
+<span class="cstat-no" title="statement not covered" >    await li_client.get().if_http_client$request.get().if_http_entity$set_header_field({name: abap.CharacterFactory.get(10, 'user-agent'), value: (await this.get_agent())});</span>
+<span class="cstat-no" title="statement not covered" >    for await (const unique500 of abap.statements.loop(it_headers)) {</span>
+<span class="cstat-no" title="statement not covered" >      ls_header.set(unique500);</span>
+<span class="cstat-no" title="statement not covered" >      await li_client.get().if_http_client$request.get().if_http_entity$set_header_field({name: ls_header.get().key, value: ls_header.get().value});</span>
+<span class="cstat-no" title="statement not covered" >    }</span>
+<span class="cstat-no" title="statement not covered" >    li_client.get().if_http_client$propertytype_logon_popup.set(abap.Classes['IF_HTTP_CLIENT'].if_http_client$co_disabled);</span>
+<span class="cstat-no" title="statement not covered" >    lv_authorization.set((await abap.Classes['ZCL_ABAPGIT_LOGIN_MANAGER'].load({iv_uri: iv_url})));</span>
+<span class="cstat-no" title="statement not covered" >    if (abap.compare.initial(lv_authorization) === false) {</span>
+<span class="cstat-no" title="statement not covered" >      await li_client.get().if_http_client$request.get().if_http_entity$set_header_field({name: abap.CharacterFactory.get(13, 'authorization'), value: lv_authorization});</span>
+<span class="cstat-no" title="statement not covered" >      li_client.get().if_http_client$propertytype_logon_popup.set(li_client.get().if_http_client$co_disabled);</span>
+<span class="cstat-no" title="statement not covered" >    }</span>
+<span class="cstat-no" title="statement not covered" >    await li_client.get().if_http_client$request.get().if_http_request$set_version({version: abap.Classes['IF_HTTP_REQUEST'].if_http_entity$co_protocol_version_1_1});</span>
+<span class="cstat-no" title="statement not covered" >    await (await abap.Classes['ZCL_ABAPGIT_EXIT'].get_instance()).get().zif_abapgit_exit$http_client({iv_url: iv_url, ii_client: li_client});</span>
+<span class="cstat-no" title="statement not covered" >    await ro_client.get().send_receive();</span>
+<span class="cstat-no" title="statement not covered" >    if (abap.compare.eq((await this.check_auth_requested({ii_client: li_client})), abap.builtin.abap_true)) {</span>
+<span class="cstat-no" title="statement not covered" >      lv_scheme.set((await this.acquire_login_details({ii_client: li_client, io_client: ro_client, iv_url: iv_url})));</span>
+<span class="cstat-no" title="statement not covered" >      await ro_client.get().send_receive();</span>
+<span class="cstat-no" title="statement not covered" >    }</span>
+<span class="cstat-no" title="statement not covered" >    await ro_client.get().check_http_200();</span>
+<span class="cstat-no" title="statement not covered" >    if (abap.compare.ne(lv_scheme, zcl_abapgit_http.c_scheme.get().digest)) {</span>
+<span class="cstat-no" title="statement not covered" >      await abap.Classes['ZCL_ABAPGIT_LOGIN_MANAGER'].save({iv_uri: iv_url, iv_authorization: (await li_client.get().if_http_client$request.get().if_http_entity$get_header_field({name: abap.CharacterFactory.get(13, 'authorization')}))});</span>
+<span class="cstat-no" title="statement not covered" >    }</span>
+<span class="cstat-no" title="statement not covered" >    return ro_client;</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
+<span class="fstat-no" title="function not covered" >  async get_agent() {</span>
+<span class="cstat-no" title="statement not covered" >    return zcl_abapgit_http.get_agent();</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
+  static <span class="fstat-no" title="function not covered" >async get_agent() {</span>
+<span class="cstat-no" title="statement not covered" >    let rv_agent = new abap.types.String({qualifiedName: "STRING"});</span>
+<span class="cstat-no" title="statement not covered" >    rv_agent.set(new abap.types.String().set(`git/2.0 (abapGit ${abap.templateFormatting(abap.Classes['ZIF_ABAPGIT_VERSION'].zif_abapgit_version$c_abap_version)})`));</span>
+<span class="cstat-no" title="statement not covered" >    return rv_agent;</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
+<span class="fstat-no" title="function not covered" >  async get_connection_longtext(INPUT) {</span>
+<span class="cstat-no" title="statement not covered" >    return zcl_abapgit_http.get_connection_longtext(INPUT);</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
+  static <span class="fstat-no" title="function not covered" >async get_connection_longtext(INPUT) {</span>
+<span class="cstat-no" title="statement not covered" >    let rv_longtext = new abap.types.String({qualifiedName: "STRING"});</span>
+<span class="cstat-no" title="statement not covered" >    let iv_host = INPUT?.iv_host;</span>
+<span class="cstat-no" title="statement not covered" >    if (iv_host?.getQualifiedName === undefined || iv_host.getQualifiedName() !== "STRING") { iv_host = undefined; }</span>
+<span class="cstat-no" title="statement not covered" >    if (iv_host === undefined) { iv_host = new abap.types.String({qualifiedName: "STRING"}).set(INPUT.iv_host); }</span>
+<span class="cstat-no" title="statement not covered" >    let iv_ssl_id = INPUT?.iv_ssl_id;</span>
+<span class="cstat-no" title="statement not covered" >    if (iv_ssl_id?.getQualifiedName === undefined || iv_ssl_id.getQualifiedName() !== "SSFAPPLSSL") { iv_ssl_id = undefined; }</span>
+<span class="cstat-no" title="statement not covered" >    if (iv_ssl_id === undefined) { iv_ssl_id = new abap.types.Character(6, {"qualifiedName":"SSFAPPLSSL","ddicName":"SSFAPPLSSL","description":"SSL ID"}).set(INPUT.iv_ssl_id); }</span>
+<span class="cstat-no" title="statement not covered" >    let iv_proxy_host = INPUT?.iv_proxy_host;</span>
+<span class="cstat-no" title="statement not covered" >    if (iv_proxy_host?.getQualifiedName === undefined || iv_proxy_host.getQualifiedName() !== "STRING") { iv_proxy_host = undefined; }</span>
+<span class="cstat-no" title="statement not covered" >    if (iv_proxy_host === undefined) { iv_proxy_host = new abap.types.String({qualifiedName: "STRING"}).set(INPUT.iv_proxy_host); }</span>
+<span class="cstat-no" title="statement not covered" >    let iv_proxy_service = INPUT?.iv_proxy_service;</span>
+<span class="cstat-no" title="statement not covered" >    if (iv_proxy_service?.getQualifiedName === undefined || iv_proxy_service.getQualifiedName() !== "STRING") { iv_proxy_service = undefined; }</span>
+<span class="cstat-no" title="statement not covered" >    if (iv_proxy_service === undefined) { iv_proxy_service = new abap.types.String({qualifiedName: "STRING"}).set(INPUT.iv_proxy_service); }</span>
+<span class="cstat-no" title="statement not covered" >    let lc_docs = new abap.types.String({qualifiedName: "STRING"});</span>
+<span class="cstat-no" title="statement not covered" >    lc_docs.set('https://docs.abapgit.org/user-guide/setup/ssl-setup.html');</span>
+<span class="cstat-no" title="statement not covered" >    let lv_proxy = new abap.types.String({qualifiedName: "STRING"});</span>
+<span class="cstat-no" title="statement not covered" >    if (abap.compare.initial(iv_proxy_host) === false) {</span>
+<span class="cstat-no" title="statement not covered" >      lv_proxy.set(new abap.types.String().set(` via proxy &lt;b&gt;${abap.templateFormatting(iv_proxy_host)}:${abap.templateFormatting(iv_proxy_service)}&lt;/b&gt;`));</span>
+<span class="cstat-no" title="statement not covered" >    }</span>
+<span class="cstat-no" title="statement not covered" >    rv_longtext.set(abap.operators.concat(new abap.types.String().set(`abapGit is trying to connect to &lt;b&gt;${abap.templateFormatting(iv_host)}&lt;/b&gt; `),abap.operators.concat(new abap.types.String().set(`using SSL certificates under &lt;b&gt;${abap.templateFormatting(iv_ssl_id)}&lt;/b&gt;${abap.templateFormatting(lv_proxy)}. `),abap.operators.concat(new abap.types.String().set(`Check system parameters (transaction `),abap.operators.concat((await (await abap.Classes['ZCL_ABAPGIT_HTML'].create()).get().zif_abapgit_html$a({iv_txt: abap.CharacterFactory.get(4, 'RZ10'), iv_act: new abap.types.String().set(`${abap.templateFormatting(abap.Classes['ZIF_ABAPGIT_DEFINITIONS'].zif_abapgit_definitions$c_action.get().jump_transaction)}?transaction=RZ10`), iv_class: abap.CharacterFactory.get(6, 'no-pad')})),abap.operators.concat(new abap.types.String().set(`), SSL setup (transaction `),abap.operators.concat((await (await abap.Classes['ZCL_ABAPGIT_HTML'].create()).get().zif_abapgit_html$a({iv_txt: abap.CharacterFactory.get(6, 'STRUST'), iv_act: new abap.types.String().set(`${abap.templateFormatting(abap.Classes['ZIF_ABAPGIT_DEFINITIONS'].zif_abapgit_definitions$c_action.get().jump_transaction)}?transaction=STRUST`), iv_class: abap.CharacterFactory.get(6, 'no-pad')})),abap.operators.concat(new abap.types.String().set(`), Internet connection monitor (transaction `),abap.operators.concat((await (await abap.Classes['ZCL_ABAPGIT_HTML'].create()).get().zif_abapgit_html$a({iv_txt: abap.CharacterFactory.get(5, 'SMICM'), iv_act: new abap.types.String().set(`${abap.templateFormatting(abap.Classes['ZIF_ABAPGIT_DEFINITIONS'].zif_abapgit_definitions$c_action.get().jump_transaction)}?transaction=SMICM`), iv_class: abap.CharacterFactory.get(6, 'no-pad')})),new abap.types.String().set(`)`))))))))));</span>
+<span class="cstat-no" title="statement not covered" >    if (abap.compare.initial(lv_proxy) === false) {</span>
+<span class="cstat-no" title="statement not covered" >      rv_longtext.set(abap.operators.concat(rv_longtext,abap.operators.concat(new abap.types.String().set(`, and proxy configuration (`),abap.operators.concat((await (await abap.Classes['ZCL_ABAPGIT_HTML'].create()).get().zif_abapgit_html$a({iv_txt: abap.CharacterFactory.get(15, 'global settings'), iv_act: new abap.types.String().set(`${abap.templateFormatting(abap.Classes['ZIF_ABAPGIT_DEFINITIONS'].zif_abapgit_definitions$c_action.get().go_settings)}`), iv_class: abap.CharacterFactory.get(6, 'no-pad')})),new abap.types.String().set(`)`)))));</span>
+<span class="cstat-no" title="statement not covered" >    }</span>
+<span class="cstat-no" title="statement not covered" >    rv_longtext.set(abap.operators.concat(rv_longtext,abap.operators.concat(new abap.types.String().set(`. It's recommended to get your SAP Basis and network teams involved. `),abap.operators.concat(new abap.types.String().set(`For more information and troubleshooting, see the `),abap.operators.concat((await (await abap.Classes['ZCL_ABAPGIT_HTML'].create()).get().zif_abapgit_html$a({iv_txt: abap.CharacterFactory.get(21, 'abapGit documentation'), iv_act: new abap.types.String().set(`${abap.templateFormatting(abap.Classes['ZIF_ABAPGIT_DEFINITIONS'].zif_abapgit_definitions$c_action.get().url)}?url=${abap.templateFormatting(lc_docs)}`), iv_class: abap.CharacterFactory.get(6, 'no-pad')})),new abap.types.String().set(`.`))))));</span>
+<span class="cstat-no" title="statement not covered" >    return rv_longtext;</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
+<span class="fstat-no" title="function not covered" >  async get_http_client(INPUT) {</span>
+<span class="cstat-no" title="statement not covered" >    return zcl_abapgit_http.get_http_client(INPUT);</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
+  static <span class="fstat-no" title="function not covered" >async get_http_client(INPUT) {</span>
+<span class="cstat-no" title="statement not covered" >    let ri_client = new abap.types.ABAPObject({qualifiedName: "IF_HTTP_CLIENT", RTTIName: "\\INTERFACE=IF_HTTP_CLIENT"});</span>
+<span class="cstat-no" title="statement not covered" >    let iv_url = INPUT?.iv_url;</span>
+<span class="cstat-no" title="statement not covered" >    if (iv_url?.getQualifiedName === undefined || iv_url.getQualifiedName() !== "STRING") { iv_url = undefined; }</span>
+<span class="cstat-no" title="statement not covered" >    if (iv_url === undefined) { iv_url = new abap.types.String({qualifiedName: "STRING"}).set(INPUT.iv_url); }</span>
+<span class="cstat-no" title="statement not covered" >    let lv_error = new abap.types.String({qualifiedName: "STRING"});</span>
+<span class="cstat-no" title="statement not covered" >    let lv_longtext = new abap.types.String({qualifiedName: "STRING"});</span>
+<span class="cstat-no" title="statement not covered" >    let lv_host = new abap.types.String({qualifiedName: "STRING"});</span>
+<span class="cstat-no" title="statement not covered" >    let lv_ssl_id = new abap.types.Character(6, {"qualifiedName":"SSFAPPLSSL","ddicName":"SSFAPPLSSL","description":"SSL ID"});</span>
+<span class="cstat-no" title="statement not covered" >    let lv_proxy_host = new abap.types.String({qualifiedName: "STRING"});</span>
+<span class="cstat-no" title="statement not covered" >    let lv_proxy_service = new abap.types.String({qualifiedName: "STRING"});</span>
+<span class="cstat-no" title="statement not covered" >    let lo_proxy_configuration = new abap.types.ABAPObject({qualifiedName: "ZCL_ABAPGIT_PROXY_CONFIG", RTTIName: "\\CLASS=ZCL_ABAPGIT_PROXY_CONFIG"});</span>
+<span class="cstat-no" title="statement not covered" >    lo_proxy_configuration.set(await (new abap.Classes['ZCL_ABAPGIT_PROXY_CONFIG']()).constructor_());</span>
+<span class="cstat-no" title="statement not covered" >    ri_client.set((await (await abap.Classes['ZCL_ABAPGIT_EXIT'].get_instance()).get().zif_abapgit_exit$create_http_client({iv_url: iv_url})));</span>
+<span class="cstat-no" title="statement not covered" >    if (abap.compare.initial(ri_client)) {</span>
+<span class="cstat-no" title="statement not covered" >      lv_host.set((await abap.Classes['ZCL_ABAPGIT_URL'].host({iv_url: iv_url})));</span>
+<span class="cstat-no" title="statement not covered" >      lv_ssl_id.set((await (await abap.Classes['ZCL_ABAPGIT_EXIT'].get_instance()).get().zif_abapgit_exit$get_ssl_id()));</span>
+<span class="cstat-no" title="statement not covered" >      lv_proxy_host.set((await lo_proxy_configuration.get().get_proxy_url({iv_repo_url: iv_url})));</span>
+<span class="cstat-no" title="statement not covered" >      lv_proxy_service.set((await lo_proxy_configuration.get().get_proxy_port({iv_repo_url: iv_url})));</span>
+<span class="cstat-no" title="statement not covered" >      lv_longtext.set((await this.get_connection_longtext({iv_host: lv_host, iv_ssl_id: lv_ssl_id, iv_proxy_host: lv_proxy_host, iv_proxy_service: lv_proxy_service})));</span>
+<span class="cstat-no" title="statement not covered" >      try {</span>
+<span class="cstat-no" title="statement not covered" >        await abap.Classes['CL_HTTP_CLIENT'].create_by_url({url: lv_host, ssl_id: lv_ssl_id, proxy_host: lv_proxy_host, proxy_service: lv_proxy_service, client: ri_client});</span>
+<span class="cstat-no" title="statement not covered" >        abap.builtin.sy.get().subrc.set(0);</span>
+<span class="cstat-no" title="statement not covered" >      } catch (e) {</span>
+<span class="cstat-no" title="statement not covered" >        if (e.classic) {</span>
+<span class="cstat-no" title="statement not covered" >            switch (e.classic.toUpperCase()) {</span>
+<span class="cstat-no" title="statement not covered" >            case "ARGUMENT_NOT_FOUND": abap.builtin.sy.get().subrc.set(1); break;</span>
+<span class="cstat-no" title="statement not covered" >            case "PLUGIN_NOT_ACTIVE": abap.builtin.sy.get().subrc.set(2); break;</span>
+<span class="cstat-no" title="statement not covered" >            case "INTERNAL_ERROR": abap.builtin.sy.get().subrc.set(3); break;</span>
+<span class="cstat-no" title="statement not covered" >            default: abap.builtin.sy.get().subrc.set(4); break;</span>
+<span class="cstat-no" title="statement not covered" >              }</span>
+<span class="cstat-no" title="statement not covered" >          } else {</span>
+<span class="cstat-no" title="statement not covered" >              throw e;</span>
+<span class="cstat-no" title="statement not covered" >          }</span>
+<span class="cstat-no" title="statement not covered" >        }</span>
+<span class="cstat-no" title="statement not covered" >        if (abap.compare.ne(abap.builtin.sy.get().subrc, abap.IntegerFactory.get(0))) {</span>
+<span class="cstat-no" title="statement not covered" >          let unique501 = abap.builtin.sy.get().subrc;</span>
+<span class="cstat-no" title="statement not covered" >          if (abap.compare.eq(unique501, abap.IntegerFactory.get(1))) {</span>
+<span class="cstat-no" title="statement not covered" >            lv_error.set(abap.CharacterFactory.get(18, 'ARGUMENT_NOT_FOUND'));</span>
+<span class="cstat-no" title="statement not covered" >          } else if (abap.compare.eq(unique501, abap.IntegerFactory.get(2))) {</span>
+<span class="cstat-no" title="statement not covered" >            lv_error.set(abap.CharacterFactory.get(17, 'PLUGIN_NOT_ACTIVE'));</span>
+<span class="cstat-no" title="statement not covered" >          } else if (abap.compare.eq(unique501, abap.IntegerFactory.get(3))) {</span>
+<span class="cstat-no" title="statement not covered" >            lv_error.set(abap.CharacterFactory.get(14, 'INTERNAL_ERROR'));</span>
+<span class="cstat-no" title="statement not covered" >          } else {</span>
+<span class="cstat-no" title="statement not covered" >            lv_error.set(new abap.types.String().set(`OTHER_ERROR_${abap.templateFormatting(abap.builtin.sy.get().subrc)}`));</span>
+<span class="cstat-no" title="statement not covered" >          }</span>
+<span class="cstat-no" title="statement not covered" >          await abap.Classes['ZCX_ABAPGIT_EXCEPTION'].raise({iv_text: new abap.types.String().set(`Error ${abap.templateFormatting(lv_error)} creating HTTP connection. Check the configuration`), iv_longtext: lv_longtext});</span>
+<span class="cstat-no" title="statement not covered" >        }</span>
+<span class="cstat-no" title="statement not covered" >      }</span>
+<span class="cstat-no" title="statement not covered" >      if (abap.compare.eq((await lo_proxy_configuration.get().get_proxy_authentication({iv_repo_url: iv_url})), abap.builtin.abap_true)) {</span>
+<span class="cstat-no" title="statement not covered" >        await abap.Classes['ZCL_ABAPGIT_PROXY_AUTH'].run({ii_client: ri_client});</span>
+<span class="cstat-no" title="statement not covered" >      }</span>
+<span class="cstat-no" title="statement not covered" >      return ri_client;</span>
+<span class="cstat-no" title="statement not covered" >    }</span>
+<span class="fstat-no" title="function not covered" >    async is_local_system(INPUT) {</span>
+<span class="cstat-no" title="statement not covered" >      return zcl_abapgit_http.is_local_system(INPUT);</span>
+<span class="cstat-no" title="statement not covered" >    }</span>
+    static <span class="fstat-no" title="function not covered" >async is_local_system(INPUT) {</span>
+<span class="cstat-no" title="statement not covered" >      let rv_bool = new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"});</span>
+<span class="cstat-no" title="statement not covered" >      let iv_url = INPUT?.iv_url;</span>
+<span class="cstat-no" title="statement not covered" >      if (iv_url?.getQualifiedName === undefined || iv_url.getQualifiedName() !== "STRING") { iv_url = undefined; }</span>
+<span class="cstat-no" title="statement not covered" >      if (iv_url === undefined) { iv_url = new abap.types.String({qualifiedName: "STRING"}).set(INPUT.iv_url); }</span>
+<span class="cstat-no" title="statement not covered" >      let lv_host = new abap.types.String({qualifiedName: "STRING"});</span>
+<span class="cstat-no" title="statement not covered" >      let lt_list = abap.types.TableFactory.construct(new abap.types.String({qualifiedName: "STRING"}), {"withHeader":false,"keyType":"DEFAULT","primaryKey":{"name":"primary_key","type":"STANDARD","isUnique":false,"keyFields":[]},"secondary":[]}, "zif_abapgit_definitions=&gt;ty_string_tt");</span>
+<span class="cstat-no" title="statement not covered" >      let li_exit = new abap.types.ABAPObject({qualifiedName: "ZIF_ABAPGIT_EXIT", RTTIName: "\\INTERFACE=ZIF_ABAPGIT_EXIT"});</span>
+<span class="cstat-no" title="statement not covered" >      await abap.Classes['CL_HTTP_SERVER'].if_http_server$get_location({host: lv_host});</span>
+<span class="cstat-no" title="statement not covered" >      abap.statements.append({source: lv_host, target: lt_list});</span>
+<span class="cstat-no" title="statement not covered" >      abap.statements.append({source: abap.CharacterFactory.get(9, 'localhost'), target: lt_list});</span>
+<span class="cstat-no" title="statement not covered" >      li_exit.set((await abap.Classes['ZCL_ABAPGIT_EXIT'].get_instance()));</span>
+<span class="cstat-no" title="statement not covered" >      await li_exit.get().zif_abapgit_exit$change_local_host({ct_hosts: lt_list});</span>
+<span class="cstat-no" title="statement not covered" >      abap.statements.find(iv_url, {regex: abap.CharacterFactory.get(18, 'https?://([^/^:]*)'), submatches: [lv_host]});</span>
+<span class="cstat-no" title="statement not covered" >      abap.statements.readTable(lt_list,{withKey: (i) =&gt; {return abap.compare.eq(i.table_line, lv_host);},</span>
+<span class="cstat-no" title="statement not covered" >        withKeyValue: [{key: (i) =&gt; {return i.table_line}, value: lv_host}],</span>
+<span class="cstat-no" title="statement not covered" >        usesTableLine: true,</span>
+<span class="cstat-no" title="statement not covered" >        withKeySimple: {"table_line": lv_host}});</span>
+<span class="cstat-no" title="statement not covered" >      rv_bool.set(abap.builtin.boolc(abap.compare.eq(abap.builtin.sy.get().subrc, abap.IntegerFactory.get(0))));</span>
+<span class="cstat-no" title="statement not covered" >      return rv_bool;</span>
+<span class="cstat-no" title="statement not covered" >    }</span>
+  }
+  abap.Classes['ZCL_ABAPGIT_HTTP'] = zcl_abapgit_http;
+  zcl_abapgit_http.c_scheme = new abap.types.Structure({
+  "digest": new abap.types.String({qualifiedName: "STRING"})}, undefined, undefined, {}, {});
+  zcl_abapgit_http.c_scheme.get().digest.set('Digest');
+  zcl_abapgit_http.ty_key_value = new abap.types.Structure({
+  "key": new abap.types.String({qualifiedName: "ZCL_ABAPGIT_HTTP=&gt;TY_KEY_VALUE-KEY"}),
+  "value": new abap.types.String({qualifiedName: "ZCL_ABAPGIT_HTTP=&gt;TY_KEY_VALUE-VALUE"})}, "zcl_abapgit_http=&gt;ty_key_value", undefined, {}, {});
+  zcl_abapgit_http.ty_headers = abap.types.TableFactory.construct(new abap.types.Structure({
+  "key": new abap.types.String({qualifiedName: "ZCL_ABAPGIT_HTTP=&gt;TY_KEY_VALUE-KEY"}),
+  "value": new abap.types.String({qualifiedName: "ZCL_ABAPGIT_HTTP=&gt;TY_KEY_VALUE-VALUE"})}, "zcl_abapgit_http=&gt;ty_key_value", undefined, {}, {}), {"withHeader":false,"keyType":"DEFAULT","primaryKey":{"name":"primary_key","type":"STANDARD","isUnique":false,"keyFields":[]},"secondary":[]}, "zcl_abapgit_http=&gt;ty_headers");
+export {zcl_abapgit_http};</pre></td></tr></table></pre>
+
+                <div class='push'></div><!-- for sticky footer -->
+            </div><!-- /wrapper -->
+            <div class='footer quiet pad2 space-top1 center small'>
+                Code coverage generated by
+                <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
+                at 2026-02-23T16:07:14.249Z
+            </div>
+        <script src="../prettify.js"></script>
+        <script>
+            window.onload = function () {
+                prettyPrint();
+            };
+        </script>
+        <script src="../sorter.js"></script>
+        <script src="../block-navigation.js"></script>
+    </body>
+</html>
+    

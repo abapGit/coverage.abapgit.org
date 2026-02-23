@@ -1,0 +1,733 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Code coverage report for output/cl_oa2c_config_writer_api.clas.mjs</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+    
+<body>
+<div class='wrapper'>
+    <div class='pad1'>
+        <h1><a href="../index.html">All files</a> / <a href="index.html">output</a> cl_oa2c_config_writer_api.clas.mjs</h1>
+        <div class='clearfix'>
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">11.98% </span>
+                <span class="quiet">Statements</span>
+                <span class='fraction'>26/217</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">66.66% </span>
+                <span class="quiet">Branches</span>
+                <span class='fraction'>2/3</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">1.78% </span>
+                <span class="quiet">Functions</span>
+                <span class='fraction'>1/56</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">11.98% </span>
+                <span class="quiet">Lines</span>
+                <span class='fraction'>26/217</span>
+            </div>
+        
+            
+        </div>
+        <p class="quiet">
+            Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
+        </p>
+        <template id="filterTemplate">
+            <div class="quiet">
+                Filter:
+                <input type="search" id="fileSearch">
+            </div>
+        </template>
+    </div>
+    <div class='status-line low'></div>
+    <pre><table class="coverage">
+<tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
+<a name='L2'></a><a href='#L2'>2</a>
+<a name='L3'></a><a href='#L3'>3</a>
+<a name='L4'></a><a href='#L4'>4</a>
+<a name='L5'></a><a href='#L5'>5</a>
+<a name='L6'></a><a href='#L6'>6</a>
+<a name='L7'></a><a href='#L7'>7</a>
+<a name='L8'></a><a href='#L8'>8</a>
+<a name='L9'></a><a href='#L9'>9</a>
+<a name='L10'></a><a href='#L10'>10</a>
+<a name='L11'></a><a href='#L11'>11</a>
+<a name='L12'></a><a href='#L12'>12</a>
+<a name='L13'></a><a href='#L13'>13</a>
+<a name='L14'></a><a href='#L14'>14</a>
+<a name='L15'></a><a href='#L15'>15</a>
+<a name='L16'></a><a href='#L16'>16</a>
+<a name='L17'></a><a href='#L17'>17</a>
+<a name='L18'></a><a href='#L18'>18</a>
+<a name='L19'></a><a href='#L19'>19</a>
+<a name='L20'></a><a href='#L20'>20</a>
+<a name='L21'></a><a href='#L21'>21</a>
+<a name='L22'></a><a href='#L22'>22</a>
+<a name='L23'></a><a href='#L23'>23</a>
+<a name='L24'></a><a href='#L24'>24</a>
+<a name='L25'></a><a href='#L25'>25</a>
+<a name='L26'></a><a href='#L26'>26</a>
+<a name='L27'></a><a href='#L27'>27</a>
+<a name='L28'></a><a href='#L28'>28</a>
+<a name='L29'></a><a href='#L29'>29</a>
+<a name='L30'></a><a href='#L30'>30</a>
+<a name='L31'></a><a href='#L31'>31</a>
+<a name='L32'></a><a href='#L32'>32</a>
+<a name='L33'></a><a href='#L33'>33</a>
+<a name='L34'></a><a href='#L34'>34</a>
+<a name='L35'></a><a href='#L35'>35</a>
+<a name='L36'></a><a href='#L36'>36</a>
+<a name='L37'></a><a href='#L37'>37</a>
+<a name='L38'></a><a href='#L38'>38</a>
+<a name='L39'></a><a href='#L39'>39</a>
+<a name='L40'></a><a href='#L40'>40</a>
+<a name='L41'></a><a href='#L41'>41</a>
+<a name='L42'></a><a href='#L42'>42</a>
+<a name='L43'></a><a href='#L43'>43</a>
+<a name='L44'></a><a href='#L44'>44</a>
+<a name='L45'></a><a href='#L45'>45</a>
+<a name='L46'></a><a href='#L46'>46</a>
+<a name='L47'></a><a href='#L47'>47</a>
+<a name='L48'></a><a href='#L48'>48</a>
+<a name='L49'></a><a href='#L49'>49</a>
+<a name='L50'></a><a href='#L50'>50</a>
+<a name='L51'></a><a href='#L51'>51</a>
+<a name='L52'></a><a href='#L52'>52</a>
+<a name='L53'></a><a href='#L53'>53</a>
+<a name='L54'></a><a href='#L54'>54</a>
+<a name='L55'></a><a href='#L55'>55</a>
+<a name='L56'></a><a href='#L56'>56</a>
+<a name='L57'></a><a href='#L57'>57</a>
+<a name='L58'></a><a href='#L58'>58</a>
+<a name='L59'></a><a href='#L59'>59</a>
+<a name='L60'></a><a href='#L60'>60</a>
+<a name='L61'></a><a href='#L61'>61</a>
+<a name='L62'></a><a href='#L62'>62</a>
+<a name='L63'></a><a href='#L63'>63</a>
+<a name='L64'></a><a href='#L64'>64</a>
+<a name='L65'></a><a href='#L65'>65</a>
+<a name='L66'></a><a href='#L66'>66</a>
+<a name='L67'></a><a href='#L67'>67</a>
+<a name='L68'></a><a href='#L68'>68</a>
+<a name='L69'></a><a href='#L69'>69</a>
+<a name='L70'></a><a href='#L70'>70</a>
+<a name='L71'></a><a href='#L71'>71</a>
+<a name='L72'></a><a href='#L72'>72</a>
+<a name='L73'></a><a href='#L73'>73</a>
+<a name='L74'></a><a href='#L74'>74</a>
+<a name='L75'></a><a href='#L75'>75</a>
+<a name='L76'></a><a href='#L76'>76</a>
+<a name='L77'></a><a href='#L77'>77</a>
+<a name='L78'></a><a href='#L78'>78</a>
+<a name='L79'></a><a href='#L79'>79</a>
+<a name='L80'></a><a href='#L80'>80</a>
+<a name='L81'></a><a href='#L81'>81</a>
+<a name='L82'></a><a href='#L82'>82</a>
+<a name='L83'></a><a href='#L83'>83</a>
+<a name='L84'></a><a href='#L84'>84</a>
+<a name='L85'></a><a href='#L85'>85</a>
+<a name='L86'></a><a href='#L86'>86</a>
+<a name='L87'></a><a href='#L87'>87</a>
+<a name='L88'></a><a href='#L88'>88</a>
+<a name='L89'></a><a href='#L89'>89</a>
+<a name='L90'></a><a href='#L90'>90</a>
+<a name='L91'></a><a href='#L91'>91</a>
+<a name='L92'></a><a href='#L92'>92</a>
+<a name='L93'></a><a href='#L93'>93</a>
+<a name='L94'></a><a href='#L94'>94</a>
+<a name='L95'></a><a href='#L95'>95</a>
+<a name='L96'></a><a href='#L96'>96</a>
+<a name='L97'></a><a href='#L97'>97</a>
+<a name='L98'></a><a href='#L98'>98</a>
+<a name='L99'></a><a href='#L99'>99</a>
+<a name='L100'></a><a href='#L100'>100</a>
+<a name='L101'></a><a href='#L101'>101</a>
+<a name='L102'></a><a href='#L102'>102</a>
+<a name='L103'></a><a href='#L103'>103</a>
+<a name='L104'></a><a href='#L104'>104</a>
+<a name='L105'></a><a href='#L105'>105</a>
+<a name='L106'></a><a href='#L106'>106</a>
+<a name='L107'></a><a href='#L107'>107</a>
+<a name='L108'></a><a href='#L108'>108</a>
+<a name='L109'></a><a href='#L109'>109</a>
+<a name='L110'></a><a href='#L110'>110</a>
+<a name='L111'></a><a href='#L111'>111</a>
+<a name='L112'></a><a href='#L112'>112</a>
+<a name='L113'></a><a href='#L113'>113</a>
+<a name='L114'></a><a href='#L114'>114</a>
+<a name='L115'></a><a href='#L115'>115</a>
+<a name='L116'></a><a href='#L116'>116</a>
+<a name='L117'></a><a href='#L117'>117</a>
+<a name='L118'></a><a href='#L118'>118</a>
+<a name='L119'></a><a href='#L119'>119</a>
+<a name='L120'></a><a href='#L120'>120</a>
+<a name='L121'></a><a href='#L121'>121</a>
+<a name='L122'></a><a href='#L122'>122</a>
+<a name='L123'></a><a href='#L123'>123</a>
+<a name='L124'></a><a href='#L124'>124</a>
+<a name='L125'></a><a href='#L125'>125</a>
+<a name='L126'></a><a href='#L126'>126</a>
+<a name='L127'></a><a href='#L127'>127</a>
+<a name='L128'></a><a href='#L128'>128</a>
+<a name='L129'></a><a href='#L129'>129</a>
+<a name='L130'></a><a href='#L130'>130</a>
+<a name='L131'></a><a href='#L131'>131</a>
+<a name='L132'></a><a href='#L132'>132</a>
+<a name='L133'></a><a href='#L133'>133</a>
+<a name='L134'></a><a href='#L134'>134</a>
+<a name='L135'></a><a href='#L135'>135</a>
+<a name='L136'></a><a href='#L136'>136</a>
+<a name='L137'></a><a href='#L137'>137</a>
+<a name='L138'></a><a href='#L138'>138</a>
+<a name='L139'></a><a href='#L139'>139</a>
+<a name='L140'></a><a href='#L140'>140</a>
+<a name='L141'></a><a href='#L141'>141</a>
+<a name='L142'></a><a href='#L142'>142</a>
+<a name='L143'></a><a href='#L143'>143</a>
+<a name='L144'></a><a href='#L144'>144</a>
+<a name='L145'></a><a href='#L145'>145</a>
+<a name='L146'></a><a href='#L146'>146</a>
+<a name='L147'></a><a href='#L147'>147</a>
+<a name='L148'></a><a href='#L148'>148</a>
+<a name='L149'></a><a href='#L149'>149</a>
+<a name='L150'></a><a href='#L150'>150</a>
+<a name='L151'></a><a href='#L151'>151</a>
+<a name='L152'></a><a href='#L152'>152</a>
+<a name='L153'></a><a href='#L153'>153</a>
+<a name='L154'></a><a href='#L154'>154</a>
+<a name='L155'></a><a href='#L155'>155</a>
+<a name='L156'></a><a href='#L156'>156</a>
+<a name='L157'></a><a href='#L157'>157</a>
+<a name='L158'></a><a href='#L158'>158</a>
+<a name='L159'></a><a href='#L159'>159</a>
+<a name='L160'></a><a href='#L160'>160</a>
+<a name='L161'></a><a href='#L161'>161</a>
+<a name='L162'></a><a href='#L162'>162</a>
+<a name='L163'></a><a href='#L163'>163</a>
+<a name='L164'></a><a href='#L164'>164</a>
+<a name='L165'></a><a href='#L165'>165</a>
+<a name='L166'></a><a href='#L166'>166</a>
+<a name='L167'></a><a href='#L167'>167</a>
+<a name='L168'></a><a href='#L168'>168</a>
+<a name='L169'></a><a href='#L169'>169</a>
+<a name='L170'></a><a href='#L170'>170</a>
+<a name='L171'></a><a href='#L171'>171</a>
+<a name='L172'></a><a href='#L172'>172</a>
+<a name='L173'></a><a href='#L173'>173</a>
+<a name='L174'></a><a href='#L174'>174</a>
+<a name='L175'></a><a href='#L175'>175</a>
+<a name='L176'></a><a href='#L176'>176</a>
+<a name='L177'></a><a href='#L177'>177</a>
+<a name='L178'></a><a href='#L178'>178</a>
+<a name='L179'></a><a href='#L179'>179</a>
+<a name='L180'></a><a href='#L180'>180</a>
+<a name='L181'></a><a href='#L181'>181</a>
+<a name='L182'></a><a href='#L182'>182</a>
+<a name='L183'></a><a href='#L183'>183</a>
+<a name='L184'></a><a href='#L184'>184</a>
+<a name='L185'></a><a href='#L185'>185</a>
+<a name='L186'></a><a href='#L186'>186</a>
+<a name='L187'></a><a href='#L187'>187</a>
+<a name='L188'></a><a href='#L188'>188</a>
+<a name='L189'></a><a href='#L189'>189</a>
+<a name='L190'></a><a href='#L190'>190</a>
+<a name='L191'></a><a href='#L191'>191</a>
+<a name='L192'></a><a href='#L192'>192</a>
+<a name='L193'></a><a href='#L193'>193</a>
+<a name='L194'></a><a href='#L194'>194</a>
+<a name='L195'></a><a href='#L195'>195</a>
+<a name='L196'></a><a href='#L196'>196</a>
+<a name='L197'></a><a href='#L197'>197</a>
+<a name='L198'></a><a href='#L198'>198</a>
+<a name='L199'></a><a href='#L199'>199</a>
+<a name='L200'></a><a href='#L200'>200</a>
+<a name='L201'></a><a href='#L201'>201</a>
+<a name='L202'></a><a href='#L202'>202</a>
+<a name='L203'></a><a href='#L203'>203</a>
+<a name='L204'></a><a href='#L204'>204</a>
+<a name='L205'></a><a href='#L205'>205</a>
+<a name='L206'></a><a href='#L206'>206</a>
+<a name='L207'></a><a href='#L207'>207</a>
+<a name='L208'></a><a href='#L208'>208</a>
+<a name='L209'></a><a href='#L209'>209</a>
+<a name='L210'></a><a href='#L210'>210</a>
+<a name='L211'></a><a href='#L211'>211</a>
+<a name='L212'></a><a href='#L212'>212</a>
+<a name='L213'></a><a href='#L213'>213</a>
+<a name='L214'></a><a href='#L214'>214</a>
+<a name='L215'></a><a href='#L215'>215</a>
+<a name='L216'></a><a href='#L216'>216</a>
+<a name='L217'></a><a href='#L217'>217</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span></td><td class="text"><pre class="prettyprint lang-js">const {cx_root} = await import("./cx_root.clas.mjs");
+// cl_oa2c_config_writer_api.clas.abap
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ><span class="branch-0 cbranch-no" title="branch not covered" >class cl_oa2c_config_writer_api {</span></span></span>
+<span class="cstat-no" title="statement not covered" >  static STATIC_SUPER = undefined;</span>
+<span class="cstat-no" title="statement not covered" >  static INTERNAL_TYPE = 'CLAS';</span>
+<span class="cstat-no" title="statement not covered" >  static INTERNAL_NAME = 'CL_OA2C_CONFIG_WRITER_API';</span>
+<span class="cstat-no" title="statement not covered" >  static IMPLEMENTED_INTERFACES = [];</span>
+<span class="cstat-no" title="statement not covered" >  static ATTRIBUTES = {"MT_SAVED_CONFIGS": {"type": () =&gt; {return abap.types.TableFactory.construct(new abap.types.Structure({</span>
+<span class="cstat-no" title="statement not covered" >  "configuration": new abap.types.Character(32, {"qualifiedName":"OA2C_CONFIGURATION","ddicName":"OA2C_CONFIGURATION","description":""}),</span>
+<span class="cstat-no" title="statement not covered" >  "client_id": new abap.types.String({qualifiedName: "CL_OA2C_CONFIG_WRITER_API=&gt;TY_CONFIG-CLIENT_ID"}),</span>
+<span class="cstat-no" title="statement not covered" >  "client_secret": new abap.types.String({qualifiedName: "CL_OA2C_CONFIG_WRITER_API=&gt;TY_CONFIG-CLIENT_SECRET"}),</span>
+<span class="cstat-no" title="statement not covered" >  "authorization_endpoint": new abap.types.String({qualifiedName: "CL_OA2C_CONFIG_WRITER_API=&gt;TY_CONFIG-AUTHORIZATION_ENDPOINT"}),</span>
+<span class="cstat-no" title="statement not covered" >  "token_endpoint": new abap.types.String({qualifiedName: "CL_OA2C_CONFIG_WRITER_API=&gt;TY_CONFIG-TOKEN_ENDPOINT"}),</span>
+<span class="cstat-no" title="statement not covered" >  "target_path": new abap.types.String({qualifiedName: "CL_OA2C_CONFIG_WRITER_API=&gt;TY_CONFIG-TARGET_PATH"}),</span>
+<span class="cstat-no" title="statement not covered" >  "granttype": new abap.types.Integer({qualifiedName: "OA2C_GRANTTYPE"})}, "cl_oa2c_config_writer_api=&gt;ty_config", undefined, {}, {}), {"withHeader":false,"keyType":"USER","primaryKey":{"name":"primary_key","type":"SORTED","isUnique":true,"keyFields":["CONFIGURATION"]},"secondary":[]}, "");}, "visibility": "I", "is_constant": " ", "is_class": "X"},</span>
+<span class="cstat-no" title="statement not covered" >  "MS_CONFIG": {"type": () =&gt; {return new abap.types.Structure({</span>
+<span class="cstat-no" title="statement not covered" >  "configuration": new abap.types.Character(32, {"qualifiedName":"OA2C_CONFIGURATION","ddicName":"OA2C_CONFIGURATION","description":""}),</span>
+<span class="cstat-no" title="statement not covered" >  "client_id": new abap.types.String({qualifiedName: "CL_OA2C_CONFIG_WRITER_API=&gt;TY_CONFIG-CLIENT_ID"}),</span>
+<span class="cstat-no" title="statement not covered" >  "client_secret": new abap.types.String({qualifiedName: "CL_OA2C_CONFIG_WRITER_API=&gt;TY_CONFIG-CLIENT_SECRET"}),</span>
+<span class="cstat-no" title="statement not covered" >  "authorization_endpoint": new abap.types.String({qualifiedName: "CL_OA2C_CONFIG_WRITER_API=&gt;TY_CONFIG-AUTHORIZATION_ENDPOINT"}),</span>
+<span class="cstat-no" title="statement not covered" >  "token_endpoint": new abap.types.String({qualifiedName: "CL_OA2C_CONFIG_WRITER_API=&gt;TY_CONFIG-TOKEN_ENDPOINT"}),</span>
+<span class="cstat-no" title="statement not covered" >  "target_path": new abap.types.String({qualifiedName: "CL_OA2C_CONFIG_WRITER_API=&gt;TY_CONFIG-TARGET_PATH"}),</span>
+<span class="cstat-no" title="statement not covered" >  "granttype": new abap.types.Integer({qualifiedName: "OA2C_GRANTTYPE"})}, "cl_oa2c_config_writer_api=&gt;ty_config", undefined, {}, {});}, "visibility": "I", "is_constant": " ", "is_class": " "},</span>
+<span class="cstat-no" title="statement not covered" >  "C_GRANTTYPE_CC": {"type": () =&gt; {return new abap.types.Integer({qualifiedName: "OA2C_GRANTTYPE"});}, "visibility": "U", "is_constant": "X", "is_class": "X"}};</span>
+<span class="cstat-no" title="statement not covered" >  static METHODS = {"CREATE": {"visibility": "U", "parameters": {"RO_CONFIG_WRITER_API": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.ABAPObject({qualifiedName: "CL_OA2C_CONFIG_WRITER_API", RTTIName: "\\CLASS=CL_OA2C_CONFIG_WRITER_API"});},</span> "is_optional": " ", "parm_kind": "R", "type_name": "ObjectReferenceType"}, "I_CLIENT_ID": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.String({qualifiedName: "STRING"});},</span> "is_optional": " ", "parm_kind": "I", "type_name": "StringType"}, "I_CLIENT_SECRET": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.String({qualifiedName: "STRING"});},</span> "is_optional": " ", "parm_kind": "I", "type_name": "StringType"}, "I_PROFILE": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Character(30, {"qualifiedName":"OA2C_PROFILE","ddicName":"OA2C_PROFILE","description":""});},</span> "is_optional": " ", "parm_kind": "I", "type_name": "CharacterType"}, "I_AUTH_CODE_ALLOWED": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"});},</span> "is_optional": " ", "parm_kind": "I", "type_name": "CharacterType"}, "I_AUTHENTICATION_METHOD": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Character(4);},</span> "is_optional": " ", "parm_kind": "I", "type_name": "AnyType"}, "I_AUTHORIZATION_ENDPOINT": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.String({qualifiedName: "STRING"});},</span> "is_optional": " ", "parm_kind": "I", "type_name": "StringType"}, "I_CLOCK_SKEW_TOLERANCE": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Integer({qualifiedName: "I"});},</span> "is_optional": " ", "parm_kind": "I", "type_name": "IntegerType"}, "I_CONFIGURATION": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Character(32, {"qualifiedName":"OA2C_CONFIGURATION","ddicName":"OA2C_CONFIGURATION","description":""});},</span> "is_optional": " ", "parm_kind": "I", "type_name": "CharacterType"}, "I_CONFIGURED_GRANTTYPE": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Integer({qualifiedName: "OA2C_GRANTTYPE"});},</span> "is_optional": " ", "parm_kind": "I", "type_name": "IntegerType"}, "I_PROXY_HOST": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.String({qualifiedName: "STRING"});},</span> "is_optional": " ", "parm_kind": "I", "type_name": "StringType"}, "I_PROXY_PORT": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.String({qualifiedName: "STRING"});},</span> "is_optional": " ", "parm_kind": "I", "type_name": "StringType"}, "I_PROXY_USER": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.String({qualifiedName: "STRING"});},</span> "is_optional": " ", "parm_kind": "I", "type_name": "StringType"}, "I_REDIRECTION_URI_SERVER": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.String({qualifiedName: "STRING"});},</span> "is_optional": " ", "parm_kind": "I", "type_name": "StringType"}, "I_RS_AUTHENTICATION_METHOD": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Character(4);},</span> "is_optional": " ", "parm_kind": "I", "type_name": "AnyType"}, "I_RT_VALIDITY": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Integer({qualifiedName: "I"});},</span> "is_optional": " ", "parm_kind": "I", "type_name": "IntegerType"}, "I_SAML20_ALLOWED": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"});},</span> "is_optional": " ", "parm_kind": "I", "type_name": "CharacterType"}, "I_SAML20_AUDIENCE": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.String({qualifiedName: "STRING"});},</span> "is_optional": " ", "parm_kind": "I", "type_name": "StringType"}, "I_SAML20_NAMEID_EMAIL_NUM": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Character(4);},</span> "is_optional": " ", "parm_kind": "I", "type_name": "AnyType"}, "I_TARGET_PATH": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.String({qualifiedName: "STRING"});},</span> "is_optional": " ", "parm_kind": "I", "type_name": "StringType"}, "I_TOKEN_ENDPOINT": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.String({qualifiedName: "STRING"});},</span> "is_optional": " ", "parm_kind": "I", "type_name": "StringType"}, "IT_CONFIGURED_SCOPES": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return abap.types.TableFactory.construct(new abap.types.String({qualifiedName: "STRING"}), {"withHeader":false,"keyType":"DEFAULT","primaryKey":{"isUnique":false,"type":"STANDARD","keyFields":[],"name":"primary_key"},"secondary":[]}, "STRING_TABLE");},</span> "is_optional": " ", "parm_kind": "I", "type_name": "TableType"}}},</span>
+  "LOAD": {"visibility": "U", "parameters": {"RO_CONFIG_WRITER_API": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.ABAPObject({qualifiedName: "CL_OA2C_CONFIG_WRITER_API", RTTIName: "\\CLASS=CL_OA2C_CONFIG_WRITER_API"});},</span> "is_optional": " ", "parm_kind": "R", "type_name": "ObjectReferenceType"}, "I_PROFILE": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Character(30, {"qualifiedName":"OA2C_PROFILE","ddicName":"OA2C_PROFILE","description":""});},</span> "is_optional": " ", "parm_kind": "I", "type_name": "CharacterType"}, "I_CONFIGURATION": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Character(32, {"qualifiedName":"OA2C_CONFIGURATION","ddicName":"OA2C_CONFIGURATION","description":""});},</span> "is_optional": " ", "parm_kind": "I", "type_name": "CharacterType"}}},
+  "SAVE": {"visibility": "U", "parameters": {}},
+  "READ": {"visibility": "U", "parameters": {"E_AUTH_CODE_ALLOWED": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"});},</span> "is_optional": " ", "parm_kind": "E", "type_name": "CharacterType"}, "E_AUTHENTICATION_METHOD": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.String({qualifiedName: "STRING"});},</span> "is_optional": " ", "parm_kind": "E", "type_name": "StringType"}, "E_AUTHORIZATION_ENDPOINT": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.String({qualifiedName: "STRING"});},</span> "is_optional": " ", "parm_kind": "E", "type_name": "StringType"}, "E_CLIENT_ID": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.String({qualifiedName: "STRING"});},</span> "is_optional": " ", "parm_kind": "E", "type_name": "StringType"}, "E_CLIENT_UUID": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.String({qualifiedName: "STRING"});},</span> "is_optional": " ", "parm_kind": "E", "type_name": "StringType"}, "E_CLOCK_SKEW_TOLERANCE": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Integer({qualifiedName: "I"});},</span> "is_optional": " ", "parm_kind": "E", "type_name": "IntegerType"}, "E_CONFIGURATION": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.String({qualifiedName: "STRING"});},</span> "is_optional": " ", "parm_kind": "E", "type_name": "StringType"}, "E_CONFIGURED_GRANT_TYPE": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Integer({qualifiedName: "OA2C_GRANTTYPE"});},</span> "is_optional": " ", "parm_kind": "E", "type_name": "IntegerType"}, "E_PROXY_HOST": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.String({qualifiedName: "STRING"});},</span> "is_optional": " ", "parm_kind": "E", "type_name": "StringType"}, "E_PROXY_PORT": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.String({qualifiedName: "STRING"});},</span> "is_optional": " ", "parm_kind": "E", "type_name": "StringType"}, "E_PROXY_USER": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.String({qualifiedName: "STRING"});},</span> "is_optional": " ", "parm_kind": "E", "type_name": "StringType"}, "E_REDIRECT_URI": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.String({qualifiedName: "STRING"});},</span> "is_optional": " ", "parm_kind": "E", "type_name": "StringType"}, "E_REDIRECT_URI_HOST": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.String({qualifiedName: "STRING"});},</span> "is_optional": " ", "parm_kind": "E", "type_name": "StringType"}, "E_REDIRECT_URI_PATH": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.String({qualifiedName: "STRING"});},</span> "is_optional": " ", "parm_kind": "E", "type_name": "StringType"}, "E_REDIRECT_URI_PORT": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Integer({qualifiedName: "I"});},</span> "is_optional": " ", "parm_kind": "E", "type_name": "IntegerType"}, "E_RS_AUTHENTICATION_METHOD": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.String({qualifiedName: "STRING"});},</span> "is_optional": " ", "parm_kind": "E", "type_name": "StringType"}, "E_RT_VALIDITY": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Integer({qualifiedName: "I"});},</span> "is_optional": " ", "parm_kind": "E", "type_name": "IntegerType"}, "E_SAML20_ALLOWED": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"});},</span> "is_optional": " ", "parm_kind": "E", "type_name": "CharacterType"}, "E_SAML20_AUDIENCE": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.String({qualifiedName: "STRING"});},</span> "is_optional": " ", "parm_kind": "E", "type_name": "StringType"}, "E_SAML20_NAMEID_EMAIL": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.String({qualifiedName: "STRING"});},</span> "is_optional": " ", "parm_kind": "E", "type_name": "StringType"}, "E_SAML20_RECIPIENT": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.String({qualifiedName: "STRING"});},</span> "is_optional": " ", "parm_kind": "E", "type_name": "StringType"}, "E_TARGET_PATH": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.String({qualifiedName: "STRING"});},</span> "is_optional": " ", "parm_kind": "E", "type_name": "StringType"}, "E_TOKEN_ENDPOINT": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.String({qualifiedName: "STRING"});},</span> "is_optional": " ", "parm_kind": "E", "type_name": "StringType"}, "ES_OA2C_ADMIN": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.String({qualifiedName: "STRING"});},</span> "is_optional": " ", "parm_kind": "E", "type_name": "StringType"}, "ET_PROFILES": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.String({qualifiedName: "STRING"});},</span> "is_optional": " ", "parm_kind": "E", "type_name": "StringType"}, "ET_CONFIGURED_SCOPES": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return abap.types.TableFactory.construct(new abap.types.String({qualifiedName: "STRING"}), {"withHeader":false,"keyType":"DEFAULT","primaryKey":{"isUnique":false,"type":"STANDARD","keyFields":[],"name":"primary_key"},"secondary":[]}, "STRING_TABLE");},</span> "is_optional": " ", "parm_kind": "E", "type_name": "TableType"}, "E_CONFIGURED_GRANTTYPE": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Integer({qualifiedName: "OA2C_GRANTTYPE"});},</span> "is_optional": " ", "parm_kind": "E", "type_name": "IntegerType"}}},
+  "SET_PROFILES": {"visibility": "U", "parameters": {"IT_PROFILES": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Character(4);},</span> "is_optional": " ", "parm_kind": "I", "type_name": "AnyType"}}},
+<span class="cstat-no" title="statement not covered" >  "SET_CLIENT_SECRET": {"visibility": "U", "parameters": {"I_CLIENT_SECRET": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.String({qualifiedName: "STRING"});},</span> "is_optional": " ", "parm_kind": "I", "type_name": "StringType"}}}};</span>
+<span class="cstat-no" title="statement not covered" >  #mt_saved_configs;</span>
+<span class="cstat-no" title="statement not covered" >  #ms_config;</span>
+<span class="cstat-no" title="statement not covered" >  constructor() {</span>
+<span class="cstat-no" title="statement not covered" >    this.me = new abap.types.ABAPObject();</span>
+<span class="cstat-no" title="statement not covered" >    this.me.set(this);</span>
+<span class="cstat-no" title="statement not covered" >    this.INTERNAL_ID = abap.internalIdCounter++;</span>
+<span class="cstat-no" title="statement not covered" >    this.FRIENDS_ACCESS_INSTANCE = {</span>
+<span class="cstat-no" title="statement not covered" >      "save": this.save.bind(this),</span>
+<span class="cstat-no" title="statement not covered" >      "read": this.read.bind(this),</span>
+<span class="cstat-no" title="statement not covered" >      "set_profiles": this.set_profiles.bind(this),</span>
+<span class="cstat-no" title="statement not covered" >      "set_client_secret": this.set_client_secret.bind(this),</span>
+<span class="cstat-no" title="statement not covered" >    };</span>
+<span class="cstat-no" title="statement not covered" >    this.mt_saved_configs = cl_oa2c_config_writer_api.mt_saved_configs;</span>
+<span class="cstat-no" title="statement not covered" >    this.#ms_config = new abap.types.Structure({</span>
+<span class="cstat-no" title="statement not covered" >    "configuration": new abap.types.Character(32, {"qualifiedName":"OA2C_CONFIGURATION","ddicName":"OA2C_CONFIGURATION","description":""}),</span>
+<span class="cstat-no" title="statement not covered" >    "client_id": new abap.types.String({qualifiedName: "CL_OA2C_CONFIG_WRITER_API=&gt;TY_CONFIG-CLIENT_ID"}),</span>
+<span class="cstat-no" title="statement not covered" >    "client_secret": new abap.types.String({qualifiedName: "CL_OA2C_CONFIG_WRITER_API=&gt;TY_CONFIG-CLIENT_SECRET"}),</span>
+<span class="cstat-no" title="statement not covered" >    "authorization_endpoint": new abap.types.String({qualifiedName: "CL_OA2C_CONFIG_WRITER_API=&gt;TY_CONFIG-AUTHORIZATION_ENDPOINT"}),</span>
+<span class="cstat-no" title="statement not covered" >    "token_endpoint": new abap.types.String({qualifiedName: "CL_OA2C_CONFIG_WRITER_API=&gt;TY_CONFIG-TOKEN_ENDPOINT"}),</span>
+<span class="cstat-no" title="statement not covered" >    "target_path": new abap.types.String({qualifiedName: "CL_OA2C_CONFIG_WRITER_API=&gt;TY_CONFIG-TARGET_PATH"}),</span>
+<span class="cstat-no" title="statement not covered" >    "granttype": new abap.types.Integer({qualifiedName: "OA2C_GRANTTYPE"})}, "cl_oa2c_config_writer_api=&gt;ty_config", undefined, {}, {});</span>
+<span class="cstat-no" title="statement not covered" >    this.FRIENDS_ACCESS_INSTANCE["ms_config"] = this.#ms_config;</span>
+<span class="cstat-no" title="statement not covered" >    this.c_granttype_cc = cl_oa2c_config_writer_api.c_granttype_cc;</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
+<span class="cstat-no" title="statement not covered" >  async constructor_(INPUT) {</span>
+<span class="cstat-no" title="statement not covered" >    if (super.constructor_) { await super.constructor_(INPUT); }</span>
+<span class="cstat-no" title="statement not covered" >    return this;</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
+<span class="cstat-no" title="statement not covered" >  async set_client_secret(INPUT) {</span>
+<span class="cstat-no" title="statement not covered" >    let i_client_secret = INPUT?.i_client_secret;</span>
+<span class="cstat-no" title="statement not covered" >    if (i_client_secret?.getQualifiedName === undefined || i_client_secret.getQualifiedName() !== "STRING") { i_client_secret = undefined; }</span>
+<span class="cstat-no" title="statement not covered" >    if (i_client_secret === undefined) { i_client_secret = new abap.types.String({qualifiedName: "STRING"}).set(INPUT.i_client_secret); }</span>
+<span class="cstat-no" title="statement not covered" >    abap.statements.assert(abap.compare.eq(abap.IntegerFactory.get(1), abap.CharacterFactory.get(4, 'todo')));</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
+<span class="cstat-no" title="statement not covered" >  async set_profiles(INPUT) {</span>
+<span class="cstat-no" title="statement not covered" >    let it_profiles = INPUT?.it_profiles;</span>
+<span class="cstat-no" title="statement not covered" >    abap.statements.assert(abap.compare.eq(abap.IntegerFactory.get(1), abap.CharacterFactory.get(4, 'todo')));</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
+<span class="cstat-no" title="statement not covered" >  async create(INPUT) {</span>
+<span class="cstat-no" title="statement not covered" >    return cl_oa2c_config_writer_api.create(INPUT);</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
+<span class="cstat-no" title="statement not covered" >  static async create(INPUT) {</span>
+<span class="cstat-no" title="statement not covered" >    let ro_config_writer_api = new abap.types.ABAPObject({qualifiedName: "CL_OA2C_CONFIG_WRITER_API", RTTIName: "\\CLASS=CL_OA2C_CONFIG_WRITER_API"});</span>
+<span class="cstat-no" title="statement not covered" >    let i_client_id = INPUT?.i_client_id;</span>
+<span class="cstat-no" title="statement not covered" >    if (i_client_id?.getQualifiedName === undefined || i_client_id.getQualifiedName() !== "STRING") { i_client_id = undefined; }</span>
+<span class="cstat-no" title="statement not covered" >    if (i_client_id === undefined) { i_client_id = new abap.types.String({qualifiedName: "STRING"}).set(INPUT.i_client_id); }</span>
+<span class="cstat-no" title="statement not covered" >    let i_client_secret = INPUT?.i_client_secret;</span>
+<span class="cstat-no" title="statement not covered" >    if (i_client_secret?.getQualifiedName === undefined || i_client_secret.getQualifiedName() !== "STRING") { i_client_secret = undefined; }</span>
+<span class="cstat-no" title="statement not covered" >    if (i_client_secret === undefined) { i_client_secret = new abap.types.String({qualifiedName: "STRING"}).set(INPUT.i_client_secret); }</span>
+<span class="cstat-no" title="statement not covered" >    let i_profile = INPUT?.i_profile;</span>
+<span class="cstat-no" title="statement not covered" >    if (i_profile?.getQualifiedName === undefined || i_profile.getQualifiedName() !== "OA2C_PROFILE") { i_profile = undefined; }</span>
+<span class="cstat-no" title="statement not covered" >    if (i_profile === undefined) { i_profile = new abap.types.Character(30, {"qualifiedName":"OA2C_PROFILE","ddicName":"OA2C_PROFILE","description":""}).set(INPUT.i_profile); }</span>
+<span class="cstat-no" title="statement not covered" >    let i_auth_code_allowed = new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"});</span>
+<span class="cstat-no" title="statement not covered" >    if (INPUT &amp;&amp; INPUT.i_auth_code_allowed) {i_auth_code_allowed.set(INPUT.i_auth_code_allowed);}</span>
+<span class="cstat-no" title="statement not covered" >    let i_authentication_method = INPUT?.i_authentication_method || new abap.types.Character(4);</span>
+<span class="cstat-no" title="statement not covered" >    let i_authorization_endpoint = new abap.types.String({qualifiedName: "STRING"});</span>
+<span class="cstat-no" title="statement not covered" >    if (INPUT &amp;&amp; INPUT.i_authorization_endpoint) {i_authorization_endpoint.set(INPUT.i_authorization_endpoint);}</span>
+<span class="cstat-no" title="statement not covered" >    let i_clock_skew_tolerance = new abap.types.Integer({qualifiedName: "I"});</span>
+<span class="cstat-no" title="statement not covered" >    if (INPUT &amp;&amp; INPUT.i_clock_skew_tolerance) {i_clock_skew_tolerance.set(INPUT.i_clock_skew_tolerance);}</span>
+<span class="cstat-no" title="statement not covered" >    let i_configuration = new abap.types.Character(32, {"qualifiedName":"OA2C_CONFIGURATION","ddicName":"OA2C_CONFIGURATION","description":""});</span>
+<span class="cstat-no" title="statement not covered" >    if (INPUT &amp;&amp; INPUT.i_configuration) {i_configuration.set(INPUT.i_configuration);}</span>
+<span class="cstat-no" title="statement not covered" >    let i_configured_granttype = new abap.types.Integer({qualifiedName: "OA2C_GRANTTYPE"});</span>
+<span class="cstat-no" title="statement not covered" >    if (INPUT &amp;&amp; INPUT.i_configured_granttype) {i_configured_granttype.set(INPUT.i_configured_granttype);}</span>
+<span class="cstat-no" title="statement not covered" >    if (INPUT === undefined || INPUT.i_configured_granttype === undefined) {i_configured_granttype = abap.IntegerFactory.get(0);}</span>
+<span class="cstat-no" title="statement not covered" >    let i_proxy_host = new abap.types.String({qualifiedName: "STRING"});</span>
+<span class="cstat-no" title="statement not covered" >    if (INPUT &amp;&amp; INPUT.i_proxy_host) {i_proxy_host.set(INPUT.i_proxy_host);}</span>
+<span class="cstat-no" title="statement not covered" >    let i_proxy_port = new abap.types.String({qualifiedName: "STRING"});</span>
+<span class="cstat-no" title="statement not covered" >    if (INPUT &amp;&amp; INPUT.i_proxy_port) {i_proxy_port.set(INPUT.i_proxy_port);}</span>
+<span class="cstat-no" title="statement not covered" >    let i_proxy_user = new abap.types.String({qualifiedName: "STRING"});</span>
+<span class="cstat-no" title="statement not covered" >    if (INPUT &amp;&amp; INPUT.i_proxy_user) {i_proxy_user.set(INPUT.i_proxy_user);}</span>
+<span class="cstat-no" title="statement not covered" >    let i_redirection_uri_server = new abap.types.String({qualifiedName: "STRING"});</span>
+<span class="cstat-no" title="statement not covered" >    if (INPUT &amp;&amp; INPUT.i_redirection_uri_server) {i_redirection_uri_server.set(INPUT.i_redirection_uri_server);}</span>
+<span class="cstat-no" title="statement not covered" >    let i_rs_authentication_method = INPUT?.i_rs_authentication_method || new abap.types.Character(4);</span>
+<span class="cstat-no" title="statement not covered" >    let i_rt_validity = new abap.types.Integer({qualifiedName: "I"});</span>
+<span class="cstat-no" title="statement not covered" >    if (INPUT &amp;&amp; INPUT.i_rt_validity) {i_rt_validity.set(INPUT.i_rt_validity);}</span>
+<span class="cstat-no" title="statement not covered" >    let i_saml20_allowed = new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"});</span>
+<span class="cstat-no" title="statement not covered" >    if (INPUT &amp;&amp; INPUT.i_saml20_allowed) {i_saml20_allowed.set(INPUT.i_saml20_allowed);}</span>
+<span class="cstat-no" title="statement not covered" >    let i_saml20_audience = new abap.types.String({qualifiedName: "STRING"});</span>
+<span class="cstat-no" title="statement not covered" >    if (INPUT &amp;&amp; INPUT.i_saml20_audience) {i_saml20_audience.set(INPUT.i_saml20_audience);}</span>
+<span class="cstat-no" title="statement not covered" >    let i_saml20_nameid_email_num = INPUT?.i_saml20_nameid_email_num || new abap.types.Character(4);</span>
+<span class="cstat-no" title="statement not covered" >    let i_target_path = new abap.types.String({qualifiedName: "STRING"});</span>
+<span class="cstat-no" title="statement not covered" >    if (INPUT &amp;&amp; INPUT.i_target_path) {i_target_path.set(INPUT.i_target_path);}</span>
+<span class="cstat-no" title="statement not covered" >    let i_token_endpoint = new abap.types.String({qualifiedName: "STRING"});</span>
+<span class="cstat-no" title="statement not covered" >    if (INPUT &amp;&amp; INPUT.i_token_endpoint) {i_token_endpoint.set(INPUT.i_token_endpoint);}</span>
+<span class="cstat-no" title="statement not covered" >    let it_configured_scopes = abap.types.TableFactory.construct(new abap.types.String({qualifiedName: "STRING"}), {"withHeader":false,"keyType":"DEFAULT","primaryKey":{"isUnique":false,"type":"STANDARD","keyFields":[],"name":"primary_key"},"secondary":[]}, "STRING_TABLE");</span>
+<span class="cstat-no" title="statement not covered" >    if (INPUT &amp;&amp; INPUT.it_configured_scopes) {it_configured_scopes.set(INPUT.it_configured_scopes);}</span>
+<span class="cstat-no" title="statement not covered" >    abap.statements.assert(abap.compare.eq(i_configured_granttype, cl_oa2c_config_writer_api.c_granttype_cc));</span>
+<span class="cstat-no" title="statement not covered" >    ro_config_writer_api.set(await (new abap.Classes['CL_OA2C_CONFIG_WRITER_API']()).constructor_());</span>
+<span class="cstat-no" title="statement not covered" >    ro_config_writer_api.get().FRIENDS_ACCESS_INSTANCE["ms_config"].get().configuration.set(i_configuration);</span>
+<span class="cstat-no" title="statement not covered" >    ro_config_writer_api.get().FRIENDS_ACCESS_INSTANCE["ms_config"].get().client_id.set(i_client_id);</span>
+<span class="cstat-no" title="statement not covered" >    ro_config_writer_api.get().FRIENDS_ACCESS_INSTANCE["ms_config"].get().client_secret.set(i_client_secret);</span>
+<span class="cstat-no" title="statement not covered" >    ro_config_writer_api.get().FRIENDS_ACCESS_INSTANCE["ms_config"].get().authorization_endpoint.set(i_authorization_endpoint);</span>
+<span class="cstat-no" title="statement not covered" >    ro_config_writer_api.get().FRIENDS_ACCESS_INSTANCE["ms_config"].get().token_endpoint.set(i_token_endpoint);</span>
+<span class="cstat-no" title="statement not covered" >    ro_config_writer_api.get().FRIENDS_ACCESS_INSTANCE["ms_config"].get().target_path.set(i_target_path);</span>
+<span class="cstat-no" title="statement not covered" >    ro_config_writer_api.get().FRIENDS_ACCESS_INSTANCE["ms_config"].get().granttype.set(i_configured_granttype);</span>
+<span class="cstat-no" title="statement not covered" >    return ro_config_writer_api;</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
+<span class="cstat-no" title="statement not covered" >  async save() {</span>
+<span class="cstat-no" title="statement not covered" >    abap.statements.insertInternal({data: this.#ms_config, table: cl_oa2c_config_writer_api.mt_saved_configs});</span>
+<span class="cstat-no" title="statement not covered" >    abap.statements.assert(abap.compare.eq(abap.builtin.sy.get().subrc, abap.IntegerFactory.get(0)));</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
+<span class="cstat-no" title="statement not covered" >  async load(INPUT) {</span>
+<span class="cstat-no" title="statement not covered" >    return cl_oa2c_config_writer_api.load(INPUT);</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
+<span class="cstat-no" title="statement not covered" >  static async load(INPUT) {</span>
+<span class="cstat-no" title="statement not covered" >    let ro_config_writer_api = new abap.types.ABAPObject({qualifiedName: "CL_OA2C_CONFIG_WRITER_API", RTTIName: "\\CLASS=CL_OA2C_CONFIG_WRITER_API"});</span>
+<span class="cstat-no" title="statement not covered" >    let i_profile = new abap.types.Character(30, {"qualifiedName":"OA2C_PROFILE","ddicName":"OA2C_PROFILE","description":""});</span>
+<span class="cstat-no" title="statement not covered" >    if (INPUT &amp;&amp; INPUT.i_profile) {i_profile.set(INPUT.i_profile);}</span>
+<span class="cstat-no" title="statement not covered" >    let i_configuration = new abap.types.Character(32, {"qualifiedName":"OA2C_CONFIGURATION","ddicName":"OA2C_CONFIGURATION","description":""});</span>
+<span class="cstat-no" title="statement not covered" >    if (INPUT &amp;&amp; INPUT.i_configuration) {i_configuration.set(INPUT.i_configuration);}</span>
+<span class="cstat-no" title="statement not covered" >    let ls_config = new abap.types.Structure({</span>
+<span class="cstat-no" title="statement not covered" >    "configuration": new abap.types.Character(32, {"qualifiedName":"OA2C_CONFIGURATION","ddicName":"OA2C_CONFIGURATION","description":""}),</span>
+<span class="cstat-no" title="statement not covered" >    "client_id": new abap.types.String({qualifiedName: "CL_OA2C_CONFIG_WRITER_API=&gt;TY_CONFIG-CLIENT_ID"}),</span>
+<span class="cstat-no" title="statement not covered" >    "client_secret": new abap.types.String({qualifiedName: "CL_OA2C_CONFIG_WRITER_API=&gt;TY_CONFIG-CLIENT_SECRET"}),</span>
+<span class="cstat-no" title="statement not covered" >    "authorization_endpoint": new abap.types.String({qualifiedName: "CL_OA2C_CONFIG_WRITER_API=&gt;TY_CONFIG-AUTHORIZATION_ENDPOINT"}),</span>
+<span class="cstat-no" title="statement not covered" >    "token_endpoint": new abap.types.String({qualifiedName: "CL_OA2C_CONFIG_WRITER_API=&gt;TY_CONFIG-TOKEN_ENDPOINT"}),</span>
+<span class="cstat-no" title="statement not covered" >    "target_path": new abap.types.String({qualifiedName: "CL_OA2C_CONFIG_WRITER_API=&gt;TY_CONFIG-TARGET_PATH"}),</span>
+<span class="cstat-no" title="statement not covered" >    "granttype": new abap.types.Integer({qualifiedName: "OA2C_GRANTTYPE"})}, "cl_oa2c_config_writer_api=&gt;ty_config", undefined, {}, {});</span>
+<span class="cstat-no" title="statement not covered" >    abap.statements.readTable(cl_oa2c_config_writer_api.mt_saved_configs,{into: ls_config,</span>
+<span class="cstat-no" title="statement not covered" >      withKey: (i) =&gt; {return abap.compare.eq(i.configuration, i_configuration);},</span>
+<span class="cstat-no" title="statement not covered" >      withKeyValue: [{key: (i) =&gt; {return i.configuration}, value: i_configuration}],</span>
+<span class="cstat-no" title="statement not covered" >      usesTableLine: false,</span>
+<span class="cstat-no" title="statement not covered" >      withKeySimple: {"configuration": i_configuration}});</span>
+<span class="cstat-no" title="statement not covered" >    if (abap.compare.ne(abap.builtin.sy.get().subrc, abap.IntegerFactory.get(0))) {</span>
+<span class="cstat-no" title="statement not covered" >      const unique1499 = await (new abap.Classes['CX_OA2C_CONFIG_NOT_FOUND']()).constructor_();</span>
+<span class="cstat-no" title="statement not covered" >      unique1499.EXTRA_CX = {"INTERNAL_FILENAME": "cl_oa2c_config_writer_api.clas.abap","INTERNAL_LINE": 137};</span>
+<span class="cstat-no" title="statement not covered" >      throw unique1499;</span>
+<span class="cstat-no" title="statement not covered" >    }</span>
+<span class="cstat-no" title="statement not covered" >    ro_config_writer_api.set(await (new abap.Classes['CL_OA2C_CONFIG_WRITER_API']()).constructor_());</span>
+<span class="cstat-no" title="statement not covered" >    ro_config_writer_api.get().FRIENDS_ACCESS_INSTANCE["ms_config"].set(ls_config);</span>
+<span class="cstat-no" title="statement not covered" >    return ro_config_writer_api;</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
+<span class="cstat-no" title="statement not covered" >  async read(INPUT) {</span>
+<span class="cstat-no" title="statement not covered" >    let e_auth_code_allowed = INPUT?.e_auth_code_allowed || new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"});</span>
+<span class="cstat-no" title="statement not covered" >    let e_authentication_method = INPUT?.e_authentication_method || new abap.types.String({qualifiedName: "STRING"});</span>
+<span class="cstat-no" title="statement not covered" >    let e_authorization_endpoint = INPUT?.e_authorization_endpoint || new abap.types.String({qualifiedName: "STRING"});</span>
+<span class="cstat-no" title="statement not covered" >    let e_client_id = INPUT?.e_client_id || new abap.types.String({qualifiedName: "STRING"});</span>
+<span class="cstat-no" title="statement not covered" >    let e_client_uuid = INPUT?.e_client_uuid || new abap.types.String({qualifiedName: "STRING"});</span>
+<span class="cstat-no" title="statement not covered" >    let e_clock_skew_tolerance = INPUT?.e_clock_skew_tolerance || new abap.types.Integer({qualifiedName: "I"});</span>
+<span class="cstat-no" title="statement not covered" >    let e_configuration = INPUT?.e_configuration || new abap.types.String({qualifiedName: "STRING"});</span>
+<span class="cstat-no" title="statement not covered" >    let e_configured_grant_type = INPUT?.e_configured_grant_type || new abap.types.Integer({qualifiedName: "OA2C_GRANTTYPE"});</span>
+<span class="cstat-no" title="statement not covered" >    let e_proxy_host = INPUT?.e_proxy_host || new abap.types.String({qualifiedName: "STRING"});</span>
+<span class="cstat-no" title="statement not covered" >    let e_proxy_port = INPUT?.e_proxy_port || new abap.types.String({qualifiedName: "STRING"});</span>
+<span class="cstat-no" title="statement not covered" >    let e_proxy_user = INPUT?.e_proxy_user || new abap.types.String({qualifiedName: "STRING"});</span>
+<span class="cstat-no" title="statement not covered" >    let e_redirect_uri = INPUT?.e_redirect_uri || new abap.types.String({qualifiedName: "STRING"});</span>
+<span class="cstat-no" title="statement not covered" >    let e_redirect_uri_host = INPUT?.e_redirect_uri_host || new abap.types.String({qualifiedName: "STRING"});</span>
+<span class="cstat-no" title="statement not covered" >    let e_redirect_uri_path = INPUT?.e_redirect_uri_path || new abap.types.String({qualifiedName: "STRING"});</span>
+<span class="cstat-no" title="statement not covered" >    let e_redirect_uri_port = INPUT?.e_redirect_uri_port || new abap.types.Integer({qualifiedName: "I"});</span>
+<span class="cstat-no" title="statement not covered" >    let e_rs_authentication_method = INPUT?.e_rs_authentication_method || new abap.types.String({qualifiedName: "STRING"});</span>
+<span class="cstat-no" title="statement not covered" >    let e_rt_validity = INPUT?.e_rt_validity || new abap.types.Integer({qualifiedName: "I"});</span>
+<span class="cstat-no" title="statement not covered" >    let e_saml20_allowed = INPUT?.e_saml20_allowed || new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"});</span>
+<span class="cstat-no" title="statement not covered" >    let e_saml20_audience = INPUT?.e_saml20_audience || new abap.types.String({qualifiedName: "STRING"});</span>
+<span class="cstat-no" title="statement not covered" >    let e_saml20_nameid_email = INPUT?.e_saml20_nameid_email || new abap.types.String({qualifiedName: "STRING"});</span>
+<span class="cstat-no" title="statement not covered" >    let e_saml20_recipient = INPUT?.e_saml20_recipient || new abap.types.String({qualifiedName: "STRING"});</span>
+<span class="cstat-no" title="statement not covered" >    let e_target_path = INPUT?.e_target_path || new abap.types.String({qualifiedName: "STRING"});</span>
+<span class="cstat-no" title="statement not covered" >    let e_token_endpoint = INPUT?.e_token_endpoint || new abap.types.String({qualifiedName: "STRING"});</span>
+<span class="cstat-no" title="statement not covered" >    let es_oa2c_admin = INPUT?.es_oa2c_admin || new abap.types.String({qualifiedName: "STRING"});</span>
+<span class="cstat-no" title="statement not covered" >    let et_profiles = INPUT?.et_profiles || new abap.types.String({qualifiedName: "STRING"});</span>
+<span class="cstat-no" title="statement not covered" >    let et_configured_scopes = INPUT?.et_configured_scopes || abap.types.TableFactory.construct(new abap.types.String({qualifiedName: "STRING"}), {"withHeader":false,"keyType":"DEFAULT","primaryKey":{"isUnique":false,"type":"STANDARD","keyFields":[],"name":"primary_key"},"secondary":[]}, "STRING_TABLE");</span>
+<span class="cstat-no" title="statement not covered" >    let e_configured_granttype = INPUT?.e_configured_granttype || new abap.types.Integer({qualifiedName: "OA2C_GRANTTYPE"});</span>
+<span class="cstat-no" title="statement not covered" >    e_client_id.set(this.#ms_config.get().client_id);</span>
+<span class="cstat-no" title="statement not covered" >    e_authorization_endpoint.set(this.#ms_config.get().authorization_endpoint);</span>
+<span class="cstat-no" title="statement not covered" >    e_token_endpoint.set(this.#ms_config.get().token_endpoint);</span>
+<span class="cstat-no" title="statement not covered" >    e_target_path.set(this.#ms_config.get().target_path);</span>
+<span class="cstat-no" title="statement not covered" >    e_configured_granttype.set(this.#ms_config.get().granttype);</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
+<span class="cstat-no" title="statement not covered" >}</span>
+abap.Classes['CL_OA2C_CONFIG_WRITER_API'] = cl_oa2c_config_writer_api;
+cl_oa2c_config_writer_api.mt_saved_configs = abap.types.TableFactory.construct(new abap.types.Structure({
+"configuration": new abap.types.Character(32, {"qualifiedName":"OA2C_CONFIGURATION","ddicName":"OA2C_CONFIGURATION","description":""}),
+"client_id": new abap.types.String({qualifiedName: "CL_OA2C_CONFIG_WRITER_API=&gt;TY_CONFIG-CLIENT_ID"}),
+"client_secret": new abap.types.String({qualifiedName: "CL_OA2C_CONFIG_WRITER_API=&gt;TY_CONFIG-CLIENT_SECRET"}),
+"authorization_endpoint": new abap.types.String({qualifiedName: "CL_OA2C_CONFIG_WRITER_API=&gt;TY_CONFIG-AUTHORIZATION_ENDPOINT"}),
+"token_endpoint": new abap.types.String({qualifiedName: "CL_OA2C_CONFIG_WRITER_API=&gt;TY_CONFIG-TOKEN_ENDPOINT"}),
+"target_path": new abap.types.String({qualifiedName: "CL_OA2C_CONFIG_WRITER_API=&gt;TY_CONFIG-TARGET_PATH"}),
+"granttype": new abap.types.Integer({qualifiedName: "OA2C_GRANTTYPE"})}, "cl_oa2c_config_writer_api=&gt;ty_config", undefined, {}, {}), {"withHeader":false,"keyType":"USER","primaryKey":{"name":"primary_key","type":"SORTED","isUnique":true,"keyFields":["CONFIGURATION"]},"secondary":[]}, "");
+cl_oa2c_config_writer_api.c_granttype_cc = new abap.types.Integer({qualifiedName: "OA2C_GRANTTYPE"});
+cl_oa2c_config_writer_api.c_granttype_cc.set(4);
+cl_oa2c_config_writer_api.ty_config = new abap.types.Structure({
+"configuration": new abap.types.Character(32, {"qualifiedName":"OA2C_CONFIGURATION","ddicName":"OA2C_CONFIGURATION","description":""}),
+"client_id": new abap.types.String({qualifiedName: "CL_OA2C_CONFIG_WRITER_API=&gt;TY_CONFIG-CLIENT_ID"}),
+"client_secret": new abap.types.String({qualifiedName: "CL_OA2C_CONFIG_WRITER_API=&gt;TY_CONFIG-CLIENT_SECRET"}),
+"authorization_endpoint": new abap.types.String({qualifiedName: "CL_OA2C_CONFIG_WRITER_API=&gt;TY_CONFIG-AUTHORIZATION_ENDPOINT"}),
+"token_endpoint": new abap.types.String({qualifiedName: "CL_OA2C_CONFIG_WRITER_API=&gt;TY_CONFIG-TOKEN_ENDPOINT"}),
+"target_path": new abap.types.String({qualifiedName: "CL_OA2C_CONFIG_WRITER_API=&gt;TY_CONFIG-TARGET_PATH"}),
+"granttype": new abap.types.Integer({qualifiedName: "OA2C_GRANTTYPE"})}, "cl_oa2c_config_writer_api=&gt;ty_config", undefined, {}, {});
+export {cl_oa2c_config_writer_api};</pre></td></tr></table></pre>
+
+                <div class='push'></div><!-- for sticky footer -->
+            </div><!-- /wrapper -->
+            <div class='footer quiet pad2 space-top1 center small'>
+                Code coverage generated by
+                <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
+                at 2026-02-23T16:07:14.249Z
+            </div>
+        <script src="../prettify.js"></script>
+        <script>
+            window.onload = function () {
+                prettyPrint();
+            };
+        </script>
+        <script src="../sorter.js"></script>
+        <script src="../block-navigation.js"></script>
+    </body>
+</html>
+    

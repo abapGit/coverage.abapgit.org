@@ -1,0 +1,280 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Code coverage report for output/kernel_numberrange.clas.mjs</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+    
+<body>
+<div class='wrapper'>
+    <div class='pad1'>
+        <h1><a href="../index.html">All files</a> / <a href="index.html">output</a> kernel_numberrange.clas.mjs</h1>
+        <div class='clearfix'>
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">18.18% </span>
+                <span class="quiet">Statements</span>
+                <span class='fraction'>12/66</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">66.66% </span>
+                <span class="quiet">Branches</span>
+                <span class='fraction'>2/3</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">20% </span>
+                <span class="quiet">Functions</span>
+                <span class='fraction'>1/5</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">18.18% </span>
+                <span class="quiet">Lines</span>
+                <span class='fraction'>12/66</span>
+            </div>
+        
+            
+        </div>
+        <p class="quiet">
+            Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
+        </p>
+        <template id="filterTemplate">
+            <div class="quiet">
+                Filter:
+                <input type="search" id="fileSearch">
+            </div>
+        </template>
+    </div>
+    <div class='status-line low'></div>
+    <pre><table class="coverage">
+<tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
+<a name='L2'></a><a href='#L2'>2</a>
+<a name='L3'></a><a href='#L3'>3</a>
+<a name='L4'></a><a href='#L4'>4</a>
+<a name='L5'></a><a href='#L5'>5</a>
+<a name='L6'></a><a href='#L6'>6</a>
+<a name='L7'></a><a href='#L7'>7</a>
+<a name='L8'></a><a href='#L8'>8</a>
+<a name='L9'></a><a href='#L9'>9</a>
+<a name='L10'></a><a href='#L10'>10</a>
+<a name='L11'></a><a href='#L11'>11</a>
+<a name='L12'></a><a href='#L12'>12</a>
+<a name='L13'></a><a href='#L13'>13</a>
+<a name='L14'></a><a href='#L14'>14</a>
+<a name='L15'></a><a href='#L15'>15</a>
+<a name='L16'></a><a href='#L16'>16</a>
+<a name='L17'></a><a href='#L17'>17</a>
+<a name='L18'></a><a href='#L18'>18</a>
+<a name='L19'></a><a href='#L19'>19</a>
+<a name='L20'></a><a href='#L20'>20</a>
+<a name='L21'></a><a href='#L21'>21</a>
+<a name='L22'></a><a href='#L22'>22</a>
+<a name='L23'></a><a href='#L23'>23</a>
+<a name='L24'></a><a href='#L24'>24</a>
+<a name='L25'></a><a href='#L25'>25</a>
+<a name='L26'></a><a href='#L26'>26</a>
+<a name='L27'></a><a href='#L27'>27</a>
+<a name='L28'></a><a href='#L28'>28</a>
+<a name='L29'></a><a href='#L29'>29</a>
+<a name='L30'></a><a href='#L30'>30</a>
+<a name='L31'></a><a href='#L31'>31</a>
+<a name='L32'></a><a href='#L32'>32</a>
+<a name='L33'></a><a href='#L33'>33</a>
+<a name='L34'></a><a href='#L34'>34</a>
+<a name='L35'></a><a href='#L35'>35</a>
+<a name='L36'></a><a href='#L36'>36</a>
+<a name='L37'></a><a href='#L37'>37</a>
+<a name='L38'></a><a href='#L38'>38</a>
+<a name='L39'></a><a href='#L39'>39</a>
+<a name='L40'></a><a href='#L40'>40</a>
+<a name='L41'></a><a href='#L41'>41</a>
+<a name='L42'></a><a href='#L42'>42</a>
+<a name='L43'></a><a href='#L43'>43</a>
+<a name='L44'></a><a href='#L44'>44</a>
+<a name='L45'></a><a href='#L45'>45</a>
+<a name='L46'></a><a href='#L46'>46</a>
+<a name='L47'></a><a href='#L47'>47</a>
+<a name='L48'></a><a href='#L48'>48</a>
+<a name='L49'></a><a href='#L49'>49</a>
+<a name='L50'></a><a href='#L50'>50</a>
+<a name='L51'></a><a href='#L51'>51</a>
+<a name='L52'></a><a href='#L52'>52</a>
+<a name='L53'></a><a href='#L53'>53</a>
+<a name='L54'></a><a href='#L54'>54</a>
+<a name='L55'></a><a href='#L55'>55</a>
+<a name='L56'></a><a href='#L56'>56</a>
+<a name='L57'></a><a href='#L57'>57</a>
+<a name='L58'></a><a href='#L58'>58</a>
+<a name='L59'></a><a href='#L59'>59</a>
+<a name='L60'></a><a href='#L60'>60</a>
+<a name='L61'></a><a href='#L61'>61</a>
+<a name='L62'></a><a href='#L62'>62</a>
+<a name='L63'></a><a href='#L63'>63</a>
+<a name='L64'></a><a href='#L64'>64</a>
+<a name='L65'></a><a href='#L65'>65</a>
+<a name='L66'></a><a href='#L66'>66</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span></td><td class="text"><pre class="prettyprint lang-js">const {cx_root} = await import("./cx_root.clas.mjs");
+// kernel_numberrange.clas.abap
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ><span class="branch-0 cbranch-no" title="branch not covered" >class kernel_numberrange {</span></span></span>
+<span class="cstat-no" title="statement not covered" >  static STATIC_SUPER = undefined;</span>
+<span class="cstat-no" title="statement not covered" >  static INTERNAL_TYPE = 'CLAS';</span>
+<span class="cstat-no" title="statement not covered" >  static INTERNAL_NAME = 'KERNEL_NUMBERRANGE';</span>
+<span class="cstat-no" title="statement not covered" >  static IMPLEMENTED_INTERFACES = [];</span>
+<span class="cstat-no" title="statement not covered" >  static ATTRIBUTES = {"STATUS": {"type": () =&gt; {return abap.types.TableFactory.construct(new abap.types.Structure({</span>
+<span class="cstat-no" title="statement not covered" >  "nr_range_nr": new abap.types.Character(2, {"qualifiedName":"cl_numberrange_runtime=&gt;nr_interval"}),</span>
+<span class="cstat-no" title="statement not covered" >  "object": new abap.types.Character(10, {"qualifiedName":"cl_numberrange_runtime=&gt;nr_object"}),</span>
+<span class="cstat-no" title="statement not covered" >  "number": new abap.types.Numc({length: 20, qualifiedName: "cl_numberrange_runtime=&gt;nr_number"})}, "kernel_numberrange=&gt;ty_status", undefined, {}, {}), {"withHeader":false,"keyType":"DEFAULT","primaryKey":{"name":"primary_key","type":"STANDARD","isUnique":false,"keyFields":[]},"secondary":[]}, "");}, "visibility": "I", "is_constant": " ", "is_class": "X"}};</span>
+<span class="cstat-no" title="statement not covered" >  static METHODS = {"NUMBER_GET": {"visibility": "U", "parameters": {"NR_RANGE_NR": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Character(2, {"qualifiedName":"cl_numberrange_runtime=&gt;nr_interval"});},</span> "is_optional": " ", "parm_kind": "I", "type_name": "CharacterType"}, "OBJECT": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Character(10, {"qualifiedName":"cl_numberrange_runtime=&gt;nr_object"});},</span> "is_optional": " ", "parm_kind": "I", "type_name": "CharacterType"}, "NUMBER": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Numc({length: 20, qualifiedName: "cl_numberrange_runtime=&gt;nr_number"});},</span> "is_optional": " ", "parm_kind": "E", "type_name": "NumericType"}}}};</span>
+<span class="cstat-no" title="statement not covered" >  #status;</span>
+<span class="cstat-no" title="statement not covered" >  constructor() {</span>
+<span class="cstat-no" title="statement not covered" >    this.me = new abap.types.ABAPObject();</span>
+<span class="cstat-no" title="statement not covered" >    this.me.set(this);</span>
+<span class="cstat-no" title="statement not covered" >    this.INTERNAL_ID = abap.internalIdCounter++;</span>
+<span class="cstat-no" title="statement not covered" >    this.FRIENDS_ACCESS_INSTANCE = {</span>
+<span class="cstat-no" title="statement not covered" >    };</span>
+<span class="cstat-no" title="statement not covered" >    this.status = kernel_numberrange.status;</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
+<span class="cstat-no" title="statement not covered" >  async constructor_(INPUT) {</span>
+<span class="cstat-no" title="statement not covered" >    if (super.constructor_) { await super.constructor_(INPUT); }</span>
+<span class="cstat-no" title="statement not covered" >    return this;</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
+<span class="cstat-no" title="statement not covered" >  async number_get(INPUT) {</span>
+<span class="cstat-no" title="statement not covered" >    return kernel_numberrange.number_get(INPUT);</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
+<span class="cstat-no" title="statement not covered" >  static async number_get(INPUT) {</span>
+<span class="cstat-no" title="statement not covered" >    let nr_range_nr = INPUT?.nr_range_nr;</span>
+<span class="cstat-no" title="statement not covered" >    if (nr_range_nr?.getQualifiedName === undefined || nr_range_nr.getQualifiedName() !== "CL_NUMBERRANGE_RUNTIME=&gt;NR_INTERVAL") { nr_range_nr = undefined; }</span>
+<span class="cstat-no" title="statement not covered" >    if (nr_range_nr === undefined) { nr_range_nr = new abap.types.Character(2, {"qualifiedName":"cl_numberrange_runtime=&gt;nr_interval"}).set(INPUT.nr_range_nr); }</span>
+<span class="cstat-no" title="statement not covered" >    let object = INPUT?.object;</span>
+<span class="cstat-no" title="statement not covered" >    if (object?.getQualifiedName === undefined || object.getQualifiedName() !== "CL_NUMBERRANGE_RUNTIME=&gt;NR_OBJECT") { object = undefined; }</span>
+<span class="cstat-no" title="statement not covered" >    if (object === undefined) { object = new abap.types.Character(10, {"qualifiedName":"cl_numberrange_runtime=&gt;nr_object"}).set(INPUT.object); }</span>
+<span class="cstat-no" title="statement not covered" >    let number = INPUT?.number || new abap.types.Numc({length: 20, qualifiedName: "cl_numberrange_runtime=&gt;nr_number"});</span>
+<span class="cstat-no" title="statement not covered" >    let fs_row_ = new abap.types.FieldSymbol(new abap.types.Structure({</span>
+<span class="cstat-no" title="statement not covered" >    "nr_range_nr": new abap.types.Character(2, {"qualifiedName":"cl_numberrange_runtime=&gt;nr_interval"}),</span>
+<span class="cstat-no" title="statement not covered" >    "object": new abap.types.Character(10, {"qualifiedName":"cl_numberrange_runtime=&gt;nr_object"}),</span>
+<span class="cstat-no" title="statement not covered" >    "number": new abap.types.Numc({length: 20, qualifiedName: "cl_numberrange_runtime=&gt;nr_number"})}, "kernel_numberrange=&gt;ty_status", undefined, {}, {}));</span>
+<span class="cstat-no" title="statement not covered" >    abap.statements.readTable(kernel_numberrange.status,{assigning: fs_row_,</span>
+<span class="cstat-no" title="statement not covered" >      withKey: (i) =&gt; {return abap.compare.eq(i.nr_range_nr, nr_range_nr) &amp;&amp; abap.compare.eq(i.object, object);},</span>
+<span class="cstat-no" title="statement not covered" >      withKeyValue: [{key: (i) =&gt; {return i.nr_range_nr}, value: nr_range_nr},{key: (i) =&gt; {return i.object}, value: object}],</span>
+<span class="cstat-no" title="statement not covered" >      usesTableLine: false,</span>
+<span class="cstat-no" title="statement not covered" >      withKeySimple: {"nr_range_nr": nr_range_nr,"object": object}});</span>
+<span class="cstat-no" title="statement not covered" >    if (abap.compare.eq(abap.builtin.sy.get().subrc, abap.IntegerFactory.get(0))) {</span>
+<span class="cstat-no" title="statement not covered" >      fs_row_.get().number.set(abap.operators.add(fs_row_.get().number,abap.IntegerFactory.get(1)));</span>
+<span class="cstat-no" title="statement not covered" >    } else {</span>
+<span class="cstat-no" title="statement not covered" >      fs_row_.assign(kernel_numberrange.status.appendInitial());</span>
+<span class="cstat-no" title="statement not covered" >      fs_row_.get().nr_range_nr.set(nr_range_nr);</span>
+<span class="cstat-no" title="statement not covered" >      fs_row_.get().object.set(object);</span>
+<span class="cstat-no" title="statement not covered" >      fs_row_.get().number.set(abap.IntegerFactory.get(1));</span>
+<span class="cstat-no" title="statement not covered" >    }</span>
+<span class="cstat-no" title="statement not covered" >    number.set(fs_row_.get().number);</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
+<span class="cstat-no" title="statement not covered" >}</span>
+abap.Classes['KERNEL_NUMBERRANGE'] = kernel_numberrange;
+kernel_numberrange.status = abap.types.TableFactory.construct(new abap.types.Structure({
+"nr_range_nr": new abap.types.Character(2, {"qualifiedName":"cl_numberrange_runtime=&gt;nr_interval"}),
+"object": new abap.types.Character(10, {"qualifiedName":"cl_numberrange_runtime=&gt;nr_object"}),
+"number": new abap.types.Numc({length: 20, qualifiedName: "cl_numberrange_runtime=&gt;nr_number"})}, "kernel_numberrange=&gt;ty_status", undefined, {}, {}), {"withHeader":false,"keyType":"DEFAULT","primaryKey":{"name":"primary_key","type":"STANDARD","isUnique":false,"keyFields":[]},"secondary":[]}, "");
+kernel_numberrange.ty_status = new abap.types.Structure({
+"nr_range_nr": new abap.types.Character(2, {"qualifiedName":"cl_numberrange_runtime=&gt;nr_interval"}),
+"object": new abap.types.Character(10, {"qualifiedName":"cl_numberrange_runtime=&gt;nr_object"}),
+"number": new abap.types.Numc({length: 20, qualifiedName: "cl_numberrange_runtime=&gt;nr_number"})}, "kernel_numberrange=&gt;ty_status", undefined, {}, {});
+export {kernel_numberrange};</pre></td></tr></table></pre>
+
+                <div class='push'></div><!-- for sticky footer -->
+            </div><!-- /wrapper -->
+            <div class='footer quiet pad2 space-top1 center small'>
+                Code coverage generated by
+                <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
+                at 2026-02-23T16:07:14.249Z
+            </div>
+        <script src="../prettify.js"></script>
+        <script>
+            window.onload = function () {
+                prettyPrint();
+            };
+        </script>
+        <script src="../sorter.js"></script>
+        <script src="../block-navigation.js"></script>
+    </body>
+</html>
+    

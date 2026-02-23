@@ -1,0 +1,361 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Code coverage report for output/zcl_abapgit_zlib.clas.testclasses.mjs</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+    
+<body>
+<div class='wrapper'>
+    <div class='pad1'>
+        <h1><a href="../index.html">All files</a> / <a href="index.html">output</a> zcl_abapgit_zlib.clas.testclasses.mjs</h1>
+        <div class='clearfix'>
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">100% </span>
+                <span class="quiet">Statements</span>
+                <span class='fraction'>93/93</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">90% </span>
+                <span class="quiet">Branches</span>
+                <span class='fraction'>9/10</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">100% </span>
+                <span class="quiet">Functions</span>
+                <span class='fraction'>8/8</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">100% </span>
+                <span class="quiet">Lines</span>
+                <span class='fraction'>93/93</span>
+            </div>
+        
+            
+        </div>
+        <p class="quiet">
+            Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
+        </p>
+        <template id="filterTemplate">
+            <div class="quiet">
+                Filter:
+                <input type="search" id="fileSearch">
+            </div>
+        </template>
+    </div>
+    <div class='status-line high'></div>
+    <pre><table class="coverage">
+<tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
+<a name='L2'></a><a href='#L2'>2</a>
+<a name='L3'></a><a href='#L3'>3</a>
+<a name='L4'></a><a href='#L4'>4</a>
+<a name='L5'></a><a href='#L5'>5</a>
+<a name='L6'></a><a href='#L6'>6</a>
+<a name='L7'></a><a href='#L7'>7</a>
+<a name='L8'></a><a href='#L8'>8</a>
+<a name='L9'></a><a href='#L9'>9</a>
+<a name='L10'></a><a href='#L10'>10</a>
+<a name='L11'></a><a href='#L11'>11</a>
+<a name='L12'></a><a href='#L12'>12</a>
+<a name='L13'></a><a href='#L13'>13</a>
+<a name='L14'></a><a href='#L14'>14</a>
+<a name='L15'></a><a href='#L15'>15</a>
+<a name='L16'></a><a href='#L16'>16</a>
+<a name='L17'></a><a href='#L17'>17</a>
+<a name='L18'></a><a href='#L18'>18</a>
+<a name='L19'></a><a href='#L19'>19</a>
+<a name='L20'></a><a href='#L20'>20</a>
+<a name='L21'></a><a href='#L21'>21</a>
+<a name='L22'></a><a href='#L22'>22</a>
+<a name='L23'></a><a href='#L23'>23</a>
+<a name='L24'></a><a href='#L24'>24</a>
+<a name='L25'></a><a href='#L25'>25</a>
+<a name='L26'></a><a href='#L26'>26</a>
+<a name='L27'></a><a href='#L27'>27</a>
+<a name='L28'></a><a href='#L28'>28</a>
+<a name='L29'></a><a href='#L29'>29</a>
+<a name='L30'></a><a href='#L30'>30</a>
+<a name='L31'></a><a href='#L31'>31</a>
+<a name='L32'></a><a href='#L32'>32</a>
+<a name='L33'></a><a href='#L33'>33</a>
+<a name='L34'></a><a href='#L34'>34</a>
+<a name='L35'></a><a href='#L35'>35</a>
+<a name='L36'></a><a href='#L36'>36</a>
+<a name='L37'></a><a href='#L37'>37</a>
+<a name='L38'></a><a href='#L38'>38</a>
+<a name='L39'></a><a href='#L39'>39</a>
+<a name='L40'></a><a href='#L40'>40</a>
+<a name='L41'></a><a href='#L41'>41</a>
+<a name='L42'></a><a href='#L42'>42</a>
+<a name='L43'></a><a href='#L43'>43</a>
+<a name='L44'></a><a href='#L44'>44</a>
+<a name='L45'></a><a href='#L45'>45</a>
+<a name='L46'></a><a href='#L46'>46</a>
+<a name='L47'></a><a href='#L47'>47</a>
+<a name='L48'></a><a href='#L48'>48</a>
+<a name='L49'></a><a href='#L49'>49</a>
+<a name='L50'></a><a href='#L50'>50</a>
+<a name='L51'></a><a href='#L51'>51</a>
+<a name='L52'></a><a href='#L52'>52</a>
+<a name='L53'></a><a href='#L53'>53</a>
+<a name='L54'></a><a href='#L54'>54</a>
+<a name='L55'></a><a href='#L55'>55</a>
+<a name='L56'></a><a href='#L56'>56</a>
+<a name='L57'></a><a href='#L57'>57</a>
+<a name='L58'></a><a href='#L58'>58</a>
+<a name='L59'></a><a href='#L59'>59</a>
+<a name='L60'></a><a href='#L60'>60</a>
+<a name='L61'></a><a href='#L61'>61</a>
+<a name='L62'></a><a href='#L62'>62</a>
+<a name='L63'></a><a href='#L63'>63</a>
+<a name='L64'></a><a href='#L64'>64</a>
+<a name='L65'></a><a href='#L65'>65</a>
+<a name='L66'></a><a href='#L66'>66</a>
+<a name='L67'></a><a href='#L67'>67</a>
+<a name='L68'></a><a href='#L68'>68</a>
+<a name='L69'></a><a href='#L69'>69</a>
+<a name='L70'></a><a href='#L70'>70</a>
+<a name='L71'></a><a href='#L71'>71</a>
+<a name='L72'></a><a href='#L72'>72</a>
+<a name='L73'></a><a href='#L73'>73</a>
+<a name='L74'></a><a href='#L74'>74</a>
+<a name='L75'></a><a href='#L75'>75</a>
+<a name='L76'></a><a href='#L76'>76</a>
+<a name='L77'></a><a href='#L77'>77</a>
+<a name='L78'></a><a href='#L78'>78</a>
+<a name='L79'></a><a href='#L79'>79</a>
+<a name='L80'></a><a href='#L80'>80</a>
+<a name='L81'></a><a href='#L81'>81</a>
+<a name='L82'></a><a href='#L82'>82</a>
+<a name='L83'></a><a href='#L83'>83</a>
+<a name='L84'></a><a href='#L84'>84</a>
+<a name='L85'></a><a href='#L85'>85</a>
+<a name='L86'></a><a href='#L86'>86</a>
+<a name='L87'></a><a href='#L87'>87</a>
+<a name='L88'></a><a href='#L88'>88</a>
+<a name='L89'></a><a href='#L89'>89</a>
+<a name='L90'></a><a href='#L90'>90</a>
+<a name='L91'></a><a href='#L91'>91</a>
+<a name='L92'></a><a href='#L92'>92</a>
+<a name='L93'></a><a href='#L93'>93</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span></td><td class="text"><pre class="prettyprint lang-js">const {zcl_abapgit_zlib} = await import("./zcl_abapgit_zlib.clas.mjs");
+const {cx_root} = await import("./cx_root.clas.mjs");
+// zcl_abapgit_zlib.clas.testclasses.abap
+class ltcl_zlib {
+  static STATIC_SUPER = undefined;
+  static INTERNAL_TYPE = 'CLAS';
+  static INTERNAL_NAME = 'CLAS-ZCL_ABAPGIT_ZLIB-LTCL_ZLIB';
+  static IMPLEMENTED_INTERFACES = [];
+  static ATTRIBUTES = {};
+  static METHODS = {"FIXED": {"visibility": "I", "parameters": {}},
+  "DYNAMIC_SIMPLE": {"visibility": "I", "parameters": {}},
+  "DYNAMIC_ANOTHER": {"visibility": "I", "parameters": {}},
+  "DYNAMIC": {"visibility": "I", "parameters": {}},
+  "NOT_COMPRESSED": {"visibility": "I", "parameters": {}}};
+  constructor() {
+    this.me = new abap.types.ABAPObject();
+    this.me.set(this);
+    this.INTERNAL_ID = abap.internalIdCounter++;
+    this.FRIENDS_ACCESS_INSTANCE = {
+      "fixed": this.#fixed.bind(this),
+      "dynamic_simple": this.#dynamic_simple.bind(this),
+      "dynamic_another": this.#dynamic_another.bind(this),
+      "dynamic": this.#dynamic.bind(this),
+      "not_compressed": this.#not_compressed.bind(this),
+    };
+  }
+  async constructor_(INPUT) {
+    if (super.constructor_) <span class="branch-0 cbranch-no" title="branch not covered" >{ await super.constructor_(INPUT); }</span>
+    return this;
+  }
+  async #fixed() {
+    let ls_data = new abap.types.Structure({
+    "raw": new abap.types.XString({qualifiedName: "ZCL_ABAPGIT_ZLIB=&gt;TY_DECOMPRESS-RAW"}),
+    "compressed_len": new abap.types.Integer({qualifiedName: "ZCL_ABAPGIT_ZLIB=&gt;TY_DECOMPRESS-COMPRESSED_LEN"})}, "zcl_abapgit_zlib=&gt;ty_decompress", undefined, {}, {});
+    let lc_raw = new abap.types.XString({qualifiedName: "XSTRING"});
+    lc_raw.set('48656C6C6F20576F726C64210D0A');
+    let lc_compressed = new abap.types.XString({qualifiedName: "XSTRING"});
+    lc_compressed.set('F348CDC9C95708CF2FCA4951E4E5020024E90455');
+    ls_data.set((await abap.Classes['ZCL_ABAPGIT_ZLIB'].decompress({iv_compressed: lc_compressed})));
+    await abap.Classes['CL_ABAP_UNIT_ASSERT'].assert_not_initial({act: ls_data.get().raw});
+    await abap.Classes['CL_ABAP_UNIT_ASSERT'].assert_equals({act: ls_data.get().raw, exp: lc_raw});
+  }
+  async #not_compressed() {
+    let ls_data = new abap.types.Structure({
+    "raw": new abap.types.XString({qualifiedName: "ZCL_ABAPGIT_ZLIB=&gt;TY_DECOMPRESS-RAW"}),
+    "compressed_len": new abap.types.Integer({qualifiedName: "ZCL_ABAPGIT_ZLIB=&gt;TY_DECOMPRESS-COMPRESSED_LEN"})}, "zcl_abapgit_zlib=&gt;ty_decompress", undefined, {}, {});
+    let lc_raw = new abap.types.XString({qualifiedName: "XSTRING"});
+    lc_raw.set('4142434445464748494A4B4C');
+    let lc_compressed = new abap.types.XString({qualifiedName: "XSTRING"});
+    lc_compressed.set('010C00F3FF4142434445464748494A4B4C');
+    ls_data.set((await abap.Classes['ZCL_ABAPGIT_ZLIB'].decompress({iv_compressed: lc_compressed})));
+    await abap.Classes['CL_ABAP_UNIT_ASSERT'].assert_not_initial({act: ls_data.get().raw});
+    await abap.Classes['CL_ABAP_UNIT_ASSERT'].assert_equals({act: ls_data.get().raw, exp: lc_raw});
+  }
+  async #dynamic_simple() {
+    let ls_data = new abap.types.Structure({
+    "raw": new abap.types.XString({qualifiedName: "ZCL_ABAPGIT_ZLIB=&gt;TY_DECOMPRESS-RAW"}),
+    "compressed_len": new abap.types.Integer({qualifiedName: "ZCL_ABAPGIT_ZLIB=&gt;TY_DECOMPRESS-COMPRESSED_LEN"})}, "zcl_abapgit_zlib=&gt;ty_decompress", undefined, {}, {});
+    let lv_compressed = new abap.types.XString({qualifiedName: "XSTRING"});
+    let lv_decoded = new abap.types.XString({qualifiedName: "XSTRING"});
+    lv_compressed.set(new abap.types.String().set(`05804109000008C4AA184EC1C7E0C08FF5C70EA43E470B1A0B045D`));
+    lv_decoded.set((await abap.Classes['ZCL_ABAPGIT_CONVERT'].string_to_xstring_utf8({iv_string: new abap.types.String().set(`hello world`)})));
+    ls_data.set((await abap.Classes['ZCL_ABAPGIT_ZLIB'].decompress({iv_compressed: lv_compressed})));
+    await abap.Classes['CL_ABAP_UNIT_ASSERT'].assert_not_initial({act: ls_data.get().raw});
+    await abap.Classes['CL_ABAP_UNIT_ASSERT'].assert_equals({act: ls_data.get().raw, exp: lv_decoded});
+  }
+  async #dynamic_another() {
+    let ls_data = new abap.types.Structure({
+    "raw": new abap.types.XString({qualifiedName: "ZCL_ABAPGIT_ZLIB=&gt;TY_DECOMPRESS-RAW"}),
+    "compressed_len": new abap.types.Integer({qualifiedName: "ZCL_ABAPGIT_ZLIB=&gt;TY_DECOMPRESS-COMPRESSED_LEN"})}, "zcl_abapgit_zlib=&gt;ty_decompress", undefined, {}, {});
+    let lv_compressed = new abap.types.XString({qualifiedName: "XSTRING"});
+    let lv_decoded = new abap.types.XString({qualifiedName: "XSTRING"});
+    lv_compressed.set(abap.operators.concat(new abap.types.String().set(`25CCD10903310C04D156B680904AD284628963C1929D93D4FF`),abap.operators.concat(new abap.types.String().set(`19F23DBCF9ACDB1CDCD90E5D73DD4816C4AD5E182BD24659F50D516EE6605CB0`),abap.operators.concat(new abap.types.String().set(`C913D3F400183B7D29CA7C1FCC18546A47A10B53BE670FABFFDAE0728540267F`),new abap.types.String().set(`2DEF07`)))));
+    lv_decoded.set((await abap.Classes['ZCL_ABAPGIT_CONVERT'].string_to_xstring_utf8({iv_string: abap.operators.concat(new abap.types.String().set(`Lorem ipsum dolor sit amet, consectetur adipiscing elit, `),new abap.types.String().set(`sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`))})));
+    ls_data.set((await abap.Classes['ZCL_ABAPGIT_ZLIB'].decompress({iv_compressed: lv_compressed})));
+    await abap.Classes['CL_ABAP_UNIT_ASSERT'].assert_not_initial({act: ls_data.get().raw});
+    await abap.Classes['CL_ABAP_UNIT_ASSERT'].assert_equals({act: ls_data.get().raw, exp: lv_decoded});
+  }
+  async #dynamic() {
+    let ls_data = new abap.types.Structure({
+    "raw": new abap.types.XString({qualifiedName: "ZCL_ABAPGIT_ZLIB=&gt;TY_DECOMPRESS-RAW"}),
+    "compressed_len": new abap.types.Integer({qualifiedName: "ZCL_ABAPGIT_ZLIB=&gt;TY_DECOMPRESS-COMPRESSED_LEN"})}, "zcl_abapgit_zlib=&gt;ty_decompress", undefined, {}, {});
+    let lv_compressed = new abap.types.XString({qualifiedName: "XSTRING"});
+    let lv_decoded = new abap.types.XString({qualifiedName: "XSTRING"});
+    lv_compressed.set(abap.operators.concat(new abap.types.String().set(`75555D6FE246147DF7AFB8521F1610A0AA8F911A`),abap.operators.concat(new abap.types.String().set(`C9C1A6B5969034711A352FCE605FF074CD8C3B33`),abap.operators.concat(new abap.types.String().set(`86657FFD9E191302DBEC8B857DBFCFB9F7F00BED`),abap.operators.concat(new abap.types.String().set(`2BD1EC8A52ABB5DC448FF13D3DF38A92836A8DA6`),abap.operators.concat(new abap.types.String().set(`F806EFF1E26FEACD9D114E9B288A46A34C59279A`),abap.operators.concat(new abap.types.String().set(`66348A46946D5B6D1CB99A49AFFEE5D2595A1BBD`),abap.operators.concat(new abap.types.String().set(`25D56D36EC682D1BA64E556CA8118EADA38D7464`),abap.operators.concat(new abap.types.String().set(`B8616161B0526D087517D9F23392C5A5933BB811`),abap.operators.concat(new abap.types.String().set(`B29FA7846966D81B9E13126DDBC85238A9156A69`),abap.operators.concat(new abap.types.String().set(`432F68B298DDDDDEE3B19C677FF81613DEEAD0DF`),abap.operators.concat(new abap.types.String().set(`8771EF61497A7B87ECE9572E3BA4F7639CE53FB3`),abap.operators.concat(new abap.types.String().set(`9C8370EE42831FCB0F7DB7B5501B26ABB77C848F`),abap.operators.concat(new abap.types.String().set(`76A2E9D892501559B163383D70233A55D6FD00BE`),abap.operators.concat(new abap.types.String().set(`938BC44E93E5BEA532A4B301FC27CB186C427155`),abap.operators.concat(new abap.types.String().set(`013F812A7A1D32A010B850ACC086469DC3F9875A`),abap.operators.concat(new abap.types.String().set(`3878A3BE2719ECA9CA37D2B3FB16358111483E27`),abap.operators.concat(new abap.types.String().set(`451EDF2C52D408442B273DF27ECCB38C3EBC15D6`),abap.operators.concat(new abap.types.String().set(`861CC73E02FFBE1D6DE4462AD104239A09B12B34`),abap.operators.concat(new abap.types.String().set(`045E3DE35239366B51326DD9D51A88B02BFC2686`),abap.operators.concat(new abap.types.String().set(`44538AA2D7D757B1126DD4E8A2DCB6FD77FA9D08`),abap.operators.concat(new abap.types.String().set(`1B5BB85ADAC9357E942D462ABE217040C36994CD`),abap.operators.concat(new abap.types.String().set(`E9DC7D725D0B5B08BF528C153F4E094FCA1E295B`),abap.operators.concat(new abap.types.String().set(`6679162FA61152FE1055864DBB889846E932C9E6`),abap.operators.concat(new abap.types.String().set(`D3284AE23CF6FEA709B017CEE8A6C182E7FFDCA7`),abap.operators.concat(new abap.types.String().set(`F490CE29BFA36F725F4A3F124DFD0C1FB9FF7F1A`),abap.operators.concat(new abap.types.String().set(`B92EDFA7F949D8E4FA02AB4118E0049D8708E54E`),abap.operators.concat(new abap.types.String().set(`EFB00218801981CD396E05875D7580442BB2252B`),abap.operators.concat(new abap.types.String().set(`61A4B657E0F98D88A77B4C9816C94D317FB8BB3D`),abap.operators.concat(new abap.types.String().set(`1E94A7F404207E9D26BEF81E489E505973F985E4`),abap.operators.concat(new abap.types.String().set(`3ADC52D919E317D21EACE32D494B07DD19AA78C7`),abap.operators.concat(new abap.types.String().set(`8D6EB7EFA629E5609558D9CE604B9DDFD7177262`),abap.operators.concat(new abap.types.String().set(`D5F89B31908AB6C21656B497AEF62D40B07CCF82`),abap.operators.concat(new abap.types.String().set(`F0599056CD015B4509EF8EB5CE978868F6673AFB`),abap.operators.concat(new abap.types.String().set(`0CCB048DC88ACA963E25A34F3D3213CA8D5036C8`),abap.operators.concat(new abap.types.String().set(`D8DEE0FA41E52C14B80A906988823966B5BE8817`),abap.operators.concat(new abap.types.String().set(`09770A6985AB077FC5E32C1F3FE5E3FB6438262B`),abap.operators.concat(new abap.types.String().set(`B72DFA79F709117E160CE88CC44841235F72DCD4`),abap.operators.concat(new abap.types.String().set(`E86DCA3DCABCA945E10E2D83CC5F7FA3C1F3454F`),abap.operators.concat(new abap.types.String().set(`43AF6E4BED7A11B8F5870C593EE0A6B9BDFA998E`),abap.operators.concat(new abap.types.String().set(`D1E081FFEBA4017E5E300396FE0E4F087F8CEA90`),abap.operators.concat(new abap.types.String().set(`560C7F26D329E5FD7B09F0D8F7FF0614B7AD9789`),abap.operators.concat(new abap.types.String().set(`75B0AC21664755F6FF003D4947C74123BF304DA0`),abap.operators.concat(new abap.types.String().set(`FCA536204077CA8D69DD41E72D0E8ED598F86BC9`),abap.operators.concat(new abap.types.String().set(`0D9E9E8861E01CCAB1626ABB55236D8DDE012316`),abap.operators.concat(new abap.types.String().set(`558082338D26C5DEA4A986AA92D215440566DFAE`),abap.operators.concat(new abap.types.String().set(`9F75FEB49CE5D9DDB24817E96DBACC1F7B176C2E`),abap.operators.concat(new abap.types.String().set(`86F14BF21DD2B86583A502789C33343030333151`),abap.operators.concat(new abap.types.String().set(`284A4D4CC94DD5CB4D61E8F9CF526533B9F99E89`),abap.operators.concat(new abap.types.String().set(`F5DD0E11137B1563BF8D9300E5B40D39B801789C`),abap.operators.concat(new abap.types.String().set(`0BCBCF4CD15308CFCCC951484A554849CD492D49`),abap.operators.concat(new abap.types.String().set(`050A700100650107AFB643789C5D524B8FDA3010`),abap.operators.concat(new abap.types.String().set(`BEFB578C38ED4AD1F621F5D29B49CC6235C49163`),abap.operators.concat(new abap.types.String().set(`96720C8921AE428C62A768FF7D6702BBDB564242`),abap.operators.concat(new abap.types.String().set(`F3F85EE398CEC2461AC85D638760E1018B47C652`),abap.operators.concat(new abap.types.String().set(`7F791DDDA98BF0D03CC2D7CF5FBE81AEBBA9077E`),abap.operators.concat(new abap.types.String().set(`AD47CB5869C7B30BC1F9015C80CE8EF6F00AA7B1`),abap.operators.concat(new abap.types.String().set(`1EA26D13388ED6823F42D3D5E3C926103DD4C32B`),abap.operators.concat(new abap.types.String().set(`5CEC1810E00FB176831B4E5043833A0C37638734`),abap.operators.concat(new abap.types.String().set(`C11F23D1E3720B7508BE7135F241EB9BE96C8758`),abap.operators.concat(new abap.types.String().set(`47D23BBADE067888687C51DD118BC759A4B575CF`),abap.operators.concat(new abap.types.String().set(`DC00347B1BC1D5C5CE4F11461BE2E81AE248C00D`),abap.operators.concat(new abap.types.String().set(`4D3FB5E4E16DDCBBB3BB2B107C0E1F18924E0113`),abap.operators.concat(new abap.types.String().set(`90CF04CEBE7547FAB773ACCB74E85DE812681D51`),abap.operators.concat(new abap.types.String().set(`1FA688CD40CDF99609E5F8E44708B6EF193238F4`),abap.operators.concat(new abap.types.String().set(`3D67FD7037EF90F50B1D34DE4F14A873EDFCF9DF`),new abap.types.String().set(`242EB0E3340E2869674CEBF164B3E22FDB44EAD0`)))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))));
+    lv_decoded.set((await abap.Classes['ZCL_ABAPGIT_CONVERT'].string_to_xstring_utf8({iv_string: abap.operators.concat(new abap.types.String().set(`# wdalv_config\nSAP Web Dynpro ABAP ALV `),abap.operators.concat(new abap.types.String().set(`configurator\n\n\n**Install**\n* Import `),abap.operators.concat(new abap.types.String().set(`the objects from nugget file under lates`),abap.operators.concat(new abap.types.String().set(`t git release using SAPLINK\n* Activate `),abap.operators.concat(new abap.types.String().set(`all the objects\n* Create WD application`),abap.operators.concat(new abap.types.String().set(`s for ZALV_COMP_CONFIG\n\n**Demo**\n* Cr`),abap.operators.concat(new abap.types.String().set(`eate WD application for ZALV_DEMO\n* Exe`),abap.operators.concat(new abap.types.String().set(`cute the application\n* Execute configur`),abap.operators.concat(new abap.types.String().set(`ator application (ZALV_COMP_CONFIG)\n* C`),abap.operators.concat(new abap.types.String().set(`hange some config values and save\n* Rel`),abap.operators.concat(new abap.types.String().set(`aunch ZALV_DEMO application to see the c`),abap.operators.concat(new abap.types.String().set(`hanges\n\n\n**Use**\n- Add usage of ZALV`),abap.operators.concat(new abap.types.String().set(` component to any component that uses SA`),abap.operators.concat(new abap.types.String().set(`P standand ALV component - SALV_WD_TABLE`),abap.operators.concat(new abap.types.String().set(`\n- Instantiate ZALV component and pass `),abap.operators.concat(new abap.types.String().set(`ALV usage object of original ALV to ZALV`),abap.operators.concat(new abap.types.String().set(` by calling interface method set_alv_usa`),abap.operators.concat(new abap.types.String().set(`ge. \n\n\`\`\`abap\nlo_cmp_usage =   wd_thi`),abap.operators.concat(new abap.types.String().set(`s-&gt;wd_cpuse_zalv( ).\nIF lo_cmp_usage-&gt;h`),abap.operators.concat(new abap.types.String().set(`as_active_component( ) IS INITIAL.\n    `),abap.operators.concat(new abap.types.String().set(`lo_cmp_usage-&gt;create_component( ).\nENDI`),abap.operators.concat(new abap.types.String().set(`F.\n\nDATA lo_interfacecontroller TYPE R`),abap.operators.concat(new abap.types.String().set(`EF TO ziwci_alv .\nlo_interfacecontrolle`),abap.operators.concat(new abap.types.String().set(`r =   wd_this-&gt;wd_cpifc_zalv( ).\n\nlo_i`),abap.operators.concat(new abap.types.String().set(`nterfacecontroller-&gt;set_alv_usage(\n    `),abap.operators.concat(new abap.types.String().set(`alv_usage =  lo_alv_usage\n  ).\n\`\`\`\n\n`),abap.operators.concat(new abap.types.String().set(`- For production scenarios: In method UP`),abap.operators.concat(new abap.types.String().set(`DATE_DB_FROM_CONFIG of component control`),abap.operators.concat(new abap.types.String().set(`ler of component ZALV - check if the cur`),abap.operators.concat(new abap.types.String().set(`rent system is your development system. `),abap.operators.concat(new abap.types.String().set(`This ensures that Z tables are updated w`),abap.operators.concat(new abap.types.String().set(`ith config meta data only in Dev system.`),abap.operators.concat(new abap.types.String().set(` \n\n\`\`\`abap\n  CHECK sy-sysid cp 'D*'.\n`),abap.operators.concat(new abap.types.String().set(`\`\`\`\n- Transport wrapper Config: For ot`),abap.operators.concat(new abap.types.String().set(`her systems in the transport path(QA,IT,`),abap.operators.concat(new abap.types.String().set(`UT,PD), simply transport the table entri`),abap.operators.concat(new abap.types.String().set(`es from ZTALV* tables where config_type `),abap.operators.concat(new abap.types.String().set(`= 02 (Wrapper Config)\n\n**Note**\n- Man`),abap.operators.concat(new abap.types.String().set(`datory step: Execute the application (Re`),abap.operators.concat(new abap.types.String().set(`quired for updating Z tables with config`),abap.operators.concat(new abap.types.String().set(` meta data ) before running ALV configur`),abap.operators.concat(new abap.types.String().set(`ator App\n- If ALV functions from config`),abap.operators.concat(new abap.types.String().set(`urator (like - record count, full screen`),abap.operators.concat(new abap.types.String().set(`, excel export) are to be published then`),abap.operators.concat(new abap.types.String().set(` main application need to have node mapp`),new abap.types.String().set(`ing for FUNCTION_ELEMENTS node of ALV. \n\n`))))))))))))))))))))))))))))))))))))))))))))))})));
+    ls_data.set((await abap.Classes['ZCL_ABAPGIT_ZLIB'].decompress({iv_compressed: lv_compressed})));
+    await abap.Classes['CL_ABAP_UNIT_ASSERT'].assert_not_initial({act: ls_data.get().raw});
+    await abap.Classes['CL_ABAP_UNIT_ASSERT'].assert_equals({act: ls_data.get().raw, exp: lv_decoded});
+  }
+}
+abap.Classes['CLAS-ZCL_ABAPGIT_ZLIB-LTCL_ZLIB'] = ltcl_zlib;
+export {ltcl_zlib};</pre></td></tr></table></pre>
+
+                <div class='push'></div><!-- for sticky footer -->
+            </div><!-- /wrapper -->
+            <div class='footer quiet pad2 space-top1 center small'>
+                Code coverage generated by
+                <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
+                at 2026-02-23T16:07:14.249Z
+            </div>
+        <script src="../prettify.js"></script>
+        <script>
+            window.onload = function () {
+                prettyPrint();
+            };
+        </script>
+        <script src="../sorter.js"></script>
+        <script src="../block-navigation.js"></script>
+    </body>
+</html>
+    

@@ -1,0 +1,691 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Code coverage report for output/zcl_abapgit_syntax_abap.clas.mjs</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+    
+<body>
+<div class='wrapper'>
+    <div class='pad1'>
+        <h1><a href="../index.html">All files</a> / <a href="index.html">output</a> zcl_abapgit_syntax_abap.clas.mjs</h1>
+        <div class='clearfix'>
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">95.07% </span>
+                <span class="quiet">Statements</span>
+                <span class='fraction'>193/203</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">88.57% </span>
+                <span class="quiet">Branches</span>
+                <span class='fraction'>31/35</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">50% </span>
+                <span class="quiet">Functions</span>
+                <span class='fraction'>10/20</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">95.07% </span>
+                <span class="quiet">Lines</span>
+                <span class='fraction'>193/203</span>
+            </div>
+        
+            
+        </div>
+        <p class="quiet">
+            Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
+        </p>
+        <template id="filterTemplate">
+            <div class="quiet">
+                Filter:
+                <input type="search" id="fileSearch">
+            </div>
+        </template>
+    </div>
+    <div class='status-line high'></div>
+    <pre><table class="coverage">
+<tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
+<a name='L2'></a><a href='#L2'>2</a>
+<a name='L3'></a><a href='#L3'>3</a>
+<a name='L4'></a><a href='#L4'>4</a>
+<a name='L5'></a><a href='#L5'>5</a>
+<a name='L6'></a><a href='#L6'>6</a>
+<a name='L7'></a><a href='#L7'>7</a>
+<a name='L8'></a><a href='#L8'>8</a>
+<a name='L9'></a><a href='#L9'>9</a>
+<a name='L10'></a><a href='#L10'>10</a>
+<a name='L11'></a><a href='#L11'>11</a>
+<a name='L12'></a><a href='#L12'>12</a>
+<a name='L13'></a><a href='#L13'>13</a>
+<a name='L14'></a><a href='#L14'>14</a>
+<a name='L15'></a><a href='#L15'>15</a>
+<a name='L16'></a><a href='#L16'>16</a>
+<a name='L17'></a><a href='#L17'>17</a>
+<a name='L18'></a><a href='#L18'>18</a>
+<a name='L19'></a><a href='#L19'>19</a>
+<a name='L20'></a><a href='#L20'>20</a>
+<a name='L21'></a><a href='#L21'>21</a>
+<a name='L22'></a><a href='#L22'>22</a>
+<a name='L23'></a><a href='#L23'>23</a>
+<a name='L24'></a><a href='#L24'>24</a>
+<a name='L25'></a><a href='#L25'>25</a>
+<a name='L26'></a><a href='#L26'>26</a>
+<a name='L27'></a><a href='#L27'>27</a>
+<a name='L28'></a><a href='#L28'>28</a>
+<a name='L29'></a><a href='#L29'>29</a>
+<a name='L30'></a><a href='#L30'>30</a>
+<a name='L31'></a><a href='#L31'>31</a>
+<a name='L32'></a><a href='#L32'>32</a>
+<a name='L33'></a><a href='#L33'>33</a>
+<a name='L34'></a><a href='#L34'>34</a>
+<a name='L35'></a><a href='#L35'>35</a>
+<a name='L36'></a><a href='#L36'>36</a>
+<a name='L37'></a><a href='#L37'>37</a>
+<a name='L38'></a><a href='#L38'>38</a>
+<a name='L39'></a><a href='#L39'>39</a>
+<a name='L40'></a><a href='#L40'>40</a>
+<a name='L41'></a><a href='#L41'>41</a>
+<a name='L42'></a><a href='#L42'>42</a>
+<a name='L43'></a><a href='#L43'>43</a>
+<a name='L44'></a><a href='#L44'>44</a>
+<a name='L45'></a><a href='#L45'>45</a>
+<a name='L46'></a><a href='#L46'>46</a>
+<a name='L47'></a><a href='#L47'>47</a>
+<a name='L48'></a><a href='#L48'>48</a>
+<a name='L49'></a><a href='#L49'>49</a>
+<a name='L50'></a><a href='#L50'>50</a>
+<a name='L51'></a><a href='#L51'>51</a>
+<a name='L52'></a><a href='#L52'>52</a>
+<a name='L53'></a><a href='#L53'>53</a>
+<a name='L54'></a><a href='#L54'>54</a>
+<a name='L55'></a><a href='#L55'>55</a>
+<a name='L56'></a><a href='#L56'>56</a>
+<a name='L57'></a><a href='#L57'>57</a>
+<a name='L58'></a><a href='#L58'>58</a>
+<a name='L59'></a><a href='#L59'>59</a>
+<a name='L60'></a><a href='#L60'>60</a>
+<a name='L61'></a><a href='#L61'>61</a>
+<a name='L62'></a><a href='#L62'>62</a>
+<a name='L63'></a><a href='#L63'>63</a>
+<a name='L64'></a><a href='#L64'>64</a>
+<a name='L65'></a><a href='#L65'>65</a>
+<a name='L66'></a><a href='#L66'>66</a>
+<a name='L67'></a><a href='#L67'>67</a>
+<a name='L68'></a><a href='#L68'>68</a>
+<a name='L69'></a><a href='#L69'>69</a>
+<a name='L70'></a><a href='#L70'>70</a>
+<a name='L71'></a><a href='#L71'>71</a>
+<a name='L72'></a><a href='#L72'>72</a>
+<a name='L73'></a><a href='#L73'>73</a>
+<a name='L74'></a><a href='#L74'>74</a>
+<a name='L75'></a><a href='#L75'>75</a>
+<a name='L76'></a><a href='#L76'>76</a>
+<a name='L77'></a><a href='#L77'>77</a>
+<a name='L78'></a><a href='#L78'>78</a>
+<a name='L79'></a><a href='#L79'>79</a>
+<a name='L80'></a><a href='#L80'>80</a>
+<a name='L81'></a><a href='#L81'>81</a>
+<a name='L82'></a><a href='#L82'>82</a>
+<a name='L83'></a><a href='#L83'>83</a>
+<a name='L84'></a><a href='#L84'>84</a>
+<a name='L85'></a><a href='#L85'>85</a>
+<a name='L86'></a><a href='#L86'>86</a>
+<a name='L87'></a><a href='#L87'>87</a>
+<a name='L88'></a><a href='#L88'>88</a>
+<a name='L89'></a><a href='#L89'>89</a>
+<a name='L90'></a><a href='#L90'>90</a>
+<a name='L91'></a><a href='#L91'>91</a>
+<a name='L92'></a><a href='#L92'>92</a>
+<a name='L93'></a><a href='#L93'>93</a>
+<a name='L94'></a><a href='#L94'>94</a>
+<a name='L95'></a><a href='#L95'>95</a>
+<a name='L96'></a><a href='#L96'>96</a>
+<a name='L97'></a><a href='#L97'>97</a>
+<a name='L98'></a><a href='#L98'>98</a>
+<a name='L99'></a><a href='#L99'>99</a>
+<a name='L100'></a><a href='#L100'>100</a>
+<a name='L101'></a><a href='#L101'>101</a>
+<a name='L102'></a><a href='#L102'>102</a>
+<a name='L103'></a><a href='#L103'>103</a>
+<a name='L104'></a><a href='#L104'>104</a>
+<a name='L105'></a><a href='#L105'>105</a>
+<a name='L106'></a><a href='#L106'>106</a>
+<a name='L107'></a><a href='#L107'>107</a>
+<a name='L108'></a><a href='#L108'>108</a>
+<a name='L109'></a><a href='#L109'>109</a>
+<a name='L110'></a><a href='#L110'>110</a>
+<a name='L111'></a><a href='#L111'>111</a>
+<a name='L112'></a><a href='#L112'>112</a>
+<a name='L113'></a><a href='#L113'>113</a>
+<a name='L114'></a><a href='#L114'>114</a>
+<a name='L115'></a><a href='#L115'>115</a>
+<a name='L116'></a><a href='#L116'>116</a>
+<a name='L117'></a><a href='#L117'>117</a>
+<a name='L118'></a><a href='#L118'>118</a>
+<a name='L119'></a><a href='#L119'>119</a>
+<a name='L120'></a><a href='#L120'>120</a>
+<a name='L121'></a><a href='#L121'>121</a>
+<a name='L122'></a><a href='#L122'>122</a>
+<a name='L123'></a><a href='#L123'>123</a>
+<a name='L124'></a><a href='#L124'>124</a>
+<a name='L125'></a><a href='#L125'>125</a>
+<a name='L126'></a><a href='#L126'>126</a>
+<a name='L127'></a><a href='#L127'>127</a>
+<a name='L128'></a><a href='#L128'>128</a>
+<a name='L129'></a><a href='#L129'>129</a>
+<a name='L130'></a><a href='#L130'>130</a>
+<a name='L131'></a><a href='#L131'>131</a>
+<a name='L132'></a><a href='#L132'>132</a>
+<a name='L133'></a><a href='#L133'>133</a>
+<a name='L134'></a><a href='#L134'>134</a>
+<a name='L135'></a><a href='#L135'>135</a>
+<a name='L136'></a><a href='#L136'>136</a>
+<a name='L137'></a><a href='#L137'>137</a>
+<a name='L138'></a><a href='#L138'>138</a>
+<a name='L139'></a><a href='#L139'>139</a>
+<a name='L140'></a><a href='#L140'>140</a>
+<a name='L141'></a><a href='#L141'>141</a>
+<a name='L142'></a><a href='#L142'>142</a>
+<a name='L143'></a><a href='#L143'>143</a>
+<a name='L144'></a><a href='#L144'>144</a>
+<a name='L145'></a><a href='#L145'>145</a>
+<a name='L146'></a><a href='#L146'>146</a>
+<a name='L147'></a><a href='#L147'>147</a>
+<a name='L148'></a><a href='#L148'>148</a>
+<a name='L149'></a><a href='#L149'>149</a>
+<a name='L150'></a><a href='#L150'>150</a>
+<a name='L151'></a><a href='#L151'>151</a>
+<a name='L152'></a><a href='#L152'>152</a>
+<a name='L153'></a><a href='#L153'>153</a>
+<a name='L154'></a><a href='#L154'>154</a>
+<a name='L155'></a><a href='#L155'>155</a>
+<a name='L156'></a><a href='#L156'>156</a>
+<a name='L157'></a><a href='#L157'>157</a>
+<a name='L158'></a><a href='#L158'>158</a>
+<a name='L159'></a><a href='#L159'>159</a>
+<a name='L160'></a><a href='#L160'>160</a>
+<a name='L161'></a><a href='#L161'>161</a>
+<a name='L162'></a><a href='#L162'>162</a>
+<a name='L163'></a><a href='#L163'>163</a>
+<a name='L164'></a><a href='#L164'>164</a>
+<a name='L165'></a><a href='#L165'>165</a>
+<a name='L166'></a><a href='#L166'>166</a>
+<a name='L167'></a><a href='#L167'>167</a>
+<a name='L168'></a><a href='#L168'>168</a>
+<a name='L169'></a><a href='#L169'>169</a>
+<a name='L170'></a><a href='#L170'>170</a>
+<a name='L171'></a><a href='#L171'>171</a>
+<a name='L172'></a><a href='#L172'>172</a>
+<a name='L173'></a><a href='#L173'>173</a>
+<a name='L174'></a><a href='#L174'>174</a>
+<a name='L175'></a><a href='#L175'>175</a>
+<a name='L176'></a><a href='#L176'>176</a>
+<a name='L177'></a><a href='#L177'>177</a>
+<a name='L178'></a><a href='#L178'>178</a>
+<a name='L179'></a><a href='#L179'>179</a>
+<a name='L180'></a><a href='#L180'>180</a>
+<a name='L181'></a><a href='#L181'>181</a>
+<a name='L182'></a><a href='#L182'>182</a>
+<a name='L183'></a><a href='#L183'>183</a>
+<a name='L184'></a><a href='#L184'>184</a>
+<a name='L185'></a><a href='#L185'>185</a>
+<a name='L186'></a><a href='#L186'>186</a>
+<a name='L187'></a><a href='#L187'>187</a>
+<a name='L188'></a><a href='#L188'>188</a>
+<a name='L189'></a><a href='#L189'>189</a>
+<a name='L190'></a><a href='#L190'>190</a>
+<a name='L191'></a><a href='#L191'>191</a>
+<a name='L192'></a><a href='#L192'>192</a>
+<a name='L193'></a><a href='#L193'>193</a>
+<a name='L194'></a><a href='#L194'>194</a>
+<a name='L195'></a><a href='#L195'>195</a>
+<a name='L196'></a><a href='#L196'>196</a>
+<a name='L197'></a><a href='#L197'>197</a>
+<a name='L198'></a><a href='#L198'>198</a>
+<a name='L199'></a><a href='#L199'>199</a>
+<a name='L200'></a><a href='#L200'>200</a>
+<a name='L201'></a><a href='#L201'>201</a>
+<a name='L202'></a><a href='#L202'>202</a>
+<a name='L203'></a><a href='#L203'>203</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">48x</span>
+<span class="cline-any cline-yes">48x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">48x</span>
+<span class="cline-any cline-yes">48x</span>
+<span class="cline-any cline-yes">48x</span>
+<span class="cline-any cline-yes">48x</span>
+<span class="cline-any cline-yes">48x</span>
+<span class="cline-any cline-yes">48x</span>
+<span class="cline-any cline-yes">48x</span>
+<span class="cline-any cline-yes">48x</span>
+<span class="cline-any cline-yes">48x</span>
+<span class="cline-any cline-yes">48x</span>
+<span class="cline-any cline-yes">48x</span>
+<span class="cline-any cline-yes">48x</span>
+<span class="cline-any cline-yes">48x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">49x</span>
+<span class="cline-any cline-yes">49x</span>
+<span class="cline-any cline-yes">49x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">48x</span>
+<span class="cline-any cline-yes">49x</span>
+<span class="cline-any cline-yes">20x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">49x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">28x</span>
+<span class="cline-any cline-yes">24x</span>
+<span class="cline-any cline-yes">24x</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-yes">24x</span>
+<span class="cline-any cline-yes">30x</span>
+<span class="cline-any cline-yes">30x</span>
+<span class="cline-any cline-yes">30x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">48x</span>
+<span class="cline-any cline-yes">48x</span>
+<span class="cline-any cline-yes">48x</span>
+<span class="cline-any cline-yes">19x</span>
+<span class="cline-any cline-yes">19x</span>
+<span class="cline-any cline-yes">48x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span></td><td class="text"><pre class="prettyprint lang-js">const {zcl_abapgit_syntax_highlighter} = await import("./zcl_abapgit_syntax_highlighter.clas.mjs");
+const {cx_root} = await import("./cx_root.clas.mjs");
+// zcl_abapgit_syntax_abap.clas.abap
+class zcl_abapgit_syntax_abap extends zcl_abapgit_syntax_highlighter {
+  static STATIC_SUPER = zcl_abapgit_syntax_highlighter;
+  static INTERNAL_TYPE = 'CLAS';
+  static INTERNAL_NAME = 'ZCL_ABAPGIT_SYNTAX_ABAP';
+  static IMPLEMENTED_INTERFACES = [];
+  static ATTRIBUTES = {"GT_KEYWORDS": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return abap.types.TableFactory.construct(new abap.types.String({qualifiedName: "STRING"}), {"withHeader":false,"keyType":"USER","primaryKey":{"name":"primary_key","type":"HASHED","isUnique":true,"keyFields":["TABLE_LINE"]},"secondary":[]}, "");},</span> "visibility": "O", "is_constant": " ", "is_class": "X"},
+  "C_CSS": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Structure({</span>
+<span class="cstat-no" title="statement not covered" >  "keyword": new abap.types.String({qualifiedName: "STRING"}),</span>
+<span class="cstat-no" title="statement not covered" >  "text": new abap.types.String({qualifiedName: "STRING"}),</span>
+  "comment": new abap.types.String({qualifiedName: "STRING"})}, undefined, undefined, {}, {});}, "visibility": "U", "is_constant": "X", "is_class": "X"},
+  "C_TOKEN": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Structure({</span>
+<span class="cstat-no" title="statement not covered" >  "keyword": new abap.types.Character(1, {}),</span>
+<span class="cstat-no" title="statement not covered" >  "text": new abap.types.Character(1, {}),</span>
+  "comment": new abap.types.Character(1, {})}, undefined, undefined, {}, {});}, "visibility": "U", "is_constant": "X", "is_class": "X"},
+  "C_REGEX": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Structure({</span>
+<span class="cstat-no" title="statement not covered" >  "comment": new abap.types.String({qualifiedName: "STRING"}),</span>
+<span class="cstat-no" title="statement not covered" >  "text": new abap.types.String({qualifiedName: "STRING"}),</span>
+  "keyword": new abap.types.String({qualifiedName: "STRING"})}, undefined, undefined, {}, {});}, "visibility": "U", "is_constant": "X", "is_class": "X"}};
+  static METHODS = {"INIT_KEYWORDS": {"visibility": "O", "parameters": {}},
+  "IS_KEYWORD": {"visibility": "O", "parameters": {"RV_YES": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"});},</span> "is_optional": " ", "parm_kind": "R", "type_name": "CharacterType"}, "IV_CHUNK": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.String({qualifiedName: "STRING"});},</span> "is_optional": " ", "parm_kind": "I", "type_name": "StringType"}}},
+  "ORDER_MATCHES": {"visibility": "O", "parameters": {}},
+  "PARSE_LINE": {"visibility": "O", "parameters": {}},
+  "CLASS_CONSTRUCTOR": {"visibility": "U", "parameters": {}},
+  "CONSTRUCTOR": {"visibility": "U", "parameters": {}}};
+  constructor() {
+    const sup = super();
+    this.me = new abap.types.ABAPObject();
+    this.me.set(this);
+    this.INTERNAL_ID = abap.internalIdCounter++;
+    this.FRIENDS_ACCESS_INSTANCE = {
+      "SUPER": sup.FRIENDS_ACCESS_INSTANCE,
+      "order_matches": this.order_matches.bind(this),
+      "parse_line": this.parse_line.bind(this),
+    };
+    this.gt_keywords = zcl_abapgit_syntax_abap.gt_keywords;
+    this.c_css = zcl_abapgit_syntax_abap.c_css;
+    this.c_token = zcl_abapgit_syntax_abap.c_token;
+    this.c_regex = zcl_abapgit_syntax_abap.c_regex;
+  }
+<span class="fstat-no" title="function not covered" >  async class_constructor() {</span>
+<span class="cstat-no" title="statement not covered" >    return zcl_abapgit_syntax_abap.class_constructor();</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
+  static async class_constructor() {
+    await this.init_keywords();
+  }
+  async constructor_(INPUT) {
+    await super.constructor_();
+    await this.add_rule({iv_regex: zcl_abapgit_syntax_abap.c_regex.get().keyword, iv_token: zcl_abapgit_syntax_abap.c_token.get().keyword, iv_style: zcl_abapgit_syntax_abap.c_css.get().keyword});
+    await this.add_rule({iv_regex: zcl_abapgit_syntax_abap.c_regex.get().comment, iv_token: zcl_abapgit_syntax_abap.c_token.get().comment, iv_style: zcl_abapgit_syntax_abap.c_css.get().comment});
+    await this.add_rule({iv_regex: zcl_abapgit_syntax_abap.c_regex.get().text, iv_token: zcl_abapgit_syntax_abap.c_token.get().text, iv_style: zcl_abapgit_syntax_abap.c_css.get().text});
+    return this;
+  }
+<span class="fstat-no" title="function not covered" >  async init_keywords() {</span>
+<span class="cstat-no" title="statement not covered" >    return zcl_abapgit_syntax_abap.init_keywords();</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
+  static async init_keywords() {
+    let lv_keywords = new abap.types.String({qualifiedName: "STRING"});
+    let lt_keywords = abap.types.TableFactory.construct(new abap.types.String({qualifiedName: "STRING"}), {"withHeader":false,"keyType":"USER","primaryKey":{"name":"primary_key","type":"STANDARD","isUnique":false,"keyFields":[]},"secondary":[]}, "");
+    lv_keywords.set(abap.operators.concat(abap.CharacterFactory.get(60, '&amp;&amp;|?TO|ABAP-SOURCE|ABBREVIATED|ABS|ABSTRACT|ACCEPT|ACCEPTING'),abap.operators.concat(abap.CharacterFactory.get(76, '|ACCORDING|ACOS|ACTIVATION|ACTUAL|ADD|ADD-CORRESPONDING|ADJACENT|AFTER|ALIAS'),abap.operators.concat(abap.CharacterFactory.get(76, '|ALIASES|ALIGN|ALL|ALLOCATE|ALPHA|ANALYSIS|ANALYZER|AND|ANY|APPEND|APPENDAGE'),abap.operators.concat(abap.CharacterFactory.get(78, '|APPENDING|APPLICATION|ARCHIVE|AREA|ARITHMETIC|AS|ASCENDING|ASIN|ASPECT|ASSERT'),abap.operators.concat(abap.CharacterFactory.get(80, '|ASSIGN|ASSIGNED|ASSIGNING|ASSOCIATION|ASYNCHRONOUS|AT|ATAN|ATTRIBUTES|AUTHORITY'),abap.operators.concat(abap.CharacterFactory.get(75, '|AUTHORITY-CHECK|AVG|BACK|BACKGROUND|BACKUP|BACKWARD|BADI|BASE|BEFORE|BEGIN'),abap.operators.concat(abap.CharacterFactory.get(66, '|BETWEEN|BIG|BINARY|BIT|BIT-AND|BIT-NOT|BIT-OR|BIT-XOR|BLACK|BLANK'),abap.operators.concat(abap.CharacterFactory.get(75, '|BLANKS|BLOB|BLOCK|BLOCKS|BLUE|BOUND|BOUNDARIES|BOUNDS|BOXED|BREAK-POINT|BT'),abap.operators.concat(abap.CharacterFactory.get(73, '|BUFFER|BY|BYPASSING|BYTE|BYTE-CA|BYTE-CN|BYTE-CO|BYTE-CS|BYTE-NA|BYTE-NS'),abap.operators.concat(abap.CharacterFactory.get(74, '|BYTE-ORDER|C|CA|CALL|CALLING|CASE|CAST|CASTING|CATCH|CEIL|CENTER|CENTERED'),abap.operators.concat(abap.CharacterFactory.get(75, '|CHAIN|CHAIN-INPUT|CHAIN-REQUEST|CHANGE|CHANGING|CHANNELS|CHARACTER|CHARLEN'),abap.operators.concat(abap.CharacterFactory.get(70, '|CHAR-TO-HEX|CHECK|CHECKBOX|CI_|CIRCULAR|CLASS|CLASS-CODING|CLASS-DATA'),abap.operators.concat(abap.CharacterFactory.get(76, '|CLASS-EVENTS|CLASS-METHODS|CLASS-POOL|CLEANUP|CLEAR|CLIENT|CLOB|CLOCK|CLOSE'),abap.operators.concat(abap.CharacterFactory.get(72, '|CN|CO|COALESCE|CODE|CODING|COL_BACKGROUND|COL_GROUP|COL_HEADING|COL_KEY'),abap.operators.concat(abap.CharacterFactory.get(76, '|COL_NEGATIVE|COL_NORMAL|COL_POSITIVE|COL_TOTAL|COLLECT|COLOR|COLUMN|COLUMNS'),abap.operators.concat(abap.CharacterFactory.get(76, '|COMMENT|COMMENTS|COMMIT|COMMON|COMMUNICATION|COMPARING|COMPONENT|COMPONENTS'),abap.operators.concat(abap.CharacterFactory.get(71, '|COMPRESSION|COMPUTE|CONCAT|CONCATENATE|COND|CONDENSE|CONDITION|CONNECT'),abap.operators.concat(abap.CharacterFactory.get(80, '|CONNECTION|CONSTANTS|CONTEXT|CONTEXTS|CONTINUE|CONTROL|CONTROLS|CONV|CONVERSION'),abap.operators.concat(abap.CharacterFactory.get(77, '|CONVERT|COPIES|COPY|CORRESPONDING|COS|COSH|COUNT|COUNTRY|COVER|CP|CPI|CREATE'),abap.operators.concat(abap.CharacterFactory.get(82, '|CREATING|CRITICAL|CS|CURRENCY|CURRENCY_CONVERSION|CURRENT|CURSOR|CURSOR-SELECTION'),abap.operators.concat(abap.CharacterFactory.get(73, '|CUSTOMER|CUSTOMER-FUNCTION|DANGEROUS|DATA|DATABASE|DATAINFO|DATASET|DATE'),abap.operators.concat(abap.CharacterFactory.get(79, '|DAYLIGHT|DBMAXLEN|DD/MM/YY|DD/MM/YYYY|DDMMYY|DEALLOCATE|DECIMAL_SHIFT|DECIMALS'),abap.operators.concat(abap.CharacterFactory.get(78, '|DECLARATIONS|DEEP|DEFAULT|DEFERRED|DEFINE|DEFINING|DEFINITION|DELETE|DELETING'),abap.operators.concat(abap.CharacterFactory.get(74, '|DEMAND|DEPARTMENT|DESCENDING|DESCRIBE|DESTINATION|DETAIL|DIALOG|DIRECTORY'),abap.operators.concat(abap.CharacterFactory.get(82, '|DISCONNECT|DISPLAY|DISPLAY-MODE|DISTANCE|DISTINCT|DIV|DIVIDE|DIVIDE-CORRESPONDING'),abap.operators.concat(abap.CharacterFactory.get(70, '|DIVISION|DO|DUMMY|DUPLICATE|DUPLICATES|DURATION|DURING|DYNAMIC|DYNPRO'),abap.operators.concat(abap.CharacterFactory.get(79, '|EDIT|EDITOR-CALL|ELSE|ELSEIF|EMPTY|ENABLED|ENABLING|ENCODING|END|ENDAT|ENDCASE'),abap.operators.concat(abap.CharacterFactory.get(72, '|ENDCATCH|ENDCHAIN|ENDCLASS|ENDDO|ENDENHANCEMENT|END-ENHANCEMENT-SECTION'),abap.operators.concat(abap.CharacterFactory.get(61, '|ENDEXEC|ENDFORM|ENDFUNCTION|ENDIAN|ENDIF|ENDING|ENDINTERFACE'),abap.operators.concat(abap.CharacterFactory.get(68, '|END-LINES|ENDLOOP|ENDMETHOD|ENDMODULE|END-OF-DEFINITION|END-OF-FILE'),abap.operators.concat(abap.CharacterFactory.get(72, '|END-OF-PAGE|END-OF-SELECTION|ENDON|ENDPROVIDE|ENDSELECT|ENDTRY|ENDWHILE'),abap.operators.concat(abap.CharacterFactory.get(75, '|ENGINEERING|ENHANCEMENT|ENHANCEMENT-POINT|ENHANCEMENTS|ENHANCEMENT-SECTION'),abap.operators.concat(abap.CharacterFactory.get(71, '|ENTRIES|ENTRY|ENVIRONMENT|EQ|EQUIV|ERRORMESSAGE|ERRORS|ESCAPE|ESCAPING'),abap.operators.concat(abap.CharacterFactory.get(81, '|EVENT|EVENTS|EXACT|EXCEPT|EXCEPTION|EXCEPTIONS|EXCEPTION-TABLE|EXCLUDE|EXCLUDING'),abap.operators.concat(abap.CharacterFactory.get(79, '|EXEC|EXECUTE|EXISTS|EXIT|EXIT-COMMAND|EXP|EXPAND|EXPANDING|EXPIRATION|EXPLICIT'),abap.operators.concat(abap.CharacterFactory.get(77, '|EXPONENT|EXPORT|EXPORTING|EXTEND|EXTENDED|EXTENSION|EXTRACT|FAIL|FETCH|FIELD'),abap.operators.concat(abap.CharacterFactory.get(80, '|FIELD-GROUPS|FIELDS|FIELD-SYMBOL|FIELD-SYMBOLS|FILE|FILTER|FILTERS|FILTER-TABLE'),abap.operators.concat(abap.CharacterFactory.get(76, '|FINAL|FIND|FIRST|FIRST-LINE|FIXED-POINT|FKEQ|FKGE|FLOOR|FLUSH|FONT|FOR|FORM'),abap.operators.concat(abap.CharacterFactory.get(80, '|FORMAT|FORWARD|FOUND|FRAC|FRAME|FRAMES|FREE|FRIENDS|FROM|FUNCTION|FUNCTIONALITY'),abap.operators.concat(abap.CharacterFactory.get(73, '|FUNCTION-POOL|FURTHER|GAPS|GE|GENERATE|GET|GIVING|GKEQ|GKGE|GLOBAL|GRANT'),abap.operators.concat(abap.CharacterFactory.get(79, '|GREEN|GROUP|GROUPS|GT|HANDLE|HANDLER|HARMLESS|HASHED|HAVING|HDB|HEADER|HEADERS'),abap.operators.concat(abap.CharacterFactory.get(78, '|HEADING|HEAD-LINES|HELP-ID|HELP-REQUEST|HIDE|HIGH|HINT|HOLD|HOTSPOT|I|ICON|ID'),abap.operators.concat(abap.CharacterFactory.get(76, '|IDENTIFICATION|IDENTIFIER|IDS|IF|IGNORE|IGNORING|IMMEDIATELY|IMPLEMENTATION'),abap.operators.concat(abap.CharacterFactory.get(79, '|IMPLEMENTATIONS|IMPLEMENTED|IMPLICIT|IMPORT|IMPORTING|IN|INACTIVE|INCL|INCLUDE'),abap.operators.concat(abap.CharacterFactory.get(80, '|INCLUDES|INCLUDING|INCREMENT|INDEX|INDEX-LINE|INFOTYPES|INHERITING|INIT|INITIAL'),abap.operators.concat(abap.CharacterFactory.get(72, '|INITIALIZATION|INNER|INOUT|INPUT|INSERT|INSTANCES|INTENSIFIED|INTERFACE'),abap.operators.concat(abap.CharacterFactory.get(75, '|INTERFACE-POOL|INTERFACES|INTERNAL|INTERVALS|INTO|INVERSE|INVERTED-DATE|IS'),abap.operators.concat(abap.CharacterFactory.get(56, '|ISO|JOB|JOIN|KEEP|KEEPING|KERNEL|KEY|KEYS|KEYWORDS|KIND'),abap.operators.concat(abap.CharacterFactory.get(72, '|LANGUAGE|LAST|LATE|LAYOUT|LE|LEADING|LEAVE|LEFT|LEFT-JUSTIFIED|LEFTPLUS'),abap.operators.concat(abap.CharacterFactory.get(71, '|LEFTSPACE|LEGACY|LENGTH|LET|LEVEL|LEVELS|LIKE|LINE|LINE-COUNT|LINEFEED'),abap.operators.concat(abap.CharacterFactory.get(73, '|LINES|LINE-SELECTION|LINE-SIZE|LIST|LISTBOX|LIST-PROCESSING|LITTLE|LLANG'),abap.operators.concat(abap.CharacterFactory.get(72, '|LOAD|LOAD-OF-PROGRAM|LOB|LOCAL|LOCALE|LOCATOR|LOG|LOG10|LOGFILE|LOGICAL'),abap.operators.concat(abap.CharacterFactory.get(78, '|LOG-POINT|LONG|LOOP|LOW|LOWER|LPAD|LPI|LT|M|MAIL|MAIN|MAJOR-ID|MAPPING|MARGIN'),abap.operators.concat(abap.CharacterFactory.get(73, '|MARK|MASK|MATCH|MATCHCODE|MAX|MAXIMUM|MEDIUM|MEMBERS|MEMORY|MESH|MESSAGE'),abap.operators.concat(abap.CharacterFactory.get(75, '|MESSAGE-ID|MESSAGES|MESSAGING|METHOD|METHODS|MIN|MINIMUM|MINOR-ID|MM/DD/YY'),abap.operators.concat(abap.CharacterFactory.get(80, '|MM/DD/YYYY|MMDDYY|MOD|MODE|MODIF|MODIFIER|MODIFY|MODULE|MOVE|MOVE-CORRESPONDING'),abap.operators.concat(abap.CharacterFactory.get(76, '|MULTIPLY|MULTIPLY-CORRESPONDING|NA|NAME|NAMETAB|NATIVE|NB|NE|NESTED|NESTING'),abap.operators.concat(abap.CharacterFactory.get(64, '|NEW|NEW-LINE|NEW-PAGE|NEW-SECTION|NEXT|NO|NODE|NODES|NO-DISPLAY'),abap.operators.concat(abap.CharacterFactory.get(74, '|NO-EXTENSION|NO-GAP|NO-GAPS|NO-GROUPING|NO-HEADING|NON-UNICODE|NON-UNIQUE'),abap.operators.concat(abap.CharacterFactory.get(73, '|NO-SCROLLING|NO-SIGN|NOT|NO-TITLE|NO-TOPOFPAGE|NO-ZERO|NP|NS|NULL|NUMBER'),abap.operators.concat(abap.CharacterFactory.get(75, '|NUMOFCHAR|O|OBJECT|OBJECTS|OBLIGATORY|OCCURRENCE|OCCURRENCES|OCCURS|OF|OFF'),abap.operators.concat(abap.CharacterFactory.get(74, '|OFFSET|OLE|ON|ONLY|OPEN|OPTION|OPTIONAL|OPTIONS|OR|ORDER|OTHER|OTHERS|OUT'),abap.operators.concat(abap.CharacterFactory.get(74, '|OUTER|OUTPUT|OUTPUT-LENGTH|OVERFLOW|OVERLAY|PACK|PACKAGE|PAD|PADDING|PAGE'),abap.operators.concat(abap.CharacterFactory.get(77, '|PAGES|PARAMETER|PARAMETERS|PARAMETER-TABLE|PART|PARTIALLY|PATTERN|PERCENTAGE'),abap.operators.concat(abap.CharacterFactory.get(77, '|PERFORM|PERFORMING|PERSON|PF1|PF2|PF3|PF4|PF5|PF6|PF7|PF8|PF9|PF10|PF11|PF12'),abap.operators.concat(abap.CharacterFactory.get(59, '|PF13|PF14|PF15|PF-STATUS|PINK|PLACES|POOL|POS_HIGH|POS_LOW'),abap.operators.concat(abap.CharacterFactory.get(78, '|POSITION|PRAGMAS|PRECOMPILED|PREFERRED|PRESERVING|PRIMARY|PRINT|PRINT-CONTROL'),abap.operators.concat(abap.CharacterFactory.get(77, '|PRIORITY|PRIVATE|PROCEDURE|PROCESS|PROGRAM|PROPERTY|PROTECTED|PROVIDE|PUBLIC'),abap.operators.concat(abap.CharacterFactory.get(75, '|PUSHBUTTON|PUT|QUEUE-ONLY|QUICKINFO|RADIOBUTTON|RAISE|RAISING|RANGE|RANGES'),abap.operators.concat(abap.CharacterFactory.get(79, '|RAW|READ|READER|READ-ONLY|RECEIVE|RECEIVED|RECEIVER|RECEIVING|RED|REDEFINITION'),abap.operators.concat(abap.CharacterFactory.get(74, '|REDUCE|REDUCED|REF|REFERENCE|REFRESH|REGEX|REJECT|REMOTE|RENAMING|REPLACE'),abap.operators.concat(abap.CharacterFactory.get(72, '|REPLACEMENT|REPLACING|REPORT|REQUEST|REQUESTED|RESERVE|RESET|RESOLUTION'),abap.operators.concat(abap.CharacterFactory.get(79, '|RESPECTING|RESPONSIBLE|RESULT|RESULTS|RESUMABLE|RESUME|RETRY|RETURN|RETURNCODE'),abap.operators.concat(abap.CharacterFactory.get(84, '|RETURNING|RIGHT|RIGHT-JUSTIFIED|RIGHTPLUS|RIGHTSPACE|RISK|RMC_COMMUNICATION_FAILURE'),abap.operators.concat(abap.CharacterFactory.get(71, '|RMC_INVALID_STATUS|RMC_SYSTEM_FAILURE|ROLE|ROLLBACK|ROUND|ROWS|RUN|SAP'),abap.operators.concat(abap.CharacterFactory.get(78, '|SAP-SPOOL|SAVING|SCALE_PRESERVING|SCALE_PRESERVING_SCIENTIFIC|SCAN|SCIENTIFIC'),abap.operators.concat(abap.CharacterFactory.get(76, '|SCIENTIFIC_WITH_LEADING_ZERO|SCREEN|SCROLL|SCROLL-BOUNDARY|SCROLLING|SEARCH'),abap.operators.concat(abap.CharacterFactory.get(85, '|SECONDARY|SECONDS|SECTION|SELECT|SELECTION|SELECTIONS|SELECTION-SCREEN|SELECTION-SET'),abap.operators.concat(abap.CharacterFactory.get(74, '|SELECTION-SETS|SELECTION-TABLE|SELECT-OPTIONS|SEND|SEPARATE|SEPARATED|SET'),abap.operators.concat(abap.CharacterFactory.get(81, '|SHARED|SHIFT|SHORT|SHORTDUMP-ID|SIGN|SIGN_AS_POSTFIX|SIMPLE|SIN|SINGLE|SINH|SIZE'),abap.operators.concat(abap.CharacterFactory.get(81, '|SKIP|SKIPPING|SMART|SOME|SORT|SORTABLE|SORTED|SOURCE|SPACE|SPECIFIED|SPLIT|SPOOL'),abap.operators.concat(abap.CharacterFactory.get(81, '|SPOTS|SQL|SQLSCRIPT|SQRT|STABLE|STAMP|STANDARD|STARTING|START-OF-SELECTION|STATE'),abap.operators.concat(abap.CharacterFactory.get(79, '|STATEMENT|STATEMENTS|STATIC|STATICS|STATUSINFO|STEP-LOOP|STOP|STRLEN|STRUCTURE'),abap.operators.concat(abap.CharacterFactory.get(82, '|STRUCTURES|STYLE|SUBKEY|SUBMATCHES|SUBMIT|SUBROUTINE|SUBSCREEN|SUBSTRING|SUBTRACT'),abap.operators.concat(abap.CharacterFactory.get(82, '|SUBTRACT-CORRESPONDING|SUFFIX|SUM|SUMMARY|SUMMING|SUPPLIED|SUPPLY|SUPPRESS|SWITCH'),abap.operators.concat(abap.CharacterFactory.get(64, '|SWITCHSTATES|SYMBOL|SYNCPOINTS|SYNTAX|SYNTAX-CHECK|SYNTAX-TRACE'),abap.operators.concat(abap.CharacterFactory.get(85, '|SYSTEM-CALL|SYSTEM-EXCEPTIONS|SYSTEM-EXIT|TAB|TABBED|TABLE|TABLES|TABLEVIEW|TABSTRIP'),abap.operators.concat(abap.CharacterFactory.get(86, '|TAN|TANH|TARGET|TASK|TASKS|TEST|TESTING|TEXT|TEXTPOOL|THEN|THROW|TIME|TIMES|TIMESTAMP'),abap.operators.concat(abap.CharacterFactory.get(81, '|TIMEZONE|TITLE|TITLEBAR|TITLE-LINES|TO|TOKENIZATION|TOKENS|TOP-LINES|TOP-OF-PAGE'),abap.operators.concat(abap.CharacterFactory.get(78, '|TRACE-FILE|TRACE-TABLE|TRAILING|TRANSACTION|TRANSFER|TRANSFORMATION|TRANSLATE'),abap.operators.concat(abap.CharacterFactory.get(81, '|TRANSPORTING|TRMAC|TRUNC|TRUNCATE|TRUNCATION|TRY|TYPE|TYPE-POOL|TYPE-POOLS|TYPES'),abap.operators.concat(abap.CharacterFactory.get(81, '|ULINE|UNASSIGN|UNDER|UNICODE|UNION|UNIQUE|UNIT|UNIT_CONVERSION|UNIX|UNPACK|UNTIL'),abap.operators.concat(abap.CharacterFactory.get(86, '|UNWIND|UP|UPDATE|UPPER|USER|USER-COMMAND|USING|UTF-8|VALID|VALUE|VALUE-REQUEST|VALUES'),abap.operators.concat(abap.CharacterFactory.get(86, '|VARY|VARYING|VERIFICATION-MESSAGE|VERSION|VIA|VIEW|VISIBLE|WAIT|WARNING|WHEN|WHENEVER'),abap.operators.concat(abap.CharacterFactory.get(80, '|WHERE|WHILE|WIDTH|WINDOW|WINDOWS|WITH|WITH-HEADING|WITHOUT|WITH-TITLE|WORD|WORK'),abap.operators.concat(abap.CharacterFactory.get(61, '|WRITE|WRITER|X|XML|XSD|XSTRLEN|YELLOW|YES|YYMMDD|Z|ZERO|ZONE'),abap.operators.concat(abap.CharacterFactory.get(77, '|BINTOHEX|CHAR|CLNT|CONCAT_WITH_SPACE|CURR|DATS|DATS_ADD_DAYS|DATS_ADD_MONTHS'),abap.operators.concat(abap.CharacterFactory.get(84, '|DATS_DAYS_BETWEEN|DATS_IS_VALID|DEC|END-OF-EDITING|END-TEST-INJECTION|END-TEST-SEAM'),abap.operators.concat(abap.CharacterFactory.get(58, '|ENDWITH|ENUM|HEXTOBIN|INSTANCE|INSTR|LANG|LTRIM|NUMC|PUSH'),abap.operators.concat(abap.CharacterFactory.get(79, '|QUAN|RETURNS|RPAD|RTRIM|SSTRING|START-OF-EDITING|TEST-INJECTION|TEST-SEAM|TIMS'),abap.operators.concat(abap.CharacterFactory.get(74, '|TIMS_IS_VALID|TSTMP_ADD_SECONDS|TSTMP_CURRENT_UTCTIMESTAMP|TSTMP_IS_VALID'),abap.operators.concat(abap.CharacterFactory.get(86, '|TSTMP_SECONDS_BETWEEN|B|D|DECFLOAT16|DECFLOAT34|F|INT8|N|P|S|STRING|T|UTCLONG|XSTRING'),abap.operators.concat(abap.CharacterFactory.get(61, '|ABAP_BOOL|ACCP|CUKY|DF16_DEC|DF16_RAW|DF34_DEC|DF34_RAW|FLTP'),abap.operators.concat(abap.CharacterFactory.get(53, '|INT1|INT2|INT4|LCHR|LRAW|RAWSTRING|DF16_SCL|DF34_SCL'),abap.operators.concat(abap.CharacterFactory.get(64, '|PREC|VARC|CLIKE|CSEQUENCE|DECFLOAT|NUMERIC|XSEQUENCE|ME|SYST|SY'),abap.operators.concat(abap.CharacterFactory.get(84, '|BIT-SET|BOOLC|BOOLX|CHAR_OFF|CMAX|CMIN|CONCAT_LINES_OF|CONTAINS|CONTAINS_ANY_NOT_OF'),abap.operators.concat(abap.CharacterFactory.get(83, '|CONTAINS_ANY_OF|COUNT_ANY_NOT_OF|COUNT_ANY_OF|FIND_ANY_NOT_OF|FIND_ANY_OF|FIND_END'),abap.operators.concat(abap.CharacterFactory.get(80, '|FROM_MIXED|IPOW|LINE_EXISTS|LINE_INDEX|MATCHES|NMAX|NMIN|REPEAT|RESCALE|REVERSE'),abap.operators.concat(abap.CharacterFactory.get(92, '|SEGMENT|SHIFT_LEFT|SHIFT_RIGHT|SUBSTRING_AFTER|SUBSTRING_BEFORE|SUBSTRING_FROM|SUBSTRING_TO'),abap.CharacterFactory.get(76, '|TO_LOWER|TO_MIXED|TO_UPPER|UTCLONG_ADD|UTCLONG_CURRENT|UTCLONG_DIFF|XSDBOOL')))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))));
+    abap.statements.split({source: lv_keywords, at: abap.CharacterFactory.get(1, '|'), table: lt_keywords});
+    abap.statements.sort(lt_keywords,{by: [{component: "table_line"}]});
+    await abap.statements.deleteInternal(lt_keywords,{adjacent: true});
+    zcl_abapgit_syntax_abap.gt_keywords.set(lt_keywords);
+  }
+  async is_keyword(INPUT) {
+    return zcl_abapgit_syntax_abap.is_keyword(INPUT);
+  }
+  static async is_keyword(INPUT) {
+    let rv_yes = new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"});
+    let iv_chunk = INPUT?.iv_chunk;
+    if (iv_chunk?.getQualifiedName === undefined || iv_chunk.getQualifiedName() !== "STRING") { iv_chunk = undefined; }
+    if (iv_chunk === undefined) { iv_chunk = new abap.types.String({qualifiedName: "STRING"}).set(INPUT.iv_chunk); }
+    let lv_str = new abap.types.String({qualifiedName: "STRING"});
+    lv_str.set(abap.builtin.to_upper({val: iv_chunk}));
+    abap.statements.readTable(zcl_abapgit_syntax_abap.gt_keywords,{withKey: <span class="fstat-no" title="function not covered" >(i) =&gt; {return abap.compare.eq(i.table_line, lv_str);},</span>
+      withKeyValue: [{key: <span class="fstat-no" title="function not covered" >(i) =&gt; {return i.table_line},</span> value: lv_str}],
+      usesTableLine: true,
+      withKeySimple: {"table_line": lv_str}});
+    rv_yes.set(abap.builtin.boolc(abap.compare.eq(abap.builtin.sy.get().subrc, abap.IntegerFactory.get(0))));
+    return rv_yes;
+  }
+  async order_matches(INPUT) {
+    let iv_line = INPUT?.iv_line;
+    if (iv_line?.getQualifiedName === undefined || iv_line.getQualifiedName() !== "STRING") <span class="branch-0 cbranch-no" title="branch not covered" >{ iv_line = undefined; }</span>
+    if (iv_line === undefined) <span class="branch-0 cbranch-no" title="branch not covered" >{ iv_line = new abap.types.String({qualifiedName: "STRING"}).set(INPUT.iv_line); }</span>
+    let ct_matches = abap.types.TableFactory.construct(new abap.types.Structure({
+    "token": new abap.types.Character(1, {"qualifiedName":"zcl_abapgit_syntax_highlighter=&gt;ty_match-token"}),
+    "offset": new abap.types.Integer({qualifiedName: "ZCL_ABAPGIT_SYNTAX_HIGHLIGHTER=&gt;TY_MATCH-OFFSET"}),
+    "length": new abap.types.Integer({qualifiedName: "ZCL_ABAPGIT_SYNTAX_HIGHLIGHTER=&gt;TY_MATCH-LENGTH"}),
+    "text_tag": new abap.types.String({qualifiedName: "ZCL_ABAPGIT_SYNTAX_HIGHLIGHTER=&gt;TY_MATCH-TEXT_TAG"})}, "zcl_abapgit_syntax_highlighter=&gt;ty_match", undefined, {}, {}), {"withHeader":false,"keyType":"DEFAULT","primaryKey":{"name":"primary_key","type":"STANDARD","isUnique":false,"keyFields":[]},"secondary":[]}, "zcl_abapgit_syntax_highlighter=&gt;ty_match_tt");
+    if (INPUT &amp;&amp; INPUT.ct_matches) {ct_matches = INPUT.ct_matches;}
+    let lv_index = new abap.types.Integer({qualifiedName: "I"});
+    let lv_line_len = new abap.types.Integer({qualifiedName: "I"});
+    let lv_prev_token = new abap.types.Character(1, {});
+    let fs_ls_prev_ = new abap.types.FieldSymbol(new abap.types.Structure({
+    "token": new abap.types.Character(1, {"qualifiedName":"zcl_abapgit_syntax_highlighter=&gt;ty_match-token"}),
+    "offset": new abap.types.Integer({qualifiedName: "ZCL_ABAPGIT_SYNTAX_HIGHLIGHTER=&gt;TY_MATCH-OFFSET"}),
+    "length": new abap.types.Integer({qualifiedName: "ZCL_ABAPGIT_SYNTAX_HIGHLIGHTER=&gt;TY_MATCH-LENGTH"}),
+    "text_tag": new abap.types.String({qualifiedName: "ZCL_ABAPGIT_SYNTAX_HIGHLIGHTER=&gt;TY_MATCH-TEXT_TAG"})}, "zcl_abapgit_syntax_highlighter=&gt;ty_match", undefined, {}, {}));
+    let fs_ls_match_ = new abap.types.FieldSymbol(new abap.types.Structure({
+    "token": new abap.types.Character(1, {"qualifiedName":"zcl_abapgit_syntax_highlighter=&gt;ty_match-token"}),
+    "offset": new abap.types.Integer({qualifiedName: "ZCL_ABAPGIT_SYNTAX_HIGHLIGHTER=&gt;TY_MATCH-OFFSET"}),
+    "length": new abap.types.Integer({qualifiedName: "ZCL_ABAPGIT_SYNTAX_HIGHLIGHTER=&gt;TY_MATCH-LENGTH"}),
+    "text_tag": new abap.types.String({qualifiedName: "ZCL_ABAPGIT_SYNTAX_HIGHLIGHTER=&gt;TY_MATCH-TEXT_TAG"})}, "zcl_abapgit_syntax_highlighter=&gt;ty_match", undefined, {}, {}));
+    abap.statements.sort(ct_matches,{by: [{component: "offset"}]});
+    lv_line_len.set(abap.builtin.strlen({val: iv_line}));
+    for await (const unique895 of abap.statements.loop(ct_matches)) {
+      fs_ls_match_.assign(unique895);
+      lv_index.set(abap.builtin.sy.get().tabix);
+      if (abap.compare.eq(lv_prev_token, zcl_abapgit_syntax_abap.c_token.get().text) &amp;&amp; abap.compare.ne(fs_ls_match_.get().token, zcl_abapgit_syntax_abap.c_token.get().text)) {
+        await abap.statements.deleteInternal(ct_matches,{index: lv_index});
+        continue;
+      }
+      let unique896 = fs_ls_match_.get().token;
+      if (abap.compare.eq(unique896, zcl_abapgit_syntax_abap.c_token.get().keyword)) {
+        if (abap.compare.gt(fs_ls_match_.get().offset, abap.IntegerFactory.get(0)) &amp;&amp; abap.compare.ca(abap.builtin.substring({val: iv_line, off: abap.operators.minus(fs_ls_match_.get().offset,abap.IntegerFactory.get(1)), len: abap.IntegerFactory.get(1)}), abap.CharacterFactory.get(2, '-&lt;'))) {
+          await abap.statements.deleteInternal(ct_matches,{index: lv_index});
+          continue;
+        }
+      } else if (abap.compare.eq(unique896, zcl_abapgit_syntax_abap.c_token.get().comment)) {
+        fs_ls_match_.get().length.set(abap.operators.minus(lv_line_len,fs_ls_match_.get().offset));
+        await abap.statements.deleteInternal(ct_matches,{from: abap.operators.add(lv_index,abap.IntegerFactory.get(1))});
+        continue;
+      } else if (abap.compare.eq(unique896, zcl_abapgit_syntax_abap.c_token.get().text)) {
+        fs_ls_match_.get().text_tag.set(abap.builtin.substring({val: iv_line, off: fs_ls_match_.get().offset, len: fs_ls_match_.get().length}));
+        if (abap.compare.eq(lv_prev_token, zcl_abapgit_syntax_abap.c_token.get().text)) {
+          if (abap.compare.eq(fs_ls_match_.get().text_tag, fs_ls_prev_.get().text_tag)) {
+            fs_ls_prev_.get().length.set(abap.operators.minus(abap.operators.add(fs_ls_match_.get().offset,fs_ls_match_.get().length),fs_ls_prev_.get().offset));
+            lv_prev_token.clear();
+          } else if (abap.compare.eq(fs_ls_prev_.get().text_tag, abap.CharacterFactory.get(1, '}')) &amp;&amp; abap.compare.eq(fs_ls_match_.get().text_tag, abap.CharacterFactory.get(1, '{'))) {
+            fs_ls_prev_.get().length.set(abap.operators.minus(abap.operators.minus(fs_ls_match_.get().offset,fs_ls_prev_.get().offset),abap.IntegerFactory.get(1)));
+            fs_ls_prev_.get().offset.set(abap.operators.add(fs_ls_prev_.get().offset,abap.IntegerFactory.get(1)));
+            lv_prev_token.clear();
+          } else if (abap.compare.eq(fs_ls_match_.get().text_tag, abap.CharacterFactory.get(1, '{'))) {
+            fs_ls_prev_.get().length.set(abap.operators.minus(fs_ls_match_.get().offset,fs_ls_prev_.get().offset));
+            lv_prev_token.clear();
+          } else if (abap.compare.eq(fs_ls_prev_.get().text_tag, abap.CharacterFactory.get(1, '}'))) {
+            fs_ls_prev_.get().length.set(abap.operators.minus(fs_ls_match_.get().offset,fs_ls_prev_.get().offset));
+            fs_ls_prev_.get().offset.set(abap.operators.add(fs_ls_prev_.get().offset,abap.IntegerFactory.get(1)));
+            lv_prev_token.clear();
+          }
+          await abap.statements.deleteInternal(ct_matches,{index: lv_index});
+          continue;
+        }
+      }
+      lv_prev_token.set(fs_ls_match_.get().token);
+      abap.statements.assign({target: fs_ls_prev_, source: fs_ls_match_});
+    }
+  }
+  async parse_line(INPUT) {
+    let rt_matches = abap.types.TableFactory.construct(new abap.types.Structure({
+    "token": new abap.types.Character(1, {"qualifiedName":"zcl_abapgit_syntax_highlighter=&gt;ty_match-token"}),
+    "offset": new abap.types.Integer({qualifiedName: "ZCL_ABAPGIT_SYNTAX_HIGHLIGHTER=&gt;TY_MATCH-OFFSET"}),
+    "length": new abap.types.Integer({qualifiedName: "ZCL_ABAPGIT_SYNTAX_HIGHLIGHTER=&gt;TY_MATCH-LENGTH"}),
+    "text_tag": new abap.types.String({qualifiedName: "ZCL_ABAPGIT_SYNTAX_HIGHLIGHTER=&gt;TY_MATCH-TEXT_TAG"})}, "zcl_abapgit_syntax_highlighter=&gt;ty_match", undefined, {}, {}), {"withHeader":false,"keyType":"DEFAULT","primaryKey":{"name":"primary_key","type":"STANDARD","isUnique":false,"keyFields":[]},"secondary":[]}, "zcl_abapgit_syntax_highlighter=&gt;ty_match_tt");
+    let iv_line = INPUT?.iv_line;
+    if (iv_line?.getQualifiedName === undefined || iv_line.getQualifiedName() !== "STRING") <span class="branch-0 cbranch-no" title="branch not covered" >{ iv_line = undefined; }</span>
+    if (iv_line === undefined) <span class="branch-0 cbranch-no" title="branch not covered" >{ iv_line = new abap.types.String({qualifiedName: "STRING"}).set(INPUT.iv_line); }</span>
+    let lv_index = new abap.types.Integer({qualifiedName: "I"});
+    let fs_ls_match_ = new abap.types.FieldSymbol(new abap.types.Structure({
+    "token": new abap.types.Character(1, {"qualifiedName":"zcl_abapgit_syntax_highlighter=&gt;ty_match-token"}),
+    "offset": new abap.types.Integer({qualifiedName: "ZCL_ABAPGIT_SYNTAX_HIGHLIGHTER=&gt;TY_MATCH-OFFSET"}),
+    "length": new abap.types.Integer({qualifiedName: "ZCL_ABAPGIT_SYNTAX_HIGHLIGHTER=&gt;TY_MATCH-LENGTH"}),
+    "text_tag": new abap.types.String({qualifiedName: "ZCL_ABAPGIT_SYNTAX_HIGHLIGHTER=&gt;TY_MATCH-TEXT_TAG"})}, "zcl_abapgit_syntax_highlighter=&gt;ty_match", undefined, {}, {}));
+    rt_matches.set((await super.parse_line({iv_line: iv_line})));
+    for await (const unique897 of abap.statements.loop(rt_matches,{where: async (I) =&gt; {return abap.compare.eq(I.token, zcl_abapgit_syntax_abap.c_token.get().keyword);},topEquals: {"token": zcl_abapgit_syntax_abap.c_token.get().keyword}})) {
+      fs_ls_match_.assign(unique897);
+      lv_index.set(abap.builtin.sy.get().tabix);
+      if (abap.compare.eq(abap.builtin.abap_false, (await this.is_keyword({iv_chunk: abap.builtin.substring({val: iv_line, off: fs_ls_match_.get().offset, len: fs_ls_match_.get().length})})))) {
+        await abap.statements.deleteInternal(rt_matches,{index: lv_index});
+      }
+    }
+    return rt_matches;
+  }
+}
+abap.Classes['ZCL_ABAPGIT_SYNTAX_ABAP'] = zcl_abapgit_syntax_abap;
+zcl_abapgit_syntax_abap.gt_keywords = abap.types.TableFactory.construct(new abap.types.String({qualifiedName: "STRING"}), {"withHeader":false,"keyType":"USER","primaryKey":{"name":"primary_key","type":"HASHED","isUnique":true,"keyFields":["TABLE_LINE"]},"secondary":[]}, "");
+zcl_abapgit_syntax_abap.c_css = new abap.types.Structure({
+"keyword": new abap.types.String({qualifiedName: "STRING"}),
+"text": new abap.types.String({qualifiedName: "STRING"}),
+"comment": new abap.types.String({qualifiedName: "STRING"})}, undefined, undefined, {}, {});
+zcl_abapgit_syntax_abap.c_css.get().keyword.set('keyword');
+zcl_abapgit_syntax_abap.c_css.get().text.set('text');
+zcl_abapgit_syntax_abap.c_css.get().comment.set('comment');
+zcl_abapgit_syntax_abap.c_token = new abap.types.Structure({
+"keyword": new abap.types.Character(1, {}),
+"text": new abap.types.Character(1, {}),
+"comment": new abap.types.Character(1, {})}, undefined, undefined, {}, {});
+zcl_abapgit_syntax_abap.c_token.get().keyword.set('K');
+zcl_abapgit_syntax_abap.c_token.get().text.set('T');
+zcl_abapgit_syntax_abap.c_token.get().comment.set('C');
+zcl_abapgit_syntax_abap.c_regex = new abap.types.Structure({
+"comment": new abap.types.String({qualifiedName: "STRING"}),
+"text": new abap.types.String({qualifiedName: "STRING"}),
+"keyword": new abap.types.String({qualifiedName: "STRING"})}, undefined, undefined, {}, {});
+zcl_abapgit_syntax_abap.c_regex.get().comment.set('##|"|^\\*');
+zcl_abapgit_syntax_abap.c_regex.get().text.set('`|\'|\\||\\{|\\}');
+zcl_abapgit_syntax_abap.c_regex.get().keyword.set('&amp;&amp;|\\b[-_a-z0-9]+\\b');
+await abap.Classes['ZCL_ABAPGIT_SYNTAX_ABAP'].class_constructor();
+export {zcl_abapgit_syntax_abap};</pre></td></tr></table></pre>
+
+                <div class='push'></div><!-- for sticky footer -->
+            </div><!-- /wrapper -->
+            <div class='footer quiet pad2 space-top1 center small'>
+                Code coverage generated by
+                <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
+                at 2026-02-23T16:07:14.249Z
+            </div>
+        <script src="../prettify.js"></script>
+        <script>
+            window.onload = function () {
+                prettyPrint();
+            };
+        </script>
+        <script src="../sorter.js"></script>
+        <script src="../block-navigation.js"></script>
+    </body>
+</html>
+    

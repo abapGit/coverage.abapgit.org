@@ -1,0 +1,274 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Code coverage report for output/cl_abap_memory_utilities.clas.mjs</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+    
+<body>
+<div class='wrapper'>
+    <div class='pad1'>
+        <h1><a href="../index.html">All files</a> / <a href="index.html">output</a> cl_abap_memory_utilities.clas.mjs</h1>
+        <div class='clearfix'>
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">39.06% </span>
+                <span class="quiet">Statements</span>
+                <span class='fraction'>25/64</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">100% </span>
+                <span class="quiet">Branches</span>
+                <span class='fraction'>2/2</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">4% </span>
+                <span class="quiet">Functions</span>
+                <span class='fraction'>1/25</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">39.06% </span>
+                <span class="quiet">Lines</span>
+                <span class='fraction'>25/64</span>
+            </div>
+        
+            
+        </div>
+        <p class="quiet">
+            Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
+        </p>
+        <template id="filterTemplate">
+            <div class="quiet">
+                Filter:
+                <input type="search" id="fileSearch">
+            </div>
+        </template>
+    </div>
+    <div class='status-line low'></div>
+    <pre><table class="coverage">
+<tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
+<a name='L2'></a><a href='#L2'>2</a>
+<a name='L3'></a><a href='#L3'>3</a>
+<a name='L4'></a><a href='#L4'>4</a>
+<a name='L5'></a><a href='#L5'>5</a>
+<a name='L6'></a><a href='#L6'>6</a>
+<a name='L7'></a><a href='#L7'>7</a>
+<a name='L8'></a><a href='#L8'>8</a>
+<a name='L9'></a><a href='#L9'>9</a>
+<a name='L10'></a><a href='#L10'>10</a>
+<a name='L11'></a><a href='#L11'>11</a>
+<a name='L12'></a><a href='#L12'>12</a>
+<a name='L13'></a><a href='#L13'>13</a>
+<a name='L14'></a><a href='#L14'>14</a>
+<a name='L15'></a><a href='#L15'>15</a>
+<a name='L16'></a><a href='#L16'>16</a>
+<a name='L17'></a><a href='#L17'>17</a>
+<a name='L18'></a><a href='#L18'>18</a>
+<a name='L19'></a><a href='#L19'>19</a>
+<a name='L20'></a><a href='#L20'>20</a>
+<a name='L21'></a><a href='#L21'>21</a>
+<a name='L22'></a><a href='#L22'>22</a>
+<a name='L23'></a><a href='#L23'>23</a>
+<a name='L24'></a><a href='#L24'>24</a>
+<a name='L25'></a><a href='#L25'>25</a>
+<a name='L26'></a><a href='#L26'>26</a>
+<a name='L27'></a><a href='#L27'>27</a>
+<a name='L28'></a><a href='#L28'>28</a>
+<a name='L29'></a><a href='#L29'>29</a>
+<a name='L30'></a><a href='#L30'>30</a>
+<a name='L31'></a><a href='#L31'>31</a>
+<a name='L32'></a><a href='#L32'>32</a>
+<a name='L33'></a><a href='#L33'>33</a>
+<a name='L34'></a><a href='#L34'>34</a>
+<a name='L35'></a><a href='#L35'>35</a>
+<a name='L36'></a><a href='#L36'>36</a>
+<a name='L37'></a><a href='#L37'>37</a>
+<a name='L38'></a><a href='#L38'>38</a>
+<a name='L39'></a><a href='#L39'>39</a>
+<a name='L40'></a><a href='#L40'>40</a>
+<a name='L41'></a><a href='#L41'>41</a>
+<a name='L42'></a><a href='#L42'>42</a>
+<a name='L43'></a><a href='#L43'>43</a>
+<a name='L44'></a><a href='#L44'>44</a>
+<a name='L45'></a><a href='#L45'>45</a>
+<a name='L46'></a><a href='#L46'>46</a>
+<a name='L47'></a><a href='#L47'>47</a>
+<a name='L48'></a><a href='#L48'>48</a>
+<a name='L49'></a><a href='#L49'>49</a>
+<a name='L50'></a><a href='#L50'>50</a>
+<a name='L51'></a><a href='#L51'>51</a>
+<a name='L52'></a><a href='#L52'>52</a>
+<a name='L53'></a><a href='#L53'>53</a>
+<a name='L54'></a><a href='#L54'>54</a>
+<a name='L55'></a><a href='#L55'>55</a>
+<a name='L56'></a><a href='#L56'>56</a>
+<a name='L57'></a><a href='#L57'>57</a>
+<a name='L58'></a><a href='#L58'>58</a>
+<a name='L59'></a><a href='#L59'>59</a>
+<a name='L60'></a><a href='#L60'>60</a>
+<a name='L61'></a><a href='#L61'>61</a>
+<a name='L62'></a><a href='#L62'>62</a>
+<a name='L63'></a><a href='#L63'>63</a>
+<a name='L64'></a><a href='#L64'>64</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span></td><td class="text"><pre class="prettyprint lang-js">const {cx_root} = await import("./cx_root.clas.mjs");
+// cl_abap_memory_utilities.clas.abap
+class cl_abap_memory_utilities {
+  static STATIC_SUPER = undefined;
+  static INTERNAL_TYPE = 'CLAS';
+  static INTERNAL_NAME = 'CL_ABAP_MEMORY_UTILITIES';
+  static IMPLEMENTED_INTERFACES = [];
+  static ATTRIBUTES = {};
+  static METHODS = {"GET_MEMORY_SIZE_OF_OBJECT": {"visibility": "U", "parameters": {"OBJECT": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Character(4);},</span> "is_optional": " ", "parm_kind": "I", "type_name": "AnyType"}, "BOUND_SIZE_ALLOC": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Packed({length: 20, decimals: 0, qualifiedName: "ABAP_MSIZE"});},</span> "is_optional": " ", "parm_kind": "E", "type_name": "PackedType"}, "BOUND_SIZE_USED": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Packed({length: 20, decimals: 0, qualifiedName: "ABAP_MSIZE"});},</span> "is_optional": " ", "parm_kind": "E", "type_name": "PackedType"}, "REFERENCED_SIZE_ALLOC": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Packed({length: 20, decimals: 0, qualifiedName: "ABAP_MSIZE"});},</span> "is_optional": " ", "parm_kind": "E", "type_name": "PackedType"}, "REFERENCED_SIZE_USED": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Packed({length: 20, decimals: 0, qualifiedName: "ABAP_MSIZE"});},</span> "is_optional": " ", "parm_kind": "E", "type_name": "PackedType"}, "IS_PART_OF_NON_TRIVIAL_SZK": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Character();},</span> "is_optional": " ", "parm_kind": "E", "type_name": "CGenericType"}, "SZK_SIZE_ALLOC": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Packed({length: 20, decimals: 0, qualifiedName: "ABAP_MSIZE"});},</span> "is_optional": " ", "parm_kind": "E", "type_name": "PackedType"}, "SZK_SIZE_USED": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Packed({length: 20, decimals: 0, qualifiedName: "ABAP_MSIZE"});},</span> "is_optional": " ", "parm_kind": "E", "type_name": "PackedType"}, "LOW_MEM": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Character();},</span> "is_optional": " ", "parm_kind": "E", "type_name": "CGenericType"}, "IS_IN_SHARED_MEMORY": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Character();},</span> "is_optional": " ", "parm_kind": "E", "type_name": "CGenericType"}, "SIZEOF_ALLOC": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Packed({length: 20, decimals: 0, qualifiedName: "ABAP_MSIZE"});},</span> "is_optional": " ", "parm_kind": "E", "type_name": "PackedType"}, "SIZEOF_USED": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Packed({length: 20, decimals: 0, qualifiedName: "ABAP_MSIZE"});},</span> "is_optional": " ", "parm_kind": "E", "type_name": "PackedType"}}},
+  "GET_PEAK_USED_SIZE": {"visibility": "U", "parameters": {"SIZE": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Packed({length: 20, decimals: 0, qualifiedName: "ABAP_MSIZE"});},</span> "is_optional": " ", "parm_kind": "E", "type_name": "PackedType"}}},
+  "GET_TOTAL_USED_SIZE": {"visibility": "U", "parameters": {"SIZE": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Packed({length: 20, decimals: 0, qualifiedName: "ABAP_MSIZE"});},</span> "is_optional": " ", "parm_kind": "E", "type_name": "PackedType"}}},
+  "DO_GARBAGE_COLLECTION": {"visibility": "U", "parameters": {}}};
+<span class="fstat-no" title="function not covered" >  constructor() {</span>
+<span class="cstat-no" title="statement not covered" >    this.me = new abap.types.ABAPObject();</span>
+<span class="cstat-no" title="statement not covered" >    this.me.set(this);</span>
+<span class="cstat-no" title="statement not covered" >    this.INTERNAL_ID = abap.internalIdCounter++;</span>
+<span class="cstat-no" title="statement not covered" >    this.FRIENDS_ACCESS_INSTANCE = {</span>
+<span class="cstat-no" title="statement not covered" >    };</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
+<span class="fstat-no" title="function not covered" >  async constructor_(INPUT) {</span>
+<span class="cstat-no" title="statement not covered" >    if (super.constructor_) { await super.constructor_(INPUT); }</span>
+<span class="cstat-no" title="statement not covered" >    return this;</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
+<span class="fstat-no" title="function not covered" >  async get_total_used_size(INPUT) {</span>
+<span class="cstat-no" title="statement not covered" >    return cl_abap_memory_utilities.get_total_used_size(INPUT);</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
+  static <span class="fstat-no" title="function not covered" >async get_total_used_size(INPUT) {</span>
+<span class="cstat-no" title="statement not covered" >    let size = INPUT?.size || new abap.types.Packed({length: 20, decimals: 0, qualifiedName: "ABAP_MSIZE"});</span>
+<span class="cstat-no" title="statement not covered" >    return;</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
+<span class="fstat-no" title="function not covered" >  async do_garbage_collection() {</span>
+<span class="cstat-no" title="statement not covered" >    return cl_abap_memory_utilities.do_garbage_collection();</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
+  static <span class="fstat-no" title="function not covered" >async do_garbage_collection() {</span>
+<span class="cstat-no" title="statement not covered" >    return;</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
+<span class="fstat-no" title="function not covered" >  async get_peak_used_size(INPUT) {</span>
+<span class="cstat-no" title="statement not covered" >    return cl_abap_memory_utilities.get_peak_used_size(INPUT);</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
+  static <span class="fstat-no" title="function not covered" >async get_peak_used_size(INPUT) {</span>
+<span class="cstat-no" title="statement not covered" >    let size = INPUT?.size || new abap.types.Packed({length: 20, decimals: 0, qualifiedName: "ABAP_MSIZE"});</span>
+<span class="cstat-no" title="statement not covered" >    return;</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
+<span class="fstat-no" title="function not covered" >  async get_memory_size_of_object(INPUT) {</span>
+<span class="cstat-no" title="statement not covered" >    return cl_abap_memory_utilities.get_memory_size_of_object(INPUT);</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
+  static <span class="fstat-no" title="function not covered" >async get_memory_size_of_object(INPUT) {</span>
+<span class="cstat-no" title="statement not covered" >    let object = INPUT?.object;</span>
+<span class="cstat-no" title="statement not covered" >    let bound_size_alloc = INPUT?.bound_size_alloc || new abap.types.Packed({length: 20, decimals: 0, qualifiedName: "ABAP_MSIZE"});</span>
+<span class="cstat-no" title="statement not covered" >    let bound_size_used = INPUT?.bound_size_used || new abap.types.Packed({length: 20, decimals: 0, qualifiedName: "ABAP_MSIZE"});</span>
+<span class="cstat-no" title="statement not covered" >    let referenced_size_alloc = INPUT?.referenced_size_alloc || new abap.types.Packed({length: 20, decimals: 0, qualifiedName: "ABAP_MSIZE"});</span>
+<span class="cstat-no" title="statement not covered" >    let referenced_size_used = INPUT?.referenced_size_used || new abap.types.Packed({length: 20, decimals: 0, qualifiedName: "ABAP_MSIZE"});</span>
+<span class="cstat-no" title="statement not covered" >    let is_part_of_non_trivial_szk = INPUT?.is_part_of_non_trivial_szk || new abap.types.Character();</span>
+<span class="cstat-no" title="statement not covered" >    let szk_size_alloc = INPUT?.szk_size_alloc || new abap.types.Packed({length: 20, decimals: 0, qualifiedName: "ABAP_MSIZE"});</span>
+<span class="cstat-no" title="statement not covered" >    let szk_size_used = INPUT?.szk_size_used || new abap.types.Packed({length: 20, decimals: 0, qualifiedName: "ABAP_MSIZE"});</span>
+<span class="cstat-no" title="statement not covered" >    let low_mem = INPUT?.low_mem || new abap.types.Character();</span>
+<span class="cstat-no" title="statement not covered" >    let is_in_shared_memory = INPUT?.is_in_shared_memory || new abap.types.Character();</span>
+<span class="cstat-no" title="statement not covered" >    let sizeof_alloc = INPUT?.sizeof_alloc || new abap.types.Packed({length: 20, decimals: 0, qualifiedName: "ABAP_MSIZE"});</span>
+<span class="cstat-no" title="statement not covered" >    let sizeof_used = INPUT?.sizeof_used || new abap.types.Packed({length: 20, decimals: 0, qualifiedName: "ABAP_MSIZE"});</span>
+<span class="cstat-no" title="statement not covered" >    return;</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
+}
+abap.Classes['CL_ABAP_MEMORY_UTILITIES'] = cl_abap_memory_utilities;
+export {cl_abap_memory_utilities};</pre></td></tr></table></pre>
+
+                <div class='push'></div><!-- for sticky footer -->
+            </div><!-- /wrapper -->
+            <div class='footer quiet pad2 space-top1 center small'>
+                Code coverage generated by
+                <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
+                at 2026-02-23T16:07:14.249Z
+            </div>
+        <script src="../prettify.js"></script>
+        <script>
+            window.onload = function () {
+                prettyPrint();
+            };
+        </script>
+        <script src="../sorter.js"></script>
+        <script src="../block-navigation.js"></script>
+    </body>
+</html>
+    
