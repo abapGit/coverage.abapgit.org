@@ -1,0 +1,262 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Code coverage report for output/cl_dd_table_element.clas.mjs</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+    
+<body>
+<div class='wrapper'>
+    <div class='pad1'>
+        <h1><a href="../index.html">All files</a> / <a href="index.html">output</a> cl_dd_table_element.clas.mjs</h1>
+        <div class='clearfix'>
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">31.66% </span>
+                <span class="quiet">Statements</span>
+                <span class='fraction'>19/60</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">100% </span>
+                <span class="quiet">Branches</span>
+                <span class='fraction'>2/2</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">3.7% </span>
+                <span class="quiet">Functions</span>
+                <span class='fraction'>1/27</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">31.66% </span>
+                <span class="quiet">Lines</span>
+                <span class='fraction'>19/60</span>
+            </div>
+        
+            
+        </div>
+        <p class="quiet">
+            Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
+        </p>
+        <template id="filterTemplate">
+            <div class="quiet">
+                Filter:
+                <input type="search" id="fileSearch">
+            </div>
+        </template>
+    </div>
+    <div class='status-line low'></div>
+    <pre><table class="coverage">
+<tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
+<a name='L2'></a><a href='#L2'>2</a>
+<a name='L3'></a><a href='#L3'>3</a>
+<a name='L4'></a><a href='#L4'>4</a>
+<a name='L5'></a><a href='#L5'>5</a>
+<a name='L6'></a><a href='#L6'>6</a>
+<a name='L7'></a><a href='#L7'>7</a>
+<a name='L8'></a><a href='#L8'>8</a>
+<a name='L9'></a><a href='#L9'>9</a>
+<a name='L10'></a><a href='#L10'>10</a>
+<a name='L11'></a><a href='#L11'>11</a>
+<a name='L12'></a><a href='#L12'>12</a>
+<a name='L13'></a><a href='#L13'>13</a>
+<a name='L14'></a><a href='#L14'>14</a>
+<a name='L15'></a><a href='#L15'>15</a>
+<a name='L16'></a><a href='#L16'>16</a>
+<a name='L17'></a><a href='#L17'>17</a>
+<a name='L18'></a><a href='#L18'>18</a>
+<a name='L19'></a><a href='#L19'>19</a>
+<a name='L20'></a><a href='#L20'>20</a>
+<a name='L21'></a><a href='#L21'>21</a>
+<a name='L22'></a><a href='#L22'>22</a>
+<a name='L23'></a><a href='#L23'>23</a>
+<a name='L24'></a><a href='#L24'>24</a>
+<a name='L25'></a><a href='#L25'>25</a>
+<a name='L26'></a><a href='#L26'>26</a>
+<a name='L27'></a><a href='#L27'>27</a>
+<a name='L28'></a><a href='#L28'>28</a>
+<a name='L29'></a><a href='#L29'>29</a>
+<a name='L30'></a><a href='#L30'>30</a>
+<a name='L31'></a><a href='#L31'>31</a>
+<a name='L32'></a><a href='#L32'>32</a>
+<a name='L33'></a><a href='#L33'>33</a>
+<a name='L34'></a><a href='#L34'>34</a>
+<a name='L35'></a><a href='#L35'>35</a>
+<a name='L36'></a><a href='#L36'>36</a>
+<a name='L37'></a><a href='#L37'>37</a>
+<a name='L38'></a><a href='#L38'>38</a>
+<a name='L39'></a><a href='#L39'>39</a>
+<a name='L40'></a><a href='#L40'>40</a>
+<a name='L41'></a><a href='#L41'>41</a>
+<a name='L42'></a><a href='#L42'>42</a>
+<a name='L43'></a><a href='#L43'>43</a>
+<a name='L44'></a><a href='#L44'>44</a>
+<a name='L45'></a><a href='#L45'>45</a>
+<a name='L46'></a><a href='#L46'>46</a>
+<a name='L47'></a><a href='#L47'>47</a>
+<a name='L48'></a><a href='#L48'>48</a>
+<a name='L49'></a><a href='#L49'>49</a>
+<a name='L50'></a><a href='#L50'>50</a>
+<a name='L51'></a><a href='#L51'>51</a>
+<a name='L52'></a><a href='#L52'>52</a>
+<a name='L53'></a><a href='#L53'>53</a>
+<a name='L54'></a><a href='#L54'>54</a>
+<a name='L55'></a><a href='#L55'>55</a>
+<a name='L56'></a><a href='#L56'>56</a>
+<a name='L57'></a><a href='#L57'>57</a>
+<a name='L58'></a><a href='#L58'>58</a>
+<a name='L59'></a><a href='#L59'>59</a>
+<a name='L60'></a><a href='#L60'>60</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span></td><td class="text"><pre class="prettyprint lang-js">const {cx_root} = await import("./cx_root.clas.mjs");
+// cl_dd_table_element.clas.abap
+class cl_dd_table_element {
+  static STATIC_SUPER = undefined;
+  static INTERNAL_TYPE = 'CLAS';
+  static INTERNAL_NAME = 'CL_DD_TABLE_ELEMENT';
+  static IMPLEMENTED_INTERFACES = [];
+  static ATTRIBUTES = {"TABLE_OF_COLUMNS": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return abap.types.TableFactory.construct(new abap.types.ABAPObject({qualifiedName: undefined, RTTIName: undefined}), {"withHeader":false,"keyType":"DEFAULT","primaryKey":{"name":"primary_key","type":"STANDARD","isUnique":false,"keyFields":[]},"secondary":[]}, "sdydo_object_table");},</span> "visibility": "U", "is_constant": " ", "is_class": " "}};
+  static METHODS = {"SET_COLUMN_STYLE": {"visibility": "U", "parameters": {"COL_NO": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Integer({qualifiedName: "I"});},</span> "is_optional": " ", "parm_kind": "I", "type_name": "IntegerType"}, "SAP_STYLE": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Character(4);},</span> "is_optional": " ", "parm_kind": "I", "type_name": "AnyType"}, "SAP_COLOR": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Character(4);},</span> "is_optional": " ", "parm_kind": "I", "type_name": "AnyType"}, "SAP_FONTSIZE": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Character(4);},</span> "is_optional": " ", "parm_kind": "I", "type_name": "AnyType"}, "SAP_FONTSTYLE": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Character(4);},</span> "is_optional": " ", "parm_kind": "I", "type_name": "AnyType"}, "SAP_EMPHASIS": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Character(4);},</span> "is_optional": " ", "parm_kind": "I", "type_name": "AnyType"}, "SAP_ALIGN": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Character(4);},</span> "is_optional": " ", "parm_kind": "I", "type_name": "AnyType"}, "SAP_VALIGN": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Character(4);},</span> "is_optional": " ", "parm_kind": "I", "type_name": "AnyType"}, "SAP_SYMBOL": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Character(4);},</span> "is_optional": " ", "parm_kind": "I", "type_name": "AnyType"}}},
+  "ADD_COLUMN": {"visibility": "U", "parameters": {"WIDTH": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Character(4);},</span> "is_optional": " ", "parm_kind": "I", "type_name": "AnyType"}, "BG_COLOR": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Character(4);},</span> "is_optional": " ", "parm_kind": "I", "type_name": "AnyType"}, "HEADING": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Character(4);},</span> "is_optional": " ", "parm_kind": "I", "type_name": "AnyType"}, "SAP_STYLE": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Character(4);},</span> "is_optional": " ", "parm_kind": "I", "type_name": "AnyType"}, "STYLE_CLASS": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Character(4);},</span> "is_optional": " ", "parm_kind": "I", "type_name": "AnyType"}, "COLUMN": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.ABAPObject({qualifiedName: "CL_DD_AREA", RTTIName: "\\CLASS=CL_DD_AREA"});},</span> "is_optional": " ", "parm_kind": "E", "type_name": "ObjectReferenceType"}}},
+  "NEW_ROW": {"visibility": "U", "parameters": {"SAP_STYLE": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Character(4);},</span> "is_optional": " ", "parm_kind": "I", "type_name": "AnyType"}, "SAP_COLOR": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Character(4);},</span> "is_optional": " ", "parm_kind": "I", "type_name": "AnyType"}, "SAP_FONTSIZE": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Character(4);},</span> "is_optional": " ", "parm_kind": "I", "type_name": "AnyType"}, "SAP_FONTSTYLE": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Character(4);},</span> "is_optional": " ", "parm_kind": "I", "type_name": "AnyType"}, "SAP_EMPHASIS": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Character(4);},</span> "is_optional": " ", "parm_kind": "I", "type_name": "AnyType"}}}};
+<span class="fstat-no" title="function not covered" >  constructor() {</span>
+<span class="cstat-no" title="statement not covered" >    this.me = new abap.types.ABAPObject();</span>
+<span class="cstat-no" title="statement not covered" >    this.me.set(this);</span>
+<span class="cstat-no" title="statement not covered" >    this.INTERNAL_ID = abap.internalIdCounter++;</span>
+<span class="cstat-no" title="statement not covered" >    this.FRIENDS_ACCESS_INSTANCE = {</span>
+<span class="cstat-no" title="statement not covered" >      "set_column_style": this.set_column_style.bind(this),</span>
+<span class="cstat-no" title="statement not covered" >      "add_column": this.add_column.bind(this),</span>
+<span class="cstat-no" title="statement not covered" >      "new_row": this.new_row.bind(this),</span>
+<span class="cstat-no" title="statement not covered" >    };</span>
+<span class="cstat-no" title="statement not covered" >    this.table_of_columns = abap.types.TableFactory.construct(new abap.types.ABAPObject({qualifiedName: undefined, RTTIName: undefined}), {"withHeader":false,"keyType":"DEFAULT","primaryKey":{"name":"primary_key","type":"STANDARD","isUnique":false,"keyFields":[]},"secondary":[]}, "sdydo_object_table");</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
+<span class="fstat-no" title="function not covered" >  async constructor_(INPUT) {</span>
+<span class="cstat-no" title="statement not covered" >    if (super.constructor_) { await super.constructor_(INPUT); }</span>
+<span class="cstat-no" title="statement not covered" >    return this;</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
+<span class="fstat-no" title="function not covered" >  async new_row(INPUT) {</span>
+<span class="cstat-no" title="statement not covered" >    let sap_style = INPUT?.sap_style || new abap.types.Character(4);</span>
+<span class="cstat-no" title="statement not covered" >    let sap_color = INPUT?.sap_color || new abap.types.Character(4);</span>
+<span class="cstat-no" title="statement not covered" >    let sap_fontsize = INPUT?.sap_fontsize || new abap.types.Character(4);</span>
+<span class="cstat-no" title="statement not covered" >    let sap_fontstyle = INPUT?.sap_fontstyle || new abap.types.Character(4);</span>
+<span class="cstat-no" title="statement not covered" >    let sap_emphasis = INPUT?.sap_emphasis || new abap.types.Character(4);</span>
+<span class="cstat-no" title="statement not covered" >    return;</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
+<span class="fstat-no" title="function not covered" >  async add_column(INPUT) {</span>
+<span class="cstat-no" title="statement not covered" >    let width = INPUT?.width || new abap.types.Character(4);</span>
+<span class="cstat-no" title="statement not covered" >    let bg_color = INPUT?.bg_color || new abap.types.Character(4);</span>
+<span class="cstat-no" title="statement not covered" >    let heading = INPUT?.heading || new abap.types.Character(4);</span>
+<span class="cstat-no" title="statement not covered" >    let sap_style = INPUT?.sap_style || new abap.types.Character(4);</span>
+<span class="cstat-no" title="statement not covered" >    let style_class = INPUT?.style_class || new abap.types.Character(4);</span>
+<span class="cstat-no" title="statement not covered" >    let column = INPUT?.column || new abap.types.ABAPObject({qualifiedName: "CL_DD_AREA", RTTIName: "\\CLASS=CL_DD_AREA"});</span>
+<span class="cstat-no" title="statement not covered" >    return;</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
+<span class="fstat-no" title="function not covered" >  async set_column_style(INPUT) {</span>
+<span class="cstat-no" title="statement not covered" >    let col_no = INPUT?.col_no;</span>
+<span class="cstat-no" title="statement not covered" >    if (col_no?.getQualifiedName === undefined || col_no.getQualifiedName() !== "I") { col_no = undefined; }</span>
+<span class="cstat-no" title="statement not covered" >    if (col_no === undefined) { col_no = new abap.types.Integer({qualifiedName: "I"}).set(INPUT.col_no); }</span>
+<span class="cstat-no" title="statement not covered" >    let sap_style = INPUT?.sap_style || new abap.types.Character(4);</span>
+<span class="cstat-no" title="statement not covered" >    let sap_color = INPUT?.sap_color || new abap.types.Character(4);</span>
+<span class="cstat-no" title="statement not covered" >    let sap_fontsize = INPUT?.sap_fontsize || new abap.types.Character(4);</span>
+<span class="cstat-no" title="statement not covered" >    let sap_fontstyle = INPUT?.sap_fontstyle || new abap.types.Character(4);</span>
+<span class="cstat-no" title="statement not covered" >    let sap_emphasis = INPUT?.sap_emphasis || new abap.types.Character(4);</span>
+<span class="cstat-no" title="statement not covered" >    let sap_align = INPUT?.sap_align || new abap.types.Character(4);</span>
+<span class="cstat-no" title="statement not covered" >    let sap_valign = INPUT?.sap_valign || new abap.types.Character(4);</span>
+<span class="cstat-no" title="statement not covered" >    let sap_symbol = INPUT?.sap_symbol || new abap.types.Character(4);</span>
+<span class="cstat-no" title="statement not covered" >    return;</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
+}
+abap.Classes['CL_DD_TABLE_ELEMENT'] = cl_dd_table_element;
+export {cl_dd_table_element};</pre></td></tr></table></pre>
+
+                <div class='push'></div><!-- for sticky footer -->
+            </div><!-- /wrapper -->
+            <div class='footer quiet pad2 space-top1 center small'>
+                Code coverage generated by
+                <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
+                at 2026-04-27T10:44:08.865Z
+            </div>
+        <script src="../prettify.js"></script>
+        <script>
+            window.onload = function () {
+                prettyPrint();
+            };
+        </script>
+        <script src="../sorter.js"></script>
+        <script src="../block-navigation.js"></script>
+    </body>
+</html>
+    
