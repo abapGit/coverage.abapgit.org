@@ -1,0 +1,319 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Code coverage report for output/zcl_abapgit_object_sfpf.clas.testclasses.mjs</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+    
+<body>
+<div class='wrapper'>
+    <div class='pad1'>
+        <h1><a href="../index.html">All files</a> / <a href="index.html">output</a> zcl_abapgit_object_sfpf.clas.testclasses.mjs</h1>
+        <div class='clearfix'>
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">100% </span>
+                <span class="quiet">Statements</span>
+                <span class='fraction'>79/79</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">58.33% </span>
+                <span class="quiet">Branches</span>
+                <span class='fraction'>7/12</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">60% </span>
+                <span class="quiet">Functions</span>
+                <span class='fraction'>6/10</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">100% </span>
+                <span class="quiet">Lines</span>
+                <span class='fraction'>79/79</span>
+            </div>
+        
+            
+        </div>
+        <p class="quiet">
+            Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
+        </p>
+        <template id="filterTemplate">
+            <div class="quiet">
+                Filter:
+                <input type="search" id="fileSearch">
+            </div>
+        </template>
+    </div>
+    <div class='status-line high'></div>
+    <pre><table class="coverage">
+<tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
+<a name='L2'></a><a href='#L2'>2</a>
+<a name='L3'></a><a href='#L3'>3</a>
+<a name='L4'></a><a href='#L4'>4</a>
+<a name='L5'></a><a href='#L5'>5</a>
+<a name='L6'></a><a href='#L6'>6</a>
+<a name='L7'></a><a href='#L7'>7</a>
+<a name='L8'></a><a href='#L8'>8</a>
+<a name='L9'></a><a href='#L9'>9</a>
+<a name='L10'></a><a href='#L10'>10</a>
+<a name='L11'></a><a href='#L11'>11</a>
+<a name='L12'></a><a href='#L12'>12</a>
+<a name='L13'></a><a href='#L13'>13</a>
+<a name='L14'></a><a href='#L14'>14</a>
+<a name='L15'></a><a href='#L15'>15</a>
+<a name='L16'></a><a href='#L16'>16</a>
+<a name='L17'></a><a href='#L17'>17</a>
+<a name='L18'></a><a href='#L18'>18</a>
+<a name='L19'></a><a href='#L19'>19</a>
+<a name='L20'></a><a href='#L20'>20</a>
+<a name='L21'></a><a href='#L21'>21</a>
+<a name='L22'></a><a href='#L22'>22</a>
+<a name='L23'></a><a href='#L23'>23</a>
+<a name='L24'></a><a href='#L24'>24</a>
+<a name='L25'></a><a href='#L25'>25</a>
+<a name='L26'></a><a href='#L26'>26</a>
+<a name='L27'></a><a href='#L27'>27</a>
+<a name='L28'></a><a href='#L28'>28</a>
+<a name='L29'></a><a href='#L29'>29</a>
+<a name='L30'></a><a href='#L30'>30</a>
+<a name='L31'></a><a href='#L31'>31</a>
+<a name='L32'></a><a href='#L32'>32</a>
+<a name='L33'></a><a href='#L33'>33</a>
+<a name='L34'></a><a href='#L34'>34</a>
+<a name='L35'></a><a href='#L35'>35</a>
+<a name='L36'></a><a href='#L36'>36</a>
+<a name='L37'></a><a href='#L37'>37</a>
+<a name='L38'></a><a href='#L38'>38</a>
+<a name='L39'></a><a href='#L39'>39</a>
+<a name='L40'></a><a href='#L40'>40</a>
+<a name='L41'></a><a href='#L41'>41</a>
+<a name='L42'></a><a href='#L42'>42</a>
+<a name='L43'></a><a href='#L43'>43</a>
+<a name='L44'></a><a href='#L44'>44</a>
+<a name='L45'></a><a href='#L45'>45</a>
+<a name='L46'></a><a href='#L46'>46</a>
+<a name='L47'></a><a href='#L47'>47</a>
+<a name='L48'></a><a href='#L48'>48</a>
+<a name='L49'></a><a href='#L49'>49</a>
+<a name='L50'></a><a href='#L50'>50</a>
+<a name='L51'></a><a href='#L51'>51</a>
+<a name='L52'></a><a href='#L52'>52</a>
+<a name='L53'></a><a href='#L53'>53</a>
+<a name='L54'></a><a href='#L54'>54</a>
+<a name='L55'></a><a href='#L55'>55</a>
+<a name='L56'></a><a href='#L56'>56</a>
+<a name='L57'></a><a href='#L57'>57</a>
+<a name='L58'></a><a href='#L58'>58</a>
+<a name='L59'></a><a href='#L59'>59</a>
+<a name='L60'></a><a href='#L60'>60</a>
+<a name='L61'></a><a href='#L61'>61</a>
+<a name='L62'></a><a href='#L62'>62</a>
+<a name='L63'></a><a href='#L63'>63</a>
+<a name='L64'></a><a href='#L64'>64</a>
+<a name='L65'></a><a href='#L65'>65</a>
+<a name='L66'></a><a href='#L66'>66</a>
+<a name='L67'></a><a href='#L67'>67</a>
+<a name='L68'></a><a href='#L68'>68</a>
+<a name='L69'></a><a href='#L69'>69</a>
+<a name='L70'></a><a href='#L70'>70</a>
+<a name='L71'></a><a href='#L71'>71</a>
+<a name='L72'></a><a href='#L72'>72</a>
+<a name='L73'></a><a href='#L73'>73</a>
+<a name='L74'></a><a href='#L74'>74</a>
+<a name='L75'></a><a href='#L75'>75</a>
+<a name='L76'></a><a href='#L76'>76</a>
+<a name='L77'></a><a href='#L77'>77</a>
+<a name='L78'></a><a href='#L78'>78</a>
+<a name='L79'></a><a href='#L79'>79</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span></td><td class="text"><pre class="prettyprint lang-js">const {zcl_abapgit_objects_super} = await import("./zcl_abapgit_objects_super.clas.mjs");
+const {zcl_abapgit_object_sfpf} = await import("./zcl_abapgit_object_sfpf.clas.mjs");
+const {cx_root} = await import("./cx_root.clas.mjs");
+// zcl_abapgit_object_sfpf.clas.testclasses.abap
+&nbsp;
+&nbsp;
+class ltcl_test_sort_contexts {
+  static STATIC_SUPER = undefined;
+  static INTERNAL_TYPE = 'CLAS';
+  static INTERNAL_NAME = 'CLAS-ZCL_ABAPGIT_OBJECT_SFPF-LTCL_TEST_SORT_CONTEXTS';
+  static IMPLEMENTED_INTERFACES = [];
+  static ATTRIBUTES = {};
+  static METHODS = {"BASIC": {"visibility": "I", "parameters": {}},
+  "PARSE": {"visibility": "I", "parameters": {"RI_DOC": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.ABAPObject({qualifiedName: "IF_IXML_DOCUMENT", RTTIName: "\\INTERFACE=IF_IXML_DOCUMENT"});},</span> "is_optional": " ", "parm_kind": "R", "type_name": "ObjectReferenceType"}, "IV_XML": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.String({qualifiedName: "STRING"});},</span> "is_optional": " ", "parm_kind": "I", "type_name": "StringType"}}},
+  "RENDER": {"visibility": "I", "parameters": {"RV_XML": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.String({qualifiedName: "STRING"});},</span> "is_optional": " ", "parm_kind": "R", "type_name": "StringType"}, "II_DOC": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.ABAPObject({qualifiedName: "IF_IXML_DOCUMENT", RTTIName: "\\INTERFACE=IF_IXML_DOCUMENT"});},</span> "is_optional": " ", "parm_kind": "I", "type_name": "ObjectReferenceType"}}}};
+  constructor() {
+    this.me = new abap.types.ABAPObject();
+    this.me.set(this);
+    this.INTERNAL_ID = abap.internalIdCounter++;
+    this.FRIENDS_ACCESS_INSTANCE = {
+      "basic": this.#basic.bind(this),
+      "parse": this.#parse.bind(this),
+      "render": this.#render.bind(this),
+    };
+  }
+  async constructor_(INPUT) {
+    if (super.constructor_) <span class="branch-0 cbranch-no" title="branch not covered" >{ await super.constructor_(INPUT); }</span>
+    return this;
+  }
+  async #parse(INPUT) {
+    let ri_doc = new abap.types.ABAPObject({qualifiedName: "IF_IXML_DOCUMENT", RTTIName: "\\INTERFACE=IF_IXML_DOCUMENT"});
+    let iv_xml = INPUT?.iv_xml;
+    if (iv_xml?.getQualifiedName === undefined || iv_xml.getQualifiedName() !== "STRING") <span class="branch-0 cbranch-no" title="branch not covered" >{ iv_xml = undefined; }</span>
+    if (iv_xml === undefined) <span class="branch-0 cbranch-no" title="branch not covered" >{ iv_xml = new abap.types.String({qualifiedName: "STRING"}).set(INPUT.iv_xml); }</span>
+    let li_factory = new abap.types.ABAPObject({qualifiedName: "IF_IXML_STREAM_FACTORY", RTTIName: "\\INTERFACE=IF_IXML_STREAM_FACTORY"});
+    let li_istream = new abap.types.ABAPObject({qualifiedName: "IF_IXML_ISTREAM", RTTIName: "\\INTERFACE=IF_IXML_ISTREAM"});
+    let li_parser = new abap.types.ABAPObject({qualifiedName: "IF_IXML_PARSER", RTTIName: "\\INTERFACE=IF_IXML_PARSER"});
+    let lv_subrc = new abap.types.Integer({qualifiedName: "I"});
+    let li_ixml = new abap.types.ABAPObject({qualifiedName: "IF_IXML", RTTIName: "\\INTERFACE=IF_IXML"});
+    li_ixml.set((await abap.Classes['CL_IXML'].create()));
+    ri_doc.set((await li_ixml.get().if_ixml$create_document()));
+    li_factory.set((await li_ixml.get().if_ixml$create_stream_factory()));
+    li_istream.set((await li_factory.get().if_ixml_stream_factory$create_istream_string({string: iv_xml})));
+    li_parser.set((await li_ixml.get().if_ixml$create_parser({stream_factory: li_factory, istream: li_istream, document: ri_doc})));
+    await li_parser.get().if_ixml_parser$add_strip_space_element();
+    lv_subrc.set((await li_parser.get().if_ixml_parser$parse()));
+    await li_istream.get().if_ixml_istream$close();
+    await abap.Classes['CL_ABAP_UNIT_ASSERT'].assert_equals({act: lv_subrc, exp: abap.IntegerFactory.get(0)});
+    return ri_doc;
+  }
+  async #render(INPUT) {
+    let rv_xml = new abap.types.String({qualifiedName: "STRING"});
+    let ii_doc = INPUT?.ii_doc;
+    if (ii_doc?.getQualifiedName === undefined || ii_doc.getQualifiedName() !== "IF_IXML_DOCUMENT") <span class="branch-0 cbranch-no" title="branch not covered" >{ ii_doc = undefined; }</span>
+    if (ii_doc === undefined) <span class="branch-0 cbranch-no" title="branch not covered" >{ ii_doc = new abap.types.ABAPObject({qualifiedName: "IF_IXML_DOCUMENT", RTTIName: "\\INTERFACE=IF_IXML_DOCUMENT"}).set(INPUT.ii_doc); }</span>
+    let li_ostream = new abap.types.ABAPObject({qualifiedName: "IF_IXML_OSTREAM", RTTIName: "\\INTERFACE=IF_IXML_OSTREAM"});
+    let li_renderer = new abap.types.ABAPObject({qualifiedName: "IF_IXML_RENDERER", RTTIName: "\\INTERFACE=IF_IXML_RENDERER"});
+    let li_factory = new abap.types.ABAPObject({qualifiedName: "IF_IXML_STREAM_FACTORY", RTTIName: "\\INTERFACE=IF_IXML_STREAM_FACTORY"});
+    let li_ixml = new abap.types.ABAPObject({qualifiedName: "IF_IXML", RTTIName: "\\INTERFACE=IF_IXML"});
+    li_ixml.set((await abap.Classes['CL_IXML'].create()));
+    li_factory.set((await li_ixml.get().if_ixml$create_stream_factory()));
+    li_ostream.set((await li_factory.get().if_ixml_stream_factory$create_ostream_cstring({string: rv_xml})));
+    li_renderer.set((await li_ixml.get().if_ixml$create_renderer({ostream: li_ostream, document: ii_doc})));
+    await li_renderer.get().if_ixml_renderer$render();
+    return rv_xml;
+  }
+  async #basic() {
+    let lv_xml = new abap.types.String({qualifiedName: "STRING"});
+    let lv_result = new abap.types.String({qualifiedName: "STRING"});
+    let li_xml_doc = new abap.types.ABAPObject({qualifiedName: "IF_IXML_DOCUMENT", RTTIName: "\\INTERFACE=IF_IXML_DOCUMENT"});
+    lv_xml.set(abap.operators.concat(new abap.types.String().set(`&lt;ROOT&gt;`),abap.operators.concat(new abap.types.String().set(` &lt;FPCONTEXTT&gt;`),abap.operators.concat(new abap.types.String().set(`  &lt;item&gt;`),abap.operators.concat(new abap.types.String().set(`   &lt;NAME&gt;ZB&lt;/NAME&gt;`),abap.operators.concat(new abap.types.String().set(`   &lt;STATE&gt;A&lt;/STATE&gt;`),abap.operators.concat(new abap.types.String().set(`   &lt;LANGUAGE&gt;E&lt;/LANGUAGE&gt;`),abap.operators.concat(new abap.types.String().set(`   &lt;ID&gt;1&lt;/ID&gt;`),abap.operators.concat(new abap.types.String().set(`   &lt;TEXT&gt;fourth&lt;/TEXT&gt;`),abap.operators.concat(new abap.types.String().set(`  &lt;/item&gt;`),abap.operators.concat(new abap.types.String().set(`  &lt;item&gt;`),abap.operators.concat(new abap.types.String().set(`   &lt;NAME&gt;ZA&lt;/NAME&gt;`),abap.operators.concat(new abap.types.String().set(`   &lt;STATE&gt;B&lt;/STATE&gt;`),abap.operators.concat(new abap.types.String().set(`   &lt;LANGUAGE&gt;E&lt;/LANGUAGE&gt;`),abap.operators.concat(new abap.types.String().set(`   &lt;ID&gt;1&lt;/ID&gt;`),abap.operators.concat(new abap.types.String().set(`   &lt;TEXT&gt;third&lt;/TEXT&gt;`),abap.operators.concat(new abap.types.String().set(`  &lt;/item&gt;`),abap.operators.concat(new abap.types.String().set(`  &lt;item&gt;`),abap.operators.concat(new abap.types.String().set(`   &lt;NAME&gt;ZA&lt;/NAME&gt;`),abap.operators.concat(new abap.types.String().set(`   &lt;STATE&gt;A&lt;/STATE&gt;`),abap.operators.concat(new abap.types.String().set(`   &lt;LANGUAGE&gt;D&lt;/LANGUAGE&gt;`),abap.operators.concat(new abap.types.String().set(`   &lt;ID&gt;1&lt;/ID&gt;`),abap.operators.concat(new abap.types.String().set(`   &lt;TEXT&gt;second&lt;/TEXT&gt;`),abap.operators.concat(new abap.types.String().set(`  &lt;/item&gt;`),abap.operators.concat(new abap.types.String().set(`  &lt;item&gt;`),abap.operators.concat(new abap.types.String().set(`   &lt;NAME&gt;ZA&lt;/NAME&gt;`),abap.operators.concat(new abap.types.String().set(`   &lt;STATE&gt;A&lt;/STATE&gt;`),abap.operators.concat(new abap.types.String().set(`   &lt;LANGUAGE&gt;C&lt;/LANGUAGE&gt;`),abap.operators.concat(new abap.types.String().set(`   &lt;ID&gt;2&lt;/ID&gt;`),abap.operators.concat(new abap.types.String().set(`   &lt;TEXT&gt;id second&lt;/TEXT&gt;`),abap.operators.concat(new abap.types.String().set(`  &lt;/item&gt;`),abap.operators.concat(new abap.types.String().set(`  &lt;item&gt;`),abap.operators.concat(new abap.types.String().set(`   &lt;NAME&gt;ZA&lt;/NAME&gt;`),abap.operators.concat(new abap.types.String().set(`   &lt;STATE&gt;A&lt;/STATE&gt;`),abap.operators.concat(new abap.types.String().set(`   &lt;LANGUAGE&gt;C&lt;/LANGUAGE&gt;`),abap.operators.concat(new abap.types.String().set(`   &lt;ID&gt;1&lt;/ID&gt;`),abap.operators.concat(new abap.types.String().set(`   &lt;TEXT&gt;id first&lt;/TEXT&gt;`),abap.operators.concat(new abap.types.String().set(`  &lt;/item&gt;`),abap.operators.concat(new abap.types.String().set(` &lt;/FPCONTEXTT&gt;`),new abap.types.String().set(`&lt;/ROOT&gt;`))))))))))))))))))))))))))))))))))))))));
+    li_xml_doc.set((await this.#parse({iv_xml: lv_xml})));
+    await abap.Classes['ZCL_ABAPGIT_OBJECT_SFPF'].sort_contexts({ii_document: li_xml_doc});
+    lv_result.set((await this.#render({ii_doc: li_xml_doc})));
+    await abap.Classes['CL_ABAP_UNIT_ASSERT'].assert_char_cp({act: lv_result, exp: abap.operators.concat(abap.CharacterFactory.get(13, '*&lt;FPCONTEXTT&gt;'),abap.operators.concat(abap.CharacterFactory.get(97, '&lt;item&gt;&lt;NAME&gt;ZA&lt;/NAME&gt;&lt;STATE&gt;A&lt;/STATE&gt;&lt;LANGUAGE&gt;C&lt;/LANGUAGE&gt;&lt;ID&gt;1&lt;/ID&gt;&lt;TEXT&gt;id first&lt;/TEXT&gt;&lt;/item&gt;'),abap.operators.concat(abap.CharacterFactory.get(98, '&lt;item&gt;&lt;NAME&gt;ZA&lt;/NAME&gt;&lt;STATE&gt;A&lt;/STATE&gt;&lt;LANGUAGE&gt;C&lt;/LANGUAGE&gt;&lt;ID&gt;2&lt;/ID&gt;&lt;TEXT&gt;id second&lt;/TEXT&gt;&lt;/item&gt;'),abap.operators.concat(abap.CharacterFactory.get(95, '&lt;item&gt;&lt;NAME&gt;ZA&lt;/NAME&gt;&lt;STATE&gt;A&lt;/STATE&gt;&lt;LANGUAGE&gt;D&lt;/LANGUAGE&gt;&lt;ID&gt;1&lt;/ID&gt;&lt;TEXT&gt;second&lt;/TEXT&gt;&lt;/item&gt;'),abap.operators.concat(abap.CharacterFactory.get(94, '&lt;item&gt;&lt;NAME&gt;ZA&lt;/NAME&gt;&lt;STATE&gt;B&lt;/STATE&gt;&lt;LANGUAGE&gt;E&lt;/LANGUAGE&gt;&lt;ID&gt;1&lt;/ID&gt;&lt;TEXT&gt;third&lt;/TEXT&gt;&lt;/item&gt;'),abap.operators.concat(abap.CharacterFactory.get(95, '&lt;item&gt;&lt;NAME&gt;ZB&lt;/NAME&gt;&lt;STATE&gt;A&lt;/STATE&gt;&lt;LANGUAGE&gt;E&lt;/LANGUAGE&gt;&lt;ID&gt;1&lt;/ID&gt;&lt;TEXT&gt;fourth&lt;/TEXT&gt;&lt;/item&gt;'),abap.CharacterFactory.get(14, '&lt;/FPCONTEXTT&gt;*')))))))});
+  }
+}
+abap.Classes['CLAS-ZCL_ABAPGIT_OBJECT_SFPF-LTCL_TEST_SORT_CONTEXTS'] = ltcl_test_sort_contexts;
+export {ltcl_test_sort_contexts};</pre></td></tr></table></pre>
+
+                <div class='push'></div><!-- for sticky footer -->
+            </div><!-- /wrapper -->
+            <div class='footer quiet pad2 space-top1 center small'>
+                Code coverage generated by
+                <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
+                at 2026-06-23T16:23:46.828Z
+            </div>
+        <script src="../prettify.js"></script>
+        <script>
+            window.onload = function () {
+                prettyPrint();
+            };
+        </script>
+        <script src="../sorter.js"></script>
+        <script src="../block-navigation.js"></script>
+    </body>
+</html>
+    
