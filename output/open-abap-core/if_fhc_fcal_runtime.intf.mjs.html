@@ -1,0 +1,181 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Code coverage report for output/open-abap-core/if_fhc_fcal_runtime.intf.mjs</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../prettify.css" />
+    <link rel="stylesheet" href="../../base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+    
+<body>
+<div class='wrapper'>
+    <div class='pad1'>
+        <h1><a href="../../index.html">All files</a> / <a href="index.html">output/open-abap-core</a> if_fhc_fcal_runtime.intf.mjs</h1>
+        <div class='clearfix'>
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">100% </span>
+                <span class="quiet">Statements</span>
+                <span class='fraction'>33/33</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">100% </span>
+                <span class="quiet">Branches</span>
+                <span class='fraction'>2/2</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">3.7% </span>
+                <span class="quiet">Functions</span>
+                <span class='fraction'>1/27</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">100% </span>
+                <span class="quiet">Lines</span>
+                <span class='fraction'>33/33</span>
+            </div>
+        
+            
+        </div>
+        <p class="quiet">
+            Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
+        </p>
+        <template id="filterTemplate">
+            <div class="quiet">
+                Filter:
+                <input type="search" id="fileSearch">
+            </div>
+        </template>
+    </div>
+    <div class='status-line high'></div>
+    <pre><table class="coverage">
+<tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
+<a name='L2'></a><a href='#L2'>2</a>
+<a name='L3'></a><a href='#L3'>3</a>
+<a name='L4'></a><a href='#L4'>4</a>
+<a name='L5'></a><a href='#L5'>5</a>
+<a name='L6'></a><a href='#L6'>6</a>
+<a name='L7'></a><a href='#L7'>7</a>
+<a name='L8'></a><a href='#L8'>8</a>
+<a name='L9'></a><a href='#L9'>9</a>
+<a name='L10'></a><a href='#L10'>10</a>
+<a name='L11'></a><a href='#L11'>11</a>
+<a name='L12'></a><a href='#L12'>12</a>
+<a name='L13'></a><a href='#L13'>13</a>
+<a name='L14'></a><a href='#L14'>14</a>
+<a name='L15'></a><a href='#L15'>15</a>
+<a name='L16'></a><a href='#L16'>16</a>
+<a name='L17'></a><a href='#L17'>17</a>
+<a name='L18'></a><a href='#L18'>18</a>
+<a name='L19'></a><a href='#L19'>19</a>
+<a name='L20'></a><a href='#L20'>20</a>
+<a name='L21'></a><a href='#L21'>21</a>
+<a name='L22'></a><a href='#L22'>22</a>
+<a name='L23'></a><a href='#L23'>23</a>
+<a name='L24'></a><a href='#L24'>24</a>
+<a name='L25'></a><a href='#L25'>25</a>
+<a name='L26'></a><a href='#L26'>26</a>
+<a name='L27'></a><a href='#L27'>27</a>
+<a name='L28'></a><a href='#L28'>28</a>
+<a name='L29'></a><a href='#L29'>29</a>
+<a name='L30'></a><a href='#L30'>30</a>
+<a name='L31'></a><a href='#L31'>31</a>
+<a name='L32'></a><a href='#L32'>32</a>
+<a name='L33'></a><a href='#L33'>33</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span></td><td class="text"><pre class="prettyprint lang-js">// if_fhc_fcal_runtime.intf.abap
+class if_fhc_fcal_runtime {
+  static INTERNAL_TYPE = 'INTF';
+  static INTERNAL_NAME = 'IF_FHC_FCAL_RUNTIME';
+  static ATTRIBUTES = {"GC_CORRECT_OPTION_PLUS": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Integer({qualifiedName: "I"});},</span> "visibility": "U", "is_constant": "X", "is_class": "X"},
+  "GC_CORRECT_OPTION_MINUS": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Integer({qualifiedName: "I"});},</span> "visibility": "U", "is_constant": "X", "is_class": "X"}};
+  static METHODS = {"CONVERT_DATE_TO_FACTORYDATE": {"visibility": "U", "exceptions": ["CX_FHC_RUNTIME"], "parameters": {"RV_FACTORYDATE": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Integer({qualifiedName: "IF_FHC_FCAL_RUNTIME=&gt;TY_FHC_FACTORYDATE"});},</span> "is_optional": " ", "parm_kind": "R", "type_name": "IntegerType"}, "IV_DATE": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Date({qualifiedName: "IF_FHC_FCAL_RUNTIME=&gt;TY_FHC_DATE"});},</span> "is_optional": " ", "parm_kind": "I", "type_name": "DateType"}, "IV_CORRECT_OPTION": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.String({qualifiedName: "IF_FHC_FCAL_RUNTIME=&gt;TE_CORRECT_OPTION"});},</span> "is_optional": "X", "parm_kind": "I", "type_name": "EnumType"}}},
+  "CONVERT_FACTORYDATE_TO_DATE": {"visibility": "U", "exceptions": ["CX_FHC_RUNTIME"], "parameters": {"RV_DATE": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Date({qualifiedName: "IF_FHC_FCAL_RUNTIME=&gt;TY_FHC_DATE"});},</span> "is_optional": " ", "parm_kind": "R", "type_name": "DateType"}, "IV_FACTORYDATE": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Integer({qualifiedName: "IF_FHC_FCAL_RUNTIME=&gt;TY_FHC_FACTORYDATE"});},</span> "is_optional": " ", "parm_kind": "I", "type_name": "IntegerType"}}},
+  "GET_LAST_FACTORYDATE": {"visibility": "U", "exceptions": ["CX_FHC_RUNTIME"], "parameters": {"RV_LAST_FACTORY_DATE": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Integer({qualifiedName: "IF_FHC_FCAL_RUNTIME=&gt;TY_FHC_FACTORYDATE"});},</span> "is_optional": " ", "parm_kind": "R", "type_name": "IntegerType"}}},
+  "CALC_WORKINGDAYS_BETWEEN_DATES": {"visibility": "U", "exceptions": ["CX_FHC_RUNTIME"], "parameters": {"RV_NUMBER_OF_WORKING_DAYS": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Integer({qualifiedName: "IF_FHC_FCAL_RUNTIME=&gt;TY_FHC_NUMBER_OF_DAYS"});},</span> "is_optional": " ", "parm_kind": "R", "type_name": "IntegerType"}, "IV_START": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Date({qualifiedName: "IF_FHC_FCAL_RUNTIME=&gt;TY_FHC_DATE"});},</span> "is_optional": " ", "parm_kind": "I", "type_name": "DateType"}, "IV_END": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Date({qualifiedName: "IF_FHC_FCAL_RUNTIME=&gt;TY_FHC_DATE"});},</span> "is_optional": " ", "parm_kind": "I", "type_name": "DateType"}}},
+  "ADD_WORKINGDAYS_TO_DATE": {"visibility": "U", "exceptions": ["CX_FHC_RUNTIME"], "parameters": {"RV_END": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Date({qualifiedName: "IF_FHC_FCAL_RUNTIME=&gt;TY_FHC_DATE"});},</span> "is_optional": " ", "parm_kind": "R", "type_name": "DateType"}, "IV_START": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Date({qualifiedName: "IF_FHC_FCAL_RUNTIME=&gt;TY_FHC_DATE"});},</span> "is_optional": " ", "parm_kind": "I", "type_name": "DateType"}, "IV_NUMBER_OF_WORKINGDAYS": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Integer({qualifiedName: "IF_FHC_FCAL_RUNTIME=&gt;TY_FHC_NUMBER_OF_DAYS"});},</span> "is_optional": " ", "parm_kind": "I", "type_name": "IntegerType"}}},
+  "SUBTRACT_WORKINGDAYS_FROM_DATE": {"visibility": "U", "exceptions": ["CX_FHC_RUNTIME"], "parameters": {"RV_END": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Date({qualifiedName: "IF_FHC_FCAL_RUNTIME=&gt;TY_FHC_DATE"});},</span> "is_optional": " ", "parm_kind": "R", "type_name": "DateType"}, "IV_START": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Date({qualifiedName: "IF_FHC_FCAL_RUNTIME=&gt;TY_FHC_DATE"});},</span> "is_optional": " ", "parm_kind": "I", "type_name": "DateType"}, "IV_NUMBER_OF_WORKINGDAYS": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Integer({qualifiedName: "IF_FHC_FCAL_RUNTIME=&gt;TY_FHC_NUMBER_OF_DAYS"});},</span> "is_optional": " ", "parm_kind": "I", "type_name": "IntegerType"}}},
+  "GET_VALIDITY_START": {"visibility": "U", "parameters": {"RV_VALIDITY_START": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Date({qualifiedName: "IF_FHC_FCAL_RUNTIME=&gt;TY_FHC_DATE"});},</span> "is_optional": " ", "parm_kind": "R", "type_name": "DateType"}}},
+  "GET_VALIDITY_END": {"visibility": "U", "parameters": {"RV_VALIDITY_END": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Date({qualifiedName: "IF_FHC_FCAL_RUNTIME=&gt;TY_FHC_DATE"});},</span> "is_optional": " ", "parm_kind": "R", "type_name": "DateType"}}},
+  "IS_WORKINGDAY": {"visibility": "U", "parameters": {"RV_WORKINGDAY": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"});},</span> "is_optional": " ", "parm_kind": "R", "type_name": "CharacterType"}, "IV_WEEKDAY": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Numc({qualifiedName: "if_fhc_fcal_runtime=&gt;ty_fhc_weekday"});},</span> "is_optional": " ", "parm_kind": "I", "type_name": "NumericType"}}},
+  "IS_HOLIDAY_WORKINGDAY": {"visibility": "U", "parameters": {"RV_WORKINGDAY": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Character(1, {"qualifiedName":"ABAP_BOOL","ddicName":"ABAP_BOOL"});},</span> "is_optional": " ", "parm_kind": "R", "type_name": "CharacterType"}}},
+  "GET_DESCRIPTION": {"visibility": "U", "parameters": {"RV_DESCRIPTION": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Character(255, {"qualifiedName":"if_fhc_fcal_runtime=&gt;ty_fhc_description"});},</span> "is_optional": " ", "parm_kind": "R", "type_name": "CharacterType"}, "IV_LANGUAGE": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Character(1, {"qualifiedName":"SPRAS","ddicName":"SPRAS","description":"SPRAS"});},</span> "is_optional": "X", "parm_kind": "I", "type_name": "CharacterType"}}},
+  "GET_HCAL_ASSIGNMENT": {"visibility": "U", "exceptions": ["CX_FHC_RUNTIME"], "parameters": {"RO_HOLIDAYCALENDAR": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.ABAPObject({qualifiedName: "IF_FHC_HCAL_RUNTIME", RTTIName: "\\INTERFACE=IF_FHC_HCAL_RUNTIME"});},</span> "is_optional": " ", "parm_kind": "R", "type_name": "ObjectReferenceType"}}},
+  "GET_ID": {"visibility": "U", "parameters": {"RV_ID": {"type": <span class="fstat-no" title="function not covered" >() =&gt; {return new abap.types.Character(32, {"qualifiedName":"if_fhc_fcal_runtime=&gt;ty_fhc_fcalid"});},</span> "is_optional": " ", "parm_kind": "R", "type_name": "CharacterType"}}}};
+}
+abap.Classes['IF_FHC_FCAL_RUNTIME'] = if_fhc_fcal_runtime;
+if_fhc_fcal_runtime.if_fhc_fcal_runtime$gc_correct_option_plus = new abap.types.Integer({qualifiedName: "I"});
+if_fhc_fcal_runtime.if_fhc_fcal_runtime$gc_correct_option_plus.set(0);
+if_fhc_fcal_runtime.if_fhc_fcal_runtime$gc_correct_option_minus = new abap.types.Integer({qualifiedName: "I"});
+if_fhc_fcal_runtime.if_fhc_fcal_runtime$gc_correct_option_minus.set(1);
+if_fhc_fcal_runtime.ty_fhc_date = new abap.types.Date({qualifiedName: "IF_FHC_FCAL_RUNTIME=&gt;TY_FHC_DATE"});
+if_fhc_fcal_runtime.ty_fhc_factorydate = new abap.types.Integer({qualifiedName: "IF_FHC_FCAL_RUNTIME=&gt;TY_FHC_FACTORYDATE"});
+if_fhc_fcal_runtime.ty_fhc_number_of_days = new abap.types.Integer({qualifiedName: "IF_FHC_FCAL_RUNTIME=&gt;TY_FHC_NUMBER_OF_DAYS"});
+if_fhc_fcal_runtime.ty_fhc_weekday = new abap.types.Numc({qualifiedName: "if_fhc_fcal_runtime=&gt;ty_fhc_weekday"});
+if_fhc_fcal_runtime.ty_fhc_description = new abap.types.Character(255, {"qualifiedName":"if_fhc_fcal_runtime=&gt;ty_fhc_description"});
+if_fhc_fcal_runtime.ty_fhc_fcalid = new abap.types.Character(32, {"qualifiedName":"if_fhc_fcal_runtime=&gt;ty_fhc_fcalid"});
+if_fhc_fcal_runtime.te_correct_option = new abap.types.String({qualifiedName: "IF_FHC_FCAL_RUNTIME=&gt;TE_CORRECT_OPTION"});
+export {if_fhc_fcal_runtime};</pre></td></tr></table></pre>
+
+                <div class='push'></div><!-- for sticky footer -->
+            </div><!-- /wrapper -->
+            <div class='footer quiet pad2 space-top1 center small'>
+                Code coverage generated by
+                <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
+                at 2026-10-17T14:48:28.466Z
+            </div>
+        <script src="../../prettify.js"></script>
+        <script>
+            window.onload = function () {
+                prettyPrint();
+            };
+        </script>
+        <script src="../../sorter.js"></script>
+        <script src="../../block-navigation.js"></script>
+    </body>
+</html>
+    
